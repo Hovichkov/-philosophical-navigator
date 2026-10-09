@@ -4,6 +4,7 @@ Routes
   GET  /                      the app (static/index.html)
   GET  /api/options           topics, experiences, difficulty options per topic
   POST /api/interpret         {topic, experiences, difficulty_center, narrative} → proposed question / clarification
+  POST /api/choose            {session_id, index} → one of several questions from the story (no model call)
   POST /api/confirm           {session_id, action, text?} → confirmed question
   POST /api/retrieve          {session_id} → stage 1: candidate retrieval (fast, local)
   POST /api/compose           {session_id} → stage 2: 2–3 perspectives (one model call)
@@ -141,7 +142,12 @@ def make_handler(app: App):
                     if not isinstance(exps, list):
                         exps = []
                     return self._json(200, s.submit(str(data.get("topic", "")), [str(e) for e in exps],
-                                                    str(data.get("difficulty_center", "")), str(data.get("narrative", ""))))
+                                                    str(data.get("difficulty_center", "")), str(data.get("narrative", "")),
+                                                    auto_confirm=data.get("auto_confirm") is True))
+                if path == "/api/choose":
+                    index = data.get("index")
+                    return self._json(200, app.get(str(data.get("session_id", ""))).choose(
+                        index if isinstance(index, int) and not isinstance(index, bool) else -1))
                 if path == "/api/confirm":
                     s = app.get(str(data.get("session_id", "")))
                     return self._json(200, s.confirm(str(data.get("action", "")), data.get("text")))

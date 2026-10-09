@@ -97,8 +97,6 @@
   .share-status { color: var(--ink-soft); font-size: .95rem; min-height: 1.5rem; margin: .5rem 0 0; }
 
   #next-thought { white-space: pre-line; }
-  .reflection textarea { min-height: 5rem; margin-top: .25rem; }
-  .reflection .options { margin-bottom: 1rem; }
   .notice { padding: .9rem 1rem; border-radius: 10px; background: var(--accent-soft); margin: 0 0 1.25rem; }
   .notice.warn { background: transparent; border: 1px solid var(--error); color: var(--ink); }
   .notice.warn strong { display: block; color: var(--error); margin-bottom: .2rem; }
@@ -125,50 +123,40 @@
 <body>
 <main>
 
-  <section class="screen active" id="s-start">
+  <!-- MVP flow: story → feelings → question → answer. The story is the first screen. -->
+  <section class="screen active" id="s-story">
     <h1>Инструмент Самоанализа</h1>
-    <!-- M3.4 onboarding: what the tool does, before the first analysis -->
     <p class="lead">Здесь не будет совета, как правильно поступить.</p>
-    <p>Вы описываете ситуацию, которая вас сейчас занимает. Инструмент помогает точнее сформулировать ваш вопрос, а потом показывает несколько способов посмотреть на него через философские и духовные тексты.</p>
-    <p>Эти взгляды могут различаться и даже противоречить друг другу. Их задача — помочь заметить в своём вопросе то, чего вы раньше не замечали.</p>
-    <p>В конце можно выбрать мысль, с которой хочется продолжить.</p>
-    <div class="actions"><button class="primary" data-go="s-topic">Начать</button></div>
-  </section>
-
-  <section class="screen" id="s-topic">
-    <div class="step">Шаг 1 из 4</div>
-    <h2>Что сейчас занимает вас больше всего?</h2>
-    <div class="options" id="topic-options"></div>
-    <div class="other-input" id="topic-other" hidden><input type="text" id="topic-other-text" placeholder="Своими словами"></div>
-    <div class="actions"><button class="primary" id="topic-next" disabled>Дальше</button></div>
-  </section>
-
-  <section class="screen" id="s-exp">
-    <div class="step">Шаг 2 из 4</div>
-    <h2>Что вы чувствуете в этой ситуации?</h2>
-    <p class="hint">Выберите до трёх — те, что сейчас сильнее всего.</p>
-    <div class="options" id="exp-options"></div>
-    <p class="counter" id="exp-counter" aria-live="polite"></p>
-    <div class="other-input" id="exp-other" hidden><input type="text" id="exp-other-text" placeholder="Что ещё?"></div>
-    <div class="actions"><button class="link" data-go="s-topic">Назад</button><button class="primary" id="exp-next" disabled>Дальше</button></div>
-  </section>
-
-  <section class="screen" id="s-diff">
-    <div class="step">Шаг 3 из 4</div>
-    <h2>Что в этой ситуации для вас сейчас самое трудное?</h2>
-    <div class="options" id="diff-options"></div>
-    <div class="other-input" id="diff-other" hidden><input type="text" id="diff-other-text" placeholder="Своими словами"></div>
-    <div class="actions"><button class="link" data-go="s-exp">Назад</button><button class="primary" id="diff-next" disabled>Дальше</button></div>
-  </section>
-
-  <section class="screen" id="s-story">
-    <div class="step">Шаг 4 из 4</div>
-    <h2>Расскажите, что происходит</h2>
-    <p class="hint">Опишите ситуацию простыми словами: что произошло, что вы чувствуете и что именно вам трудно принять или решить. Чем конкретнее вопрос, тем точнее результат.</p>
+    <p>Инструмент помогает точнее сформулировать ваш вопрос и показывает, как на него можно посмотреть через философские и духовные тексты. Эти взгляды могут различаться и даже противоречить друг другу.</p>
+    <h2>Расскажите, что вас беспокоит.</h2>
+    <p class="hint">Постарайтесь описать ситуацию своими словами.</p>
     <div class="notice" id="story-clarify" hidden></div>
     <textarea id="story" aria-label="Ваш рассказ"></textarea>
     <p class="error" id="story-error"></p>
-    <div class="actions"><button class="link" data-go="s-diff">Назад</button><button class="primary" id="story-next" disabled>Дальше</button></div>
+    <div class="actions"><button class="primary" id="story-next" disabled>Дальше</button></div>
+  </section>
+
+  <section class="screen" id="s-exp">
+    <h2>Что вы чувствуете в этой ситуации?</h2>
+    <p class="hint">Выберите до трёх — те, что сейчас сильнее всего. Можно добавить своё или пропустить.</p>
+    <div class="options" id="exp-options"></div>
+    <p class="counter" id="exp-counter" aria-live="polite"></p>
+    <div class="other-input" id="exp-other" hidden><input type="text" id="exp-other-text" placeholder="Что ещё?"></div>
+    <div class="actions"><button class="link" data-go="s-story">Назад</button><button class="primary" id="exp-next">Пропустить</button></div>
+  </section>
+
+  <section class="screen" id="s-clarify">
+    <h2>Уточните, пожалуйста</h2>
+    <div class="question" id="clarify-question"></div>
+    <textarea id="clarify-text" aria-label="Ваш ответ"></textarea>
+    <p class="error" id="clarify-error"></p>
+    <div class="actions"><button class="link" id="clarify-back">Изменить рассказ</button><button class="primary" id="clarify-next" disabled>Дальше</button></div>
+  </section>
+
+  <section class="screen" id="s-choose">
+    <h2>В вашем рассказе несколько вопросов</h2>
+    <p class="hint">С какого начать? К остальным можно будет вернуться после ответа.</p>
+    <div class="stack" id="choose-options"></div>
   </section>
 
   <section class="screen" id="s-loading">
@@ -176,30 +164,16 @@
       <div><span id="loading-text"></span><small id="loading-sub" style="display:block;font-size:.9rem"></small></div></div>
   </section>
 
-  <section class="screen" id="s-confirm">
-    <h2>Правильно ли мы поняли ваш вопрос?</h2>
-    <div class="question" id="proposed"></div>
-    <div class="stack" id="confirm-choices">
-      <button class="primary" id="c-yes">Да, это мой вопрос</button>
-      <button id="c-edit">Частично, хочу изменить формулировку</button>
-      <button id="c-no">Нет, мой вопрос о другом</button>
-    </div>
-    <div id="edit-box" hidden>
-      <p class="hint" style="margin-top:0">Измените формулировку так, как вам точнее.</p>
-      <textarea id="edit-text" aria-label="Формулировка вопроса"></textarea>
-      <div class="actions"><button class="link" id="edit-cancel">Отмена</button><button class="primary" id="edit-send">Дальше</button></div>
-    </div>
-    <div id="own-box" hidden>
-      <p class="hint" style="margin-top:0">Сформулируйте вопрос своими словами.</p>
-      <textarea id="own-text" aria-label="Ваш вопрос"></textarea>
-      <div class="actions"><button class="link" id="own-cancel">Отмена</button><button class="primary" id="own-send">Дальше</button></div>
-    </div>
-    <p class="error" id="confirm-error"></p>
-  </section>
-
   <section class="screen" id="s-result">
     <h2>Ваш вопрос</h2>
     <div class="question" id="confirmed"></div>
+    <!-- MVP flow: the person can correct the question; the story and feelings are kept, only the answer is rebuilt -->
+    <div class="actions" id="edit-q-link" hidden style="margin-top:-.75rem"><button class="link" id="edit-q">Изменить вопрос</button></div>
+    <div id="edit-q-box" hidden>
+      <textarea id="edit-q-text" aria-label="Формулировка вопроса"></textarea>
+      <p class="error" id="edit-q-error"></p>
+      <div class="actions"><button class="link" id="edit-q-cancel">Отмена</button><button class="primary" id="edit-q-save">Сохранить</button></div>
+    </div>
     <div id="result-pending">
       <div class="pending" aria-live="polite"><span class="dot"></span><span class="dot"></span><span class="dot"></span>
         <div><span id="pending-text">Ищем философские перспективы…</span><small id="pending-sub"></small></div></div>
@@ -207,14 +181,10 @@
     </div>
     <p class="lead" id="result-lead" hidden>На него можно посмотреть с нескольких сторон.</p>
     <div id="cards"></div>
-    <!-- M3.4: after the cards — what changed; the entry point of the next round -->
-    <section class="card reflection" id="reflection" hidden>
-      <h3>Что изменилось в вашем вопросе?</h3>
-      <p>Какая из этих мыслей оказалась для вас важной? Можно выбрать её, написать своими словами, что вы теперь видите иначе, — или сделать и то и другое.</p>
-      <div class="options" id="reflection-options"></div>
-      <textarea id="reflection-text" aria-label="Своими словами" placeholder="Своими словами — если хочется"></textarea>
-      <p class="error" id="reflection-error"></p>
-      <div class="actions"><button class="primary" id="reflection-next" disabled>Продолжить разбор</button></div>
+    <!-- MVP flow: the other independent questions from the story stay one tap away -->
+    <section class="card" id="other-questions" hidden>
+      <h3>Другие вопросы из вашего рассказа</h3>
+      <div class="stack" id="other-options"></div>
     </section>
     <div class="actions">
       <button id="copy" hidden>Скопировать</button>
@@ -222,14 +192,6 @@
       <button class="primary" id="restart">Начать заново</button>
     </div>
     <p class="share-status" id="share-status" aria-live="polite"></p>
-  </section>
-
-  <section class="screen" id="s-next">
-    <h2>Вы продолжаете с этой мыслью</h2>
-    <div class="question" id="next-thought"></div>
-    <p class="lead" id="next-text">Следующий круг будет строиться от этой мысли.</p>
-    <p class="hint" style="margin-top:0">Ваш выбор сохранён. Следующий круг разбора пока в разработке.</p>
-    <div class="actions"><button class="link" id="back-to-result">Вернуться к перспективам</button><button class="primary" id="restart-3">Начать заново</button></div>
   </section>
 
   <section class="screen" id="s-error">
@@ -243,7 +205,7 @@
 
 <script>
 const OTHER = "Другое";
-const state = { topic: null, topicOther: "", exps: new Set(), expOther: "", diff: null, diffOther: "", sessionId: null, retry: null };
+const state = { exps: new Set(), expOther: "", sessionId: null, retry: null, story: "", questions: [] };
 let OPTIONS = null;
 
 const $ = (id) => document.getElementById(id);
@@ -315,17 +277,25 @@ function fail(message, retryFn) {
   show("s-error");
 }
 
-// ---- screen 1
-function renderTopics() {
-  renderOptions("topic-options", OPTIONS.topics, false, (l) => state.topic === l, (l) => {
-    state.topic = l; state.diff = null; renderTopics(); updateTopic();
-  });
-  $("topic-other").hidden = state.topic !== OTHER;
+// ---- screen 1: the story (no model call yet)
+$("story").addEventListener("input", () => { $("story-next").disabled = !$("story").value.trim(); });
+$("story-next").addEventListener("click", () => {
+  $("story-error").textContent = ""; $("story-clarify").hidden = true;
+  state.story = $("story").value;
+  renderExps(); show("s-exp");
+});
+function storyNotice(title, text) {
+  // MVP pass 1: never a silent bounce — say what happened, keep the text, let the person fix it
+  const box = $("story-clarify");
+  box.className = "notice warn";
+  box.innerHTML = "";
+  const strong = document.createElement("strong");
+  strong.textContent = title;
+  box.append(strong, document.createTextNode(text));
+  box.hidden = false;
+  show("s-story");
+  setTimeout(() => { box.scrollIntoView({ behavior: "smooth", block: "center" }); $("story").focus(); }, 50);
 }
-function topicValue() { return state.topic === OTHER ? (state.topicOther.trim() || OTHER) : state.topic; }
-function updateTopic() { $("topic-next").disabled = !state.topic; }
-$("topic-other-text").addEventListener("input", (e) => { state.topicOther = e.target.value; });
-$("topic-next").addEventListener("click", () => { renderExps(); show("s-exp"); });
 
 // ---- screen 2
 const MAX_FEELINGS = 3;
@@ -342,60 +312,28 @@ function renderExps() {
   $("exp-counter").textContent = full ? "Выбрано три — это максимум. Чтобы выбрать другое, снимите одну отметку."
                                       : (state.exps.size ? "Выбрано: " + state.exps.size + " из " + MAX_FEELINGS : "");
   $("exp-other").hidden = !state.exps.has(OTHER);
-  $("exp-next").disabled = state.exps.size === 0;
+  $("exp-next").textContent = expValues().length ? "Дальше" : "Пропустить";  // feelings are optional
 }
-$("exp-other-text").addEventListener("input", (e) => { state.expOther = e.target.value; });
-$("exp-next").addEventListener("click", () => { renderDiff(); show("s-diff"); });
+$("exp-other-text").addEventListener("input", (e) => { state.expOther = e.target.value; renderExps(); });
+$("exp-next").addEventListener("click", () => exclusive(() => interpretStory(state.story)));
 function expValues() {
   return [...state.exps].map((e) => (e === OTHER ? state.expOther.trim() : e)).filter(Boolean);
 }
 
-// ---- screen 3
-function renderDiff() {
-  const items = OPTIONS.difficulty[state.topic] || OPTIONS.difficulty[OTHER];
-  renderOptions("diff-options", items, false, (l) => state.diff === l, (l) => { state.diff = l; renderDiff(); });
-  $("diff-other").hidden = state.diff !== OTHER;
-  $("diff-next").disabled = !state.diff || (state.diff === OTHER && !state.diffOther.trim());
-}
-$("diff-other-text").addEventListener("input", (e) => { state.diffOther = e.target.value; renderDiffButton(); });
-function renderDiffButton() { $("diff-next").disabled = !state.diff || (state.diff === OTHER && !state.diffOther.trim()); }
-$("diff-next").addEventListener("click", () => { show("s-story"); $("story").focus(); });
-function diffValue() { return state.diff === OTHER ? state.diffOther.trim() : state.diff; }
-
-// ---- screen 4
-$("story").addEventListener("input", () => { $("story-next").disabled = !$("story").value.trim(); });
-$("story-next").addEventListener("click", () => exclusive(interpretStory));
-function storyNotice(title, text) {
-  // MVP pass 1: never a silent bounce — say what happened, keep the text, let the person fix it
-  const box = $("story-clarify");
-  box.className = "notice warn";
-  box.innerHTML = "";
-  const strong = document.createElement("strong");
-  strong.textContent = title;
-  box.append(strong, document.createTextNode(text));
-  box.hidden = false;
-  show("s-story");
-  setTimeout(() => { box.scrollIntoView({ behavior: "smooth", block: "center" }); $("story").focus(); }, 50);
-}
-async function interpretStory() {
-  $("story-error").textContent = "";
-  $("story-clarify").hidden = true;
+// ---- the question: ONE model call reads the story with the feelings. One clear question → straight to the answer;
+// several independent ones → the person picks one; an unclear story → one short clarifying question.
+async function interpretStory(narrative) {
   loading("Разбираем ваш рассказ и формулируем вопрос…");
   startElapsed("loading-sub", "Обычно это занимает до минуты.");
   try {
-    const data = await api("/api/interpret", {
-      topic: topicValue(), experiences: expValues(), difficulty_center: diffValue(), narrative: $("story").value,
-    });
+    const data = await api("/api/interpret", { experiences: expValues(), narrative, auto_confirm: true });
     stopElapsed();
     state.sessionId = data.session_id;
-    if (data.state === "insufficient") {
-      storyNotice("Не получилось понять рассказ.", " " + data.clarification);
-      return;
-    }
-    $("story-clarify").hidden = true;
-    $("proposed").textContent = data.proposed_question;
-    resetConfirm();
-    show("s-confirm");
+    if (data.state === "insufficient") { askClarification(narrative, data.clarification); return; }
+    state.questions = data.questions || []; state.editedFrom = null;
+    if (data.state === "confirmed") { await answer(data.confirmed_question); return; }
+    if (state.questions.length > 1) { renderChoice(); return; }
+    await choose(0);  // safety net: a single proposed question is taken as is
   } catch (e) {
     stopElapsed();
     if (e instanceof Stale) return;
@@ -403,30 +341,40 @@ async function interpretStory() {
   }
 }
 
-// ---- screen 5
-function resetConfirm() {
-  $("confirm-choices").hidden = false; $("edit-box").hidden = true; $("own-box").hidden = true; $("confirm-error").textContent = "";
+function askClarification(narrative, question) {
+  state.clarifyBase = narrative;
+  $("clarify-question").textContent = question;
+  $("clarify-text").value = ""; $("clarify-next").disabled = true; $("clarify-error").textContent = "";
+  show("s-clarify");
+  setTimeout(() => $("clarify-text").focus(), 50);
 }
-$("c-yes").addEventListener("click", () => exclusive(() => confirmAndAnswer("confirmed", null)));
-$("c-edit").addEventListener("click", () => {
-  $("confirm-choices").hidden = true; $("edit-box").hidden = false; $("edit-text").value = $("proposed").textContent; $("edit-text").focus();
-});
-$("c-no").addEventListener("click", () => { $("confirm-choices").hidden = true; $("own-box").hidden = false; $("own-text").focus(); });
-$("edit-cancel").addEventListener("click", resetConfirm);
-$("own-cancel").addEventListener("click", resetConfirm);
-$("edit-send").addEventListener("click", () => sendOwn("edited", $("edit-text").value));
-$("own-send").addEventListener("click", () => sendOwn("replaced", $("own-text").value));
-function sendOwn(action, text) {
-  if (!text.trim()) { $("confirm-error").textContent = "Пожалуйста, напишите формулировку вопроса."; return; }
-  exclusive(() => confirmAndAnswer(action, text));
-}
+$("clarify-text").addEventListener("input", () => { $("clarify-next").disabled = !$("clarify-text").value.trim(); });
+$("clarify-back").addEventListener("click", () => { $("story").value = state.story; show("s-story"); });
+$("clarify-next").addEventListener("click", () => exclusive(() => {
+  // the answer is added to the story: the next reading sees both (still one model call)
+  state.story = state.clarifyBase.trim() + "\n\n" + $("clarify-text").value.trim();
+  $("story").value = state.story;
+  return interpretStory(state.story);
+}));
 
-async function confirmAndAnswer(action, text) {
+function questionButtons(containerId, onlyOthers, current) {
+  const box = $(containerId);
+  box.innerHTML = "";
+  state.questions.forEach((q, i) => {
+    if (onlyOthers && (q === current || q === state.editedFrom)) return;
+    const b = el("button", null, q);
+    b.addEventListener("click", () => exclusive(() => choose(i)));
+    box.append(b);
+  });
+}
+function renderChoice() { questionButtons("choose-options", false, null); show("s-choose"); }
+async function choose(index) {
+  state.editedFrom = null;
   loading("Сохраняем ваш вопрос…");
   try {
-    const confirmed = await api("/api/confirm", { session_id: state.sessionId, action, text });
-    await answer(confirmed.confirmed_question);
-  } catch (e) { if (!(e instanceof Stale)) fail(e.message, () => exclusive(() => confirmAndAnswer(action, text))); }
+    const data = await api("/api/choose", { session_id: state.sessionId, index });
+    await answer(data.confirmed_question);
+  } catch (e) { if (!(e instanceof Stale)) fail(e.message, () => exclusive(() => choose(index))); }
 }
 
 // Staged loading (M3.2): the result screen with the confirmed question appears at once.
@@ -441,7 +389,8 @@ function showPendingResult(question) {
   $("cards").innerHTML = "";
   $("share-status").textContent = "";
   $("result-lead").hidden = true; $("copy").hidden = true; $("share").hidden = true;
-  $("reflection").hidden = true;
+  $("other-questions").hidden = true;
+  $("edit-q-link").hidden = true; $("edit-q-box").hidden = true;
   $("result-pending").hidden = false;
   show("s-result");
 }
@@ -515,7 +464,8 @@ function renderResult(question, perspectives, copyText) {
     }
     box.append(card);
   });
-  renderReflection(perspectives);
+  renderOtherQuestions(question);
+  $("edit-q-link").hidden = false; $("edit-q-box").hidden = true;
   show("s-result");
 }
 
@@ -541,35 +491,35 @@ function finalCard(p) {
   return card;
 }
 
-// ---- M3.4 reflection: pick the perspective that mattered and/or say it in own words, then continue
-const reflection = { chosen: null };
-function renderReflection(perspectives) {
-  reflection.chosen = null;
-  $("reflection-text").value = "";
-  $("reflection-error").textContent = "";
-  const titles = perspectives.map((p) => p.title);
-  const draw = () => renderOptions("reflection-options", titles, false, (l) => titles[reflection.chosen] === l,
-    (l) => { reflection.chosen = titles.indexOf(l); draw(); updateReflection(); });
-  draw();
-  updateReflection();
-  $("reflection").hidden = perspectives.length === 0;
-}
-function updateReflection() {
-  $("reflection-next").disabled = reflection.chosen === null && !$("reflection-text").value.trim();
-}
-$("reflection-text").addEventListener("input", updateReflection);
-$("reflection-next").addEventListener("click", () => exclusive(async () => {
-  $("reflection-error").textContent = "";
+// MVP flow: «Изменить вопрос» — an «edited» confirmation of the answered session (existing /api/confirm), then a new
+// answer for the edited question. No new reading of the story; «Отмена» sends nothing.
+$("edit-q").addEventListener("click", () => {
+  $("edit-q-text").value = RESULT ? RESULT.question : $("confirmed").textContent;
+  $("edit-q-error").textContent = "";
+  $("edit-q-link").hidden = true; $("edit-q-box").hidden = false; $("edit-q-text").focus();
+});
+$("edit-q-cancel").addEventListener("click", () => { $("edit-q-box").hidden = true; $("edit-q-link").hidden = false; });
+$("edit-q-save").addEventListener("click", () => {
+  const text = $("edit-q-text").value.trim();
+  if (!text) { $("edit-q-error").textContent = "Пожалуйста, напишите формулировку вопроса."; return; }
+  if (RESULT && text === RESULT.question) { $("edit-q-box").hidden = true; $("edit-q-link").hidden = false; return; }
+  state.editedFrom = RESULT ? RESULT.question : null;
+  exclusive(() => editQuestion(text));
+});
+async function editQuestion(text) {
+  loading("Сохраняем ваш вопрос…");
   try {
-    const data = await api("/api/reflect", { session_id: state.sessionId, chosen: reflection.chosen,
-                                             text: $("reflection-text").value });
-    const r = data.reflection || {};
-    $("next-thought").textContent = [r.chosen_title, r.own_text].filter(Boolean).join("\n\n");
-    $("next-text").textContent = r.next || "Следующий круг будет строиться от этой мысли.";
-    show("s-next");
-  } catch (e) { if (!(e instanceof Stale)) $("reflection-error").textContent = e.message; }
-}));
-$("back-to-result").addEventListener("click", () => show("s-result"));
+    const data = await api("/api/confirm", { session_id: state.sessionId, action: "edited", text });
+    await answer(data.confirmed_question);
+  } catch (e) { if (!(e instanceof Stale)) fail(e.message, () => exclusive(() => editQuestion(text))); }
+}
+
+// MVP flow: the other questions from the same story stay available after the answer (no new reading of the story)
+function renderOtherQuestions(current) {
+  const others = state.questions.filter((q) => q !== current && q !== state.editedFrom);
+  questionButtons("other-options", true, current);
+  $("other-questions").hidden = others.length === 0;
+}
 
 // M3.3.1: the clipboard text is built by the server (flow.copy_text): every card in full, including
 // «Что имеется в виду?» and «Подробнее», whether or not they are open on screen.
@@ -610,17 +560,16 @@ $("share").addEventListener("click", async () => {
 function restart() {
   clearPending(); stopElapsed();
   GEN += 1; BUSY = false;  // answers of the abandoned question are ignored when they arrive
-  Object.assign(state, { topic: null, topicOther: "", exps: new Set(), expOther: "", diff: null, diffOther: "", sessionId: null, retry: null });
-  ["topic-other-text", "exp-other-text", "diff-other-text"].forEach((id) => { $(id).value = ""; });
+  Object.assign(state, { exps: new Set(), expOther: "", sessionId: null, retry: null, story: "", questions: [], editedFrom: null });
+  $("exp-other-text").value = ""; $("clarify-text").value = "";
   $("story").value = ""; $("story-next").disabled = true; $("story-clarify").hidden = true; $("exp-counter").textContent = "";
-  renderTopics(); updateTopic(); show("s-topic");  // the onboarding was already seen in this visit
+  show("s-story");
 }
 $("restart").addEventListener("click", restart);
 $("restart-2").addEventListener("click", restart);
-$("restart-3").addEventListener("click", restart);
 $("retry").addEventListener("click", () => { if (state.retry) state.retry(); else restart(); });
 
-fetch("/api/options").then((r) => r.json()).then((o) => { OPTIONS = o; renderTopics(); updateTopic(); })
+fetch("/api/options").then((r) => r.json()).then((o) => { OPTIONS = o; })
   .catch(() => fail("Не получилось загрузить приложение. Обновите страницу.", () => location.reload()));
 </script>
 </body>

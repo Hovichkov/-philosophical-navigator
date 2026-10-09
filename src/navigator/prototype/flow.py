@@ -2,6 +2,9 @@
 
     input → interpret (M2.6) → proposed
     proposed → confirm(confirmed | edited | replaced) → confirmed
+    MVP flow (story → feelings → question → answer): with ``auto_confirm`` ONE clear question is confirmed at once
+    (no extra step, no model call); several independent questions → the person chooses one (``choose``), the others
+    stay in the session and can be chosen later; an unclear story → one short clarifying question (insufficient).
     confirmed → retrieve (M2.4, fast) → retrieved → compose (selection + card writers) → answered
     answered → reflect (M3.4: the chosen perspective and/or the person's own words) → reflected
 
@@ -159,6 +162,8 @@ class Session:
     errors: list[dict] = field(default_factory=list)
     timings: list[dict] = field(default_factory=list)  # M3.3.1 latency breakdown per stage
     reflection: dict | None = None  # M3.4: what the person took from the result (entry point of the next round)
+    questions: list[str] = field(default_factory=list)  # MVP flow: every independent question found in the story
+    auto_confirmed: bool = False  # MVP flow: the one clear question was taken without a confirmation step
     _busy: threading.Lock = field(default_factory=threading.Lock, repr=False)
 
     def _guard(self):
@@ -169,11 +174,13 @@ class Session:
         return _Release(self._busy)
 
     # ---------------------------------------------------------------- steps
-    def submit(self, topic: str, experiences: list[str], difficulty_center: str, narrative: str) -> dict:
+    def submit(self, topic: str, experiences: list[str], difficulty_center: str, narrative: str,
+               auto_confirm: bool = False) -> dict:
         with self._guard():
-            return self._submit(topic, experiences, difficulty_center, narrative)
+            return self._submit(topic, experiences, difficulty_center, narrative, auto_confirm)
 
-    def _submit(self, topic: str, experiences: list[str], difficulty_center: str, narrative: str) -> dict:
+    def _submit(self, topic: str, experiences: list[str], difficulty_center: str, narrative: str,
+                auto_confirm: bool = False) -> dict:
         feelings = list(dict.fromkeys(e.strip() for e in experiences if e.strip()))[:MAX_EXPERIENCES]
         self.input = InterpretationInput(
             topic=topic.strip() or "Другое", experiences=feelings,
@@ -181,6 +188,7 @@ class Session:
         )
         self.interpretation = self.insufficient = self.confirmation = None
         self.query = self.retrieval = self.composition = None
+        self.questions, self.auto_confirmed = [], False
         t0 = time.monotonic()
         try:
             outcome = interpret(self.input, self.services.interpreter)
@@ -195,21 +203,45 @@ class Session:
             self.insufficient, self.state = outcome, "insufficient"
         else:
             self.interpretation, self.state = outcome, "proposed"
+            self.questions = [outcome.proposed_question, *outcome.other_questions]
+            if auto_confirm and len(self.questions) == 1:  # one clear question: no confirmation step
+                self.auto_confirmed = True
+                return self._confirm("confirmed")
         self._save()
         return self.public_view()
+
+    def choose(self, index: int) -> dict:
+        """MVP flow: take one of the questions found in the story (also later, from the answer screen: the others stay
+        in the session). No model call — the interpretation of the story is reused; the answer is built anew."""
+        with self._guard():
+            if self.interpretation is None or self.state in ("new", "insufficient"):
+                raise FlowError(USER_ERROR, f"cannot choose a question in state {self.state}")
+            if not (isinstance(index, int) and not isinstance(index, bool) and 0 <= index < len(self.questions)):
+                raise FlowError(USER_ERROR, f"unknown question {index}")
+            chosen = self.questions[index]
+            self.interpretation = self.interpretation.model_copy(update={
+                "proposed_question": chosen, "other_questions": [q for q in self.questions if q != chosen]})
+            self.retrieval = self.composition = self.reflection = None
+            self.state = "proposed"
+            return self._confirm("confirmed")
 
     def confirm(self, action: str, text: str | None = None) -> dict:
         with self._guard():
             return self._confirm(action, text)
 
     def _confirm(self, action: str, text: str | None = None) -> dict:
-        if self.state not in ("proposed", "confirmed") or self.interpretation is None:
+        # MVP flow: «Изменить вопрос» on the answer screen = an «edited» confirmation after the answer; the story,
+        # the feelings and the interpretation are kept (no interpreter call), the old answer is dropped
+        answered = self.state in ("retrieved", "answered", "reflected") and action == "edited"
+        if (self.state not in ("proposed", "confirmed") and not answered) or self.interpretation is None:
             raise FlowError(USER_ERROR, f"cannot confirm in state {self.state}")
         if action not in ("confirmed", "edited", "replaced"):
             raise FlowError(USER_ERROR, f"unknown action {action}")
         own = (text or "").strip() or None
         if action != "confirmed" and not own:
             raise FlowError("Пожалуйста, напишите формулировку вопроса.", "empty edited/replaced text")
+        if answered:
+            self.retrieval = self.composition = self.reflection = None
         try:
             self.confirmation = confirm(self.interpretation, action=action, source="user", edited_text=own)
             self.query = to_query_representation(self.interpretation, self.confirmation)
@@ -312,6 +344,8 @@ class Session:
             view["clarification"] = self.insufficient.clarification_prompt
         if self.interpretation is not None:
             view["proposed_question"] = self.interpretation.proposed_question
+            if len(self.questions) > 1:  # MVP flow: several independent questions — the person picks one
+                view["questions"] = list(self.questions)
         if self.confirmation is not None:
             view["confirmed_question"] = self.confirmation.confirmed_question
         if self.state in ("answered", "reflected") and self.composition is not None:
@@ -379,6 +413,8 @@ class Session:
             "errors": self.errors,
             "timings": self.timings,
             "reflection": self.reflection,
+            "questions": self.questions,
+            "auto_confirmed": self.auto_confirmed,
         }
 
     # ---------------------------------------------------------------- internals
