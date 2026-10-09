@@ -220,6 +220,18 @@ def test_feelings_are_optional_and_capped(fragments, tmp_path):
     assert it.inputs[1].experiences == ["Тревогу", "Страх", "Вину"]
 
 
+def test_feeling_options_are_the_approved_sixteen_plus_free_text():
+    from navigator.prototype.options import EXPERIENCES, OTHER
+
+    assert EXPERIENCES == [
+        "Тревога", "Страх", "Злость", "Грусть", "Обида", "Одиночество", "Стыд", "Вина",
+        "Зависть", "Разочарование", "Растерянность", "Пустота", "Радость", "Любовь", "Надежда", "Гордость",
+        OTHER,
+    ]
+    assert "Раздражение" not in EXPERIENCES
+    assert "Благодарность" not in EXPERIENCES
+
+
 # ------------------------------------------------------------------ 5. the HTTP API
 
 
