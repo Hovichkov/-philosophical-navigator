@@ -208,8 +208,75 @@ def test_page_order_is_story_feelings_question_answer_and_has_no_dead_end():
     story = page[page.index('id="s-story"'):page.index("</section>", page.index('id="s-story"'))]
     assert "Расскажите, что вас беспокоит." in story and "Постарайтесь описать ситуацию своими словами." in story
     for gone in ('id="s-topic"', 'id="s-diff"', 'id="s-confirm"', 'id="s-next"', 'id="reflection"',
-                 "в разработке", "Следующий круг", "/api/reflect", "/api/confirm"):
+                 "в разработке", "Следующий круг", "/api/reflect", "Правильно ли мы поняли"):
         assert gone not in page, gone
     for kept in ('id="copy"', 'id="restart"', "auto_confirm: true", "/api/choose", "Пропустить",
                  "MAX_FEELINGS = 3", "if (BUSY) return;", "class Stale"):
         assert kept in page, kept
+
+
+# ------------------------------------------------------------------ 7. «Изменить вопрос» on the answer screen
+
+
+EDITED = "Как быть рядом с сыном, когда мне хочется запретить, но я понимаю, что это не поможет?"
+
+
+def answered_session(fragments, tmp_path, outputs=None):
+    svc, it, sel = services(fragments, tmp_path, outputs or [out()])
+    s = Session(svc, tmp_path / "t")
+    submit(s, feelings=("Беспомощность", "Тревогу"))
+    first = s.compose()
+    return s, it, sel, first
+
+
+def test_edited_question_rebuilds_the_answer_without_the_interpreter(fragments, tmp_path):
+    s, it, sel, first = answered_session(fragments, tmp_path)
+    story, feelings, interpretation = s.input.free_narrative, list(s.input.experiences), s.interpretation
+    view = s.confirm("edited", f"  {EDITED} ")
+    assert view["state"] == "confirmed" and view["confirmed_question"] == EDITED
+    assert "perspectives" not in view and s.composition is None and s.retrieval is None  # the old answer is gone
+    assert s.query.confirmed_question == EDITED and s.query.provenance.confirmed_question_source == "user_edited"
+    new = s.compose()
+    assert new["confirmed_question"] == EDITED and new["perspectives"]
+    assert s.composition.confirmed_question == EDITED  # the new selection was made for the edited question
+    assert it.calls == 1 and sel.calls == 2  # no new reading of the story; one new selection
+    assert s.input.free_narrative == story and s.input.experiences == feelings == ["Беспомощность", "Тревогу"]
+    assert s.interpretation is interpretation and s.questions == [Q1]
+
+
+def test_edited_question_reaches_the_selection_package(fragments, tmp_path):
+    s, it, sel, _ = answered_session(fragments, tmp_path)
+    seen = []
+    orig = sel.complete
+    sel.complete = lambda pkg, feedback=None: (seen.append(pkg["confirmed_question"]), orig(pkg, feedback))[1]
+    s.confirm("edited", EDITED)
+    s.compose()
+    assert seen == [EDITED]
+
+
+def test_cancel_sends_nothing_and_an_empty_edit_changes_nothing(fragments, tmp_path):
+    s, it, sel, first = answered_session(fragments, tmp_path)
+    composition = s.composition
+    with pytest.raises(FlowError):
+        s.confirm("edited", "   ")  # the page never sends it; the server keeps the answer anyway
+    assert s.state == "answered" and s.composition is composition and s.public_view()["perspectives"]
+    assert it.calls == 1 and sel.calls == 1
+    page = (ROOT / "src/navigator/prototype/static/index.html").read_text(encoding="utf-8")
+    cancel = page[page.index('$("edit-q-cancel")'):page.index("\n", page.index('$("edit-q-cancel")'))]
+    assert "api(" not in cancel and "exclusive" not in cancel  # «Отмена» only closes the box
+
+
+def test_only_an_edit_is_accepted_after_the_answer(fragments, tmp_path):
+    s, *_ = answered_session(fragments, tmp_path)
+    for action in ("confirmed", "replaced"):
+        with pytest.raises(FlowError):
+            s.confirm(action, EDITED)
+    assert s.state == "answered"
+
+
+def test_page_has_the_edit_action_next_to_the_question():
+    page = (ROOT / "src/navigator/prototype/static/index.html").read_text(encoding="utf-8")
+    result = page[page.index('id="s-result"'):]
+    assert result.index('id="confirmed"') < result.index('id="edit-q"') < result.index('id="cards"')
+    for needle in ("Изменить вопрос", 'action: "edited"', "exclusive(() => editQuestion(text))"):
+        assert needle in page, needle

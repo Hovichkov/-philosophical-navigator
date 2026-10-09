@@ -167,6 +167,13 @@
   <section class="screen" id="s-result">
     <h2>Ваш вопрос</h2>
     <div class="question" id="confirmed"></div>
+    <!-- MVP flow: the person can correct the question; the story and feelings are kept, only the answer is rebuilt -->
+    <div class="actions" id="edit-q-link" hidden style="margin-top:-.75rem"><button class="link" id="edit-q">Изменить вопрос</button></div>
+    <div id="edit-q-box" hidden>
+      <textarea id="edit-q-text" aria-label="Формулировка вопроса"></textarea>
+      <p class="error" id="edit-q-error"></p>
+      <div class="actions"><button class="link" id="edit-q-cancel">Отмена</button><button class="primary" id="edit-q-save">Сохранить</button></div>
+    </div>
     <div id="result-pending">
       <div class="pending" aria-live="polite"><span class="dot"></span><span class="dot"></span><span class="dot"></span>
         <div><span id="pending-text">Ищем философские перспективы…</span><small id="pending-sub"></small></div></div>
@@ -323,7 +330,7 @@ async function interpretStory(narrative) {
     stopElapsed();
     state.sessionId = data.session_id;
     if (data.state === "insufficient") { askClarification(narrative, data.clarification); return; }
-    state.questions = data.questions || [];
+    state.questions = data.questions || []; state.editedFrom = null;
     if (data.state === "confirmed") { await answer(data.confirmed_question); return; }
     if (state.questions.length > 1) { renderChoice(); return; }
     await choose(0);  // safety net: a single proposed question is taken as is
@@ -354,7 +361,7 @@ function questionButtons(containerId, onlyOthers, current) {
   const box = $(containerId);
   box.innerHTML = "";
   state.questions.forEach((q, i) => {
-    if (onlyOthers && q === current) return;
+    if (onlyOthers && (q === current || q === state.editedFrom)) return;
     const b = el("button", null, q);
     b.addEventListener("click", () => exclusive(() => choose(i)));
     box.append(b);
@@ -362,6 +369,7 @@ function questionButtons(containerId, onlyOthers, current) {
 }
 function renderChoice() { questionButtons("choose-options", false, null); show("s-choose"); }
 async function choose(index) {
+  state.editedFrom = null;
   loading("Сохраняем ваш вопрос…");
   try {
     const data = await api("/api/choose", { session_id: state.sessionId, index });
@@ -382,6 +390,7 @@ function showPendingResult(question) {
   $("share-status").textContent = "";
   $("result-lead").hidden = true; $("copy").hidden = true; $("share").hidden = true;
   $("other-questions").hidden = true;
+  $("edit-q-link").hidden = true; $("edit-q-box").hidden = true;
   $("result-pending").hidden = false;
   show("s-result");
 }
@@ -456,6 +465,7 @@ function renderResult(question, perspectives, copyText) {
     box.append(card);
   });
   renderOtherQuestions(question);
+  $("edit-q-link").hidden = false; $("edit-q-box").hidden = true;
   show("s-result");
 }
 
@@ -481,9 +491,32 @@ function finalCard(p) {
   return card;
 }
 
+// MVP flow: «Изменить вопрос» — an «edited» confirmation of the answered session (existing /api/confirm), then a new
+// answer for the edited question. No new reading of the story; «Отмена» sends nothing.
+$("edit-q").addEventListener("click", () => {
+  $("edit-q-text").value = RESULT ? RESULT.question : $("confirmed").textContent;
+  $("edit-q-error").textContent = "";
+  $("edit-q-link").hidden = true; $("edit-q-box").hidden = false; $("edit-q-text").focus();
+});
+$("edit-q-cancel").addEventListener("click", () => { $("edit-q-box").hidden = true; $("edit-q-link").hidden = false; });
+$("edit-q-save").addEventListener("click", () => {
+  const text = $("edit-q-text").value.trim();
+  if (!text) { $("edit-q-error").textContent = "Пожалуйста, напишите формулировку вопроса."; return; }
+  if (RESULT && text === RESULT.question) { $("edit-q-box").hidden = true; $("edit-q-link").hidden = false; return; }
+  state.editedFrom = RESULT ? RESULT.question : null;
+  exclusive(() => editQuestion(text));
+});
+async function editQuestion(text) {
+  loading("Сохраняем ваш вопрос…");
+  try {
+    const data = await api("/api/confirm", { session_id: state.sessionId, action: "edited", text });
+    await answer(data.confirmed_question);
+  } catch (e) { if (!(e instanceof Stale)) fail(e.message, () => exclusive(() => editQuestion(text))); }
+}
+
 // MVP flow: the other questions from the same story stay available after the answer (no new reading of the story)
 function renderOtherQuestions(current) {
-  const others = state.questions.filter((q) => q !== current);
+  const others = state.questions.filter((q) => q !== current && q !== state.editedFrom);
   questionButtons("other-options", true, current);
   $("other-questions").hidden = others.length === 0;
 }
@@ -527,7 +560,7 @@ $("share").addEventListener("click", async () => {
 function restart() {
   clearPending(); stopElapsed();
   GEN += 1; BUSY = false;  // answers of the abandoned question are ignored when they arrive
-  Object.assign(state, { exps: new Set(), expOther: "", sessionId: null, retry: null, story: "", questions: [] });
+  Object.assign(state, { exps: new Set(), expOther: "", sessionId: null, retry: null, story: "", questions: [], editedFrom: null });
   $("exp-other-text").value = ""; $("clarify-text").value = "";
   $("story").value = ""; $("story-next").disabled = true; $("story-clarify").hidden = true; $("exp-counter").textContent = "";
   show("s-story");

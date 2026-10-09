@@ -230,13 +230,18 @@ class Session:
             return self._confirm(action, text)
 
     def _confirm(self, action: str, text: str | None = None) -> dict:
-        if self.state not in ("proposed", "confirmed") or self.interpretation is None:
+        # MVP flow: «Изменить вопрос» on the answer screen = an «edited» confirmation after the answer; the story,
+        # the feelings and the interpretation are kept (no interpreter call), the old answer is dropped
+        answered = self.state in ("retrieved", "answered", "reflected") and action == "edited"
+        if (self.state not in ("proposed", "confirmed") and not answered) or self.interpretation is None:
             raise FlowError(USER_ERROR, f"cannot confirm in state {self.state}")
         if action not in ("confirmed", "edited", "replaced"):
             raise FlowError(USER_ERROR, f"unknown action {action}")
         own = (text or "").strip() or None
         if action != "confirmed" and not own:
             raise FlowError("Пожалуйста, напишите формулировку вопроса.", "empty edited/replaced text")
+        if answered:
+            self.retrieval = self.composition = self.reflection = None
         try:
             self.confirmation = confirm(self.interpretation, action=action, source="user", edited_text=own)
             self.query = to_query_representation(self.interpretation, self.confirmation)
