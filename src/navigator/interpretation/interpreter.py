@@ -1,7 +1,7 @@
 """Interpretation engine (M2.6).
 
 raw input → reading notes (representations / expectations / tensions) → 2–4 working
-hypotheses → ONE proposed question → semantic annotation (coordinates, tensions).
+hypotheses for each proposed question → semantic annotation (coordinates, tensions).
 
 Runtime: the local Claude Code CLI in headless mode (``claude -p``) under the user's
 existing Claude login — the same mechanism as M2.5 composition; no API key, no new
@@ -54,7 +54,7 @@ from navigator.models.interpretation import (
 from navigator.models.query import QueryProvenance, QueryRepresentation, UserContext
 from navigator.models.vocabularies import COORDINATES, TENSIONS
 
-PROMPT_VERSION = "interpretation-prompt/0.12.0"  # MVP flow: story first; other questions + one clarifying question
+PROMPT_VERSION = "interpretation-prompt/0.13.0"  # distinct question lenses with question-specific hypotheses
 INTERPRETER_VERSION = "interpretation-layer/0.1.0"
 DEFAULT_MODEL = "claude-opus-5-5"
 
@@ -87,7 +87,7 @@ SYSTEM_PROMPT = f"""Ты — слой интерпретации философ�
 
 Порядок работы (естественный язык — главный носитель смысла):
 1. reading_notes: 3–6 коротких наблюдений о рассказе — какие представления, ожидания, напряжения, границы, неоднозначности в нём видны. Только то, что опирается на текст.
-2. working_hypotheses: 2–4 коротких рабочих гипотезы для поиска философских текстов. Это внутренний материал, человек их не увидит. Формулируй как возможности («возможно, …», «забота может переживаться как …»), они могут противоречить друг другу.
+2. working_hypotheses: 2–4 коротких рабочих гипотезы для поиска философских текстов именно по proposed_question. Это внутренний материал, человек их не увидит. Формулируй как возможности («возможно, …», «забота может переживаться как …»), они могут противоречить друг другу.
 3. proposed_question: ОДНА основная формулировка вопроса, которую человек увидит как свой вопрос перед философским ответом. Требования:
    - узнаваемая для человека и сохраняет конкретику его ситуации (кто участвует, что происходит), если она важна;
    - поднимает ситуацию до исследуемого вопроса: называет центральное напряжение или предел (например, между заботой и контролем, между желанием и долгом, между действием и тем, что от меня не зависит, между собственной оценкой и чужим взглядом);
@@ -99,7 +99,8 @@ SYSTEM_PROMPT = f"""Ты — слой интерпретации философ�
    Пиши от первого лица человека, обычным разговорным русским. Вопрос НЕ обязан быть одним предложением: если в нём несколько связанных частей, раздели их на 2–3 коротких предложения (одно может описывать ситуацию, остальные — вопросы). НИКОГДА не больше трёх предложений: четыре и больше — ошибка, ответ будет отклонён. Удерживай главный конфликт и смысл вопроса самого человека; не подменяй его новой философской рамкой; не пересказывай всю историю, но значимую эмоционально заряженную деталь не выбрасывай (см. «Смысл важнее гладкости»). Не добавляй чувств, которых человек не называл (если он пишет «стыдно», не пиши «страшно»), и не упоминай специалистов, если он о них не писал. Не добавляй новых фактов ни о человеке, ни о других людях из рассказа: их мотивов, мыслей, способностей, «свободного выбора», а также вариантов действия, которых человек не называл. Вопрос может собирать, уточнять, структурировать и делать явным то, что уже есть в словах человека, но НЕ добавляет новой исследовательской задачи: если человек назвал чувство или обстоятельство («стыдно», «боюсь»), но не спрашивал о причине, не превращай это в «почему мне стыдно?», «из-за чего…», «что заставляет меня…», «на самом ли деле я…». Если человек сам спросил «почему» — сохрани. Если пол человека не виден из его слов, пиши без форм, зависящих от рода («я готов», «я решила» — нельзя; перестрой фразу, без «готов(а)»). Сохраняй опорные слова человека, если замена меняет смысл: выбрал «трудно принять» — не пиши «трудно смириться». Напряжение называй его собственными словами: если он пишет «ученик идёт в отказ», не превращай это в выбор «помогать или уважать его отказ», пока сам человек так вопрос не ставил. Последнее предложение оканчивается «?».
    Плохо (слишком тяжело читать): «Когда я хочу быть продуктивной, но снова и снова упираюсь в пределы своих возможностей, как понять, какая я — где мои границы, с которыми стоит примириться, а где то, ради чего стоит продолжать пытаться, — и чем тогда отличается бережность к себе от отказа от себя?»
    Лучше (это пример принципа, а не шаблон): «Я хочу быть продуктивной, но снова упираюсь в пределы своих возможностей. Как понять, где мои реальные границы, а где стоит продолжать пытаться? И чем бережность к себе отличается от отказа от себя?»
-3a. other_questions: если в рассказе есть ещё 1–2 САМОСТОЯТЕЛЬНЫХ вопроса — о другом предмете или другой трудности, которые нельзя честно соединить с основным в одну формулировку, — запиши их сюда по тем же требованиям, что и proposed_question (proposed_question — главный, о котором человек говорит больше всего). Части одного вопроса, уточнения и связанные стороны одной трудности — НЕ самостоятельные вопросы: они остаются в proposed_question. В большинстве рассказов вопрос один — тогда other_questions пустой.
+3a. other_questions: если многосоставный рассказ поддерживает другие содержательно разные вопросы, запиши сюда до трёх вопросов (всего вместе с proposed_question — 2–4). Они могут относиться к той же ситуации, но исследовать разные противоречия или стороны проблемы. Не создавай альтернативы искусственно: один содержательный вопрос остаётся одним; простое перефразирование не считается отдельным вопросом. Если человек уже задал свой вопрос, сохрани его смысл в proposed_question и добавляй только обоснованные альтернативные ракурсы. Не выдавай скрытые мотивы за факт.
+3b. other_question_hypotheses: для каждого вопроса из other_questions дай отдельные 2–4 поисковые гипотезы в том же порядке. Они должны поддерживать именно этот вопрос, а не копировать working_hypotheses. Если конкретная сторона истории не подтверждает гипотезу, не добавляй её.
 4. Семантическая разметка — только после вопроса:
    - coordinates: 2–5 значений строго из списка: {", ".join(sorted(COORDINATES))};
    - canonical_tensions: 0–3 строго из списка: {"; ".join(sorted(TENSIONS))};
@@ -115,13 +116,14 @@ SYSTEM_PROMPT = f"""Ты — слой интерпретации философ�
 
 Пиши по-русски. Отвечай строго по JSON-схеме."""
 
-MAX_OTHER_QUESTIONS = 2  # MVP flow: at most three independent questions in one story
+MAX_OTHER_QUESTIONS = 3  # MVP flow: at most four distinct questions in one story
 
 OUTPUT_SCHEMA = {
     "type": "object",
     "additionalProperties": False,
     "required": ["sufficient", "insufficiency_reason", "reading_notes", "working_hypotheses", "proposed_question",
                  "coordinates", "canonical_tensions", "free_tensions", "ambiguity_notes", "other_questions",
+                 "other_question_hypotheses",
                  "clarifying_question"],
     "properties": {
         "sufficient": {"type": "boolean"},
@@ -143,6 +145,7 @@ OUTPUT_SCHEMA = {
         "free_tensions": {"type": "array", "items": {"type": "string"}},
         "ambiguity_notes": {"type": "array", "items": {"type": "string"}},
         "other_questions": {"type": "array", "items": {"type": "string"}, "maxItems": MAX_OTHER_QUESTIONS},
+        "other_question_hypotheses": {"type": "array", "items": {"type": "array", "items": {"type": "string"}, "minItems": 2, "maxItems": 4}, "maxItems": MAX_OTHER_QUESTIONS},
         "clarifying_question": {"type": ["string", "null"]},
     },
 }
@@ -228,13 +231,22 @@ def interpret(inp: InterpretationInput, interpreter: Interpreter, max_attempts: 
             pq = out["proposed_question"].strip()
             others = list(dict.fromkeys(q.strip() for q in out.get("other_questions") or [] if q.strip()
                                         and q.strip() != pq))[:MAX_OTHER_QUESTIONS]
+            raw_hypotheses = out.get("other_question_hypotheses") or []
+            hypotheses_by_question = [
+                [h.strip() for h in group if isinstance(h, str) and h.strip()] if isinstance(group, list) else []
+                for group in raw_hypotheses[:len(others)]
+            ]
+            hypotheses_by_question = (hypotheses_by_question + [[] for _ in range(len(others))])[:len(others)]
             check_question(pq, inp)
             # another independent question that breaks the contract is dropped (never a repair call for it)
-            others = [q for q in others if _passes(q, inp)]
+            valid_pairs = [(q, hs) for q, hs in zip(others, hypotheses_by_question) if _passes(q, inp)]
+            others = [q for q, _ in valid_pairs]
+            hypotheses_by_question = [hs for _, hs in valid_pairs]
             return InterpretationResult(
                 input=inp,
                 proposed_question=pq,
                 other_questions=others,
+                other_question_hypotheses=hypotheses_by_question,
                 working_hypotheses=[h.strip() for h in out["working_hypotheses"]],
                 coordinates=list(dict.fromkeys(out["coordinates"])),
                 canonical_tensions=list(dict.fromkeys(out["canonical_tensions"])),

@@ -52,6 +52,9 @@ pytorch_model*.bin
 # Diagnostic sessions and reports are project history; include them.
 !/reports/
 !/reports/**
+# Keep new local prototype traces out of future commits; tracked history remains tracked.
+/reports/prototype-sessions/*.json
+/reports/prototype-sessions/*.log
 # macOS metadata and local logs remain excluded by the global rules above.
 **/.DS_Store
 *.zip

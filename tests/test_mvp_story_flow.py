@@ -41,7 +41,9 @@ class CountingInterp(base.Interp):
 
 
 def out(question=Q1, others=(), **over):
-    return {**base.interp_out(question), "other_questions": list(others), "clarifying_question": None, **over}
+    hypotheses = over.pop("other_question_hypotheses", [])
+    return {**base.interp_out(question), "other_questions": list(others),
+            "other_question_hypotheses": hypotheses, "clarifying_question": None, **over}
 
 
 def unclear(clarifying):
@@ -88,19 +90,76 @@ def test_without_auto_confirm_the_old_confirmation_contract_stays(fragments, tmp
 
 
 def test_several_questions_are_offered_and_the_others_stay(fragments, tmp_path):
-    svc, it, sel = services(fragments, tmp_path, [out(Q1, [Q2, Q3])])
+    primary_hyp = ["main hypothesis one", "main hypothesis two"]
+    second_hyp = ["second question lens one", "second question lens two"]
+    third_hyp = ["third question lens one", "third question lens two"]
+    svc, it, sel = services(fragments, tmp_path, [out(
+        Q1, [Q2, Q3], working_hypotheses=primary_hyp,
+        other_question_hypotheses=[second_hyp, third_hyp])])
     s = Session(svc, None)
     view = submit(s)
     assert s.state == "proposed" and view["questions"] == [Q1, Q2, Q3] and s.query is None
     chosen = s.choose(1)
     assert s.state == "confirmed" and chosen["confirmed_question"] == Q2 and s.query.confirmed_question == Q2
+    assert s.query.working_hypotheses == second_hyp
     assert chosen["questions"] == [Q1, Q2, Q3]  # the others stay in the session
     s.compose()
     assert s.state == "answered"
     back = s.choose(2)  # later, from the answer screen: another question of the same story
     assert back["confirmed_question"] == Q3 and s.composition is None and s.retrieval is None
+    assert s.query.working_hypotheses == third_hyp
     assert s.compose()["confirmed_question"] == Q3
     assert it.calls == 1 and sel.calls == 2  # the story is never read again; each answer is one selection
+
+
+def test_custom_question_before_retrieval_keeps_story_feelings_and_drops_other_hypotheses(fragments, tmp_path):
+    main_hyp = ["main lens one", "main lens two"]
+    alt_hyp = ["alternative lens one", "alternative lens two"]
+    svc, it, _ = services(fragments, tmp_path, [out(Q1, [Q2], working_hypotheses=main_hyp,
+                                                    other_question_hypotheses=[alt_hyp])])
+    s = Session(svc, tmp_path / "t")
+    submit(s, feelings=("Беспомощность", "Тревогу"))
+    own = "Как мне распределить ответственность за общие решения?"
+    view = s.confirm("replaced", own)
+    assert view["confirmed_question"] == own and s.query.confirmed_question == own
+    assert s.query.working_hypotheses == []
+    assert s.query.context.narrative == SON and s.query.experiences == ["Беспомощность", "Тревогу"]
+    assert it.calls == 1 and s.retrieval is None
+
+
+def test_custom_question_then_return_to_first_proposed_restores_its_hypotheses(fragments, tmp_path):
+    main_hyp = ["main question lens one", "main question lens two"]
+    second_hyp = ["second question lens one", "second question lens two"]
+    third_hyp = ["third question lens one", "third question lens two"]
+    svc, it, sel = services(fragments, tmp_path, [out(
+        Q1, [Q2, Q3], working_hypotheses=main_hyp,
+        other_question_hypotheses=[second_hyp, third_hyp])])
+    s = Session(svc, tmp_path / "t")
+    submit(s, feelings=("Беспомощность", "Тревогу"))
+
+    own = "Как мне распределить ответственность за общие решения?"
+    s.confirm("replaced", own)
+    assert s.query.confirmed_question == own and s.query.working_hypotheses == []
+    assert s.compose()["confirmed_question"] == own
+
+    s.choose(0)
+    assert s.query.confirmed_question == Q1
+    assert s.query.working_hypotheses == main_hyp
+    assert s.query.context.narrative == SON and s.query.experiences == ["Беспомощность", "Тревогу"]
+
+    s.choose(1)
+    assert s.query.confirmed_question == Q2 and s.query.working_hypotheses == second_hyp
+    assert it.calls == 1 and sel.calls == 1
+
+
+def test_single_question_has_no_artificial_alternatives_and_prompt_allows_grounded_lenses():
+    from navigator.interpretation.interpreter import SYSTEM_PROMPT
+
+    result = interpret(InterpretationInput(topic="Другое", difficulty_center="Другое", free_narrative=SON),
+                      CountingInterp([out(Q1)]))
+    assert result.other_questions == []
+    assert "2–4" in SYSTEM_PROMPT and "простое перефразирование" in SYSTEM_PROMPT
+    assert "скрытые мотивы за факт" in SYSTEM_PROMPT
 
 
 def test_choose_rejects_unknown_index_and_wrong_state(fragments, tmp_path):

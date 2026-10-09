@@ -5,7 +5,7 @@ Three layers:
   (circumstance / narrative, stored for trace and later evaluation, never an
   embedding signal in the baseline) and ``experiences`` (stored, not weighted);
 - interpretation layer — 2–4 ``working_hypotheses`` (working readings, not a
-  diagnosis);
+  diagnosis), or none when the person supplies their own question before retrieval;
 - structural layer — TAXONOMY ``coordinates``, ``canonical_tensions`` (closed
   TAXONOMY list) and ``free_tensions`` (meaningful tensions outside it; they
   never extend the taxonomy).
@@ -80,7 +80,7 @@ class QueryRepresentation(_Strict):
     experiences: list[NonEmptyStr] = Field(default_factory=list)
 
     # B. interpretation layer
-    working_hypotheses: list[NonEmptyStr] = Field(min_length=2, max_length=4)
+    working_hypotheses: list[NonEmptyStr] = Field(default_factory=list, max_length=4)
 
     # C. structural layer
     coordinates: list[NonEmptyStr] = Field(default_factory=list)

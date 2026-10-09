@@ -84,7 +84,8 @@ class InterpretationResult(_Strict):
     status: Literal["interpreted"] = "interpreted"
     input: InterpretationInput
     proposed_question: NonEmptyStr  # shown to the user for confirmation
-    other_questions: list[NonEmptyStr] = Field(default_factory=list, max_length=2)  # MVP flow: independent ones
+    other_questions: list[NonEmptyStr] = Field(default_factory=list, max_length=3)
+    other_question_hypotheses: list[list[NonEmptyStr]] = Field(default_factory=list, max_length=3)
     working_hypotheses: list[NonEmptyStr] = Field(min_length=2, max_length=4)  # internal only
     coordinates: list[NonEmptyStr] = Field(default_factory=list)
     canonical_tensions: list[NonEmptyStr] = Field(default_factory=list)

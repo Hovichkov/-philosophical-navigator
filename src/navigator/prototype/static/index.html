@@ -45,7 +45,8 @@
   .option:hover { border-color: var(--ink-soft); }
   .option input { margin: .3rem 0 0; accent-color: var(--accent); flex: none; }
   .option.checked { border-color: var(--accent); background: var(--accent-soft); }
-  .other-input { margin: -.6rem 0 1.5rem; }
+  #s-exp .other-input { margin: -.6rem 0 1.5rem; }
+  #s-choose .other-input { margin: 1rem 0 1.5rem; }
 
   textarea, input[type=text] { width: 100%; font: inherit; color: var(--ink); background: var(--surface);
             border: 1px solid var(--line); border-radius: 10px; padding: .85rem 1rem; }
@@ -157,6 +158,11 @@
     <h2>В вашем рассказе несколько вопросов</h2>
     <p class="hint">С какого начать? К остальным можно будет вернуться после ответа.</p>
     <div class="stack" id="choose-options"></div>
+    <div class="other-input"><label for="choose-own-question">Или напишите свой вопрос</label>
+      <textarea id="choose-own-question" aria-label="Свой вопрос"></textarea>
+      <p class="error" id="choose-own-error"></p>
+      <div class="actions"><button class="primary" id="choose-own-submit">Получить ответ на мой вопрос</button></div>
+    </div>
   </section>
 
   <section class="screen" id="s-loading">
@@ -368,6 +374,17 @@ function questionButtons(containerId, onlyOthers, current) {
   });
 }
 function renderChoice() { questionButtons("choose-options", false, null); show("s-choose"); }
+$("choose-own-submit").addEventListener("click", () => exclusive(chooseOwnQuestion));
+async function chooseOwnQuestion() {
+  const text = $("choose-own-question").value.trim();
+  if (!text) { $("choose-own-error").textContent = "Напишите вопрос."; return; }
+  $("choose-own-error").textContent = "";
+  loading("Сохраняем ваш вопрос…");
+  try {
+    const data = await api("/api/confirm", { session_id: state.sessionId, action: "replaced", text });
+    await answer(data.confirmed_question);
+  } catch (e) { if (!(e instanceof Stale)) fail(e.message, () => exclusive(chooseOwnQuestion)); }
+}
 async function choose(index) {
   state.editedFrom = null;
   loading("Сохраняем ваш вопрос…");

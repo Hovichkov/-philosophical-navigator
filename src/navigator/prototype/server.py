@@ -202,10 +202,21 @@ FINAL_EMBEDDINGS = "data/retrieval/embeddings-final"
 # worse); multi-view fusion did not win and is not used. 15 = the previous behaviour.
 FINAL_POOL_SIZE = 20
 POOL_SIZES = (15, 20, 25)
+AUTHOR_FILTERS = {"epictetus": "эпиктет"}
+
+
+def filter_excluded_author(fragments: list, exclude_author: str | None) -> list:
+    """Temporary test-mode filter applied before retrieval documents and candidate pools are built."""
+    if exclude_author is None:
+        return fragments
+    if exclude_author not in AUTHOR_FILTERS:
+        raise ValueError(f"unknown excluded author {exclude_author!r}; known: {sorted(AUTHOR_FILTERS)}")
+    target = AUTHOR_FILTERS[exclude_author].casefold()
+    return [f for f in fragments if (f.author or "").strip().casefold() != target]
 
 
 def build_final_services(model: str, mode: str, retrieval_layer: str | None = None,
-                         pool_size: int = FINAL_POOL_SIZE) -> Services:
+                         pool_size: int = FINAL_POOL_SIZE, exclude_author: str | None = None) -> Services:
     """Final-corpus TEST mode (not the default runtime): FINAL-CORPUS-ACTIVE-v1.csv through the contract validator,
     retrieval documents of experimental mode A / B / C, verified quotes shown."""
     from navigator.composition.composer import ClaudeCodeCLIComposer
@@ -216,7 +227,7 @@ def build_final_services(model: str, mode: str, retrieval_layer: str | None = No
     from navigator.representations.final_meaning import mode_snapshot
 
     root = Path.cwd()
-    final = final_snapshot_fragments(load_final_active())
+    final = filter_excluded_author(final_snapshot_fragments(load_final_active()), exclude_author)
     layer = None
     if retrieval_layer and mode == "B":  # Retrieval Layer v1: a separate search text for Block 1 cards (mode B only)
         from navigator.representations.retrieval_layer import load_retrieval_layer
@@ -243,9 +254,12 @@ def build_final_services(model: str, mode: str, retrieval_layer: str | None = No
 
 
 def build_services(model: str = "claude-opus-5-5", corpus: str = "compact", final_mode: str = "A",
-                   retrieval_layer: str | None = None, pool_size: int = FINAL_POOL_SIZE) -> Services:
+                   retrieval_layer: str | None = None, pool_size: int = FINAL_POOL_SIZE,
+                   exclude_author: str | None = None) -> Services:
     if corpus == "final":
-        return build_final_services(model, final_mode, retrieval_layer, pool_size)
+        return build_final_services(model, final_mode, retrieval_layer, pool_size, exclude_author)
+    if exclude_author is not None:
+        raise ValueError("--exclude-author is available only with --corpus final")
     from navigator.composition.composer import ClaudeCodeCLIComposer
     from navigator.composition.grounding_validator import ClaudeCodeCLIValidator
     from navigator.composition.writer import ClaudeCodeCLIWriter
@@ -279,12 +293,14 @@ def build_services(model: str = "claude-opus-5-5", corpus: str = "compact", fina
 
 def serve(port: int = 8770, open_browser: bool = True, trace_dir: Path = Path("reports/prototype-sessions"),
           corpus: str = "compact", final_mode: str = "A", retrieval_layer: str | None = None,
-          pool_size: int = FINAL_POOL_SIZE) -> None:
+          pool_size: int = FINAL_POOL_SIZE, exclude_author: str | None = None) -> None:
     claude = ensure_claude_on_path()
-    services = build_services(corpus=corpus, final_mode=final_mode, retrieval_layer=retrieval_layer, pool_size=pool_size)
+    services = build_services(corpus=corpus, final_mode=final_mode, retrieval_layer=retrieval_layer,
+                              pool_size=pool_size, exclude_author=exclude_author)
     print(f"Корпус: {corpus}" + (f" (тестовый режим, retrieval {final_mode}, цитаты показываются)" if corpus == "final" else "")
           + (f"; retrieval layer: {retrieval_layer}" if corpus == "final" and final_mode == "B" and retrieval_layer else "")
-          + (f"; candidate pool: {pool_size}" if corpus == "final" else ""))
+          + (f"; candidate pool: {pool_size}" if corpus == "final" else "")
+          + (f"; excluded author: {exclude_author}" if exclude_author else ""))
     app = App(services, trace_dir)
     httpd = ThreadingHTTPServer(("127.0.0.1", port), make_handler(app))
     url = f"http://127.0.0.1:{port}/"

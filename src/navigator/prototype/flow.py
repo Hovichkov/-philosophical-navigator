@@ -163,6 +163,7 @@ class Session:
     timings: list[dict] = field(default_factory=list)  # M3.3.1 latency breakdown per stage
     reflection: dict | None = None  # M3.4: what the person took from the result (entry point of the next round)
     questions: list[str] = field(default_factory=list)  # MVP flow: every independent question found in the story
+    initial_working_hypotheses: list[str] = field(default_factory=list)  # preserve question 0 across custom/other choices
     auto_confirmed: bool = False  # MVP flow: the one clear question was taken without a confirmation step
     _busy: threading.Lock = field(default_factory=threading.Lock, repr=False)
 
@@ -188,7 +189,7 @@ class Session:
         )
         self.interpretation = self.insufficient = self.confirmation = None
         self.query = self.retrieval = self.composition = None
-        self.questions, self.auto_confirmed = [], False
+        self.questions, self.initial_working_hypotheses, self.auto_confirmed = [], [], False
         t0 = time.monotonic()
         try:
             outcome = interpret(self.input, self.services.interpreter)
@@ -204,6 +205,7 @@ class Session:
         else:
             self.interpretation, self.state = outcome, "proposed"
             self.questions = [outcome.proposed_question, *outcome.other_questions]
+            self.initial_working_hypotheses = list(outcome.working_hypotheses)
             if auto_confirm and len(self.questions) == 1:  # one clear question: no confirmation step
                 self.auto_confirmed = True
                 return self._confirm("confirmed")
@@ -219,8 +221,12 @@ class Session:
             if not (isinstance(index, int) and not isinstance(index, bool) and 0 <= index < len(self.questions)):
                 raise FlowError(USER_ERROR, f"unknown question {index}")
             chosen = self.questions[index]
+            chosen_hypotheses = (self.initial_working_hypotheses if index == 0 else
+                                 self.interpretation.other_question_hypotheses[index - 1]
+                                 if index - 1 < len(self.interpretation.other_question_hypotheses) else [])
             self.interpretation = self.interpretation.model_copy(update={
-                "proposed_question": chosen, "other_questions": [q for q in self.questions if q != chosen]})
+                "proposed_question": chosen, "other_questions": [q for q in self.questions if q != chosen],
+                "working_hypotheses": chosen_hypotheses})
             self.retrieval = self.composition = self.reflection = None
             self.state = "proposed"
             return self._confirm("confirmed")
@@ -245,6 +251,10 @@ class Session:
         try:
             self.confirmation = confirm(self.interpretation, action=action, source="user", edited_text=own)
             self.query = to_query_representation(self.interpretation, self.confirmation)
+            if action == "replaced":
+                # The custom question must not inherit a proposed question's hypotheses; keep the interpretation
+                # intact so the person can later return to any original option with its own search hypotheses.
+                self.query = self.query.model_copy(update={"working_hypotheses": []})
         except Exception as exc:
             self._fail("confirm", exc)
             raise FlowError(USER_ERROR, str(exc)) from exc
