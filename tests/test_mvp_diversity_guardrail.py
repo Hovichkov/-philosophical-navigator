@@ -193,3 +193,50 @@ def test_final_pool_default_is_20_and_15_remains_available():
 
     assert server.FINAL_POOL_SIZE == 20 and 15 in server.POOL_SIZES
     assert inspect.signature(server.build_final_services).parameters["pool_size"].default == 20
+
+
+# ------------------------------------------------------------------ 5. a lost card does not re-run the selection (MVP)
+
+
+class FailingWriter(base.Writer):
+    """Final-corpus writer whose cards with the given selection index never pass the card check (two questions)."""
+
+    def __init__(self, fail=()):
+        super().__init__()
+        self.fail = set(fail)
+
+    def complete(self, brief, feedback=None):
+        out, usage = super().complete(brief, feedback)
+        if int(brief["различение_карточки"].split("(")[1][0]) in self.fail:
+            out = {**out, "reflection_question": "Что я думаю о её ответе? И чего хочу после него?"}
+        return out, usage
+
+
+PAIR = [EPICTETUS[0], OTHERS[0]]  # two different authors: the same-author rule is not involved
+
+
+def test_both_cards_written_no_second_selection(final, tmp_path):
+    sel, w = PairSelector(PAIR), FailingWriter()
+    res = compose(final_package(final, tmp_path), final, sel, max_attempts=3, writer=w)
+    assert [p.card_id for p in res.perspectives] == PAIR
+    assert sel.calls == 1 and res.meta.attempts == 1
+    assert sorted(w.calls.values()) == [1, 1]  # each card written once
+
+
+def test_one_card_lost_keeps_the_other_without_reselection(final, tmp_path):
+    sel, w = PairSelector(PAIR), FailingWriter(fail={1})
+    res = compose(final_package(final, tmp_path), final, sel, max_attempts=3, writer=w, max_writer_attempts=3)
+    assert [p.card_id for p in res.perspectives] == [PAIR[0]]
+    assert sel.calls == 1 and res.meta.attempts == 1  # the selection is not repeated
+    calls = {k.split("(")[1][0]: n for k, n in w.calls.items()}
+    assert calls == {"0": 1, "1": 3}  # only the failed card is repaired; the written one is not rewritten
+    assert res.meta.usage["writer"]["dropped"] == [PAIR[1]]
+    assert any(r.card_id == PAIR[1] and "не прошёл проверку" in r.reason for r in res.rejected)
+    assert res.fewer_than_three_reason
+
+
+def test_no_card_written_falls_back_to_reselection(final, tmp_path):
+    sel = PairSelector(PAIR)
+    with pytest.raises(ValueError, match="composition failed validation after 2 attempts"):
+        compose(final_package(final, tmp_path), final, sel, max_attempts=2, writer=FailingWriter(fail={0, 1}))
+    assert sel.calls == 2 and "cards could not be written clearly" in sel.feedback[1]

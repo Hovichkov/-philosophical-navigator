@@ -438,7 +438,10 @@ def compose_written(package: dict, output: dict, fragments: list[Fragment], meta
                                  max_writer_attempts, validator)
     written = [(s, c) for s, c in zip(sel, cards) if c is not None]
     dropped = [s["card_id"] for s, c in zip(sel, cards) if c is None]
-    if len(written) < min(2, len(sel)):
+    # Each failed card was already repaired on its own by the writer (``max_writer_attempts``); the written ones are
+    # never rewritten. Final corpus: one checked card is a valid answer, so a lost card does not re-run the whole
+    # selection (MVP latency, sessions 84ec8453fdcf / 2090a85f0b59); only when none is written is the selection redone.
+    if len(written) < (1 if is_final_package(package) else min(2, len(sel))):
         raise ValueError(f"cards could not be written clearly: {[r['repairs'][-1][:300] for r in records if r['fallback']]}")
     kept = [s["card_id"] for s, _ in written]
     rejected = [CandidateDecision(card_id=d["card_id"], reason=f"тот же автор, что у {d['kept']}: в ответе одна карточка автора")
@@ -458,6 +461,8 @@ def compose_written(package: dict, output: dict, fragments: list[Fragment], meta
     if len(written) == 2:  # kept as a trace field; two cards are a full result and need no justification
         fewer = ("Третья перспектива не прошла проверку понятности текста и не показывается." if dropped
                  else count_reason)
+    elif len(written) == 1 and dropped:  # final corpus only (legacy raises above)
+        fewer = "Другие выбранные перспективы не прошли проверку текста и не показываются."
     meta = meta.model_copy(update={"usage": {**meta.usage, "writer": {
         "prompt_version": WRITER_PROMPT_VERSION, "seconds": round(time.monotonic() - t0, 2),
         "cards": records, "dropped": dropped, "selection": sel,
