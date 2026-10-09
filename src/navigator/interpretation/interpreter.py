@@ -54,7 +54,7 @@ from navigator.models.interpretation import (
 from navigator.models.query import QueryProvenance, QueryRepresentation, UserContext
 from navigator.models.vocabularies import COORDINATES, TENSIONS
 
-PROMPT_VERSION = "interpretation-prompt/0.11.0"  # MVP pass 1: keep charged details, feelings in hypotheses, partial input
+PROMPT_VERSION = "interpretation-prompt/0.12.0"  # MVP flow: story first; other questions + one clarifying question
 INTERPRETER_VERSION = "interpretation-layer/0.1.0"
 DEFAULT_MODEL = "claude-opus-5-5"
 
@@ -73,7 +73,7 @@ def input_sha256(inp: InterpretationInput) -> str:
     return hashlib.sha256(inp.model_dump_json().encode("utf-8")).hexdigest()
 
 
-SYSTEM_PROMPT = f"""Ты — слой интерпретации философского навигатора. Человек выбрал тему, переживания, «центр трудности» и своими словами рассказал о ситуации. Твоя задача — подготовить философское исследование его вопроса, а не решить его жизнь.
+SYSTEM_PROMPT = f"""Ты — слой интерпретации философского навигатора. Человек своими словами рассказал о ситуации и, возможно, отметил свои чувства (переживания). Тема и «центр трудности» могут быть не выбраны — тогда в них стоит «Другое», и центр трудности ты находишь в самом рассказе. Твоя задача — подготовить философское исследование его вопроса, а не решить его жизнь.
 
 Принципы:
 - Не бывает объективно «плохих» и «хороших» обстоятельств. Предмет исследования — отношение человека к обстоятельству, представления, через которые он его понимает, ожидания, напряжения между ценностями, обязанностями и желаниями, границы действия, контроля и принятия.
@@ -88,10 +88,10 @@ SYSTEM_PROMPT = f"""Ты — слой интерпретации философ�
 Порядок работы (естественный язык — главный носитель смысла):
 1. reading_notes: 3–6 коротких наблюдений о рассказе — какие представления, ожидания, напряжения, границы, неоднозначности в нём видны. Только то, что опирается на текст.
 2. working_hypotheses: 2–4 коротких рабочих гипотезы для поиска философских текстов. Это внутренний материал, человек их не увидит. Формулируй как возможности («возможно, …», «забота может переживаться как …»), они могут противоречить друг другу.
-3. proposed_question: ОДНА основная формулировка вопроса, которую человек увидит с вопросом «Правильно ли мы поняли?». Требования:
+3. proposed_question: ОДНА основная формулировка вопроса, которую человек увидит как свой вопрос перед философским ответом. Требования:
    - узнаваемая для человека и сохраняет конкретику его ситуации (кто участвует, что происходит), если она важна;
    - поднимает ситуацию до исследуемого вопроса: называет центральное напряжение или предел (например, между заботой и контролем, между желанием и долгом, между действием и тем, что от меня не зависит, между собственной оценкой и чужим взглядом);
-   - выбранный центр трудности — собственное указание человека, в чём именно трудность: его смысл ОБЯЗАТЕЛЬНО должен присутствовать в вопросе, но перефразированным и встроенным в конкретную ситуацию, а не дословной копией;
+   - если центр трудности выбран (не «Другое»), это собственное указание человека, в чём именно трудность: его смысл ОБЯЗАТЕЛЬНО должен присутствовать в вопросе, но перефразированным и встроенным в конкретную ситуацию, а не дословной копией;
    - не спрашивает «что мне делать», «как мне реагировать», «как решить» — это запрос решения, а не исследование;
    - если в рассказе есть близкий человек, сохраняет отношение к нему (как быть с ним, рядом с ним, по отношению к нему);
    - не абстрактный лозунг, не подсказывает решение, не диагностирует, не приписывает мотив, не содержит клинических слов и медицинских вопросов.
@@ -99,6 +99,7 @@ SYSTEM_PROMPT = f"""Ты — слой интерпретации философ�
    Пиши от первого лица человека, обычным разговорным русским. Вопрос НЕ обязан быть одним предложением: если в нём несколько связанных частей, раздели их на 2–3 коротких предложения (одно может описывать ситуацию, остальные — вопросы). НИКОГДА не больше трёх предложений: четыре и больше — ошибка, ответ будет отклонён. Удерживай главный конфликт и смысл вопроса самого человека; не подменяй его новой философской рамкой; не пересказывай всю историю, но значимую эмоционально заряженную деталь не выбрасывай (см. «Смысл важнее гладкости»). Не добавляй чувств, которых человек не называл (если он пишет «стыдно», не пиши «страшно»), и не упоминай специалистов, если он о них не писал. Не добавляй новых фактов ни о человеке, ни о других людях из рассказа: их мотивов, мыслей, способностей, «свободного выбора», а также вариантов действия, которых человек не называл. Вопрос может собирать, уточнять, структурировать и делать явным то, что уже есть в словах человека, но НЕ добавляет новой исследовательской задачи: если человек назвал чувство или обстоятельство («стыдно», «боюсь»), но не спрашивал о причине, не превращай это в «почему мне стыдно?», «из-за чего…», «что заставляет меня…», «на самом ли деле я…». Если человек сам спросил «почему» — сохрани. Если пол человека не виден из его слов, пиши без форм, зависящих от рода («я готов», «я решила» — нельзя; перестрой фразу, без «готов(а)»). Сохраняй опорные слова человека, если замена меняет смысл: выбрал «трудно принять» — не пиши «трудно смириться». Напряжение называй его собственными словами: если он пишет «ученик идёт в отказ», не превращай это в выбор «помогать или уважать его отказ», пока сам человек так вопрос не ставил. Последнее предложение оканчивается «?».
    Плохо (слишком тяжело читать): «Когда я хочу быть продуктивной, но снова и снова упираюсь в пределы своих возможностей, как понять, какая я — где мои границы, с которыми стоит примириться, а где то, ради чего стоит продолжать пытаться, — и чем тогда отличается бережность к себе от отказа от себя?»
    Лучше (это пример принципа, а не шаблон): «Я хочу быть продуктивной, но снова упираюсь в пределы своих возможностей. Как понять, где мои реальные границы, а где стоит продолжать пытаться? И чем бережность к себе отличается от отказа от себя?»
+3a. other_questions: если в рассказе есть ещё 1–2 САМОСТОЯТЕЛЬНЫХ вопроса — о другом предмете или другой трудности, которые нельзя честно соединить с основным в одну формулировку, — запиши их сюда по тем же требованиям, что и proposed_question (proposed_question — главный, о котором человек говорит больше всего). Части одного вопроса, уточнения и связанные стороны одной трудности — НЕ самостоятельные вопросы: они остаются в proposed_question. В большинстве рассказов вопрос один — тогда other_questions пустой.
 4. Семантическая разметка — только после вопроса:
    - coordinates: 2–5 значений строго из списка: {", ".join(sorted(COORDINATES))};
    - canonical_tensions: 0–3 строго из списка: {"; ".join(sorted(TENSIONS))};
@@ -110,15 +111,18 @@ SYSTEM_PROMPT = f"""Ты — слой интерпретации философ�
 Понятен ли рассказ. Проверка: можешь ли ты обычными словами, БЕЗ бессмысленных или шуточных слов из рассказа, сказать, что происходит (чего человек хочет, что случилось, кто участвует) и в чём для него трудность?
 - Да, хотя часть рассказа непонятна или написана неровно, грубо, с опечатками → sufficient=true. Достаточно, если обычными словами названо, чего человек хочет ИЛИ что произошло, и видна трудность (например, ясно сказано «хочу быть с нею», а она отвечает «нет»). Строй вопрос только по этой понятной части, непонятное не додумывай и отметь в ambiguity_notes.
 - Нет: ни желание человека, ни событие не названы обычными словами; понятны лишь обрывки реплик и общая эмоция; вопрос пришлось бы строить на самих бессмысленных словах → sufficient=false. Никогда не вставляй бессмысленные слова из рассказа в вопрос.
-При sufficient=false коротко объясни insufficiency_reason, остальные поля заполни минимально.
+При sufficient=false коротко объясни insufficiency_reason и задай в clarifying_question ОДИН короткий уточняющий вопрос человеку (на «вы», одно предложение, оканчивается «?»), опираясь на понятную часть рассказа, если она есть; бессмысленные слова в него не вставляй. Остальные поля заполни минимально. При sufficient=true clarifying_question = null.
 
 Пиши по-русски. Отвечай строго по JSON-схеме."""
+
+MAX_OTHER_QUESTIONS = 2  # MVP flow: at most three independent questions in one story
 
 OUTPUT_SCHEMA = {
     "type": "object",
     "additionalProperties": False,
     "required": ["sufficient", "insufficiency_reason", "reading_notes", "working_hypotheses", "proposed_question",
-                 "coordinates", "canonical_tensions", "free_tensions", "ambiguity_notes"],
+                 "coordinates", "canonical_tensions", "free_tensions", "ambiguity_notes", "other_questions",
+                 "clarifying_question"],
     "properties": {
         "sufficient": {"type": "boolean"},
         "insufficiency_reason": {"type": ["string", "null"]},
@@ -138,6 +142,8 @@ OUTPUT_SCHEMA = {
         "canonical_tensions": {"type": "array", "items": {"type": "string", "enum": sorted(TENSIONS)}},
         "free_tensions": {"type": "array", "items": {"type": "string"}},
         "ambiguity_notes": {"type": "array", "items": {"type": "string"}},
+        "other_questions": {"type": "array", "items": {"type": "string"}, "maxItems": MAX_OTHER_QUESTIONS},
+        "clarifying_question": {"type": ["string", "null"]},
     },
 }
 
@@ -216,33 +222,19 @@ def interpret(inp: InterpretationInput, interpreter: Interpreter, max_attempts: 
             if not out.get("sufficient", True):
                 return InsufficientInterpretation(
                     input=inp, reason=(out.get("insufficiency_reason") or "model reported insufficient input").strip(),
-                    clarification_prompt=UNCLEAR_PROMPT, trace=trace,
+                    clarification_prompt=clarifying_question(out.get("clarifying_question")) or UNCLEAR_PROMPT,
+                    trace=trace,
                 )
             pq = out["proposed_question"].strip()
-            hits = amplification_hits(pq)
-            if hits:
-                raise ValueError(f"proposed_question states an unconfirmed hypothesis about the person as fact: {hits}")
-            # M3.3.1: the 2–3 sentence rule is a contract, not only a prompt wish (R01 got 4 in M3.3).
-            if sentence_count(pq) > 3:
-                raise ValueError(f"proposed_question has {sentence_count(pq)} sentences; at most 3 short ones")
-            unnamed = unnamed_person_claims(pq, user_words(inp))
-            if unnamed:
-                raise ValueError(f"proposed_question adds what the person did not name: {unnamed}")
-            causal = added_causal_question(pq, user_words(inp))
-            if causal:
-                raise ValueError("proposed_question adds a causal question the person did not ask "
-                                 f"({[c.replace(chr(92) + 'b', '') for c in causal]}); keep their feeling as they said it, "
-                                 "without «почему / из-за чего»")
-            if person_gender(user_words(inp)) is None and gendered_first_person_hits(pq):
-                raise ValueError(f"the person's gender is unknown, but proposed_question uses gendered forms: "
-                                 f"{gendered_first_person_hits(pq)[:3]}; rephrase neutrally")
-            shifted = anchor_shift_hits(pq, user_words(inp))
-            if shifted:
-                raise ValueError(f"proposed_question replaces the person's word {shifted} with a near-synonym that "
-                                 "changes the frame («принять» is not «смириться»); keep their word")
+            others = list(dict.fromkeys(q.strip() for q in out.get("other_questions") or [] if q.strip()
+                                        and q.strip() != pq))[:MAX_OTHER_QUESTIONS]
+            check_question(pq, inp)
+            # another independent question that breaks the contract is dropped (never a repair call for it)
+            others = [q for q in others if _passes(q, inp)]
             return InterpretationResult(
                 input=inp,
-                proposed_question=out["proposed_question"].strip(),
+                proposed_question=pq,
+                other_questions=others,
                 working_hypotheses=[h.strip() for h in out["working_hypotheses"]],
                 coordinates=list(dict.fromkeys(out["coordinates"])),
                 canonical_tensions=list(dict.fromkeys(out["canonical_tensions"])),
@@ -254,6 +246,47 @@ def interpret(inp: InterpretationInput, interpreter: Interpreter, max_attempts: 
             feedback = str(exc)[:1500]
             repairs.append(feedback)
     raise ValueError(f"interpretation failed validation after {max_attempts} attempts: {feedback}")
+
+
+def clarifying_question(text: str | None) -> str | None:
+    """MVP flow: the model's ONE short clarifying question (shown as is); anything else → the generic prompt."""
+    q = (text or "").strip()
+    if not q or not q.endswith("?") or q.count("?") != 1 or sentence_count(q) > 2 or len(q) > 300:
+        return None
+    return q
+
+
+def _passes(question: str, inp: InterpretationInput) -> bool:
+    try:
+        check_question(question, inp)
+        return True
+    except ValueError:
+        return False
+
+
+def check_question(pq: str, inp: InterpretationInput) -> None:
+    """The contract of every question shown to the person (the main one and each other independent one)."""
+    hits = amplification_hits(pq)
+    if hits:
+        raise ValueError(f"proposed_question states an unconfirmed hypothesis about the person as fact: {hits}")
+    # M3.3.1: the 2–3 sentence rule is a contract, not only a prompt wish (R01 got 4 in M3.3).
+    if sentence_count(pq) > 3:
+        raise ValueError(f"proposed_question has {sentence_count(pq)} sentences; at most 3 short ones")
+    unnamed = unnamed_person_claims(pq, user_words(inp))
+    if unnamed:
+        raise ValueError(f"proposed_question adds what the person did not name: {unnamed}")
+    causal = added_causal_question(pq, user_words(inp))
+    if causal:
+        raise ValueError("proposed_question adds a causal question the person did not ask "
+                         f"({[c.replace(chr(92) + 'b', '') for c in causal]}); keep their feeling as they said it, "
+                         "without «почему / из-за чего»")
+    if person_gender(user_words(inp)) is None and gendered_first_person_hits(pq):
+        raise ValueError(f"the person's gender is unknown, but proposed_question uses gendered forms: "
+                         f"{gendered_first_person_hits(pq)[:3]}; rephrase neutrally")
+    shifted = anchor_shift_hits(pq, user_words(inp))
+    if shifted:
+        raise ValueError(f"proposed_question replaces the person's word {shifted} with a near-synonym that "
+                         "changes the frame («принять» is not «смириться»); keep their word")
 
 
 def confirm(result: InterpretationResult, action: str = "confirmed", source: str = "user",

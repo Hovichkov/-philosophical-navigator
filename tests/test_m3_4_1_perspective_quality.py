@@ -307,8 +307,8 @@ def test_reflection_choice_text_or_both(chosen, text, fragments, tmp_path):
     assert out["reflection"]["chosen_title"] == (view["perspectives"][chosen]["title"] if chosen is not None else None)
 
 
-def test_reflection_copy_says_both_are_possible():
+def test_reflection_step_is_not_shown_in_the_mvp_page():
+    # MVP flow (story → feelings → question → answer): the reflection step led to the «next round in development»
+    # dead end and is no longer on the page; the server-side reflect() above stays for the next round.
     page = (ROOT / "src/navigator/prototype/static/index.html").read_text(encoding="utf-8")
-    assert "или сделать и то и другое" in page
-    # the button is enabled by a choice OR own text (both together included)
-    assert 'reflection.chosen === null && !$("reflection-text").value.trim()' in page
+    assert 'id="reflection"' not in page and "/api/reflect" not in page

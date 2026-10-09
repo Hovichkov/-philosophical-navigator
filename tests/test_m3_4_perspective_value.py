@@ -249,13 +249,12 @@ def test_reflection_keeps_own_text(fragments, tmp_path):
 
 
 def test_onboarding_is_the_first_screen_of_a_new_flow():
+    # MVP flow: the story is the first screen; the short onboarding stays on it, above the story field
     page = (ROOT / "src/navigator/prototype/static/index.html").read_text(encoding="utf-8")
-    start = page.index('id="s-start"')
-    assert '<section class="screen active" id="s-start">' in page  # shown first
+    start = page.index('id="s-story"')
+    assert '<section class="screen active" id="s-story">' in page  # shown first
     first = page[start:page.index("</section>", start)]
     for needle in ("Здесь не будет совета, как правильно поступить", "точнее сформулировать ваш вопрос",
-                   "философские и духовные тексты", "могут различаться и даже противоречить",
-                   "выбрать мысль, с которой хочется продолжить", ">Начать<"):
+                   "философские и духовные тексты", "могут различаться и даже противоречить"):
         assert needle in first, needle
-    for needle in ("Что изменилось в вашем вопросе?", "Продолжить разбор", "/api/reflect"):
-        assert needle in page, needle
+    assert first.index("Здесь не будет совета") < first.index('id="story"')
