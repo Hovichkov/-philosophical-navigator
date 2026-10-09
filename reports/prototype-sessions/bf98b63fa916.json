@@ -1,0 +1,1923 @@
+{
+  "session_id": "bf98b63fa916",
+  "created_utc": "2026-10-02T12:18:46+00:00",
+  "state": "answered",
+  "interpretation_input": {
+    "topic": "Отношения с близким человеком",
+    "experiences": [
+      "Тревогу",
+      "Растерянность"
+    ],
+    "difficulty_center": "Я не понимаю, что от меня зависит, а что уже не в моей власти",
+    "free_narrative": "Моя жена идёт учиться на психоаналитика, и я боюсь, что она там влюбится. Я понимаю, что это от меня не зависит и что наша любовь сильнее, но не знаю, как это принять. Как мне найти в себе мужество принять это?"
+  },
+  "interpretation": {
+    "schema_version": "interpretation/0.1.0",
+    "status": "interpreted",
+    "input": {
+      "topic": "Отношения с близким человеком",
+      "experiences": [
+        "Тревогу",
+        "Растерянность"
+      ],
+      "difficulty_center": "Я не понимаю, что от меня зависит, а что уже не в моей власти",
+      "free_narrative": "Моя жена идёт учиться на психоаналитика, и я боюсь, что она там влюбится. Я понимаю, что это от меня не зависит и что наша любовь сильнее, но не знаю, как это принять. Как мне найти в себе мужество принять это?"
+    },
+    "proposed_question": "Моя жена идёт учиться на психоаналитика, и я боюсь, что она там влюбится. Я понимаю, что это от меня не зависит, но не могу понять, что же тогда в наших отношениях зависит от меня. Как найти в себе мужество принять то, что не в моей власти, и при этом остаться рядом с ней?",
+    "working_hypotheses": [
+      "Возможно, трудность не только в принятии неподвластного, но и в том, что неясно, какое участие в отношениях остаётся за ним, когда исход не гарантирован (стоики: различение зависящего и не зависящего от нас).",
+      "Возможно, любовь к другому человеку неизбежно включает его свободу, а значит и риск. Тогда страх оказывается частью самой привязанности, а не сбоем в ней (Марсель, Фромм, Левинас).",
+      "Мужество принять может пониматься не как исчезновение страха, а как способность продолжать доверять, оставаясь со страхом (Тиллих, «мужество быть»).",
+      "Возможно, уверенность «наша любовь сильнее» и страх существуют на разных уровнях: знание не превращается в принятие одним рассуждением."
+    ],
+    "coordinates": [
+      "контроль",
+      "принятие / сопротивление",
+      "привязанность",
+      "страх / конечность",
+      "отношение к другому"
+    ],
+    "canonical_tensions": [
+      "действие ↔ принятие",
+      "свобода ↔ привязанность",
+      "контроль ↔ конечность"
+    ],
+    "free_tensions": [
+      "понимание ↔ принятие",
+      "уверенность в любви ↔ страх потери"
+    ],
+    "ambiguity_notes": [
+      "В рассказе человек уверенно говорит, что ситуация от него не зависит. А в выбранном центре трудности он пишет, что не понимает, где проходит граница между зависящим и не зависящим от него. В вопросе удержаны обе стороны.",
+      "Человек спрашивает, «как найти мужество». Это похоже на запрос способа, но формулировка сохранена, потому что это его собственный вопрос и он касается внутреннего отношения, а не действий."
+    ],
+    "trace": {
+      "interpreter": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "interpretation-prompt/0.10.0",
+      "input_sha256": "1fdf48b393a3fe028c4f072045aa69ed3207057c88e144342cce30199a5c0691",
+      "reading_notes": [
+        {
+          "kind": "context",
+          "note": "Жена начинает учиться на психоаналитика. Страх касается не самой учёбы, а того, что она может там влюбиться."
+        },
+        {
+          "kind": "boundary",
+          "note": "Человек сам называет предел: «это от меня не зависит». При этом в центре трудности он пишет, что не понимает, где проходит граница между тем, что от него зависит, и тем, что нет."
+        },
+        {
+          "kind": "representation",
+          "note": "Человек опирается на представление «наша любовь сильнее». Это знание соседствует со страхом и не снимает его."
+        },
+        {
+          "kind": "tension",
+          "note": "Понимать и принимать для него разные вещи: «понимаю… но не знаю, как это принять». Принятие он связывает с мужеством, а не с убеждённостью."
+        },
+        {
+          "kind": "expectation",
+          "note": "Человек ждёт от себя внутреннего усилия («найти в себе мужество»). Принятие видится ему чем-то, что нужно в себе отыскать."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "wall_seconds": 18.67,
+            "cli_duration_ms": 16507,
+            "api_duration_ms": 15595,
+            "num_turns": 2,
+            "input_tokens": 2,
+            "cache_read_tokens": 0,
+            "cache_creation_tokens": 5834,
+            "output_tokens": 1535,
+            "thinking_tokens": 315,
+            "total_cost_usd_list": 0.07738,
+            "models": [
+              "claude-opus-5-5"
+            ]
+          }
+        ],
+        "repairs": []
+      }
+    }
+  },
+  "insufficient": null,
+  "confirmation": {
+    "action": "confirmed",
+    "source": "user",
+    "proposed_question": "Моя жена идёт учиться на психоаналитика, и я боюсь, что она там влюбится. Я понимаю, что это от меня не зависит, но не могу понять, что же тогда в наших отношениях зависит от меня. Как найти в себе мужество принять то, что не в моей власти, и при этом остаться рядом с ней?",
+    "confirmed_question": "Моя жена идёт учиться на психоаналитика, и я боюсь, что она там влюбится. Я понимаю, что это от меня не зависит, но не могу понять, что же тогда в наших отношениях зависит от меня. Как найти в себе мужество принять то, что не в моей власти, и при этом остаться рядом с ней?",
+    "edited_text": null
+  },
+  "query_representation": {
+    "schema_version": "query-representation/0.1.0",
+    "confirmed_question": "Моя жена идёт учиться на психоаналитика, и я боюсь, что она там влюбится. Я понимаю, что это от меня не зависит, но не могу понять, что же тогда в наших отношениях зависит от меня. Как найти в себе мужество принять то, что не в моей власти, и при этом остаться рядом с ней?",
+    "context": {
+      "circumstance": "Отношения с близким человеком",
+      "narrative": "Моя жена идёт учиться на психоаналитика, и я боюсь, что она там влюбится. Я понимаю, что это от меня не зависит и что наша любовь сильнее, но не знаю, как это принять. Как мне найти в себе мужество принять это?"
+    },
+    "experiences": [
+      "Тревогу",
+      "Растерянность"
+    ],
+    "working_hypotheses": [
+      "Возможно, трудность не только в принятии неподвластного, но и в том, что неясно, какое участие в отношениях остаётся за ним, когда исход не гарантирован (стоики: различение зависящего и не зависящего от нас).",
+      "Возможно, любовь к другому человеку неизбежно включает его свободу, а значит и риск. Тогда страх оказывается частью самой привязанности, а не сбоем в ней (Марсель, Фромм, Левинас).",
+      "Мужество принять может пониматься не как исчезновение страха, а как способность продолжать доверять, оставаясь со страхом (Тиллих, «мужество быть»).",
+      "Возможно, уверенность «наша любовь сильнее» и страх существуют на разных уровнях: знание не превращается в принятие одним рассуждением."
+    ],
+    "coordinates": [
+      "контроль",
+      "принятие / сопротивление",
+      "привязанность",
+      "страх / конечность",
+      "отношение к другому"
+    ],
+    "canonical_tensions": [
+      "действие ↔ принятие",
+      "свобода ↔ привязанность",
+      "контроль ↔ конечность"
+    ],
+    "free_tensions": [
+      "понимание ↔ принятие",
+      "уверенность в любви ↔ страх потери"
+    ],
+    "provenance": {
+      "origin": "production",
+      "confirmed_question_source": "user_confirmed",
+      "interpretation_source": "interpretation-layer_0.1.0",
+      "benchmark_item_id": null,
+      "note": null
+    }
+  },
+  "retrieval": {
+    "version": "candidate-retrieval/0.1.0",
+    "query": {
+      "schema_version": "query-representation/0.1.0",
+      "confirmed_question": "Моя жена идёт учиться на психоаналитика, и я боюсь, что она там влюбится. Я понимаю, что это от меня не зависит, но не могу понять, что же тогда в наших отношениях зависит от меня. Как найти в себе мужество принять то, что не в моей власти, и при этом остаться рядом с ней?",
+      "context": {
+        "circumstance": "Отношения с близким человеком",
+        "narrative": "Моя жена идёт учиться на психоаналитика, и я боюсь, что она там влюбится. Я понимаю, что это от меня не зависит и что наша любовь сильнее, но не знаю, как это принять. Как мне найти в себе мужество принять это?"
+      },
+      "experiences": [
+        "Тревогу",
+        "Растерянность"
+      ],
+      "working_hypotheses": [
+        "Возможно, трудность не только в принятии неподвластного, но и в том, что неясно, какое участие в отношениях остаётся за ним, когда исход не гарантирован (стоики: различение зависящего и не зависящего от нас).",
+        "Возможно, любовь к другому человеку неизбежно включает его свободу, а значит и риск. Тогда страх оказывается частью самой привязанности, а не сбоем в ней (Марсель, Фромм, Левинас).",
+        "Мужество принять может пониматься не как исчезновение страха, а как способность продолжать доверять, оставаясь со страхом (Тиллих, «мужество быть»).",
+        "Возможно, уверенность «наша любовь сильнее» и страх существуют на разных уровнях: знание не превращается в принятие одним рассуждением."
+      ],
+      "coordinates": [
+        "контроль",
+        "принятие / сопротивление",
+        "привязанность",
+        "страх / конечность",
+        "отношение к другому"
+      ],
+      "canonical_tensions": [
+        "действие ↔ принятие",
+        "свобода ↔ привязанность",
+        "контроль ↔ конечность"
+      ],
+      "free_tensions": [
+        "понимание ↔ принятие",
+        "уверенность в любви ↔ страх потери"
+      ],
+      "provenance": {
+        "origin": "production",
+        "confirmed_question_source": "user_confirmed",
+        "interpretation_source": "interpretation-layer_0.1.0",
+        "benchmark_item_id": null,
+        "note": null
+      }
+    },
+    "embedding_config": {
+      "provider": "local-sentence-transformers",
+      "model": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimensions": 1024
+    },
+    "corpus_version": "corpus-full/1.0.0",
+    "retrieval_universe_size": 815,
+    "q0_control": {
+      "route": "Q0_QUESTION_ONLY_CONTROL",
+      "query": {
+        "version": "q0-question-only/1.0",
+        "text": "Моя жена идёт учиться на психоаналитика, и я боюсь, что она там влюбится. Я понимаю, что это от меня не зависит, но не могу понять, что же тогда в наших отношениях зависит от меня. Как найти в себе мужество принять то, что не в моей власти, и при этом остаться рядом с ней?",
+        "sha256": "14086c4120af5e0c0941a4417636775f930b8e57eba06f289369e81a14199365"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0820",
+          "rank": 1,
+          "cosine": 0.544184
+        },
+        {
+          "card_id": "C0629",
+          "rank": 2,
+          "cosine": 0.539774
+        },
+        {
+          "card_id": "C0673",
+          "rank": 3,
+          "cosine": 0.534684
+        },
+        {
+          "card_id": "C0642",
+          "rank": 4,
+          "cosine": 0.534325
+        },
+        {
+          "card_id": "C0391",
+          "rank": 5,
+          "cosine": 0.532924
+        },
+        {
+          "card_id": "C0656",
+          "rank": 6,
+          "cosine": 0.532711
+        },
+        {
+          "card_id": "C0131",
+          "rank": 7,
+          "cosine": 0.530773
+        },
+        {
+          "card_id": "C0296",
+          "rank": 8,
+          "cosine": 0.527353
+        },
+        {
+          "card_id": "C0281",
+          "rank": 9,
+          "cosine": 0.525503
+        },
+        {
+          "card_id": "C1017",
+          "rank": 10,
+          "cosine": 0.524116
+        },
+        {
+          "card_id": "C0347",
+          "rank": 11,
+          "cosine": 0.523603
+        },
+        {
+          "card_id": "C0146",
+          "rank": 12,
+          "cosine": 0.520564
+        },
+        {
+          "card_id": "C0056",
+          "rank": 13,
+          "cosine": 0.51893
+        },
+        {
+          "card_id": "C0450",
+          "rank": 14,
+          "cosine": 0.518752
+        },
+        {
+          "card_id": "C1006",
+          "rank": 15,
+          "cosine": 0.518473
+        }
+      ]
+    },
+    "q1_meaning": {
+      "route": "Q1_MEANING",
+      "query": {
+        "version": "q1-meaning-query/2.0",
+        "text": "Вопрос: Моя жена идёт учиться на психоаналитика, и я боюсь, что она там влюбится. Я понимаю, что это от меня не зависит, но не могу понять, что же тогда в наших отношениях зависит от меня. Как найти в себе мужество принять то, что не в моей власти, и при этом остаться рядом с ней?\nРабочие интерпретации:\n- Возможно, трудность не только в принятии неподвластного, но и в том, что неясно, какое участие в отношениях остаётся за ним, когда исход не гарантирован (стоики: различение зависящего и не зависящего от нас).\n- Возможно, любовь к другому человеку неизбежно включает его свободу, а значит и риск. Тогда страх оказывается частью самой привязанности, а не сбоем в ней (Марсель, Фромм, Левинас).\n- Мужество принять может пониматься не как исчезновение страха, а как способность продолжать доверять, оставаясь со страхом (Тиллих, «мужество быть»).\n- Возможно, уверенность «наша любовь сильнее» и страх существуют на разных уровнях: знание не превращается в принятие одним рассуждением.",
+        "sha256": "9b877fbd0e01ced46c691392623871a412cb52ba1ac1ab37a218b04a2d50150f"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0629",
+          "rank": 1,
+          "cosine": 0.614777
+        },
+        {
+          "card_id": "C0656",
+          "rank": 2,
+          "cosine": 0.612643
+        },
+        {
+          "card_id": "C0673",
+          "rank": 3,
+          "cosine": 0.610113
+        },
+        {
+          "card_id": "C0286",
+          "rank": 4,
+          "cosine": 0.604461
+        },
+        {
+          "card_id": "C0131",
+          "rank": 5,
+          "cosine": 0.602579
+        },
+        {
+          "card_id": "C0642",
+          "rank": 6,
+          "cosine": 0.600641
+        },
+        {
+          "card_id": "C0820",
+          "rank": 7,
+          "cosine": 0.596053
+        },
+        {
+          "card_id": "C0146",
+          "rank": 8,
+          "cosine": 0.594283
+        },
+        {
+          "card_id": "C0789",
+          "rank": 9,
+          "cosine": 0.592791
+        },
+        {
+          "card_id": "C0391",
+          "rank": 10,
+          "cosine": 0.592527
+        },
+        {
+          "card_id": "C0347",
+          "rank": 11,
+          "cosine": 0.592352
+        },
+        {
+          "card_id": "C0957",
+          "rank": 12,
+          "cosine": 0.588913
+        },
+        {
+          "card_id": "C0296",
+          "rank": 13,
+          "cosine": 0.587228
+        },
+        {
+          "card_id": "C0336",
+          "rank": 14,
+          "cosine": 0.584238
+        },
+        {
+          "card_id": "C1119",
+          "rank": 15,
+          "cosine": 0.582249
+        }
+      ]
+    },
+    "structure": {
+      "route": "STRUCTURE",
+      "ranking_rule": "lexicographic: (1) more exact canonical-tension matches, (2) more exact coordinate matches, (3) card_id ascending; cards with no match are not ranked; operation is logged, never scored",
+      "query_coordinates": [
+        "контроль",
+        "принятие / сопротивление",
+        "привязанность",
+        "страх / конечность",
+        "отношение к другому"
+      ],
+      "query_canonical_tensions": [
+        "действие ↔ принятие",
+        "свобода ↔ привязанность",
+        "контроль ↔ конечность"
+      ],
+      "top_k": 15,
+      "matching_cards": 365,
+      "tied_at_cutoff": 10,
+      "hits": [
+        {
+          "card_id": "C1108",
+          "rank": 1,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "действие ↔ принятие",
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "контроль",
+            "принятие / сопротивление",
+            "страх / конечность"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0013",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "контроль",
+            "привязанность",
+            "принятие / сопротивление"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0553",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "контроль",
+            "привязанность",
+            "страх / конечность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0059",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "принятие / сопротивление"
+          ],
+          "operation": null
+        },
+        {
+          "card_id": "C0063",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "принятие / сопротивление"
+          ],
+          "operation": null
+        },
+        {
+          "card_id": "C0085",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "принятие / сопротивление"
+          ],
+          "operation": null
+        },
+        {
+          "card_id": "C0143",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": null
+        },
+        {
+          "card_id": "C0227",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "принятие / сопротивление"
+          ],
+          "operation": null
+        },
+        {
+          "card_id": "C0298",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "привязанность",
+            "принятие / сопротивление"
+          ],
+          "operation": null
+        },
+        {
+          "card_id": "C0404",
+          "rank": 10,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "свобода ↔ привязанность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "привязанность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0571",
+          "rank": 11,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": "PERSPECTIVE_LIMIT"
+        },
+        {
+          "card_id": "C0582",
+          "rank": 12,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "принятие / сопротивление",
+            "страх / конечность"
+          ],
+          "operation": null
+        },
+        {
+          "card_id": "C0597",
+          "rank": 13,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": null
+        },
+        {
+          "card_id": "C0600",
+          "rank": 14,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "принятие / сопротивление",
+            "страх / конечность"
+          ],
+          "operation": null
+        },
+        {
+          "card_id": "C0793",
+          "rank": 15,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": "LIMIT_CONTROL"
+        }
+      ]
+    },
+    "union_rule": "union(Q1_MEANING top_k, STRUCTURE top_k); Q0 excluded; one entry per card_id with separate route signals; no combined score; listed by card_id ascending (the order is not a ranking)",
+    "candidate_union": [
+      {
+        "card_id": "C0013",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 2,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "контроль",
+          "привязанность",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": "DISTINGUISH"
+      },
+      {
+        "card_id": "C0059",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 4,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": null
+      },
+      {
+        "card_id": "C0063",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 5,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": null
+      },
+      {
+        "card_id": "C0085",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 6,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "отношение к другому",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": null
+      },
+      {
+        "card_id": "C0131",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 5,
+        "meaning_score": 0.602579,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0143",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 7,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": null
+      },
+      {
+        "card_id": "C0146",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 8,
+        "meaning_score": 0.594283,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0227",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 8,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": null
+      },
+      {
+        "card_id": "C0286",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 4,
+        "meaning_score": 0.604461,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0296",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 13,
+        "meaning_score": 0.587228,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0298",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 9,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "привязанность",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": null
+      },
+      {
+        "card_id": "C0336",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 14,
+        "meaning_score": 0.584238,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0347",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 11,
+        "meaning_score": 0.592352,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0391",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 10,
+        "meaning_score": 0.592527,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0404",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 10,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "отношение к другому",
+          "привязанность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "свобода ↔ привязанность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0553",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 3,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "контроль",
+          "привязанность",
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0571",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 11,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0582",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 12,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "принятие / сопротивление",
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": null
+      },
+      {
+        "card_id": "C0597",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 13,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": null
+      },
+      {
+        "card_id": "C0600",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 14,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "принятие / сопротивление",
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": null
+      },
+      {
+        "card_id": "C0629",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 1,
+        "meaning_score": 0.614777,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0642",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 6,
+        "meaning_score": 0.600641,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0656",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 2,
+        "meaning_score": 0.612643,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0673",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 3,
+        "meaning_score": 0.610113,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0789",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 9,
+        "meaning_score": 0.592791,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0793",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 15,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0820",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 7,
+        "meaning_score": 0.596053,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0957",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 12,
+        "meaning_score": 0.588913,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_OBLIGATION"
+      },
+      {
+        "card_id": "C1108",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 1,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "контроль",
+          "принятие / сопротивление",
+          "страх / конечность"
+        ],
+        "tension_overlap": 2,
+        "matched_tensions": [
+          "действие ↔ принятие",
+          "контроль ↔ конечность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C1119",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 15,
+        "meaning_score": 0.582249,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      }
+    ]
+  },
+  "composition": {
+    "schema_version": "composition/0.5.0",
+    "item_id": "proto-bf98b63fa916",
+    "retrieval_run_id": "prototype-bf98b63fa916",
+    "confirmed_question": "Моя жена идёт учиться на психоаналитика, и я боюсь, что она там влюбится. Я понимаю, что это от меня не зависит, но не могу понять, что же тогда в наших отношениях зависит от меня. Как найти в себе мужество принять то, что не в моей власти, и при этом остаться рядом с ней?",
+    "candidate_pool": [
+      "C0013",
+      "C0059",
+      "C0063",
+      "C0085",
+      "C0131",
+      "C0143",
+      "C0146",
+      "C0227",
+      "C0286",
+      "C0296",
+      "C0298",
+      "C0336",
+      "C0347",
+      "C0391",
+      "C0404",
+      "C0553",
+      "C0571",
+      "C0582",
+      "C0597",
+      "C0600",
+      "C0629",
+      "C0642",
+      "C0656",
+      "C0673",
+      "C0789",
+      "C0793",
+      "C0820",
+      "C0957",
+      "C1108",
+      "C1119"
+    ],
+    "opening": "Ваш вопрос можно рассмотреть с нескольких сторон.",
+    "perspectives": [
+      {
+        "card_id": "C0391",
+        "role": "Разводит влияние и управление",
+        "title": "Влиять на отношения и распоряжаться чужим выбором — разное",
+        "source": "Энхиридион / Руководство, §14",
+        "perspective": "Эпиктет связывает две вещи: чего ты требуешь от другого и от чего зависит твоё благополучие. Если моё спокойствие держится на том, что другой поступит как нужно мне, распоряжается моим спокойствием уже другой человек. Поэтому Эпиктет отделяет влияние от попытки распоряжаться чужим выбором. Влиять можно своими словами и поступками. А решение другого остаётся его решением. Отсюда и граница в вашем вопросе: тревога о выборе жены не отменяет ваших собственных слов и поступков.",
+        "reflection_question": "Что в наших с женой отношениях делаю именно я? Какие мои слова и поступки в этих отношениях зависят только от меня?",
+        "why_selected": "Прямо отвечает на центральный вопрос о том, что остаётся в его власти внутри отношений.",
+        "main_idea": "Эпиктет считает: если требовать, чтобы другой поступал так, как нужно тебе, твоё благополучие начинает зависеть от чужой воли.",
+        "applied_insight": "Вы пишете, что это от вас не зависит, но не понимаете, что тогда зависит от вас. Эпиктет помогает провести границу. Решать за жену, кого ей любить, нельзя. А участвовать в ваших отношениях можно, и это совсем другое дело.",
+        "distinction": "Помогает различить влияние на отношения и присвоение чужого выбора.",
+        "perspective_effect": "Вопрос «что зависит от меня» получает конкретную границу: влиять на отношения можно, но присвоить себе чужой выбор нельзя, и это две разные вещи.",
+        "perspective_frame": "Где в отношениях проходит граница между моим участием и чужой свободой.",
+        "question_explanation": "Нельзя решить за другого человека, что ему чувствовать. Но свои слова и поступки каждый выбирает за себя. Вопрос о том, из чего состоит ваша часть отношений.",
+        "verified_quote": null
+      },
+      {
+        "card_id": "C0143",
+        "role": "Отделяет гарантию от опоры",
+        "title": "Гарантия снаружи не всегда касается того, откуда страх",
+        "source": "Дхаммапада, 188–192",
+        "perspective": "Ход мысли в «Дхаммападе» простой. Сначала страх толкает людей искать убежища. Люди ищут убежище во внешних местах. Потом текст говорит, что такое убежище не окончательное. Внешняя защита может не касаться того, откуда идёт страдание. Поэтому вопрос сдвигается: не что закроет от страха снаружи, а откуда страх берётся.",
+        "reflection_question": "Откуда именно берётся мой страх, когда я думаю об учёбе жены? Успокоило бы этот страх обещание, что ничего не случится?",
+        "why_selected": "Работает с другой частью вопроса — с самим мужеством принятия, а не с границей контроля.",
+        "main_idea": "В «Дхаммападе» есть мысль: от страха люди ищут убежища во внешних местах. Но такое убежище не окончательное. Оно может вообще не касаться того, откуда берётся страх.",
+        "applied_insight": "Вы пишете, что понимаете: влюбится ли жена, от вас не зависит. Но как это принять, вы не знаете. Мужество принять можно искать не в уверенности, что ничего не случится. Такая уверенность может вообще не касаться того, откуда берётся страх.",
+        "distinction": "Помогает различить успокоение через внешнюю гарантию и работу с тем, откуда страх происходит.",
+        "perspective_effect": "Мужество принять можно искать не в гарантии, что ничего не случится, а в другом месте: внешняя гарантия может вообще не касаться источника страха.",
+        "perspective_frame": "Как соотносятся страх и поиск гарантии.",
+        "question_explanation": "Страх можно пытаться унять обещанием, что плохого не будет. Но обещание снаружи не всегда трогает то, из-за чего страшно. Вопрос к себе — о том, откуда страх берётся.",
+        "verified_quote": null
+      }
+    ],
+    "fewer_than_three_reason": "Двух хватает: одна разделяет «моё» и «её» в отношениях, другая разводит принятие и поиск гарантии; остальные карточки повторяют первую рамку или требуют догадок о человеке.",
+    "count_reason": "Двух хватает: одна разделяет «моё» и «её» в отношениях, другая разводит принятие и поиск гарантии; остальные карточки повторяют первую рамку или требуют догадок о человеке.",
+    "rejected": [
+      {
+        "card_id": "C0298",
+        "reason": "та же рамка вопроса, что у C0391: Та же рамка «моё участие и неподвластный исход», что и у C0391, но менее прямо говорит об отношениях."
+      },
+      {
+        "card_id": "C0629",
+        "reason": "та же рамка вопроса, что у C0391: Только наполняет содержанием ту же рамку и требует переноса с общественной жизни на брак."
+      },
+      {
+        "card_id": "C0146",
+        "reason": "работает только через догадку о человеке: Легко скатывается к толкованию его привязанности."
+      },
+      {
+        "card_id": "C0286",
+        "reason": "работает только через догадку о человеке: Требует предположений о том, что для него «недопустимая потеря»."
+      },
+      {
+        "card_id": "C0656",
+        "reason": "работает только через догадку о человеке: Пришлось бы приписывать страху искажение его образа жены."
+      },
+      {
+        "card_id": "C0597",
+        "reason": "та же мыслительная операция, что у C0391: Та же операция «граница контроля», только в общем виде."
+      }
+    ],
+    "q1_top": {
+      "card_id": "C0629",
+      "decision": "rejected",
+      "reason": "Говорит о надёжности слова в общественной жизни; лишь дополняет рамку C0391 и требует переноса на брак."
+    },
+    "meta": {
+      "composer": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "composition-prompt/0.8.1",
+      "package_sha256": "c1210ef772d3c499ff52789974f8d82971532e03a37b8dc71cbb65397419a0df",
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "wall_seconds": 31.5,
+            "cli_duration_ms": 28937,
+            "api_duration_ms": 28880,
+            "num_turns": 2,
+            "input_tokens": 2,
+            "cache_read_tokens": 0,
+            "cache_creation_tokens": 16589,
+            "output_tokens": 2806,
+            "thinking_tokens": 917,
+            "total_cost_usd_list": 0.18884,
+            "models": [
+              "claude-opus-5-5"
+            ],
+            "attempt": 1,
+            "call_seconds": 31.5,
+            "validation_seconds": 96.268
+          }
+        ],
+        "repairs": [],
+        "writer": {
+          "prompt_version": "card-writer-prompt/0.6.0",
+          "seconds": 96.26,
+          "cards": [
+            {
+              "card_id": "C0391",
+              "attempts": 2,
+              "repairs": [
+                "the person's gender is unknown, but the text uses gendered forms: ['я сам']; rephrase neutrally (not «готов(а)»)"
+              ],
+              "calls": [
+                {
+                  "wall_seconds": 33.79,
+                  "cli_duration_ms": 31717,
+                  "api_duration_ms": 31682,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 0,
+                  "cache_creation_tokens": 10340,
+                  "output_tokens": 3273,
+                  "thinking_tokens": 1921,
+                  "total_cost_usd_list": 0.148188,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 1,
+                  "call_seconds": 33.79
+                },
+                {
+                  "wall_seconds": 27.61,
+                  "cli_duration_ms": 25806,
+                  "api_duration_ms": 25770,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 9081,
+                  "cache_creation_tokens": 1344,
+                  "output_tokens": 2778,
+                  "thinking_tokens": 1436,
+                  "total_cost_usd_list": 0.0681362,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 2,
+                  "call_seconds": 27.61
+                }
+              ],
+              "fallback": false,
+              "validation": [
+                {
+                  "wall_seconds": 20.88,
+                  "cli_duration_ms": 19249,
+                  "api_duration_ms": 19204,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 2125,
+                  "cache_creation_tokens": 1435,
+                  "output_tokens": 2037,
+                  "thinking_tokens": 616,
+                  "total_cost_usd_list": 0.052653000000000005,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "call_seconds": 20.88,
+                  "checked": 17,
+                  "violations": [],
+                  "labels": [
+                    [
+                      "title",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "applied_insight",
+                      "given"
+                    ],
+                    [
+                      "applied_insight",
+                      "source_frame"
+                    ],
+                    [
+                      "applied_insight",
+                      "general_distinction"
+                    ],
+                    [
+                      "applied_insight",
+                      "general_distinction"
+                    ],
+                    [
+                      "reflection_question",
+                      "open_question"
+                    ],
+                    [
+                      "reflection_question",
+                      "open_question"
+                    ],
+                    [
+                      "question_explanation",
+                      "general_distinction"
+                    ],
+                    [
+                      "question_explanation",
+                      "general_distinction"
+                    ],
+                    [
+                      "question_explanation",
+                      "open_question"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "general_distinction"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "general_distinction"
+                    ]
+                  ]
+                }
+              ],
+              "grounding": [
+                {
+                  "field": "main_idea",
+                  "claim": "Требование управлять другим делает благополучие зависимым от чужой воли",
+                  "kind": "source_fact",
+                  "evidence": "делает собственное благополучие зависимым от чужой воли"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек пишет, что это от него не зависит",
+                  "kind": "user_fact",
+                  "evidence": "Я понимаю, что это от меня не зависит"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек не понимает, что тогда зависит от него",
+                  "kind": "user_fact",
+                  "evidence": "не могу понять, что же тогда в наших отношениях зависит от меня"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Влиять на отношения можно, распоряжаться чужим выбором нельзя",
+                  "kind": "source_fact",
+                  "evidence": "отношения требуют различать влияние и присвоение чужого выбора"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Эпиктет отделяет влияние от присвоения чужого выбора",
+                  "kind": "source_fact",
+                  "evidence": "различать влияние и присвоение чужого выбора"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Требование управлять чужим поведением",
+                  "kind": "source_fact",
+                  "evidence": "требование управлять чужим поведением"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Человек называет тревогу",
+                  "kind": "user_fact",
+                  "evidence": "Тревогу"
+                },
+                {
+                  "field": "question_explanation",
+                  "claim": "Нельзя решить за другого, что ему чувствовать",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "reflection_question",
+                  "claim": "Что в отношениях делаю именно я",
+                  "kind": "question",
+                  "evidence": ""
+                }
+              ],
+              "seconds": 82.29
+            },
+            {
+              "card_id": "C0143",
+              "attempts": 2,
+              "repairs": [
+                "Независимая проверка нашла в карточке места, где сказано больше, чем известно. Исправь ТОЛЬКО эти предложения, остальное сохрани:\n- [вопрос к себе] «Какой гарантии я жду, прежде чем принять?» — гипотеза о человеке подана как факт (причина чувства, мотив, убеждение, механизм, реакция или мысли других) — предложите её для проверки или уберите (Вопрос заранее исходит из того, что человек ждёт гарантии. Сам он этого не говорил.)"
+              ],
+              "calls": [
+                {
+                  "wall_seconds": 25.56,
+                  "cli_duration_ms": 23843,
+                  "api_duration_ms": 23808,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 0,
+                  "cache_creation_tokens": 10325,
+                  "output_tokens": 2548,
+                  "thinking_tokens": 1209,
+                  "total_cost_usd_list": 0.13356800000000002,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 1,
+                  "call_seconds": 25.56
+                },
+                {
+                  "wall_seconds": 30.95,
+                  "cli_duration_ms": 29273,
+                  "api_duration_ms": 29232,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 9081,
+                  "cache_creation_tokens": 1466,
+                  "output_tokens": 3129,
+                  "thinking_tokens": 1690,
+                  "total_cost_usd_list": 0.0761322,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 2,
+                  "call_seconds": 30.95
+                }
+              ],
+              "fallback": false,
+              "validation": [
+                {
+                  "wall_seconds": 20.03,
+                  "cli_duration_ms": 18465,
+                  "api_duration_ms": 18317,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 0,
+                  "cache_creation_tokens": 3536,
+                  "output_tokens": 2180,
+                  "thinking_tokens": 848,
+                  "total_cost_usd_list": 0.071896,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "call_seconds": 20.04,
+                  "checked": 16,
+                  "violations": [
+                    {
+                      "field": "reflection_question",
+                      "sentence": "Какой гарантии я жду, прежде чем принять?",
+                      "label": "hypothesis_as_fact",
+                      "reason": "Вопрос заранее исходит из того, что человек ждёт гарантии. Сам он этого не говорил."
+                    }
+                  ],
+                  "labels": [
+                    [
+                      "title",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "applied_insight",
+                      "given"
+                    ],
+                    [
+                      "applied_insight",
+                      "given"
+                    ],
+                    [
+                      "applied_insight",
+                      "open_hypothesis"
+                    ],
+                    [
+                      "applied_insight",
+                      "open_hypothesis"
+                    ],
+                    [
+                      "reflection_question",
+                      "hypothesis_as_fact"
+                    ],
+                    [
+                      "reflection_question",
+                      "open_question"
+                    ],
+                    [
+                      "question_explanation",
+                      "general_distinction"
+                    ],
+                    [
+                      "question_explanation",
+                      "open_question"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "open_question"
+                    ]
+                  ]
+                },
+                {
+                  "wall_seconds": 19.69,
+                  "cli_duration_ms": 18020,
+                  "api_duration_ms": 17983,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 2125,
+                  "cache_creation_tokens": 1412,
+                  "output_tokens": 2276,
+                  "thinking_tokens": 816,
+                  "total_cost_usd_list": 0.057249,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "call_seconds": 19.69,
+                  "checked": 19,
+                  "violations": [],
+                  "labels": [
+                    [
+                      "title",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "applied_insight",
+                      "given"
+                    ],
+                    [
+                      "applied_insight",
+                      "given"
+                    ],
+                    [
+                      "applied_insight",
+                      "open_hypothesis"
+                    ],
+                    [
+                      "applied_insight",
+                      "open_hypothesis"
+                    ],
+                    [
+                      "reflection_question",
+                      "open_question"
+                    ],
+                    [
+                      "reflection_question",
+                      "open_question"
+                    ],
+                    [
+                      "question_explanation",
+                      "general_distinction"
+                    ],
+                    [
+                      "question_explanation",
+                      "general_distinction"
+                    ],
+                    [
+                      "question_explanation",
+                      "general_distinction"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ]
+                  ]
+                }
+              ],
+              "grounding": [
+                {
+                  "field": "main_idea",
+                  "claim": "Страх толкает людей искать убежища во внешних местах",
+                  "kind": "source_fact",
+                  "evidence": "страх толкает людей искать убежище во внешних местах"
+                },
+                {
+                  "field": "main_idea",
+                  "claim": "Такое убежище не окончательное",
+                  "kind": "source_fact",
+                  "evidence": "такое убежище объявляется не окончательным"
+                },
+                {
+                  "field": "main_idea",
+                  "claim": "Внешняя защита может не касаться источника страха",
+                  "kind": "source_fact",
+                  "evidence": "может не касаться источника страдания"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек понимает, что это от него не зависит",
+                  "kind": "user_fact",
+                  "evidence": "Я понимаю, что это от меня не зависит"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек не знает, как это принять",
+                  "kind": "user_fact",
+                  "evidence": "не знаю, как это принять"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Жена идёт учиться, и человек боится, что она влюбится",
+                  "kind": "user_fact",
+                  "evidence": "я боюсь, что она там влюбится"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Уверенность в исходе может не касаться того, откуда страх",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "reflection_question",
+                  "claim": "Поможет ли обещание — открытый вопрос, а не утверждение, что человек ждёт гарантии",
+                  "kind": "question",
+                  "evidence": ""
+                },
+                {
+                  "field": "question_explanation",
+                  "claim": "Обещание снаружи не всегда трогает то, из-за чего страшно",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Страх толкает искать убежища во внешних местах, и оно не окончательное",
+                  "kind": "source_fact",
+                  "evidence": "такое убежище объявляется не окончательным"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Внешняя защита может не касаться источника страдания",
+                  "kind": "source_fact",
+                  "evidence": "может не касаться источника страдания"
+                }
+              ],
+              "seconds": 96.26
+            }
+          ],
+          "dropped": [],
+          "selection": [
+            {
+              "card_id": "C0391",
+              "perspective_effect": "Вопрос «что зависит от меня» получает конкретную границу: влиять на отношения можно, но присвоить себе чужой выбор нельзя, и это две разные вещи.",
+              "perspective_frame": "Где в отношениях проходит граница между моим участием и чужой свободой.",
+              "distinction": "Помогает различить влияние на отношения и присвоение чужого выбора.",
+              "role": "Разводит влияние и управление",
+              "source_point": "Если требовать, чтобы другой вёл себя так, как нужно тебе, твоё благополучие начинает зависеть от его воли; поэтому влияние надо отличать от попытки распоряжаться чужим выбором.",
+              "user_point": "Вы пишете, что её чувства от вас не зависят, но не понимаете, что тогда зависит от вас; это различение показывает, что «не управлять её выбором» не значит «не участвовать в отношениях».",
+              "why_selected": "Прямо отвечает на центральный вопрос о том, что остаётся в его власти внутри отношений."
+            },
+            {
+              "card_id": "C0143",
+              "perspective_effect": "Мужество принять можно искать не в гарантии, что ничего не случится, а в другом месте: внешняя гарантия может вообще не касаться источника страха.",
+              "perspective_frame": "Как соотносятся страх и поиск гарантии.",
+              "distinction": "Помогает различить успокоение через внешнюю гарантию и работу с тем, откуда страх происходит.",
+              "role": "Отделяет гарантию от опоры",
+              "source_point": "Из страха люди ищут убежища во внешнем, но такое убежище не окончательно и не трогает корня страдания.",
+              "user_point": "Вы пишете, что знаете: «наша любовь сильнее» и исход от вас не зависит, а принять всё равно трудно; можно спросить себя, какое принятие вы ищете — то, что требует уверенности в исходе, или то, что без неё обходится.",
+              "why_selected": "Работает с другой частью вопроса — с самим мужеством принятия, а не с границей контроля."
+            }
+          ],
+          "considered": [
+            {
+              "card_id": "C0391",
+              "perspective_effect": "Влиять на отношения и распоряжаться чужим выбором — разное.",
+              "perspective_frame": "Граница моего участия и чужой свободы.",
+              "decision": "selected",
+              "duplicate_of": null,
+              "reason": "Самое точное попадание в вопрос «что зависит от меня в отношениях»."
+            },
+            {
+              "card_id": "C0143",
+              "perspective_effect": "Внешняя гарантия может не касаться источника страха.",
+              "perspective_frame": "Страх и поиск гарантии.",
+              "decision": "selected",
+              "duplicate_of": null,
+              "reason": "Даёт самостоятельный взгляд на то, как можно принять ситуацию."
+            },
+            {
+              "card_id": "C0298",
+              "perspective_effect": "Можно полностью участвовать, не делая исход абсолютным благом или злом.",
+              "perspective_frame": "Граница моего участия и исхода.",
+              "decision": "same_frame_as_selected",
+              "duplicate_of": "C0391",
+              "reason": "Та же рамка «моё участие и неподвластный исход», что и у C0391, но менее прямо говорит об отношениях."
+            },
+            {
+              "card_id": "C0629",
+              "perspective_effect": "От меня зависит, можно ли доверять моему слову.",
+              "perspective_frame": "Что моё в отношениях.",
+              "decision": "same_frame_as_selected",
+              "duplicate_of": "C0391",
+              "reason": "Только наполняет содержанием ту же рамку и требует переноса с общественной жизни на брак."
+            },
+            {
+              "card_id": "C0146",
+              "perspective_effect": "Страх утраты зависит от того, как устроена привязанность.",
+              "perspective_frame": "Страх и привязанность.",
+              "decision": "needs_guess_about_person",
+              "duplicate_of": null,
+              "reason": "Легко скатывается к толкованию его привязанности."
+            },
+            {
+              "card_id": "C0286",
+              "perspective_effect": "Власть другого растёт с ценностью того, что он может отнять.",
+              "perspective_frame": "Страх и ценность утраты.",
+              "decision": "needs_guess_about_person",
+              "duplicate_of": null,
+              "reason": "Требует предположений о том, что для него «недопустимая потеря»."
+            },
+            {
+              "card_id": "C0656",
+              "perspective_effect": "Сильное чувство может порождать «истины» о другом.",
+              "perspective_frame": "Чувство и суждение о другом.",
+              "decision": "needs_guess_about_person",
+              "duplicate_of": null,
+              "reason": "Пришлось бы приписывать страху искажение его образа жены."
+            },
+            {
+              "card_id": "C0597",
+              "perspective_effect": "Действовать можно и среди того, что неподвластно.",
+              "perspective_frame": "Граница контроля.",
+              "decision": "same_operation_as_selected",
+              "duplicate_of": "C0391",
+              "reason": "Та же операция «граница контроля», только в общем виде."
+            }
+          ],
+          "count_reason": "Двух хватает: одна разделяет «моё» и «её» в отношениях, другая разводит принятие и поиск гарантии; остальные карточки повторяют первую рамку или требуют догадок о человеке."
+        }
+      }
+    }
+  },
+  "errors": [],
+  "timings": [
+    {
+      "stage": "interpretation",
+      "seconds": 18.7,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "calls": [
+        {
+          "wall_seconds": 18.67,
+          "cli_duration_ms": 16507,
+          "api_duration_ms": 15595,
+          "num_turns": 2,
+          "input_tokens": 2,
+          "cache_read_tokens": 0,
+          "cache_creation_tokens": 5834,
+          "output_tokens": 1535,
+          "thinking_tokens": 315,
+          "total_cost_usd_list": 0.07738,
+          "models": [
+            "claude-opus-5-5"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "seconds": 2.43,
+      "llm_calls": 0
+    },
+    {
+      "stage": "selection attempt 1",
+      "seconds": 31.5,
+      "llm_calls": 1,
+      "validation_seconds": 96.268,
+      "output_tokens": 2806,
+      "thinking_tokens": 917
+    },
+    {
+      "stage": "card writing (parallel, wall)",
+      "seconds": 96.26,
+      "llm_calls": 4,
+      "dropped_cards": []
+    },
+    {
+      "stage": "independent validation (sum of calls)",
+      "seconds": 60.61,
+      "llm_calls": 3,
+      "rejected_by_validator": 1
+    },
+    {
+      "stage": "  writer C0391",
+      "seconds": 82.29,
+      "llm_calls": 2,
+      "retries": 1,
+      "retry_reasons": [
+        "the person's gender is unknown, but the text uses gendered forms: ['я сам']; rephrase neutrally (not «готов(а)»)"
+      ],
+      "fallback_to_draft": false
+    },
+    {
+      "stage": "  writer C0143",
+      "seconds": 96.26,
+      "llm_calls": 2,
+      "retries": 1,
+      "retry_reasons": [
+        "Независимая проверка нашла в карточке места, где сказано больше, чем известно. Исправь ТОЛЬКО эти предложения, остальное сохрани:\n- [вопрос к себе] «Какой гарантии я жду, прежде чем принять?» — гипотеза о человеке подана как факт (причина чувства, мотив, убеждение, механизм, реакция или мысли других) — предложите её для проверки или уберите (Вопрос заранее исходит из того, что человек ждёт гарантии. Сам он этого не говорил.)"
+      ],
+      "fallback_to_draft": false
+    },
+    {
+      "stage": "composition total",
+      "seconds": 127.77,
+      "llm_calls": 8,
+      "retries": 2,
+      "retry_reasons": [
+        "the person's gender is unknown, but the text uses gendered forms: ['я сам']; rephrase neutrally (not «готов(а)»)",
+        "Независимая проверка нашла в карточке места, где сказано больше, чем известно. Исправь ТОЛЬКО эти предложения, остальное сохрани:\n- [вопрос к себе] «Какой гарантии я жду, прежде чем принять?» — гипотеза о человеке подана как факт (причина чувства, мотив, убеждение, механизм, реакция или мысли других) — предложите её для проверки или уберите (Вопрос заранее исходит из того, что человек ждёт гарантии. Сам он этого не говорил.)"
+      ]
+    }
+  ],
+  "reflection": null
+}

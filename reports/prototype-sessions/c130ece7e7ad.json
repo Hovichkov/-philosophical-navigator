@@ -1,0 +1,1200 @@
+{
+  "session_id": "c130ece7e7ad",
+  "created_utc": "2026-09-27T16:55:03+00:00",
+  "state": "answered",
+  "interpretation_input": {
+    "topic": "Семья / дети / родители",
+    "experiences": [
+      "Тревогу",
+      "Вину",
+      "Растерянность",
+      "Желание всё исправить"
+    ],
+    "difficulty_center": "Мне трудно принять происходящее таким, какое оно сейчас есть",
+    "free_narrative": "Меня беспокоят выспышки агрессии у 8-летнего сына в школе, мне кажется я виновата в этом и я не могу это исправить. Это мешает ему учиться, дружить, у него нереалистичный параноидальный взгляд на мир."
+  },
+  "interpretation": {
+    "schema_version": "interpretation/0.1.0",
+    "status": "interpreted",
+    "input": {
+      "topic": "Семья / дети / родители",
+      "experiences": [
+        "Тревогу",
+        "Вину",
+        "Растерянность",
+        "Желание всё исправить"
+      ],
+      "difficulty_center": "Мне трудно принять происходящее таким, какое оно сейчас есть",
+      "free_narrative": "Меня беспокоят выспышки агрессии у 8-летнего сына в школе, мне кажется я виновата в этом и я не могу это исправить. Это мешает ему учиться, дружить, у него нереалистичный параноидальный взгляд на мир."
+    },
+    "proposed_question": "Как мне быть рядом с сыном, у которого в школе случаются вспышки агрессии, если я чувствую свою вину и хочу всё исправить, но не могу этого сделать: можно ли принять то, что с ним происходит сейчас, и не почувствовать, что этим я его оставляю?",
+    "working_hypotheses": [
+      "Возможно, вина связывает её с происходящим: если причина во мне, значит, происходящее хотя бы отчасти зависит от меня. Тогда принять то, что оно есть, значит признать, что не всё в её власти.",
+      "Возможно, «принять» переживается как отказ от ответственности или как смирение с тем, что сыну плохо, то есть почти как предательство.",
+      "Вопрос о границе ответственности родителя: где кончается то, за что я отвечаю, и начинается собственная жизнь ребёнка, которую нельзя целиком сформировать.",
+      "Возможно, принятие и действие здесь не противоположны: можно оставаться рядом и заботиться, не требуя от себя всё исправить."
+    ],
+    "coordinates": [
+      "принятие / сопротивление",
+      "долг / ответственность",
+      "отношение к другому",
+      "контроль",
+      "отношение к себе"
+    ],
+    "canonical_tensions": [
+      "действие ↔ принятие",
+      "контроль ↔ конечность"
+    ],
+    "free_tensions": [
+      "вина ↔ невозможность исправить",
+      "принятие ↔ верность заботе",
+      "ответственность родителя ↔ отдельность жизни ребёнка"
+    ],
+    "ambiguity_notes": [
+      "Слово «параноидальный» пользователь употребил сам. Оно не переносится в вопрос и не используется как оценка ребёнка.",
+      "Неясно, что именно трудно принять: поведение сына, собственную возможную вину или невозможность исправить ситуацию. Вопрос держит все три варианта.",
+      "Центр трудности (принять) и одно из переживаний (желание всё исправить) тянут в разные стороны. Это напряжение сохранено в вопросе, но не разрешено."
+    ],
+    "trace": {
+      "interpreter": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "interpretation-prompt/0.5.0",
+      "input_sha256": "e312575362e0f07e5ccecf071fd612a98b6d3d6b106de9ea2846791b9aaa7d51",
+      "reading_notes": [
+        {
+          "kind": "representation",
+          "note": "Мать пишет: «мне кажется, я виновата в этом». Вина здесь дана как её собственное предположение, а не как установленный факт."
+        },
+        {
+          "kind": "boundary",
+          "note": "«Я не могу это исправить» — она прямо называет предел своего действия, и при этом среди переживаний отмечено «желание всё исправить»."
+        },
+        {
+          "kind": "tension",
+          "note": "Выбранный центр трудности — принять происходящее таким, какое оно есть сейчас. Это расходится с желанием исправить и с ощущением собственной вины."
+        },
+        {
+          "kind": "representation",
+          "note": "О сыне она говорит через последствия: вспышки мешают ему учиться и дружить, его взгляд на мир она описывает как нереалистичный. Она смотрит на мир сына со стороны и оценивает его."
+        },
+        {
+          "kind": "context",
+          "note": "Сыну 8 лет, трудности видны в школе, то есть в пространстве, где мать напрямую не присутствует."
+        },
+        {
+          "kind": "expectation",
+          "note": "Можно предположить неявное ожидание: если я причина, то я же должна быть и той, кто исправит."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "total_cost_usd_list": 0.033285999999999996,
+            "models": [
+              "claude-opus-5-5"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "insufficient": null,
+  "confirmation": {
+    "action": "edited",
+    "source": "user",
+    "proposed_question": "Как мне быть рядом с сыном, у которого в школе случаются вспышки агрессии, если я чувствую свою вину и хочу всё исправить, но не могу этого сделать: можно ли принять то, что с ним происходит сейчас, и не почувствовать, что этим я его оставляю?",
+    "confirmed_question": "Как мне помочь сыну, ведь его вспышки в школе мешают ему учиться и дружить, если я чувствую за это вину и хочу всё исправить, но не могу, и мне трудно принять, что сейчас всё именно так, как есть?",
+    "edited_text": "Как мне помочь сыну, ведь его вспышки в школе мешают ему учиться и дружить, если я чувствую за это вину и хочу всё исправить, но не могу, и мне трудно принять, что сейчас всё именно так, как есть?"
+  },
+  "query_representation": {
+    "schema_version": "query-representation/0.1.0",
+    "confirmed_question": "Как мне помочь сыну, ведь его вспышки в школе мешают ему учиться и дружить, если я чувствую за это вину и хочу всё исправить, но не могу, и мне трудно принять, что сейчас всё именно так, как есть?",
+    "context": {
+      "circumstance": "Семья / дети / родители",
+      "narrative": "Меня беспокоят выспышки агрессии у 8-летнего сына в школе, мне кажется я виновата в этом и я не могу это исправить. Это мешает ему учиться, дружить, у него нереалистичный параноидальный взгляд на мир."
+    },
+    "experiences": [
+      "Тревогу",
+      "Вину",
+      "Растерянность",
+      "Желание всё исправить"
+    ],
+    "working_hypotheses": [
+      "Возможно, вина связывает её с происходящим: если причина во мне, значит, происходящее хотя бы отчасти зависит от меня. Тогда принять то, что оно есть, значит признать, что не всё в её власти.",
+      "Возможно, «принять» переживается как отказ от ответственности или как смирение с тем, что сыну плохо, то есть почти как предательство.",
+      "Вопрос о границе ответственности родителя: где кончается то, за что я отвечаю, и начинается собственная жизнь ребёнка, которую нельзя целиком сформировать.",
+      "Возможно, принятие и действие здесь не противоположны: можно оставаться рядом и заботиться, не требуя от себя всё исправить."
+    ],
+    "coordinates": [
+      "принятие / сопротивление",
+      "долг / ответственность",
+      "отношение к другому",
+      "контроль",
+      "отношение к себе"
+    ],
+    "canonical_tensions": [
+      "действие ↔ принятие",
+      "контроль ↔ конечность"
+    ],
+    "free_tensions": [
+      "вина ↔ невозможность исправить",
+      "принятие ↔ верность заботе",
+      "ответственность родителя ↔ отдельность жизни ребёнка"
+    ],
+    "provenance": {
+      "origin": "production",
+      "confirmed_question_source": "user_edited",
+      "interpretation_source": "interpretation-layer_0.1.0",
+      "benchmark_item_id": null,
+      "note": null
+    }
+  },
+  "retrieval": {
+    "version": "candidate-retrieval/0.1.0",
+    "query": {
+      "schema_version": "query-representation/0.1.0",
+      "confirmed_question": "Как мне помочь сыну, ведь его вспышки в школе мешают ему учиться и дружить, если я чувствую за это вину и хочу всё исправить, но не могу, и мне трудно принять, что сейчас всё именно так, как есть?",
+      "context": {
+        "circumstance": "Семья / дети / родители",
+        "narrative": "Меня беспокоят выспышки агрессии у 8-летнего сына в школе, мне кажется я виновата в этом и я не могу это исправить. Это мешает ему учиться, дружить, у него нереалистичный параноидальный взгляд на мир."
+      },
+      "experiences": [
+        "Тревогу",
+        "Вину",
+        "Растерянность",
+        "Желание всё исправить"
+      ],
+      "working_hypotheses": [
+        "Возможно, вина связывает её с происходящим: если причина во мне, значит, происходящее хотя бы отчасти зависит от меня. Тогда принять то, что оно есть, значит признать, что не всё в её власти.",
+        "Возможно, «принять» переживается как отказ от ответственности или как смирение с тем, что сыну плохо, то есть почти как предательство.",
+        "Вопрос о границе ответственности родителя: где кончается то, за что я отвечаю, и начинается собственная жизнь ребёнка, которую нельзя целиком сформировать.",
+        "Возможно, принятие и действие здесь не противоположны: можно оставаться рядом и заботиться, не требуя от себя всё исправить."
+      ],
+      "coordinates": [
+        "принятие / сопротивление",
+        "долг / ответственность",
+        "отношение к другому",
+        "контроль",
+        "отношение к себе"
+      ],
+      "canonical_tensions": [
+        "действие ↔ принятие",
+        "контроль ↔ конечность"
+      ],
+      "free_tensions": [
+        "вина ↔ невозможность исправить",
+        "принятие ↔ верность заботе",
+        "ответственность родителя ↔ отдельность жизни ребёнка"
+      ],
+      "provenance": {
+        "origin": "production",
+        "confirmed_question_source": "user_edited",
+        "interpretation_source": "interpretation-layer_0.1.0",
+        "benchmark_item_id": null,
+        "note": null
+      }
+    },
+    "embedding_config": {
+      "provider": "local-sentence-transformers",
+      "model": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimensions": 1024
+    },
+    "corpus_version": "launch-124/0.3.0-m1.5-retrieval-readiness",
+    "retrieval_universe_size": 113,
+    "q0_control": {
+      "route": "Q0_QUESTION_ONLY_CONTROL",
+      "query": {
+        "version": "q0-question-only/1.0",
+        "text": "Как мне помочь сыну, ведь его вспышки в школе мешают ему учиться и дружить, если я чувствую за это вину и хочу всё исправить, но не могу, и мне трудно принять, что сейчас всё именно так, как есть?",
+        "sha256": "848870eb1be8f9f6d78a94f9b185edf6444c80630a08a59900c476ef1eeabe9a"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0170",
+          "rank": 1,
+          "cosine": 0.508051
+        },
+        {
+          "card_id": "C0539",
+          "rank": 2,
+          "cosine": 0.506781
+        },
+        {
+          "card_id": "C0621",
+          "rank": 3,
+          "cosine": 0.490796
+        },
+        {
+          "card_id": "C0056",
+          "rank": 4,
+          "cosine": 0.47696
+        },
+        {
+          "card_id": "C0786",
+          "rank": 5,
+          "cosine": 0.476558
+        },
+        {
+          "card_id": "C0620",
+          "rank": 6,
+          "cosine": 0.475868
+        },
+        {
+          "card_id": "C0957",
+          "rank": 7,
+          "cosine": 0.475726
+        },
+        {
+          "card_id": "C0780",
+          "rank": 8,
+          "cosine": 0.475683
+        },
+        {
+          "card_id": "C0281",
+          "rank": 9,
+          "cosine": 0.475475
+        },
+        {
+          "card_id": "C0341",
+          "rank": 10,
+          "cosine": 0.475005
+        },
+        {
+          "card_id": "C0797",
+          "rank": 11,
+          "cosine": 0.473863
+        },
+        {
+          "card_id": "C0060",
+          "rank": 12,
+          "cosine": 0.472286
+        },
+        {
+          "card_id": "C0027",
+          "rank": 13,
+          "cosine": 0.471054
+        },
+        {
+          "card_id": "C0937",
+          "rank": 14,
+          "cosine": 0.470095
+        },
+        {
+          "card_id": "C0511",
+          "rank": 15,
+          "cosine": 0.466957
+        }
+      ]
+    },
+    "q1_meaning": {
+      "route": "Q1_MEANING",
+      "query": {
+        "version": "q1-meaning-query/2.0",
+        "text": "Вопрос: Как мне помочь сыну, ведь его вспышки в школе мешают ему учиться и дружить, если я чувствую за это вину и хочу всё исправить, но не могу, и мне трудно принять, что сейчас всё именно так, как есть?\nРабочие интерпретации:\n- Возможно, вина связывает её с происходящим: если причина во мне, значит, происходящее хотя бы отчасти зависит от меня. Тогда принять то, что оно есть, значит признать, что не всё в её власти.\n- Возможно, «принять» переживается как отказ от ответственности или как смирение с тем, что сыну плохо, то есть почти как предательство.\n- Вопрос о границе ответственности родителя: где кончается то, за что я отвечаю, и начинается собственная жизнь ребёнка, которую нельзя целиком сформировать.\n- Возможно, принятие и действие здесь не противоположны: можно оставаться рядом и заботиться, не требуя от себя всё исправить.",
+        "sha256": "4e8483ba8e25f79d42ac15903053d7f9a4d4126bdda61a7f8b4db7fbbf40d7a1"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0957",
+          "rank": 1,
+          "cosine": 0.625441
+        },
+        {
+          "card_id": "C0539",
+          "rank": 2,
+          "cosine": 0.617343
+        },
+        {
+          "card_id": "C0807",
+          "rank": 3,
+          "cosine": 0.613511
+        },
+        {
+          "card_id": "C0670",
+          "rank": 4,
+          "cosine": 0.608189
+        },
+        {
+          "card_id": "C0813",
+          "rank": 5,
+          "cosine": 0.60116
+        },
+        {
+          "card_id": "C0930",
+          "rank": 6,
+          "cosine": 0.601078
+        },
+        {
+          "card_id": "C0621",
+          "rank": 7,
+          "cosine": 0.598466
+        },
+        {
+          "card_id": "C0281",
+          "rank": 8,
+          "cosine": 0.596415
+        },
+        {
+          "card_id": "C0797",
+          "rank": 9,
+          "cosine": 0.594331
+        },
+        {
+          "card_id": "C0780",
+          "rank": 10,
+          "cosine": 0.594005
+        },
+        {
+          "card_id": "C0710",
+          "rank": 11,
+          "cosine": 0.59243
+        },
+        {
+          "card_id": "C0514",
+          "rank": 12,
+          "cosine": 0.592375
+        },
+        {
+          "card_id": "C0436",
+          "rank": 13,
+          "cosine": 0.591385
+        },
+        {
+          "card_id": "C0121",
+          "rank": 14,
+          "cosine": 0.59076
+        },
+        {
+          "card_id": "C0583",
+          "rank": 15,
+          "cosine": 0.590638
+        }
+      ]
+    },
+    "structure": {
+      "route": "STRUCTURE",
+      "ranking_rule": "lexicographic: (1) more exact canonical-tension matches, (2) more exact coordinate matches, (3) card_id ascending; cards with no match are not ranked; operation is logged, never scored",
+      "query_coordinates": [
+        "принятие / сопротивление",
+        "долг / ответственность",
+        "отношение к другому",
+        "контроль",
+        "отношение к себе"
+      ],
+      "query_canonical_tensions": [
+        "действие ↔ принятие",
+        "контроль ↔ конечность"
+      ],
+      "top_k": 15,
+      "matching_cards": 84,
+      "tied_at_cutoff": 3,
+      "hits": [
+        {
+          "card_id": "C1108",
+          "rank": 1,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "действие ↔ принятие",
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "принятие / сопротивление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0013",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "принятие / сопротивление"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0793",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "отношение к себе"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0813",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "принятие / сопротивление"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0553",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "контроль"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0571",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "контроль"
+          ],
+          "operation": "PERSPECTIVE_LIMIT"
+        },
+        {
+          "card_id": "C0871",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "контроль"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 8,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0937",
+          "rank": 9,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0056",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "принятие / сопротивление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0246",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "принятие / сопротивление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0619",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0778",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к себе"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0798",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        }
+      ]
+    },
+    "union_rule": "union(Q1_MEANING top_k, STRUCTURE top_k); Q0 excluded; one entry per card_id with separate route signals; no combined score; listed by card_id ascending (the order is not a ranking)",
+    "candidate_union": [
+      {
+        "card_id": "C0001",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 10,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "долг / ответственность",
+          "отношение к другому"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "HOLD_VALUE_CONFLICT"
+      },
+      {
+        "card_id": "C0013",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 2,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": "DISTINGUISH"
+      },
+      {
+        "card_id": "C0056",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 11,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "отношение к себе",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0121",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 14,
+        "meaning_score": 0.59076,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0246",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 12,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "отношение к себе",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0281",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 8,
+        "meaning_score": 0.596415,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0436",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 13,
+        "meaning_score": 0.591385,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0514",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 12,
+        "meaning_score": 0.592375,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "DECOUPLE_RESPONSE"
+      },
+      {
+        "card_id": "C0527",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 8,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "долг / ответственность",
+          "отношение к другому",
+          "отношение к себе"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0539",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 2,
+        "meaning_score": 0.617343,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0553",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 5,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "контроль"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0571",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 6,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "контроль"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0583",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 15,
+        "meaning_score": 0.590638,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0619",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 13,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "отношение к другому",
+          "отношение к себе"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "RELATIONAL_ACCOUNTABILITY"
+      },
+      {
+        "card_id": "C0621",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 7,
+        "meaning_score": 0.598466,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "TRANSFORM_PRACTICE"
+      },
+      {
+        "card_id": "C0670",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 4,
+        "meaning_score": 0.608189,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PRESERVE_AGENCY"
+      },
+      {
+        "card_id": "C0710",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 11,
+        "meaning_score": 0.59243,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0778",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 14,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "долг / ответственность",
+          "отношение к себе"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "RELATIONAL_ACCOUNTABILITY"
+      },
+      {
+        "card_id": "C0780",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 10,
+        "meaning_score": 0.594005,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0793",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 3,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "отношение к себе"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0797",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 9,
+        "meaning_score": 0.594331,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "DECOUPLE_RESPONSE"
+      },
+      {
+        "card_id": "C0798",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 15,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "долг / ответственность",
+          "отношение к другому"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "RELATIONAL_ACCOUNTABILITY"
+      },
+      {
+        "card_id": "C0807",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 3,
+        "meaning_score": 0.613511,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_OBLIGATION"
+      },
+      {
+        "card_id": "C0813",
+        "found_by": [
+          "Q1_MEANING",
+          "STRUCTURE"
+        ],
+        "meaning_rank": 5,
+        "meaning_score": 0.60116,
+        "structure_rank": 4,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "отношение к другому",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": "HOLD_VALUE_CONFLICT"
+      },
+      {
+        "card_id": "C0871",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 7,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "контроль"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0930",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 6,
+        "meaning_score": 0.601078,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "CHALLENGE_ASSUMPTION"
+      },
+      {
+        "card_id": "C0937",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 9,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "долг / ответственность",
+          "отношение к другому",
+          "отношение к себе"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "HOLD_VALUE_CONFLICT"
+      },
+      {
+        "card_id": "C0957",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 1,
+        "meaning_score": 0.625441,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_OBLIGATION"
+      },
+      {
+        "card_id": "C1108",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 1,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 2,
+        "matched_tensions": [
+          "действие ↔ принятие",
+          "контроль ↔ конечность"
+        ],
+        "operation": "REVALUE_GOOD"
+      }
+    ]
+  },
+  "composition": {
+    "schema_version": "composition/0.2.0",
+    "item_id": "proto-c130ece7e7ad",
+    "retrieval_run_id": "prototype-c130ece7e7ad",
+    "confirmed_question": "Как мне помочь сыну, ведь его вспышки в школе мешают ему учиться и дружить, если я чувствую за это вину и хочу всё исправить, но не могу, и мне трудно принять, что сейчас всё именно так, как есть?",
+    "candidate_pool": [
+      "C0001",
+      "C0013",
+      "C0056",
+      "C0121",
+      "C0246",
+      "C0281",
+      "C0436",
+      "C0514",
+      "C0527",
+      "C0539",
+      "C0553",
+      "C0571",
+      "C0583",
+      "C0619",
+      "C0621",
+      "C0670",
+      "C0710",
+      "C0778",
+      "C0780",
+      "C0793",
+      "C0797",
+      "C0798",
+      "C0807",
+      "C0813",
+      "C0871",
+      "C0930",
+      "C0937",
+      "C0957",
+      "C1108"
+    ],
+    "opening": "Ваш вопрос можно рассмотреть с нескольких сторон.",
+    "perspectives": [
+      {
+        "card_id": "C0957",
+        "role": "граница ответственности как знание",
+        "title": "Может ли «не могу» быть честным знанием?",
+        "source": "Тора / Пятикнижие, Чис 11:10–17",
+        "perspective": "В этой истории человек не притворяется, что справится. Он говорит вслух: мне это не под силу. И ответом становится не упрёк, а новое устройство дела: бремя распределяют между несколькими людьми. Признание предела здесь — не отказ от ответственности. Скорее это точное понимание, где она кончается. Если приложить это к вашим словам, «не могу исправить» перестаёт быть только приговором себе. Оно может стать началом вопроса: кто ещё рядом с сыном и что каждый может нести. Забота тогда не исчезает, а меняет форму.",
+        "reflection_question": "Что изменится для меня, если я увижу «не могу исправить одна» как знание, а не как вину?",
+        "why_selected": "q1_top; прямо работает с напряжением «хочу исправить, но не могу» и с границей родительской ответственности (LIMIT_OBLIGATION), не требуя смирения.",
+        "main_idea": "Моисей прямо говорит, что ноша ему не по силам. Это признание оказывается не поражением, а знанием о границе, и после него ношу делят с другими.",
+        "applied_insight": "Вы пишете: «я не могу это исправить». Можно посмотреть на эти слова как на знание о границе, а не как на провал. Тогда вопрос может сместиться: что возможно, если нести эту ношу не одной?"
+      },
+      {
+        "card_id": "C0571",
+        "role": "предел объяснения причин",
+        "title": "Откуда я знаю, что причина во мне?",
+        "source": "Книга Иова и Экклезиаст, Иов 38:1–18",
+        "perspective": "Иов хочет понять, почему с ним случилось то, что случилось. Ответ ему — не объяснение, а напоминание, как мало он видит из общего устройства мира. Это не отменяет его боли. Но ставит под вопрос уверенность, что причина найдена. Для вашего вопроса это может значить вот что. «Я виновата» — тоже объяснение, и оно тоже сделано с одной точки обзора. Можно оставить его как одну из версий, а не как окончательный ответ. Тогда рядом появляется место для вопроса: чего я пока не знаю о том, что происходит с сыном?",
+        "reflection_question": "Какие стороны жизни сына я не вижу, когда объясняю его вспышки своей виной?",
+        "why_selected": "PERSPECTIVE_LIMIT к самообвинению: ставит под сомнение предпосылку «причина во мне» как полное объяснение, другой ход, чем граница сил.",
+        "main_idea": "Книга Иова показывает: человек требует полного объяснения происходящего, но видит лишь часть целого. Поэтому уверенность в своём объяснении тоже ограничена.",
+        "applied_insight": "Вы пишете: «мне кажется, я виновата». Можно спросить, насколько это объяснение опирается на знание, а насколько на догадку. Причины поведения восьмилетнего ребёнка могут быть шире того, что видно одному человеку."
+      },
+      {
+        "card_id": "C0246",
+        "role": "различение боли и отношения к ней",
+        "title": "Где трудность, а где моё отношение к ней?",
+        "source": "Sallatha Sutta, SN 36.6",
+        "perspective": "В этом тексте боль сравнивается с раной. Первая рана приходит извне, её не выбирают. Но к ней может добавиться вторая — из того, как человек дальше обращается с первой. Текст не говорит, что первая рана ненастоящая. Он лишь предлагает не смешивать их. Для вашего вопроса это может означать различение. Есть то, что происходит с сыном сейчас. И есть то, как вы с этим внутренне встречаетесь: вина, спор с тем, что всё так. Принять первое — не значит перестать заботиться. Это может значить только увидеть его отдельно от второго.",
+        "reflection_question": "Какая часть моей тяжести идёт от того, что происходит с сыном, а какая — от моего спора с этим?",
+        "why_selected": "Работает с напряжением принятия/сопротивления и отношения к себе; различает данное обстоятельство и надстроенное к нему отношение — третий, отличный ход.",
+        "main_idea": "Буддийский текст различает две части страдания. Одна дана самим событием. Другая возникает потом — из того, как человек относится к уже случившейся боли.",
+        "applied_insight": "Трудности сына и тревога за него — одно. Слова «трудно принять, что сейчас всё так» могут указывать на что-то второе. Можно посмотреть, различаются ли для вас эти две части."
+      }
+    ],
+    "fewer_than_three_reason": null,
+    "rejected": [
+      {
+        "card_id": "C0539",
+        "reason": "Высокий meaning_rank, но про зависть старшего сына и несправедливость к себе — ложное совпадение по слову «сын»."
+      },
+      {
+        "card_id": "C0807",
+        "reason": "Предел долга перед близким в конфликте обязанностей; в вопросе нет конфликта долгов, направленность иная."
+      },
+      {
+        "card_id": "C1108",
+        "reason": "Первый structure_rank, но формулировка слишком общая для содержательной перспективы; частично дублирует C0246."
+      },
+      {
+        "card_id": "C0514",
+        "reason": "Про ответ на причинённое мне действие; здесь субъект и направленность другие."
+      },
+      {
+        "card_id": "C0670",
+        "reason": "Про ответственность, не отменяемую авторитетом учителя; не касается границы родительской ответственности."
+      },
+      {
+        "card_id": "C0013",
+        "reason": "Близко к теме действия/принятия, но формулировка бедна; ход частично покрыт C0957 и C0246."
+      }
+    ],
+    "q1_top": {
+      "card_id": "C0957",
+      "decision": "selected",
+      "reason": "Точно попадает в «хочу исправить, но не могу»: признание предела сил как знание о границе ответственности и разделение ноши."
+    },
+    "meta": {
+      "composer": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "composition-prompt/0.3.0",
+      "package_sha256": "a92578b0f7fe6f7880b0ee1915ca7541330584d1fb3a28ad7e925e4edab40018",
+      "attempts": 2,
+      "usage": {
+        "calls": [
+          {
+            "total_cost_usd_list": 0.1477214,
+            "models": [
+              "claude-opus-5-5"
+            ],
+            "input_tokens": 2,
+            "output_tokens": 2511
+          },
+          {
+            "total_cost_usd_list": 0.1517134,
+            "models": [
+              "claude-opus-5-5"
+            ],
+            "input_tokens": 2,
+            "output_tokens": 2681
+          }
+        ],
+        "repairs": [
+          "perspective C0571 states an unconfirmed hypothesis about the person as fact: ['на самом деле']"
+        ]
+      }
+    }
+  },
+  "errors": []
+}

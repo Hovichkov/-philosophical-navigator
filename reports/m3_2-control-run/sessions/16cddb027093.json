@@ -1,0 +1,1145 @@
+{
+  "session_id": "16cddb027093",
+  "created_utc": "2026-09-27T23:35:55+00:00",
+  "state": "answered",
+  "interpretation_input": {
+    "topic": "Потеря / расставание",
+    "experiences": [
+      "Страх"
+    ],
+    "difficulty_center": "Я не понимаю, кто я теперь без этого",
+    "free_narrative": "Меня сократили. 12 лет в одной компании, я там был не последний человек. Деньги пока есть. Но я каждое утро просыпаюсь и не знаю куда себя деть. Друзьям вообще не сказал, стыдно, хотя я понимаю что это не моя вина."
+  },
+  "interpretation": {
+    "schema_version": "interpretation/0.1.0",
+    "status": "interpreted",
+    "input": {
+      "topic": "Потеря / расставание",
+      "experiences": [
+        "Страх"
+      ],
+      "difficulty_center": "Я не понимаю, кто я теперь без этого",
+      "free_narrative": "Меня сократили. 12 лет в одной компании, я там был не последний человек. Деньги пока есть. Но я каждое утро просыпаюсь и не знаю куда себя деть. Друзьям вообще не сказал, стыдно, хотя я понимаю что это не моя вина."
+    },
+    "proposed_question": "Кто я, если двенадцать лет я был заметным человеком в своей компании, а теперь меня сократили, и почему мне стыдно сказать об этом даже друзьям, хотя я знаю, что это не моя вина?",
+    "working_hypotheses": [
+      "Возможно, идентичность держалась на роли и месте в организации, и сокращение проявило, насколько «я» совпадало с функцией (Сартр о дурной вере официанта, Арендт о труде и деятельности, Фромм: «иметь» или «быть»).",
+      "Стыд, возможно, связан со взглядом другого, воображаемым или ожидаемым, а не с собственной оценкой (Сартр, стыд перед Другим).",
+      "Свободное время может переживаться не как свобода, а как пустота или «заброшенность»: теперь смысл дня нужно создавать самому (Хайдеггер, Кьеркегор о страхе как головокружении свободы).",
+      "Возможно, это опыт утраты, а не только внешнее событие: прощание с частью своей жизни (стоики о том, что от нас зависит; Эпиктет о ролях)."
+    ],
+    "coordinates": [
+      "отношение к себе",
+      "признание",
+      "принадлежность",
+      "смысл / цель",
+      "страх / конечность"
+    ],
+    "canonical_tensions": [
+      "отношение к себе ↔ взгляд другого",
+      "ожидание ↔ действительность"
+    ],
+    "free_tensions": [
+      "роль ↔ личность",
+      "знание о невиновности ↔ стыд",
+      "свободное время ↔ пустота"
+    ],
+    "ambiguity_notes": [
+      "В рассказе нет ни слова о страхе, который человек отметил как переживание. Непонятно, чего именно он боится: будущего, того, что потерял себя, или того, как его увидят другие.",
+      "Непонятно, тяжелее ли потеря самой работы или потеря положения и признания, которые с ней были связаны."
+    ],
+    "trace": {
+      "interpreter": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "interpretation-prompt/0.6.0",
+      "input_sha256": "236a5e588304fd131c3d0432b4f22080c6a37aba779d789ccaf99a0789d74548",
+      "reading_notes": [
+        {
+          "kind": "context",
+          "note": "Сокращение после 12 лет в одной компании; человек пишет, что был там «не последний человек». Деньги пока есть, то есть на первом плане не материальная сторона."
+        },
+        {
+          "kind": "representation",
+          "note": "Работа, судя по словам «кто я теперь без этого», была для человека не только занятием, но и тем, через что он себя понимал."
+        },
+        {
+          "kind": "tension",
+          "note": "Человек понимает, что это не его вина, но ему всё равно стыдно: знание и чувство расходятся."
+        },
+        {
+          "kind": "boundary",
+          "note": "Он не рассказал друзьям о случившемся, и это отделяет его от близких именно тогда, когда прежняя опора пропала."
+        },
+        {
+          "kind": "expectation",
+          "note": "Фраза «не знаю куда себя деть» каждое утро говорит о том, что распался привычный распорядок: время больше не устроено извне."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "total_cost_usd_list": 0.0296482,
+            "models": [
+              "claude-opus-5-5"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "insufficient": null,
+  "confirmation": {
+    "action": "replaced",
+    "source": "user",
+    "proposed_question": "Кто я, если двенадцать лет я был заметным человеком в своей компании, а теперь меня сократили, и почему мне стыдно сказать об этом даже друзьям, хотя я знаю, что это не моя вина?",
+    "confirmed_question": "Почему мне так стыдно говорить друзьям, что меня сократили?",
+    "edited_text": "Почему мне так стыдно говорить друзьям, что меня сократили?"
+  },
+  "query_representation": {
+    "schema_version": "query-representation/0.1.0",
+    "confirmed_question": "Почему мне так стыдно говорить друзьям, что меня сократили?",
+    "context": {
+      "circumstance": "Потеря / расставание",
+      "narrative": "Меня сократили. 12 лет в одной компании, я там был не последний человек. Деньги пока есть. Но я каждое утро просыпаюсь и не знаю куда себя деть. Друзьям вообще не сказал, стыдно, хотя я понимаю что это не моя вина."
+    },
+    "experiences": [
+      "Страх"
+    ],
+    "working_hypotheses": [
+      "Возможно, идентичность держалась на роли и месте в организации, и сокращение проявило, насколько «я» совпадало с функцией (Сартр о дурной вере официанта, Арендт о труде и деятельности, Фромм: «иметь» или «быть»).",
+      "Стыд, возможно, связан со взглядом другого, воображаемым или ожидаемым, а не с собственной оценкой (Сартр, стыд перед Другим).",
+      "Свободное время может переживаться не как свобода, а как пустота или «заброшенность»: теперь смысл дня нужно создавать самому (Хайдеггер, Кьеркегор о страхе как головокружении свободы).",
+      "Возможно, это опыт утраты, а не только внешнее событие: прощание с частью своей жизни (стоики о том, что от нас зависит; Эпиктет о ролях)."
+    ],
+    "coordinates": [
+      "отношение к себе",
+      "признание",
+      "принадлежность",
+      "смысл / цель",
+      "страх / конечность"
+    ],
+    "canonical_tensions": [
+      "отношение к себе ↔ взгляд другого",
+      "ожидание ↔ действительность"
+    ],
+    "free_tensions": [
+      "роль ↔ личность",
+      "знание о невиновности ↔ стыд",
+      "свободное время ↔ пустота"
+    ],
+    "provenance": {
+      "origin": "production",
+      "confirmed_question_source": "user_replaced",
+      "interpretation_source": "interpretation-layer_0.1.0",
+      "benchmark_item_id": null,
+      "note": null
+    }
+  },
+  "retrieval": {
+    "version": "candidate-retrieval/0.1.0",
+    "query": {
+      "schema_version": "query-representation/0.1.0",
+      "confirmed_question": "Почему мне так стыдно говорить друзьям, что меня сократили?",
+      "context": {
+        "circumstance": "Потеря / расставание",
+        "narrative": "Меня сократили. 12 лет в одной компании, я там был не последний человек. Деньги пока есть. Но я каждое утро просыпаюсь и не знаю куда себя деть. Друзьям вообще не сказал, стыдно, хотя я понимаю что это не моя вина."
+      },
+      "experiences": [
+        "Страх"
+      ],
+      "working_hypotheses": [
+        "Возможно, идентичность держалась на роли и месте в организации, и сокращение проявило, насколько «я» совпадало с функцией (Сартр о дурной вере официанта, Арендт о труде и деятельности, Фромм: «иметь» или «быть»).",
+        "Стыд, возможно, связан со взглядом другого, воображаемым или ожидаемым, а не с собственной оценкой (Сартр, стыд перед Другим).",
+        "Свободное время может переживаться не как свобода, а как пустота или «заброшенность»: теперь смысл дня нужно создавать самому (Хайдеггер, Кьеркегор о страхе как головокружении свободы).",
+        "Возможно, это опыт утраты, а не только внешнее событие: прощание с частью своей жизни (стоики о том, что от нас зависит; Эпиктет о ролях)."
+      ],
+      "coordinates": [
+        "отношение к себе",
+        "признание",
+        "принадлежность",
+        "смысл / цель",
+        "страх / конечность"
+      ],
+      "canonical_tensions": [
+        "отношение к себе ↔ взгляд другого",
+        "ожидание ↔ действительность"
+      ],
+      "free_tensions": [
+        "роль ↔ личность",
+        "знание о невиновности ↔ стыд",
+        "свободное время ↔ пустота"
+      ],
+      "provenance": {
+        "origin": "production",
+        "confirmed_question_source": "user_replaced",
+        "interpretation_source": "interpretation-layer_0.1.0",
+        "benchmark_item_id": null,
+        "note": null
+      }
+    },
+    "embedding_config": {
+      "provider": "local-sentence-transformers",
+      "model": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimensions": 1024
+    },
+    "corpus_version": "launch-124/0.3.0-m1.5-retrieval-readiness",
+    "retrieval_universe_size": 113,
+    "q0_control": {
+      "route": "Q0_QUESTION_ONLY_CONTROL",
+      "query": {
+        "version": "q0-question-only/1.0",
+        "text": "Почему мне так стыдно говорить друзьям, что меня сократили?",
+        "sha256": "def8d201877271f24c0ca7d978d3683d505a2aa3500439ecbf8187445699e5ed"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0056",
+          "rank": 1,
+          "cosine": 0.475292
+        },
+        {
+          "card_id": "C0170",
+          "rank": 2,
+          "cosine": 0.445139
+        },
+        {
+          "card_id": "C0049",
+          "rank": 3,
+          "cosine": 0.439021
+        },
+        {
+          "card_id": "C0786",
+          "rank": 4,
+          "cosine": 0.426313
+        },
+        {
+          "card_id": "C0553",
+          "rank": 5,
+          "cosine": 0.424823
+        },
+        {
+          "card_id": "C0571",
+          "rank": 6,
+          "cosine": 0.404214
+        },
+        {
+          "card_id": "C0001",
+          "rank": 7,
+          "cosine": 0.399503
+        },
+        {
+          "card_id": "C0533",
+          "rank": 8,
+          "cosine": 0.399468
+        },
+        {
+          "card_id": "C0341",
+          "rank": 9,
+          "cosine": 0.398732
+        },
+        {
+          "card_id": "C0168",
+          "rank": 10,
+          "cosine": 0.39864
+        },
+        {
+          "card_id": "C0806",
+          "rank": 11,
+          "cosine": 0.396163
+        },
+        {
+          "card_id": "C0123",
+          "rank": 12,
+          "cosine": 0.392523
+        },
+        {
+          "card_id": "C0621",
+          "rank": 13,
+          "cosine": 0.391507
+        },
+        {
+          "card_id": "C0518",
+          "rank": 14,
+          "cosine": 0.390237
+        },
+        {
+          "card_id": "C0296",
+          "rank": 15,
+          "cosine": 0.387234
+        }
+      ]
+    },
+    "q1_meaning": {
+      "route": "Q1_MEANING",
+      "query": {
+        "version": "q1-meaning-query/2.0",
+        "text": "Вопрос: Почему мне так стыдно говорить друзьям, что меня сократили?\nРабочие интерпретации:\n- Возможно, идентичность держалась на роли и месте в организации, и сокращение проявило, насколько «я» совпадало с функцией (Сартр о дурной вере официанта, Арендт о труде и деятельности, Фромм: «иметь» или «быть»).\n- Стыд, возможно, связан со взглядом другого, воображаемым или ожидаемым, а не с собственной оценкой (Сартр, стыд перед Другим).\n- Свободное время может переживаться не как свобода, а как пустота или «заброшенность»: теперь смысл дня нужно создавать самому (Хайдеггер, Кьеркегор о страхе как головокружении свободы).\n- Возможно, это опыт утраты, а не только внешнее событие: прощание с частью своей жизни (стоики о том, что от нас зависит; Эпиктет о ролях).",
+        "sha256": "bb77b68da39540af8ab89a718ba4e81b4c750a25e74369dc437edd17c7b0a55d"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0056",
+          "rank": 1,
+          "cosine": 0.597943
+        },
+        {
+          "card_id": "C0049",
+          "rank": 2,
+          "cosine": 0.596693
+        },
+        {
+          "card_id": "C0447",
+          "rank": 3,
+          "cosine": 0.577554
+        },
+        {
+          "card_id": "C0055",
+          "rank": 4,
+          "cosine": 0.574294
+        },
+        {
+          "card_id": "C0341",
+          "rank": 5,
+          "cosine": 0.569554
+        },
+        {
+          "card_id": "C0533",
+          "rank": 6,
+          "cosine": 0.564957
+        },
+        {
+          "card_id": "C0806",
+          "rank": 7,
+          "cosine": 0.553686
+        },
+        {
+          "card_id": "C0553",
+          "rank": 8,
+          "cosine": 0.551644
+        },
+        {
+          "card_id": "C0333",
+          "rank": 9,
+          "cosine": 0.55141
+        },
+        {
+          "card_id": "C0821",
+          "rank": 10,
+          "cosine": 0.5491
+        },
+        {
+          "card_id": "C0023",
+          "rank": 11,
+          "cosine": 0.54859
+        },
+        {
+          "card_id": "C0712",
+          "rank": 12,
+          "cosine": 0.545222
+        },
+        {
+          "card_id": "C0446",
+          "rank": 13,
+          "cosine": 0.544184
+        },
+        {
+          "card_id": "C0571",
+          "rank": 14,
+          "cosine": 0.542632
+        },
+        {
+          "card_id": "C0275",
+          "rank": 15,
+          "cosine": 0.541317
+        }
+      ]
+    },
+    "structure": {
+      "route": "STRUCTURE",
+      "ranking_rule": "lexicographic: (1) more exact canonical-tension matches, (2) more exact coordinate matches, (3) card_id ascending; cards with no match are not ranked; operation is logged, never scored",
+      "query_coordinates": [
+        "отношение к себе",
+        "признание",
+        "принадлежность",
+        "смысл / цель",
+        "страх / конечность"
+      ],
+      "query_canonical_tensions": [
+        "отношение к себе ↔ взгляд другого",
+        "ожидание ↔ действительность"
+      ],
+      "top_k": 15,
+      "matching_cards": 84,
+      "tied_at_cutoff": 2,
+      "hits": [
+        {
+          "card_id": "C0056",
+          "rank": 1,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0058",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0170",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0786",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0275",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0281",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0579",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "смысл / цель"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0806",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "признание"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0439",
+          "rank": 10,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0440",
+          "rank": 11,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0442",
+          "rank": 12,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0518",
+          "rank": 13,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "отношение к себе",
+            "смысл / цель",
+            "страх / конечность"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0793",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "страх / конечность"
+          ],
+          "operation": "LIMIT_CONTROL"
+        }
+      ]
+    },
+    "union_rule": "union(Q1_MEANING top_k, STRUCTURE top_k); Q0 excluded; one entry per card_id with separate route signals; no combined score; listed by card_id ascending (the order is not a ranking)",
+    "candidate_union": [
+      {
+        "card_id": "C0023",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 11,
+        "meaning_score": 0.54859,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0049",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 2,
+        "meaning_score": 0.596693,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0055",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 4,
+        "meaning_score": 0.574294,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PRESERVE_AGENCY"
+      },
+      {
+        "card_id": "C0056",
+        "found_by": [
+          "Q1_MEANING",
+          "STRUCTURE"
+        ],
+        "meaning_rank": 1,
+        "meaning_score": 0.597943,
+        "structure_rank": 1,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "отношение к себе",
+          "признание"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "отношение к себе ↔ взгляд другого"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0058",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 2,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "отношение к себе",
+          "признание"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "отношение к себе ↔ взгляд другого"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0170",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 3,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "отношение к себе",
+          "признание"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "отношение к себе ↔ взгляд другого"
+        ],
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0275",
+        "found_by": [
+          "Q1_MEANING",
+          "STRUCTURE"
+        ],
+        "meaning_rank": 15,
+        "meaning_score": 0.541317,
+        "structure_rank": 6,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "признание"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0281",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 7,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "отношение к себе"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0333",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 9,
+        "meaning_score": 0.55141,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PRESERVE_AGENCY"
+      },
+      {
+        "card_id": "C0341",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 5,
+        "meaning_score": 0.569554,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "CHALLENGE_ASSUMPTION"
+      },
+      {
+        "card_id": "C0439",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 10,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0440",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 11,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0442",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 12,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0446",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 13,
+        "meaning_score": 0.544184,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "EXAMINE_DESIRE"
+      },
+      {
+        "card_id": "C0447",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 3,
+        "meaning_score": 0.577554,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "EXAMINE_DESIRE"
+      },
+      {
+        "card_id": "C0518",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 13,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0527",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 4,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "отношение к себе",
+          "смысл / цель"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0533",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 6,
+        "meaning_score": 0.564957,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "RELATIONAL_ACCOUNTABILITY"
+      },
+      {
+        "card_id": "C0553",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 8,
+        "meaning_score": 0.551644,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0571",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 14,
+        "meaning_score": 0.542632,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0579",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 8,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "смысл / цель"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0712",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 12,
+        "meaning_score": 0.545222,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0786",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 5,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "отношение к себе",
+          "признание"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "отношение к себе ↔ взгляд другого"
+        ],
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0793",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 15,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "отношение к себе",
+          "страх / конечность"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0806",
+        "found_by": [
+          "Q1_MEANING",
+          "STRUCTURE"
+        ],
+        "meaning_rank": 7,
+        "meaning_score": 0.553686,
+        "structure_rank": 9,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "признание"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "CHALLENGE_ASSUMPTION"
+      },
+      {
+        "card_id": "C0821",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 10,
+        "meaning_score": 0.5491,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_OBLIGATION"
+      },
+      {
+        "card_id": "C0930",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 14,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "отношение к себе",
+          "смысл / цель",
+          "страх / конечность"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "CHALLENGE_ASSUMPTION"
+      }
+    ]
+  },
+  "composition": {
+    "schema_version": "composition/0.3.0",
+    "item_id": "proto-16cddb027093",
+    "retrieval_run_id": "prototype-16cddb027093",
+    "confirmed_question": "Почему мне так стыдно говорить друзьям, что меня сократили?",
+    "candidate_pool": [
+      "C0023",
+      "C0049",
+      "C0055",
+      "C0056",
+      "C0058",
+      "C0170",
+      "C0275",
+      "C0281",
+      "C0333",
+      "C0341",
+      "C0439",
+      "C0440",
+      "C0442",
+      "C0446",
+      "C0447",
+      "C0518",
+      "C0527",
+      "C0533",
+      "C0553",
+      "C0571",
+      "C0579",
+      "C0712",
+      "C0786",
+      "C0793",
+      "C0806",
+      "C0821",
+      "C0930"
+    ],
+    "opening": "Ваш вопрос можно рассмотреть с нескольких сторон.",
+    "perspectives": [
+      {
+        "card_id": "C0341",
+        "role": "Отделяет событие от образа",
+        "title": "Сокращение и то, как оно выглядит, — разное",
+        "source": "Беседы, IV.6",
+        "perspective": "Эпиктет разделяет две вещи. Первая — то, что случилось. Вторая — образ положения человека, который складывается вокруг этого события. Чужая жалость может этот образ закрепить. Тогда тяжело уже не только от события, но и от картины, которую подтверждают другие. Для вашего вопроса это важно. Вы сами говорите, что сокращение — не ваша вина. Значит, стыд может касаться не вопроса вины. Можно спокойно посмотреть, к чему он относится. К самой потере работы? Или к тому, как вы будете выглядеть в глазах друзей после рассказа?",
+        "reflection_question": "Какой ответ друзей я представляю, когда думаю рассказать им о сокращении?",
+        "why_selected": "Точнее всех кандидатов отвечает на вопрос о стыде перед друзьями при знании о своей невиновности: разводит событие и образ, подтверждаемый чужой реакцией.",
+        "main_idea": "Эпиктет замечает: человек страдает не только от самого события. Ему бывает тяжело, когда чужая жалость подтверждает образ его положения, которого он не хочет.",
+        "applied_insight": "Вы пишете, что понимаете: вины на вас нет. И всё равно вам стыдно сказать друзьям. Эпиктет предлагает отдельно посмотреть на само сокращение и на то, каким оно может выглядеть после разговора с друзьями.",
+        "distinction": "Помогает различить само сокращение и образ положения, который может подтвердить чужая реакция, например жалость.",
+        "question_explanation": "Речь о том, какую именно реакцию вы ждёте. Это может быть жалость, вопросы, неловкое молчание или что-то другое."
+      },
+      {
+        "card_id": "C0049",
+        "role": "Связывает почёт и унижение",
+        "title": "Почёт и унижение держатся на одном и том же",
+        "source": "Дао дэ цзин, Чжан 13",
+        "perspective": "Обычно почёт кажется хорошим, а унижение плохим. Этот текст видит их иначе. И то, и другое приходит извне и зависит от чужого отношения. Поэтому оба приносят тревогу: то, что дали другие, другие могут и забрать. Для вашей ситуации это даёт новый взгляд. Стыд перед друзьями и прежнее высокое место в компании можно рассмотреть рядом. Текст не говорит, что место было ненастоящим. Он предлагает проверить, насколько ваше чувство своей ценности было связано с этим местом, а насколько — с чем-то другим.",
+        "reflection_question": "На чём держалось моё чувство, что я в компании не последний человек?",
+        "why_selected": "Прямо работает с напряжением «отношение к себе ↔ взгляд другого» и опирается на слова человека о прежнем положении; даёт отличный от C0341 ход — не событие против образа, а общая природа почёта и унижения.",
+        "main_idea": "Дао дэ цзин говорит, что высокая оценка и унижение связаны с тревогой. Обе появляются, когда своё положение человек ставит в зависимость от отношения других.",
+        "applied_insight": "Вы пишете, что двенадцать лет были в компании не последним человеком. Текст предлагает посмотреть на это место и на нынешний стыд вместе. Возможно, они опираются на одно и то же — на то, как вас видят другие.",
+        "distinction": "Помогает увидеть, что высокое положение и унижение — две стороны одной зависимости от чужого отношения, а не противоположности.",
+        "question_explanation": "Вопрос о том, откуда бралось это чувство. Например, из самой работы, которую вы делали, из должности или из того, как к вам относились коллеги."
+      },
+      {
+        "card_id": "C0275",
+        "role": "Отделяет отнятое от своего",
+        "title": "Работу можно отнять, но не всё",
+        "source": "Беседы, I.1",
+        "perspective": "Эпиктет проводит черту между внешним и своим. Внешнее — это тело, статус, должность. Их может ограничить или отнять кто-то другой. Своё — это то, как человек понимает события и что он выбирает делать. Для вас это связано и со стыдом, и с пустыми утрами. Статус сотрудника компании ушёл, и это настоящая потеря. Но Эпиктет спрашивает, ушло ли вместе с ним всё. То, как вы смотрите на сокращение и что вы скажете друзьям, по его мысли, остаётся вашим выбором.",
+        "reflection_question": "Что в моей жизни после сокращения по-прежнему решаю я сам?",
+        "why_selected": "Добавляет третий, отдельный ход: не взгляд других, а граница между отнятым статусом и тем, что остаётся в выборе; касается и стыда, и растерянности по утрам.",
+        "main_idea": "Эпиктет говорит: внешние обстоятельства могут ограничить тело или положение человека. Но то, как человек понимает происходящее и что выбирает, остаётся за ним.",
+        "applied_insight": "Сокращение забрало у вас работу и место в компании. Вы пишете, что каждое утро не знаете, куда себя деть. Эпиктет предлагает отделить то, что у вас забрали, от того, что по-прежнему решаете вы.",
+        "distinction": "Помогает различить то, что внешнее событие может отнять (должность, статус), и то, что остаётся в собственном выборе человека.",
+        "question_explanation": "Речь о том, что осталось в ваших руках. Например, как вы проводите утро, с кем говорите и что думаете о случившемся."
+      }
+    ],
+    "fewer_than_three_reason": null,
+    "rejected": [
+      {
+        "card_id": "C0056",
+        "reason": "Тематически близка, но мысль «недостаток не имеет единственного смысла» и «отказ от самоутверждения» слишком размыта; ясное различение для вопроса о стыде слабее, чем у C0049 и C0341."
+      },
+      {
+        "card_id": "C0058",
+        "reason": "О том, что самовосхваление не даёт прочного признания; человек себя не выставляет — пришлось бы достраивать мотив."
+      },
+      {
+        "card_id": "C0170",
+        "reason": "О сравнении с чужим полученным; человек ни с кем себя не сравнивает — это был бы новый конфликт."
+      },
+      {
+        "card_id": "C0786",
+        "reason": "Тоже про сравнение с чужим благом; в словах человека сравнения нет."
+      },
+      {
+        "card_id": "C0553",
+        "reason": "Потеря и представление о «своём» — интересно, но относится скорее к утрате, чем к стыду перед друзьями; слабее по релевантности к подтверждённому вопросу."
+      },
+      {
+        "card_id": "C0055",
+        "reason": "Дистанция между собой и праздником окружающих — ясного различения для вопроса о стыде не даёт."
+      }
+    ],
+    "q1_top": {
+      "card_id": "C0056",
+      "decision": "rejected",
+      "reason": "Первый ранг обусловлен общим совпадением тем признания и отношения к себе, но различение в карточке расплывчато; C0049 из того же источника даёт ту же линию яснее."
+    },
+    "meta": {
+      "composer": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "composition-prompt/0.4.0",
+      "package_sha256": "5bafa3f152c0624e86927c694410fc76e8b15a0c5435954d6e2ae5d021308011",
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "total_cost_usd_list": 0.1626366,
+            "models": [
+              "claude-opus-5-5"
+            ],
+            "input_tokens": 2,
+            "output_tokens": 3276
+          }
+        ],
+        "repairs": []
+      }
+    }
+  },
+  "errors": []
+}

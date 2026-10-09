@@ -1,0 +1,53 @@
+{
+  "session_id": "271260eb861d",
+  "created_utc": "2026-10-07T22:25:47+00:00",
+  "state": "insufficient",
+  "interpretation_input": {
+    "topic": "Отношения с близким человеком",
+    "experiences": [
+      "Тревогу"
+    ],
+    "difficulty_center": "Я не понимаю, что от меня зависит, а что уже не в моей власти",
+    "free_narrative": "Боюсь, что от меня уйдет жена"
+  },
+  "interpretation": null,
+  "insufficient": {
+    "schema_version": "interpretation/0.1.0",
+    "status": "insufficient_input",
+    "input": {
+      "topic": "Отношения с близким человеком",
+      "experiences": [
+        "Тревогу"
+      ],
+      "difficulty_center": "Я не понимаю, что от меня зависит, а что уже не в моей власти",
+      "free_narrative": "Боюсь, что от меня уйдет жена"
+    },
+    "reason": "free narrative has fewer than 8 words (deterministic pre-check)",
+    "clarification_prompt": "Расскажите, пожалуйста, чуть подробнее, что происходит и что в этом для вас самое трудное — так мы сможем точнее сформулировать ваш вопрос.",
+    "trace": {
+      "interpreter": "deterministic-precheck",
+      "model": null,
+      "prompt_version": "interpretation-prompt/0.10.0",
+      "input_sha256": "3d5630bf00de736bb1fa1668236f2905e44f7fe5fbe4101cb08ecb573c1af0af",
+      "reading_notes": [],
+      "attempts": 0,
+      "usage": {}
+    }
+  },
+  "confirmation": null,
+  "query_representation": null,
+  "retrieval": null,
+  "composition": null,
+  "errors": [],
+  "timings": [
+    {
+      "stage": "interpretation",
+      "seconds": 0.01,
+      "llm_calls": 0,
+      "retries": 0,
+      "retry_reasons": [],
+      "calls": []
+    }
+  ],
+  "reflection": null
+}

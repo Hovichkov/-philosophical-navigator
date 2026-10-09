@@ -1,0 +1,4366 @@
+{
+  "run_id": "m2_2-structure-only-20260927T100413Z",
+  "run_format": "m2.2-baseline-run/0.1.0",
+  "scope": "STRUCTURE route only; Q0/Q1/union pending real embeddings (PENDING_API)",
+  "adapter": "benchmark-adapter/0.1.0",
+  "ranking_rule": "lexicographic: (1) more exact canonical-tension matches, (2) more exact coordinate matches, (3) card_id ascending; cards with no match are not ranked; operation is logged, never scored",
+  "top_k": 15,
+  "contrast_top_n": 10,
+  "corpus_version": "launch-124/0.3.0-m1.5-retrieval-readiness",
+  "benchmark_spec_sha256": "ca3c9474cd7186692b561bbba108244bcbf1db44a1e8d674d448ba9b951d2cf7",
+  "cases": [
+    {
+      "case_id": "B01",
+      "confirmed_question": "Имею ли я право выбрать собственную жизнь?",
+      "coordinates": [
+        "желание",
+        "долг / ответственность",
+        "выбор / свобода",
+        "отношение к другому",
+        "отношение к себе"
+      ],
+      "canonical_tensions": [
+        "желание ↔ долг",
+        "долг перед другим ↔ долг перед собой",
+        "свобода ↔ привязанность"
+      ],
+      "free_tensions_not_used_by_structure": [],
+      "matching_cards": 92,
+      "tied_at_cutoff": 6,
+      "hits": [
+        {
+          "card_id": "C0930",
+          "rank": 1,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "долг перед другим ↔ долг перед собой",
+            "желание ↔ долг"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "желание",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "желание ↔ долг"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "желание",
+            "отношение к другому"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "долг перед другим ↔ долг перед собой"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0937",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "долг перед другим ↔ долг перед собой"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0952",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "желание ↔ долг"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "желание",
+            "отношение к другому"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0025",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "желание ↔ долг"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "желание"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0167",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "свобода ↔ привязанность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "отношение к себе"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0404",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "свобода ↔ привязанность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "отношение к другому"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0633",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "желание ↔ долг"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "желание"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0778",
+          "rank": 10,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "долг перед другим ↔ долг перед собой"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к себе"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0807",
+          "rank": 11,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "долг перед другим ↔ долг перед собой"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "долг / ответственность"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0949",
+          "rank": 12,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "свобода ↔ привязанность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "выбор / свобода"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0798",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0144",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "отношение к другому"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0170",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        }
+      ]
+    },
+    {
+      "case_id": "B02",
+      "confirmed_question": "Чего я хочу и что я должен другим?",
+      "coordinates": [
+        "желание",
+        "долг / ответственность",
+        "принадлежность",
+        "выбор / свобода",
+        "отношение к другому"
+      ],
+      "canonical_tensions": [
+        "желание ↔ долг",
+        "принадлежность ↔ свобода"
+      ],
+      "free_tensions_not_used_by_structure": [
+        "ожидание / представление ↔ действительность"
+      ],
+      "matching_cards": 45,
+      "tied_at_cutoff": 0,
+      "hits": [
+        {
+          "card_id": "C0798",
+          "rank": 1,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "принадлежность ↔ свобода"
+          ],
+          "coordinate_overlap": 4,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "долг / ответственность",
+            "отношение к другому",
+            "принадлежность"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0952",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "желание ↔ долг"
+          ],
+          "coordinate_overlap": 4,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "желание",
+            "отношение к другому",
+            "принадлежность"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "желание ↔ долг"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "желание",
+            "отношение к другому"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0144",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "принадлежность ↔ свобода"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "отношение к другому",
+            "принадлежность"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0648",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "принадлежность ↔ свобода"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "долг / ответственность",
+            "принадлежность"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0807",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "принадлежность ↔ свобода"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "долг / ответственность",
+            "принадлежность"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0025",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "желание ↔ долг"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "желание"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0633",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "желание ↔ долг"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "желание"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "желание ↔ долг"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "желание"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0957",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому",
+            "принадлежность"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0333",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "желание"
+          ],
+          "operation": "PRESERVE_AGENCY"
+        },
+        {
+          "card_id": "C0404",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "отношение к другому"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0533",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "принадлежность"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0937",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        }
+      ]
+    },
+    {
+      "case_id": "B03",
+      "confirmed_question": "Почему достижение не дало того, ради чего я к нему шёл?",
+      "coordinates": [
+        "смысл / цель",
+        "ожидание / представление",
+        "желание",
+        "признание"
+      ],
+      "canonical_tensions": [
+        "достигнутая цель ↔ смысл",
+        "ожидание ↔ действительность"
+      ],
+      "free_tensions_not_used_by_structure": [],
+      "matching_cards": 33,
+      "tied_at_cutoff": 2,
+      "hits": [
+        {
+          "card_id": "C0579",
+          "rank": 1,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "достигнутая цель ↔ смысл",
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "желание",
+            "ожидание / представление",
+            "смысл / цель"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0806",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "желание",
+            "ожидание / представление",
+            "признание"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C1105",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "достигнутая цель ↔ смысл"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "желание",
+            "признание",
+            "смысл / цель"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "достигнутая цель ↔ смысл"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "смысл / цель"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0275",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "ожидание / представление",
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "ожидание / представление",
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0056",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "достигнутая цель ↔ смысл"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0281",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0439",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0440",
+          "rank": 10,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0442",
+          "rank": 11,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0518",
+          "rank": 12,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "желание",
+            "ожидание / представление",
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0170",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "признание"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0633",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "признание"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        }
+      ]
+    },
+    {
+      "case_id": "B04",
+      "confirmed_question": "Почему чужой успех меня уменьшает?",
+      "coordinates": [
+        "признание",
+        "отношение к себе",
+        "отношение к другому",
+        "желание"
+      ],
+      "canonical_tensions": [
+        "отношение к себе ↔ взгляд другого",
+        "собственное желание ↔ признание"
+      ],
+      "free_tensions_not_used_by_structure": [],
+      "matching_cards": 86,
+      "tied_at_cutoff": 0,
+      "hits": [
+        {
+          "card_id": "C0170",
+          "rank": 1,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого",
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "желание",
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0786",
+          "rank": 2,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого",
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "желание",
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0056",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0058",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0633",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "признание"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0806",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "признание"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C1105",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 8,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "отношение к другому"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 9,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0619",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0622",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "признание"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0937",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0952",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "отношение к другому"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0957",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "признание"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        }
+      ]
+    },
+    {
+      "case_id": "B05",
+      "confirmed_question": "Что именно я продолжаю удерживать?",
+      "coordinates": [
+        "привязанность",
+        "желание",
+        "ожидание / представление",
+        "принятие / сопротивление"
+      ],
+      "canonical_tensions": [
+        "ожидание ↔ действительность"
+      ],
+      "free_tensions_not_used_by_structure": [
+        "желание ↔ принятие"
+      ],
+      "matching_cards": 41,
+      "tied_at_cutoff": 26,
+      "hits": [
+        {
+          "card_id": "C0579",
+          "rank": 1,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "ожидание / представление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0806",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "ожидание / представление"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0275",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0281",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0439",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0440",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0442",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0518",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0013",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "привязанность",
+            "принятие / сопротивление"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0025",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "привязанность"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "ожидание / представление"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0949",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "ожидание / представление",
+            "привязанность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "желание"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0005",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "привязанность"
+          ],
+          "operation": "DECOUPLE_ACTION_OUTCOME"
+        }
+      ]
+    },
+    {
+      "case_id": "B06",
+      "confirmed_question": "Что означает для меня простить?",
+      "coordinates": [
+        "отношение к другому",
+        "принятие / сопротивление",
+        "долг / ответственность",
+        "отношение к себе"
+      ],
+      "canonical_tensions": [],
+      "free_tensions_not_used_by_structure": [
+        "принятие ↔ сопротивление",
+        "отношение к себе ↔ отношение к другому"
+      ],
+      "matching_cards": 78,
+      "tied_at_cutoff": 63,
+      "hits": [
+        {
+          "card_id": "C0527",
+          "rank": 1,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0937",
+          "rank": 2,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 3,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0056",
+          "rank": 4,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "принятие / сопротивление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0246",
+          "rank": 5,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "принятие / сопротивление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0619",
+          "rank": 6,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0778",
+          "rank": 7,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к себе"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0798",
+          "rank": 8,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0813",
+          "rank": 9,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "принятие / сопротивление"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0952",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0957",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0013",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "принятие / сопротивление"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0020",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0023",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        }
+      ]
+    },
+    {
+      "case_id": "B07",
+      "confirmed_question": "Определяет ли меня то, что я сделал?",
+      "coordinates": [
+        "отношение к себе",
+        "долг / ответственность",
+        "принятие / сопротивление"
+      ],
+      "canonical_tensions": [],
+      "free_tensions_not_used_by_structure": [
+        "отношение к себе ↔ совершённое действие",
+        "ответственность ↔ возможность изменения"
+      ],
+      "matching_cards": 68,
+      "tied_at_cutoff": 53,
+      "hits": [
+        {
+          "card_id": "C0056",
+          "rank": 1,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "принятие / сопротивление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0246",
+          "rank": 2,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "принятие / сопротивление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 3,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0778",
+          "rank": 4,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к себе"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 5,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0937",
+          "rank": 6,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к себе"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 7,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "долг / ответственность"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0013",
+          "rank": 8,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "принятие / сопротивление"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0020",
+          "rank": 9,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0023",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0025",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "долг / ответственность"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0027",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к себе"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0028",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0044",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0049",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        }
+      ]
+    },
+    {
+      "case_id": "B08",
+      "confirmed_question": "Как жить, зная, что жизнь закончится?",
+      "coordinates": [
+        "страх / конечность",
+        "смысл / цель",
+        "принятие / сопротивление",
+        "контроль"
+      ],
+      "canonical_tensions": [
+        "контроль ↔ конечность"
+      ],
+      "free_tensions_not_used_by_structure": [
+        "конечность ↔ смысл"
+      ],
+      "matching_cards": 22,
+      "tied_at_cutoff": 7,
+      "hits": [
+        {
+          "card_id": "C1108",
+          "rank": 1,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "контроль",
+            "принятие / сопротивление",
+            "страх / конечность"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0553",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0571",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": "PERSPECTIVE_LIMIT"
+        },
+        {
+          "card_id": "C0793",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0871",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0013",
+          "rank": 6,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "принятие / сопротивление"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 7,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "смысл / цель",
+            "страх / конечность"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 8,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "смысл / цель"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0056",
+          "rank": 9,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "принятие / сопротивление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0130",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "страх / конечность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0246",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "принятие / сопротивление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0296",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "контроль"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0438",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "страх / конечность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0518",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "контроль"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        }
+      ]
+    },
+    {
+      "case_id": "B09",
+      "confirmed_question": "Почему мне всё ещё нужно их разрешение на мою жизнь?",
+      "coordinates": [
+        "признание",
+        "отношение к себе",
+        "принадлежность",
+        "выбор / свобода"
+      ],
+      "canonical_tensions": [
+        "отношение к себе ↔ взгляд другого",
+        "принадлежность ↔ свобода",
+        "собственное желание ↔ признание"
+      ],
+      "free_tensions_not_used_by_structure": [],
+      "matching_cards": 75,
+      "tied_at_cutoff": 0,
+      "hits": [
+        {
+          "card_id": "C0170",
+          "rank": 1,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого",
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0786",
+          "rank": 2,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого",
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0056",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0058",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0144",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "принадлежность ↔ свобода"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "принадлежность"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0648",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "принадлежность ↔ свобода"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "принадлежность"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0798",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "принадлежность ↔ свобода"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "принадлежность"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0807",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "принадлежность ↔ свобода"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "принадлежность"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0633",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "признание"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0806",
+          "rank": 10,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "признание"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C1105",
+          "rank": 11,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0167",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "отношение к себе"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0275",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0542",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "отношение к себе"
+          ],
+          "operation": "PRESERVE_AGENCY"
+        },
+        {
+          "card_id": "C0957",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "признание",
+            "принадлежность"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        }
+      ]
+    },
+    {
+      "case_id": "B10",
+      "confirmed_question": "Что удерживает меня в жизни, которую я сам считаю пустой?",
+      "coordinates": [
+        "смысл / цель",
+        "признание",
+        "желание",
+        "выбор / свобода"
+      ],
+      "canonical_tensions": [
+        "собственное желание ↔ признание"
+      ],
+      "free_tensions_not_used_by_structure": [
+        "смысл ↔ сохранение достигнутого"
+      ],
+      "matching_cards": 36,
+      "tied_at_cutoff": 21,
+      "hits": [
+        {
+          "card_id": "C1105",
+          "rank": 1,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "желание",
+            "признание",
+            "смысл / цель"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0170",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "признание"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0633",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "признание"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0786",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "признание"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0806",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "признание"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 6,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "смысл / цель"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0275",
+          "rank": 7,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0333",
+          "rank": 8,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "желание"
+          ],
+          "operation": "PRESERVE_AGENCY"
+        },
+        {
+          "card_id": "C0579",
+          "rank": 9,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "смысл / цель"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0025",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "желание"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0043",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "желание"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0056",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0058",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0123",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "желание"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        }
+      ]
+    },
+    {
+      "case_id": "B11",
+      "confirmed_question": "Где заканчивается моя ответственность за другого?",
+      "coordinates": [
+        "долг / ответственность",
+        "отношение к другому",
+        "отношение к себе",
+        "выбор / свобода"
+      ],
+      "canonical_tensions": [
+        "долг перед другим ↔ долг перед собой",
+        "свобода ↔ привязанность"
+      ],
+      "free_tensions_not_used_by_structure": [],
+      "matching_cards": 82,
+      "tied_at_cutoff": 1,
+      "hits": [
+        {
+          "card_id": "C0527",
+          "rank": 1,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "долг перед другим ↔ долг перед собой"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0937",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "долг перед другим ↔ долг перед собой"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0167",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "свобода ↔ привязанность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "отношение к себе"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0404",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "свобода ↔ привязанность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "отношение к другому"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0778",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "долг перед другим ↔ долг перед собой"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к себе"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0807",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "долг перед другим ↔ долг перед собой"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "долг / ответственность"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "долг перед другим ↔ долг перед собой"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0949",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "свобода ↔ привязанность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "выбор / свобода"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0798",
+          "rank": 9,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0144",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "отношение к другому"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0542",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "отношение к себе"
+          ],
+          "operation": "PRESERVE_AGENCY"
+        },
+        {
+          "card_id": "C0619",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0648",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "долг / ответственность"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0952",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        }
+      ]
+    },
+    {
+      "case_id": "B12",
+      "confirmed_question": "Что я пытаюсь получить с помощью контроля?",
+      "coordinates": [
+        "контроль",
+        "страх / конечность",
+        "долг / ответственность",
+        "принятие / сопротивление"
+      ],
+      "canonical_tensions": [
+        "контроль ↔ конечность",
+        "действие ↔ принятие"
+      ],
+      "free_tensions_not_used_by_structure": [],
+      "matching_cards": 30,
+      "tied_at_cutoff": 15,
+      "hits": [
+        {
+          "card_id": "C1108",
+          "rank": 1,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "действие ↔ принятие",
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "контроль",
+            "принятие / сопротивление",
+            "страх / конечность"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0013",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "принятие / сопротивление"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0553",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0571",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": "PERSPECTIVE_LIMIT"
+        },
+        {
+          "card_id": "C0793",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0871",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0813",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "принятие / сопротивление"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 8,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "страх / конечность"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 9,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "долг / ответственность"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0025",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "долг / ответственность"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0056",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "принятие / сопротивление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0130",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "страх / конечность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0246",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "принятие / сопротивление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0296",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "контроль"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0438",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "страх / конечность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        }
+      ]
+    },
+    {
+      "case_id": "B13",
+      "confirmed_question": "Что именно я теряю, когда старею?",
+      "coordinates": [
+        "страх / конечность",
+        "отношение к себе",
+        "принятие / сопротивление",
+        "ожидание / представление"
+      ],
+      "canonical_tensions": [
+        "ожидание ↔ действительность",
+        "контроль ↔ конечность"
+      ],
+      "free_tensions_not_used_by_structure": [
+        "принятие ↔ сопротивление"
+      ],
+      "matching_cards": 76,
+      "tied_at_cutoff": 0,
+      "hits": [
+        {
+          "card_id": "C0281",
+          "rank": 1,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "ожидание / представление",
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "ожидание / представление",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0571",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "ожидание / представление",
+            "страх / конечность"
+          ],
+          "operation": "PERSPECTIVE_LIMIT"
+        },
+        {
+          "card_id": "C0793",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "страх / конечность"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C1108",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "принятие / сопротивление",
+            "страх / конечность"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0275",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0439",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0440",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0442",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0518",
+          "rank": 10,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0553",
+          "rank": 11,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "страх / конечность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0579",
+          "rank": 12,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0806",
+          "rank": 13,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0871",
+          "rank": 14,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "страх / конечность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "ожидание / представление",
+            "отношение к себе",
+            "страх / конечность"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        }
+      ]
+    },
+    {
+      "case_id": "B14",
+      "confirmed_question": "От чего зависит моё достоинство?",
+      "coordinates": [
+        "признание",
+        "отношение к себе",
+        "отношение к другому",
+        "контроль"
+      ],
+      "canonical_tensions": [
+        "отношение к себе ↔ взгляд другого"
+      ],
+      "free_tensions_not_used_by_structure": [
+        "собственная оценка ↔ признание"
+      ],
+      "matching_cards": 83,
+      "tied_at_cutoff": 68,
+      "hits": [
+        {
+          "card_id": "C0056",
+          "rank": 1,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0058",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0170",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0786",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 5,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0619",
+          "rank": 6,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0622",
+          "rank": 7,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "признание"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0793",
+          "rank": 8,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "отношение к себе"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0806",
+          "rank": 9,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "признание"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0937",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "отношение к себе"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0957",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "признание"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к другому"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0013",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "контроль"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0020",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0023",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        }
+      ]
+    },
+    {
+      "case_id": "B15",
+      "confirmed_question": "Как отличить свободу от желания просто вырваться?",
+      "coordinates": [
+        "выбор / свобода",
+        "желание",
+        "действие",
+        "отношение к себе"
+      ],
+      "canonical_tensions": [],
+      "free_tensions_not_used_by_structure": [
+        "свобода ↔ повтор/импульс",
+        "желание ↔ ответственность за выбор"
+      ],
+      "matching_cards": 95,
+      "tied_at_cutoff": 34,
+      "hits": [
+        {
+          "card_id": "C0930",
+          "rank": 1,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "желание",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0020",
+          "rank": 2,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0023",
+          "rank": 3,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0025",
+          "rank": 4,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "желание"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0027",
+          "rank": 5,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0028",
+          "rank": 6,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0049",
+          "rank": 7,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0050",
+          "rank": 8,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "TRANSFORM_PRACTICE"
+        },
+        {
+          "card_id": "C0055",
+          "rank": 9,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "PRESERVE_AGENCY"
+        },
+        {
+          "card_id": "C0060",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "DECOUPLE_ACTION_OUTCOME"
+        },
+        {
+          "card_id": "C0068",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "TRANSFORM_PRACTICE"
+        },
+        {
+          "card_id": "C0125",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "TRANSFORM_PRACTICE"
+        },
+        {
+          "card_id": "C0165",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0167",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "отношение к себе"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0170",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        }
+      ]
+    },
+    {
+      "case_id": "B16",
+      "confirmed_question": "Можно ли сохранить свободу и быть близким?",
+      "coordinates": [
+        "принадлежность",
+        "выбор / свобода",
+        "привязанность",
+        "отношение к другому"
+      ],
+      "canonical_tensions": [
+        "принадлежность ↔ свобода",
+        "свобода ↔ привязанность"
+      ],
+      "free_tensions_not_used_by_structure": [],
+      "matching_cards": 34,
+      "tied_at_cutoff": 19,
+      "hits": [
+        {
+          "card_id": "C0144",
+          "rank": 1,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "принадлежность ↔ свобода"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "отношение к другому",
+            "принадлежность"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0404",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "свобода ↔ привязанность"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "отношение к другому",
+            "привязанность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0798",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "принадлежность ↔ свобода"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "отношение к другому",
+            "принадлежность"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0167",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "свобода ↔ привязанность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "привязанность"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0648",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "принадлежность ↔ свобода"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "принадлежность"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0807",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "принадлежность ↔ свобода"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "принадлежность"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0949",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "свобода ↔ привязанность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "привязанность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0533",
+          "rank": 8,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "принадлежность"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0937",
+          "rank": 9,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "привязанность"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0952",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "принадлежность"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0957",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "принадлежность"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к другому"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0005",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "привязанность"
+          ],
+          "operation": "DECOUPLE_ACTION_OUTCOME"
+        },
+        {
+          "card_id": "C0013",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "привязанность"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0014",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "привязанность"
+          ],
+          "operation": "DECOUPLE_ACTION_OUTCOME"
+        }
+      ]
+    },
+    {
+      "case_id": "B17",
+      "confirmed_question": "Не предаю ли я умершего, когда продолжаю жить?",
+      "coordinates": [
+        "привязанность",
+        "принятие / сопротивление",
+        "отношение к другому",
+        "смысл / цель"
+      ],
+      "canonical_tensions": [],
+      "free_tensions_not_used_by_structure": [
+        "привязанность ↔ продолжение собственной жизни",
+        "принятие ↔ сохранение связи"
+      ],
+      "matching_cards": 32,
+      "tied_at_cutoff": 17,
+      "hits": [
+        {
+          "card_id": "C0001",
+          "rank": 1,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "смысл / цель"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0013",
+          "rank": 2,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "привязанность",
+            "принятие / сопротивление"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0404",
+          "rank": 3,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "привязанность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 4,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0813",
+          "rank": 5,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "принятие / сопротивление"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0937",
+          "rank": 6,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к другому",
+            "привязанность"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0005",
+          "rank": 7,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "привязанность"
+          ],
+          "operation": "DECOUPLE_ACTION_OUTCOME"
+        },
+        {
+          "card_id": "C0014",
+          "rank": 8,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "привязанность"
+          ],
+          "operation": "DECOUPLE_ACTION_OUTCOME"
+        },
+        {
+          "card_id": "C0025",
+          "rank": 9,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "привязанность"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0056",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "принятие / сопротивление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0144",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к другому"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0167",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "привязанность"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0168",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "привязанность"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0246",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "принятие / сопротивление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0308",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к другому"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        }
+      ]
+    },
+    {
+      "case_id": "B18",
+      "confirmed_question": "По какому мерилу я считаю свою жизнь достаточной?",
+      "coordinates": [
+        "признание",
+        "желание",
+        "отношение к себе",
+        "смысл / цель"
+      ],
+      "canonical_tensions": [
+        "собственное желание ↔ признание",
+        "отношение к себе ↔ взгляд другого",
+        "достигнутая цель ↔ смысл"
+      ],
+      "free_tensions_not_used_by_structure": [],
+      "matching_cards": 75,
+      "tied_at_cutoff": 60,
+      "hits": [
+        {
+          "card_id": "C0170",
+          "rank": 1,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого",
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "желание",
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0786",
+          "rank": 2,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого",
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "желание",
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C1105",
+          "rank": 3,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "достигнутая цель ↔ смысл",
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "желание",
+            "признание",
+            "смысл / цель"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0056",
+          "rank": 4,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "достигнутая цель ↔ смысл",
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "достигнутая цель ↔ смысл"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "смысл / цель"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0058",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "признание"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0579",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "достигнутая цель ↔ смысл"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "смысл / цель"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0633",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "признание"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0806",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "собственное желание ↔ признание"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "признание"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "желание",
+            "отношение к себе",
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0020",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0023",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0025",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "желание"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0027",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к себе"
+          ],
+          "operation": "DISTINGUISH"
+        }
+      ]
+    },
+    {
+      "case_id": "B19",
+      "confirmed_question": "Когда продолжение перестаёт быть верностью делу?",
+      "coordinates": [
+        "действие",
+        "смысл / цель",
+        "привязанность",
+        "контроль",
+        "выбор / свобода"
+      ],
+      "canonical_tensions": [
+        "действие ↔ принятие",
+        "свобода ↔ привязанность",
+        "ожидание ↔ действительность"
+      ],
+      "free_tensions_not_used_by_structure": [],
+      "matching_cards": 82,
+      "tied_at_cutoff": 0,
+      "hits": [
+        {
+          "card_id": "C0013",
+          "rank": 1,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "контроль",
+            "привязанность"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C1108",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "действие",
+            "контроль"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0167",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "свобода ↔ привязанность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "привязанность"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0404",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "свобода ↔ привязанность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "привязанность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0949",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "свобода ↔ привязанность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "привязанность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0275",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "выбор / свобода"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0442",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "действие"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0518",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "контроль"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0579",
+          "rank": 10,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "смысл / цель"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0806",
+          "rank": 11,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "контроль"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0813",
+          "rank": 12,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "действие"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0281",
+          "rank": 13,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0439",
+          "rank": 14,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0440",
+          "rank": 15,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        }
+      ]
+    },
+    {
+      "case_id": "B20",
+      "confirmed_question": "Зачем я живу именно так?",
+      "coordinates": [
+        "смысл / цель",
+        "желание",
+        "действие",
+        "отношение к себе"
+      ],
+      "canonical_tensions": [],
+      "free_tensions_not_used_by_structure": [
+        "устроенная жизнь ↔ смысл",
+        "действие ↔ основание действия"
+      ],
+      "matching_cards": 87,
+      "tied_at_cutoff": 32,
+      "hits": [
+        {
+          "card_id": "C0930",
+          "rank": 1,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 4,
+          "matched_coordinates": [
+            "действие",
+            "желание",
+            "отношение к себе",
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 2,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе",
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 3,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "смысл / цель"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0020",
+          "rank": 4,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0023",
+          "rank": 5,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0025",
+          "rank": 6,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "желание"
+          ],
+          "operation": "EXAMINE_DESIRE"
+        },
+        {
+          "card_id": "C0027",
+          "rank": 7,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0028",
+          "rank": 8,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0049",
+          "rank": 9,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0050",
+          "rank": 10,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "TRANSFORM_PRACTICE"
+        },
+        {
+          "card_id": "C0055",
+          "rank": 11,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "PRESERVE_AGENCY"
+        },
+        {
+          "card_id": "C0060",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "DECOUPLE_ACTION_OUTCOME"
+        },
+        {
+          "card_id": "C0068",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "TRANSFORM_PRACTICE"
+        },
+        {
+          "card_id": "C0125",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "TRANSFORM_PRACTICE"
+        },
+        {
+          "card_id": "C0165",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        }
+      ]
+    }
+  ],
+  "contrast_structure_overlap": [
+    {
+      "pair_id": "CP1",
+      "variants": [
+        "CP1-A",
+        "CP1-B"
+      ],
+      "STRUCTURE": {
+        "status": "not_computable",
+        "reasons": {
+          "CP1-B": "benchmark variant lists no coordinates"
+        }
+      }
+    },
+    {
+      "pair_id": "CP2",
+      "variants": [
+        "CP2-A",
+        "CP2-B"
+      ],
+      "STRUCTURE": {
+        "status": "computed",
+        "a_ids": [
+          "C1108",
+          "C0013",
+          "C0553",
+          "C0571",
+          "C0793",
+          "C0813",
+          "C0871",
+          "C0930",
+          "C0004",
+          "C0005"
+        ],
+        "b_ids": [
+          "C0056",
+          "C0058",
+          "C0170",
+          "C0786",
+          "C0527",
+          "C0930",
+          "C1105",
+          "C0001",
+          "C0020",
+          "C0023"
+        ],
+        "overlap_ids": [
+          "C0930"
+        ],
+        "overlap_count": 1,
+        "overlap_share_of_top_n": 0.1,
+        "jaccard": 0.053
+      }
+    },
+    {
+      "pair_id": "CP3",
+      "variants": [
+        "CP3-A",
+        "CP3-B"
+      ],
+      "STRUCTURE": {
+        "status": "computed",
+        "a_ids": [
+          "C0798",
+          "C0952",
+          "C0001",
+          "C0144",
+          "C0648",
+          "C0807",
+          "C0025",
+          "C0633",
+          "C0930",
+          "C0957"
+        ],
+        "b_ids": [
+          "C0798",
+          "C1108",
+          "C0013",
+          "C0275",
+          "C0296",
+          "C0442",
+          "C0518",
+          "C0527",
+          "C0571",
+          "C0806"
+        ],
+        "overlap_ids": [
+          "C0798"
+        ],
+        "overlap_count": 1,
+        "overlap_share_of_top_n": 0.1,
+        "jaccard": 0.053
+      }
+    },
+    {
+      "pair_id": "CP4",
+      "variants": [
+        "CP4-A",
+        "CP4-B"
+      ],
+      "STRUCTURE": {
+        "status": "computed",
+        "a_ids": [
+          "C0579",
+          "C0806",
+          "C0275",
+          "C0281",
+          "C0439",
+          "C0440",
+          "C0442",
+          "C0518",
+          "C0527",
+          "C0013"
+        ],
+        "b_ids": [
+          "C0056",
+          "C0058",
+          "C0170",
+          "C0786",
+          "C0527",
+          "C0619",
+          "C0622",
+          "C0937",
+          "C0957",
+          "C0001"
+        ],
+        "overlap_ids": [
+          "C0527"
+        ],
+        "overlap_count": 1,
+        "overlap_share_of_top_n": 0.1,
+        "jaccard": 0.053
+      }
+    }
+  ]
+}

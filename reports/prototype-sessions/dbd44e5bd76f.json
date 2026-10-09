@@ -1,0 +1,1594 @@
+{
+  "session_id": "dbd44e5bd76f",
+  "created_utc": "2026-09-29T16:51:31+00:00",
+  "state": "answered",
+  "interpretation_input": {
+    "topic": "Работа / дело / деньги",
+    "experiences": [
+      "Растерянность",
+      "Тревогу",
+      "Раздражение"
+    ],
+    "difficulty_center": "Я не понимаю, продолжать или остановиться",
+    "free_narrative": "не знаю, продолжать заниматься несколькими проектами или сосредоточиться на одном. Если выбирать один, боюсь не зарабатывать достаточно или что один проект мне наскучит. Если же продолжать несколько одновременно, боюсь выгореть"
+  },
+  "interpretation": {
+    "schema_version": "interpretation/0.1.0",
+    "status": "interpreted",
+    "input": {
+      "topic": "Работа / дело / деньги",
+      "experiences": [
+        "Растерянность",
+        "Тревогу",
+        "Раздражение"
+      ],
+      "difficulty_center": "Я не понимаю, продолжать или остановиться",
+      "free_narrative": "не знаю, продолжать заниматься несколькими проектами или сосредоточиться на одном. Если выбирать один, боюсь не зарабатывать достаточно или что один проект мне наскучит. Если же продолжать несколько одновременно, боюсь выгореть"
+    },
+    "proposed_question": "Я веду несколько проектов и не понимаю, продолжать так или остановиться на одном. Если выберу один, боюсь, что денег не хватит или он мне наскучит, а если оставлю несколько, боюсь выгореть. Как выбирать, когда у каждого пути свой страх и ни один не даёт гарантий?",
+    "working_hypotheses": [
+      "Возможно, трудность в том, что выбор ищут через избегание худшего, а не через понимание того, что в работе ценно.",
+      "Несколько проектов могут быть способом держать открытыми разные возможности. Тогда выбрать один значит отказаться от других возможностей: здесь напряжение между свободой и сосредоточенностью.",
+      "Возможно, в вопросе смешаны два разных критерия, деньги и интерес. Скука и безденежье — разные потери, и их можно рассматривать по отдельности.",
+      "Пределы сил и неопределённость будущего не дают гарантий ни в одном из вариантов. Тогда вопрос уже не в том, как исключить риск, а в том, какой риск человек готов на себя взять."
+    ],
+    "coordinates": [
+      "выбор / свобода",
+      "страх / конечность",
+      "желание",
+      "смысл / цель",
+      "действие"
+    ],
+    "canonical_tensions": [
+      "контроль ↔ конечность",
+      "ожидание ↔ действительность"
+    ],
+    "free_tensions": [
+      "множество возможностей ↔ сосредоточенность на одном",
+      "надёжный заработок ↔ интерес к делу",
+      "широта занятий ↔ пределы сил"
+    ],
+    "ambiguity_notes": [
+      "Слова «продолжать или остановиться» можно понять как «бросить всё». По рассказу же речь о том, чтобы сузить работу до одного проекта.",
+      "Неясно, на что направлено раздражение: на саму ситуацию, на себя или на проекты."
+    ],
+    "trace": {
+      "interpreter": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "interpretation-prompt/0.8.1",
+      "input_sha256": "6b49c866bea365d9c7c347f482da9fb885faf0716605d50f92f2e11d51cb8405",
+      "reading_notes": [
+        {
+          "kind": "tension",
+          "note": "Выбор описан как развилка: несколько проектов или один. У каждого варианта свой страх: с одним проектом — нехватка денег и скука, с несколькими — выгорание."
+        },
+        {
+          "kind": "representation",
+          "note": "Решение представлено как выбор между двумя опасностями, а не между двумя желаемыми вещами. О том, чего человек хочет от работы, в рассказе почти ничего нет."
+        },
+        {
+          "kind": "expectation",
+          "note": "Судя по рассказу, человек ищет вариант, который не несёт риска. Но оба описанных варианта рискованны."
+        },
+        {
+          "kind": "ambiguity",
+          "note": "«Продолжать или остановиться» здесь значит продолжать вести несколько проектов или остановиться на одном. «Остановиться» не означает бросить работу совсем."
+        },
+        {
+          "kind": "context",
+          "note": "Названы растерянность, тревога и раздражение. На что направлено раздражение, не сказано."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "wall_seconds": 17.13,
+            "cli_duration_ms": 14763,
+            "api_duration_ms": 14719,
+            "num_turns": 2,
+            "input_tokens": 2,
+            "cache_read_tokens": 0,
+            "cache_creation_tokens": 5564,
+            "output_tokens": 1402,
+            "thinking_tokens": 269,
+            "total_cost_usd_list": 0.07256000000000001,
+            "models": [
+              "claude-opus-5-5"
+            ]
+          }
+        ],
+        "repairs": []
+      }
+    }
+  },
+  "insufficient": null,
+  "confirmation": {
+    "action": "confirmed",
+    "source": "user",
+    "proposed_question": "Я веду несколько проектов и не понимаю, продолжать так или остановиться на одном. Если выберу один, боюсь, что денег не хватит или он мне наскучит, а если оставлю несколько, боюсь выгореть. Как выбирать, когда у каждого пути свой страх и ни один не даёт гарантий?",
+    "confirmed_question": "Я веду несколько проектов и не понимаю, продолжать так или остановиться на одном. Если выберу один, боюсь, что денег не хватит или он мне наскучит, а если оставлю несколько, боюсь выгореть. Как выбирать, когда у каждого пути свой страх и ни один не даёт гарантий?",
+    "edited_text": null
+  },
+  "query_representation": {
+    "schema_version": "query-representation/0.1.0",
+    "confirmed_question": "Я веду несколько проектов и не понимаю, продолжать так или остановиться на одном. Если выберу один, боюсь, что денег не хватит или он мне наскучит, а если оставлю несколько, боюсь выгореть. Как выбирать, когда у каждого пути свой страх и ни один не даёт гарантий?",
+    "context": {
+      "circumstance": "Работа / дело / деньги",
+      "narrative": "не знаю, продолжать заниматься несколькими проектами или сосредоточиться на одном. Если выбирать один, боюсь не зарабатывать достаточно или что один проект мне наскучит. Если же продолжать несколько одновременно, боюсь выгореть"
+    },
+    "experiences": [
+      "Растерянность",
+      "Тревогу",
+      "Раздражение"
+    ],
+    "working_hypotheses": [
+      "Возможно, трудность в том, что выбор ищут через избегание худшего, а не через понимание того, что в работе ценно.",
+      "Несколько проектов могут быть способом держать открытыми разные возможности. Тогда выбрать один значит отказаться от других возможностей: здесь напряжение между свободой и сосредоточенностью.",
+      "Возможно, в вопросе смешаны два разных критерия, деньги и интерес. Скука и безденежье — разные потери, и их можно рассматривать по отдельности.",
+      "Пределы сил и неопределённость будущего не дают гарантий ни в одном из вариантов. Тогда вопрос уже не в том, как исключить риск, а в том, какой риск человек готов на себя взять."
+    ],
+    "coordinates": [
+      "выбор / свобода",
+      "страх / конечность",
+      "желание",
+      "смысл / цель",
+      "действие"
+    ],
+    "canonical_tensions": [
+      "контроль ↔ конечность",
+      "ожидание ↔ действительность"
+    ],
+    "free_tensions": [
+      "множество возможностей ↔ сосредоточенность на одном",
+      "надёжный заработок ↔ интерес к делу",
+      "широта занятий ↔ пределы сил"
+    ],
+    "provenance": {
+      "origin": "production",
+      "confirmed_question_source": "user_confirmed",
+      "interpretation_source": "interpretation-layer_0.1.0",
+      "benchmark_item_id": null,
+      "note": null
+    }
+  },
+  "retrieval": {
+    "version": "candidate-retrieval/0.1.0",
+    "query": {
+      "schema_version": "query-representation/0.1.0",
+      "confirmed_question": "Я веду несколько проектов и не понимаю, продолжать так или остановиться на одном. Если выберу один, боюсь, что денег не хватит или он мне наскучит, а если оставлю несколько, боюсь выгореть. Как выбирать, когда у каждого пути свой страх и ни один не даёт гарантий?",
+      "context": {
+        "circumstance": "Работа / дело / деньги",
+        "narrative": "не знаю, продолжать заниматься несколькими проектами или сосредоточиться на одном. Если выбирать один, боюсь не зарабатывать достаточно или что один проект мне наскучит. Если же продолжать несколько одновременно, боюсь выгореть"
+      },
+      "experiences": [
+        "Растерянность",
+        "Тревогу",
+        "Раздражение"
+      ],
+      "working_hypotheses": [
+        "Возможно, трудность в том, что выбор ищут через избегание худшего, а не через понимание того, что в работе ценно.",
+        "Несколько проектов могут быть способом держать открытыми разные возможности. Тогда выбрать один значит отказаться от других возможностей: здесь напряжение между свободой и сосредоточенностью.",
+        "Возможно, в вопросе смешаны два разных критерия, деньги и интерес. Скука и безденежье — разные потери, и их можно рассматривать по отдельности.",
+        "Пределы сил и неопределённость будущего не дают гарантий ни в одном из вариантов. Тогда вопрос уже не в том, как исключить риск, а в том, какой риск человек готов на себя взять."
+      ],
+      "coordinates": [
+        "выбор / свобода",
+        "страх / конечность",
+        "желание",
+        "смысл / цель",
+        "действие"
+      ],
+      "canonical_tensions": [
+        "контроль ↔ конечность",
+        "ожидание ↔ действительность"
+      ],
+      "free_tensions": [
+        "множество возможностей ↔ сосредоточенность на одном",
+        "надёжный заработок ↔ интерес к делу",
+        "широта занятий ↔ пределы сил"
+      ],
+      "provenance": {
+        "origin": "production",
+        "confirmed_question_source": "user_confirmed",
+        "interpretation_source": "interpretation-layer_0.1.0",
+        "benchmark_item_id": null,
+        "note": null
+      }
+    },
+    "embedding_config": {
+      "provider": "local-sentence-transformers",
+      "model": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimensions": 1024
+    },
+    "corpus_version": "launch-124/0.3.0-m1.5-retrieval-readiness",
+    "retrieval_universe_size": 113,
+    "q0_control": {
+      "route": "Q0_QUESTION_ONLY_CONTROL",
+      "query": {
+        "version": "q0-question-only/1.0",
+        "text": "Я веду несколько проектов и не понимаю, продолжать так или остановиться на одном. Если выберу один, боюсь, что денег не хватит или он мне наскучит, а если оставлю несколько, боюсь выгореть. Как выбирать, когда у каждого пути свой страх и ни один не даёт гарантий?",
+        "sha256": "7ce11b04902531f65e70e60a8fc3a3b207c40ea0cce86389eb543959fc624014"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0056",
+          "rank": 1,
+          "cosine": 0.505789
+        },
+        {
+          "card_id": "C0624",
+          "rank": 2,
+          "cosine": 0.505058
+        },
+        {
+          "card_id": "C0001",
+          "rank": 3,
+          "cosine": 0.493667
+        },
+        {
+          "card_id": "C0710",
+          "rank": 4,
+          "cosine": 0.48032
+        },
+        {
+          "card_id": "C1105",
+          "rank": 5,
+          "cosine": 0.47653
+        },
+        {
+          "card_id": "C0518",
+          "rank": 6,
+          "cosine": 0.475571
+        },
+        {
+          "card_id": "C0027",
+          "rank": 7,
+          "cosine": 0.471628
+        },
+        {
+          "card_id": "C0583",
+          "rank": 8,
+          "cosine": 0.469042
+        },
+        {
+          "card_id": "C0620",
+          "rank": 9,
+          "cosine": 0.468453
+        },
+        {
+          "card_id": "C0296",
+          "rank": 10,
+          "cosine": 0.466303
+        },
+        {
+          "card_id": "C0442",
+          "rank": 11,
+          "cosine": 0.465962
+        },
+        {
+          "card_id": "C0780",
+          "rank": 12,
+          "cosine": 0.465059
+        },
+        {
+          "card_id": "C0807",
+          "rank": 13,
+          "cosine": 0.464431
+        },
+        {
+          "card_id": "C0436",
+          "rank": 14,
+          "cosine": 0.463001
+        },
+        {
+          "card_id": "C0028",
+          "rank": 15,
+          "cosine": 0.462767
+        }
+      ]
+    },
+    "q1_meaning": {
+      "route": "Q1_MEANING",
+      "query": {
+        "version": "q1-meaning-query/2.0",
+        "text": "Вопрос: Я веду несколько проектов и не понимаю, продолжать так или остановиться на одном. Если выберу один, боюсь, что денег не хватит или он мне наскучит, а если оставлю несколько, боюсь выгореть. Как выбирать, когда у каждого пути свой страх и ни один не даёт гарантий?\nРабочие интерпретации:\n- Возможно, трудность в том, что выбор ищут через избегание худшего, а не через понимание того, что в работе ценно.\n- Несколько проектов могут быть способом держать открытыми разные возможности. Тогда выбрать один значит отказаться от других возможностей: здесь напряжение между свободой и сосредоточенностью.\n- Возможно, в вопросе смешаны два разных критерия, деньги и интерес. Скука и безденежье — разные потери, и их можно рассматривать по отдельности.\n- Пределы сил и неопределённость будущего не дают гарантий ни в одном из вариантов. Тогда вопрос уже не в том, как исключить риск, а в том, какой риск человек готов на себя взять.",
+        "sha256": "5702b4dee96c8e45bb3b04437b5be8955d3fb13b4d07f49d9a58867e19fd19e2"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0056",
+          "rank": 1,
+          "cosine": 0.577626
+        },
+        {
+          "card_id": "C0624",
+          "rank": 2,
+          "cosine": 0.571693
+        },
+        {
+          "card_id": "C1105",
+          "rank": 3,
+          "cosine": 0.561203
+        },
+        {
+          "card_id": "C0779",
+          "rank": 4,
+          "cosine": 0.553712
+        },
+        {
+          "card_id": "C0296",
+          "rank": 5,
+          "cosine": 0.551636
+        },
+        {
+          "card_id": "C0583",
+          "rank": 6,
+          "cosine": 0.548166
+        },
+        {
+          "card_id": "C0710",
+          "rank": 7,
+          "cosine": 0.54736
+        },
+        {
+          "card_id": "C0001",
+          "rank": 8,
+          "cosine": 0.546045
+        },
+        {
+          "card_id": "C0442",
+          "rank": 9,
+          "cosine": 0.545206
+        },
+        {
+          "card_id": "C0345",
+          "rank": 10,
+          "cosine": 0.544462
+        },
+        {
+          "card_id": "C0028",
+          "rank": 11,
+          "cosine": 0.542473
+        },
+        {
+          "card_id": "C0447",
+          "rank": 12,
+          "cosine": 0.541089
+        },
+        {
+          "card_id": "C0807",
+          "rank": 13,
+          "cosine": 0.540634
+        },
+        {
+          "card_id": "C0027",
+          "rank": 14,
+          "cosine": 0.539555
+        },
+        {
+          "card_id": "C0020",
+          "rank": 15,
+          "cosine": 0.537988
+        }
+      ]
+    },
+    "structure": {
+      "route": "STRUCTURE",
+      "ranking_rule": "lexicographic: (1) more exact canonical-tension matches, (2) more exact coordinate matches, (3) card_id ascending; cards with no match are not ranked; operation is logged, never scored",
+      "query_coordinates": [
+        "выбор / свобода",
+        "страх / конечность",
+        "желание",
+        "смысл / цель",
+        "действие"
+      ],
+      "query_canonical_tensions": [
+        "контроль ↔ конечность",
+        "ожидание ↔ действительность"
+      ],
+      "top_k": 15,
+      "matching_cards": 94,
+      "tied_at_cutoff": 0,
+      "hits": [
+        {
+          "card_id": "C1108",
+          "rank": 1,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "выбор / свобода",
+            "действие",
+            "страх / конечность"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0579",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "смысл / цель"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0275",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "выбор / свобода"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0442",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "действие"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0553",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "страх / конечность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0571",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "страх / конечность"
+          ],
+          "operation": "PERSPECTIVE_LIMIT"
+        },
+        {
+          "card_id": "C0793",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "страх / конечность"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0806",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "желание"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0871",
+          "rank": 10,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "страх / конечность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0281",
+          "rank": 11,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0439",
+          "rank": 12,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0440",
+          "rank": 13,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0518",
+          "rank": 14,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 4,
+          "matched_coordinates": [
+            "действие",
+            "желание",
+            "смысл / цель",
+            "страх / конечность"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        }
+      ]
+    },
+    "union_rule": "union(Q1_MEANING top_k, STRUCTURE top_k); Q0 excluded; one entry per card_id with separate route signals; no combined score; listed by card_id ascending (the order is not a ranking)",
+    "candidate_union": [
+      {
+        "card_id": "C0001",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 8,
+        "meaning_score": 0.546045,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "HOLD_VALUE_CONFLICT"
+      },
+      {
+        "card_id": "C0020",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 15,
+        "meaning_score": 0.537988,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0027",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 14,
+        "meaning_score": 0.539555,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "DISTINGUISH"
+      },
+      {
+        "card_id": "C0028",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 11,
+        "meaning_score": 0.542473,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0056",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 1,
+        "meaning_score": 0.577626,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0275",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 4,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "выбор / свобода"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0281",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 11,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0296",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 5,
+        "meaning_score": 0.551636,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0345",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 10,
+        "meaning_score": 0.544462,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0439",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 12,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0440",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 13,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0442",
+        "found_by": [
+          "Q1_MEANING",
+          "STRUCTURE"
+        ],
+        "meaning_rank": 9,
+        "meaning_score": 0.545206,
+        "structure_rank": 5,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "действие"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0447",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 12,
+        "meaning_score": 0.541089,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "EXAMINE_DESIRE"
+      },
+      {
+        "card_id": "C0518",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 14,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0527",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 2,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "действие",
+          "смысл / цель"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0553",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 6,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0571",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 7,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0579",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 3,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "желание",
+          "смысл / цель"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0583",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 6,
+        "meaning_score": 0.548166,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0624",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 2,
+        "meaning_score": 0.571693,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "DISTINGUISH"
+      },
+      {
+        "card_id": "C0710",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 7,
+        "meaning_score": 0.54736,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0779",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 4,
+        "meaning_score": 0.553712,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0793",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 8,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0806",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 9,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "желание"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "CHALLENGE_ASSUMPTION"
+      },
+      {
+        "card_id": "C0807",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 13,
+        "meaning_score": 0.540634,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_OBLIGATION"
+      },
+      {
+        "card_id": "C0871",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 10,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0930",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 15,
+        "coordinate_overlap": 4,
+        "matched_coordinates": [
+          "действие",
+          "желание",
+          "смысл / цель",
+          "страх / конечность"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "CHALLENGE_ASSUMPTION"
+      },
+      {
+        "card_id": "C1105",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 3,
+        "meaning_score": 0.561203,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C1108",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 1,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "выбор / свобода",
+          "действие",
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "REVALUE_GOOD"
+      }
+    ]
+  },
+  "composition": {
+    "schema_version": "composition/0.4.0",
+    "item_id": "proto-dbd44e5bd76f",
+    "retrieval_run_id": "prototype-dbd44e5bd76f",
+    "confirmed_question": "Я веду несколько проектов и не понимаю, продолжать так или остановиться на одном. Если выберу один, боюсь, что денег не хватит или он мне наскучит, а если оставлю несколько, боюсь выгореть. Как выбирать, когда у каждого пути свой страх и ни один не даёт гарантий?",
+    "candidate_pool": [
+      "C0001",
+      "C0020",
+      "C0027",
+      "C0028",
+      "C0056",
+      "C0275",
+      "C0281",
+      "C0296",
+      "C0345",
+      "C0439",
+      "C0440",
+      "C0442",
+      "C0447",
+      "C0518",
+      "C0527",
+      "C0553",
+      "C0571",
+      "C0579",
+      "C0583",
+      "C0624",
+      "C0710",
+      "C0779",
+      "C0793",
+      "C0806",
+      "C0807",
+      "C0871",
+      "C0930",
+      "C1105",
+      "C1108"
+    ],
+    "opening": "Ваш вопрос можно рассмотреть с нескольких сторон.",
+    "perspectives": [
+      {
+        "card_id": "C0442",
+        "role": "Разводит гарантию и влияние",
+        "title": "Отсутствие гарантий не значит, что выбор ничего не решает",
+        "source": "Письмо к Менекею, §127",
+        "perspective": "Эпикур держит в голове сразу две мысли. Первая: будущее никто не обещал, и никакой выбор его не обеспечит. Вторая: будущее и не закрыто для наших действий. Если помнить только первую мысль, легко решить, что выбирать бессмысленно. Если помнить только вторую, кажется, что всё можно просчитать заранее. Вы пишете, что у каждого пути свой страх и ни один не даёт гарантий. Но из отсутствия гарантий не следует, что от ваших дел ничего не зависит. В каждом варианте остаётся то, что вы делаете сами.",
+        "reflection_question": "Что я сам могу делать, чтобы денег хватило при одном проекте? И что могу делать, чтобы не выгореть при нескольких проектах?",
+        "why_selected": "Прямо отвечает на центральную формулировку вопроса про отсутствие гарантий.",
+        "main_idea": "Эпикур считает, что будущее никто не может гарантировать. Но это не значит, что будущее совсем не зависит от того, что мы делаем.",
+        "applied_insight": "Вы спрашиваете, как выбирать, когда ни один путь не даёт гарантий. Эпикур разделяет две вещи. Гарантий нет ни в одном варианте. Но в каждом варианте что-то всё равно зависит от ваших действий.",
+        "distinction": "Помогает различить «будущее не гарантировано» и «от моего выбора ничего не зависит».",
+        "question_explanation": "Речь о том, чтобы в каждом варианте найти, на что вы можете влиять своими делами. Например, как делить время и силы между задачами.",
+        "verified_quote": null
+      },
+      {
+        "card_id": "C0345",
+        "role": "Переносит выбор к иерархии ценностей",
+        "title": "Выбор между страхами зависит от того, что важнее",
+        "source": "Беседы, IV.10",
+        "perspective": "Эпиктет смотрит на то, что на нас давит, через то, что мы ценим. Если человек ставит что-то выше всего, угроза потерять это держит его крепче всего. Если ставит ниже, та же угроза давит слабее. Для вашего вопроса отсюда следует простая вещь. Три страха не обязательно весят одинаково. Страх нехватки денег, страх скуки и страх выгореть касаются трёх разных вещей, которыми вы дорожите. Пока неясно, какая из них для вас первая, выбор похож на выбор между равными страхами. Гарантий порядок ценностей не даст. Но он может показать, какой риск вы готовы взять на себя.",
+        "reflection_question": "Что для меня сейчас важнее всего: деньги, интерес к делу или силы? Какой из трёх страхов связан именно с этим?",
+        "why_selected": "Даёт ход от сравнения страхов к сравнению ценностей и не приписывает человеку никаких мотивов.",
+        "main_idea": "Эпиктет считает, что давить на человека может только то, чем он дорожит. Чем выше человек ставит какую-то вещь, тем сильнее она на него давит.",
+        "applied_insight": "Вы пишете о трёх страхах: денег не хватит, один проект наскучит, от нескольких проектов выгорите. В вашем вопросе эти страхи стоят рядом, как равные. Но вес каждого страха зависит от того, что для вас выше: деньги, интерес или силы.",
+        "distinction": "Помогает увидеть, что выбор между страхами зависит от того, что для человека стоит выше: деньги, интерес или силы. Сам вопрос этот порядок пока не различает.",
+        "question_explanation": "Вопрос о том, в каком порядке для вас стоят деньги, интерес и силы. Когда порядок ясен, легче понять, какой страх здесь главный.",
+        "verified_quote": null
+      },
+      {
+        "card_id": "C0296",
+        "role": "Разделяет предмет страха и предмет осторожности",
+        "title": "Осторожность нужна в выборе, а не перед исходом",
+        "source": "Беседы, II.1",
+        "perspective": "Эпиктет делит всё на две части. Первая — то, что от нас не зависит. Вторая — наш собственный выбор и то, как мы судим о вещах. Смелость он относит к первой части, осторожность — ко второй. В вашем вопросе оба страха смотрят в будущее: хватит ли денег, наскучит ли проект, не выгорите ли вы. Эпиктет не обещает, что какой-то путь окажется надёжным. Он переводит внимание туда, где решение действительно ваше: как вы оцениваете варианты и на что опираетесь, когда выбираете. Бояться неизвестного и внимательно относиться к своему решению — разные вещи.",
+        "reflection_question": "Что в каждом из путей зависит от моих решений? А что я пытаюсь решить, хотя от меня это не зависит?",
+        "why_selected": "Даёт отдельное от C0442 различение: оно не про гарантии, а про то, куда направлять внимание и осторожность.",
+        "main_idea": "Эпиктет считает, что смелость нужна там, где от нас ничего не зависит. А осторожность нужна там, где мы сами выбираем и решаем.",
+        "applied_insight": "Вы боитесь, что денег не хватит, что проект наскучит или что вы выгорите. И сами пишете, что ни один путь не даёт гарантий. Эпиктет предлагает беречь другое: то, как вы сами взвешиваете варианты и решаете.",
+        "distinction": "Помогает различить неподконтрольный исход (хватит ли денег, наскучит ли) и собственное суждение при выборе, где осторожность уместна.",
+        "question_explanation": "Речь о том, чтобы разделить каждый путь на две части. В одной то, что вы сами решаете и делаете, в другой то, что просто случится или нет.",
+        "verified_quote": null
+      }
+    ],
+    "fewer_than_three_reason": null,
+    "rejected": [
+      {
+        "card_id": "C0056",
+        "reason": "Мысль про уступчивость и многозначность недостатка никак не связывается с выбором между проектами без натяжек."
+      },
+      {
+        "card_id": "C0624",
+        "reason": "Карточка про то, как понимать другого человека по его основаниям, а у нас выбор о собственном деле, то есть другой субъект."
+      },
+      {
+        "card_id": "C1105",
+        "reason": "Проверка обещанного счастья от признанных благ здесь не к месту: человек не говорит о статусе или признании."
+      },
+      {
+        "card_id": "C0447",
+        "reason": "Карточка сработала бы, только если приписать человеку стремление к изобилию, а он говорит лишь о том, что денег может не хватить."
+      }
+    ],
+    "q1_top": {
+      "card_id": "C0056",
+      "decision": "rejected",
+      "reason": "Совпадение по смыслу поверхностное, и ясного различения для выбора между проектами из карточки не получается."
+    },
+    "meta": {
+      "composer": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "composition-prompt/0.6.1",
+      "package_sha256": "28239972a9a7a7ce0b5d145814afde0ebf5a5d293157d6a66446611c49cfad5c",
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "wall_seconds": 25.46,
+            "cli_duration_ms": 23304,
+            "api_duration_ms": 23263,
+            "num_turns": 2,
+            "input_tokens": 2,
+            "cache_read_tokens": 0,
+            "cache_creation_tokens": 15914,
+            "output_tokens": 2145,
+            "thinking_tokens": 967,
+            "total_cost_usd_list": 0.17022,
+            "models": [
+              "claude-opus-5-5"
+            ],
+            "attempt": 1,
+            "call_seconds": 25.46,
+            "validation_seconds": 49.972
+          }
+        ],
+        "repairs": [],
+        "writer": {
+          "prompt_version": "card-writer-prompt/0.3.0",
+          "seconds": 49.97,
+          "cards": [
+            {
+              "card_id": "C0442",
+              "attempts": 2,
+              "repairs": [
+                "1 validation error for Perspective\n  Value error, perspective reads as advice/verdict: ['\\\\bправильный выбор\\\\b'] [type=value_error, input_value={'card_id': 'C0442', 'rol...исит от вас.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error"
+              ],
+              "calls": [
+                {
+                  "wall_seconds": 26.62,
+                  "cli_duration_ms": 24711,
+                  "api_duration_ms": 24683,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 0,
+                  "cache_creation_tokens": 7863,
+                  "output_tokens": 2764,
+                  "thinking_tokens": 1542,
+                  "total_cost_usd_list": 0.11819199999999999,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 1,
+                  "call_seconds": 26.62
+                },
+                {
+                  "wall_seconds": 23.33,
+                  "cli_duration_ms": 19590,
+                  "api_duration_ms": 19562,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 6589,
+                  "cache_creation_tokens": 1430,
+                  "output_tokens": 2113,
+                  "thinking_tokens": 922,
+                  "total_cost_usd_list": 0.0550258,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 2,
+                  "call_seconds": 23.33
+                }
+              ],
+              "fallback": false,
+              "grounding": [
+                {
+                  "field": "main_idea",
+                  "claim": "Эпикур: будущее не гарантировано, но и не исключено из области действия",
+                  "kind": "source_fact",
+                  "evidence": "будущее нельзя считать ни гарантированным, ни полностью исключённым"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек спрашивает, как выбирать без гарантий",
+                  "kind": "user_fact",
+                  "evidence": "ни один не даёт гарантий"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Отсутствие гарантий не отменяет влияния действий",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "reflection_question",
+                  "claim": "Страх, что денег не хватит при одном проекте",
+                  "kind": "user_fact",
+                  "evidence": "боюсь, что денег не хватит"
+                },
+                {
+                  "field": "reflection_question",
+                  "claim": "Страх выгореть при нескольких проектах",
+                  "kind": "user_fact",
+                  "evidence": "если оставлю несколько, боюсь выгореть"
+                },
+                {
+                  "field": "question_explanation",
+                  "claim": "Пример: как делить время и силы между задачами",
+                  "kind": "impersonal_example",
+                  "evidence": ""
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Будущее не обещано и не закрыто для действий",
+                  "kind": "source_fact",
+                  "evidence": "ни полностью исключённым из области действия"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Если помнить одну из мыслей, легко сделать крайний вывод",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "perspective",
+                  "claim": "У каждого пути свой страх",
+                  "kind": "user_fact",
+                  "evidence": "у каждого пути свой страх"
+                }
+              ],
+              "seconds": 49.97
+            },
+            {
+              "card_id": "C0345",
+              "attempts": 1,
+              "repairs": [],
+              "calls": [
+                {
+                  "wall_seconds": 24.17,
+                  "cli_duration_ms": 22461,
+                  "api_duration_ms": 22434,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 0,
+                  "cache_creation_tokens": 7843,
+                  "output_tokens": 2526,
+                  "thinking_tokens": 1171,
+                  "total_cost_usd_list": 0.113272,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 1,
+                  "call_seconds": 24.17
+                }
+              ],
+              "fallback": false,
+              "grounding": [
+                {
+                  "field": "main_idea",
+                  "claim": "Эпиктет считает, что давит то, чем человек дорожит, и тем сильнее, чем выше он это ставит",
+                  "kind": "source_fact",
+                  "evidence": "иерархия ценностей определяет, чем человек может быть принуждён"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек называет три страха: нехватка денег, скука, выгорание",
+                  "kind": "user_fact",
+                  "evidence": "боюсь не зарабатывать достаточно или что один проект мне наскучит"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек боится выгореть, если продолжит несколько проектов",
+                  "kind": "user_fact",
+                  "evidence": "Если же продолжать несколько одновременно, боюсь выгореть"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "В вопросе страхи стоят рядом, порядок важности не назван",
+                  "kind": "user_fact",
+                  "evidence": "Как выбирать, когда у каждого пути свой страх"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Вес страха зависит от того, что человек ставит выше",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "reflection_question",
+                  "claim": "Вопрос о порядке важности денег, интереса и сил",
+                  "kind": "question",
+                  "evidence": ""
+                },
+                {
+                  "field": "question_explanation",
+                  "claim": "Когда порядок ясен, легче понять главный страх",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Эпиктет связывает то, что давит, с тем, что человек ценит",
+                  "kind": "source_fact",
+                  "evidence": "иерархия ценностей определяет, чем человек может быть принуждён"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Ни один путь не даёт гарантий",
+                  "kind": "user_fact",
+                  "evidence": "ни один не даёт гарантий"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Порядок ценностей может показать, какой риск готов взять человек",
+                  "kind": "distinction",
+                  "evidence": ""
+                }
+              ],
+              "seconds": 24.18
+            },
+            {
+              "card_id": "C0296",
+              "attempts": 1,
+              "repairs": [],
+              "calls": [
+                {
+                  "wall_seconds": 27.84,
+                  "cli_duration_ms": 26035,
+                  "api_duration_ms": 26007,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 0,
+                  "cache_creation_tokens": 7864,
+                  "output_tokens": 2963,
+                  "thinking_tokens": 1559,
+                  "total_cost_usd_list": 0.12218,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 1,
+                  "call_seconds": 27.84
+                }
+              ],
+              "fallback": false,
+              "grounding": [
+                {
+                  "field": "main_idea",
+                  "claim": "Эпиктет относит смелость к тому, что от нас не зависит",
+                  "kind": "source_fact",
+                  "evidence": "бесстрашие относится к неподконтрольному внешнему"
+                },
+                {
+                  "field": "main_idea",
+                  "claim": "Осторожность Эпиктет относит к собственному выбору и решению",
+                  "kind": "source_fact",
+                  "evidence": "осторожность — к собственному выбору и суждению"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек боится, что денег не хватит или проект наскучит",
+                  "kind": "user_fact",
+                  "evidence": "боюсь, что денег не хватит или он мне наскучит"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек боится выгореть",
+                  "kind": "user_fact",
+                  "evidence": "боюсь выгореть"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек пишет, что ни один путь не даёт гарантий",
+                  "kind": "user_fact",
+                  "evidence": "ни один не даёт гарантий"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Эпиктет предлагает беречь собственный выбор и суждение",
+                  "kind": "source_fact",
+                  "evidence": "осторожность — к собственному выбору и суждению"
+                },
+                {
+                  "field": "reflection_question",
+                  "claim": "Что в каждом пути зависит от решений человека, а что нет",
+                  "kind": "question",
+                  "evidence": ""
+                },
+                {
+                  "field": "question_explanation",
+                  "claim": "Каждый путь можно разделить на зависящее и не зависящее от человека",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Эпиктет разделяет неподконтрольное внешнее и собственный выбор и суждение",
+                  "kind": "source_fact",
+                  "evidence": "бесстрашие относится к неподконтрольному внешнему, осторожность"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Страхи человека касаются денег, скуки и выгорания",
+                  "kind": "user_fact",
+                  "evidence": "боюсь не зарабатывать достаточно или что один проект мне наскучит"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Бояться неизвестного и внимательно относиться к своему решению — разные вещи",
+                  "kind": "distinction",
+                  "evidence": ""
+                }
+              ],
+              "seconds": 27.85
+            }
+          ],
+          "dropped": [],
+          "selection": [
+            {
+              "card_id": "C0442",
+              "distinction": "Помогает различить «будущее не гарантировано» и «от моего выбора ничего не зависит».",
+              "role": "Разводит гарантию и влияние",
+              "source_point": "Будущее нельзя считать ни обеспеченным, ни полностью неподвластным тому, что делаешь сейчас.",
+              "user_point": "Человек спрашивает, как выбирать, если «ни один путь не даёт гарантий». Можно отделить отсутствие гарантий от того, на что его действия всё-таки влияют в каждом варианте.",
+              "why_selected": "Прямо отвечает на центральную формулировку вопроса про отсутствие гарантий."
+            },
+            {
+              "card_id": "C0345",
+              "distinction": "Помогает увидеть, что выбор между страхами зависит от того, что для человека стоит выше: деньги, интерес или силы. Сам вопрос этот порядок пока не различает.",
+              "role": "Переносит выбор к иерархии ценностей",
+              "source_point": "Сила, с которой что-то на нас давит, зависит от того, какое место оно занимает среди того, что мы ценим.",
+              "user_point": "В вопросе рядом стоят три страха: нехватка денег, скука и выгорание. Можно спросить, как эти три вещи соотносятся по важности, и не взвешивать страхи как равные.",
+              "why_selected": "Даёт ход от сравнения страхов к сравнению ценностей и не приписывает человеку никаких мотивов."
+            },
+            {
+              "card_id": "C0296",
+              "distinction": "Помогает различить неподконтрольный исход (хватит ли денег, наскучит ли) и собственное суждение при выборе, где осторожность уместна.",
+              "role": "Разделяет предмет страха и предмет осторожности",
+              "source_point": "Бояться стоит не внешнего и неподконтрольного, а беречь нужно то, как сам выбираешь и судишь.",
+              "user_point": "Оба страха человека касаются исходов в будущем. Можно отдельно посмотреть, что в каждом варианте зависит от его собственных решений и оценки, а что нет.",
+              "why_selected": "Даёт отдельное от C0442 различение: оно не про гарантии, а про то, куда направлять внимание и осторожность."
+            }
+          ]
+        }
+      }
+    }
+  },
+  "errors": [],
+  "timings": [
+    {
+      "stage": "interpretation",
+      "seconds": 17.14,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "calls": [
+        {
+          "wall_seconds": 17.13,
+          "cli_duration_ms": 14763,
+          "api_duration_ms": 14719,
+          "num_turns": 2,
+          "input_tokens": 2,
+          "cache_read_tokens": 0,
+          "cache_creation_tokens": 5564,
+          "output_tokens": 1402,
+          "thinking_tokens": 269,
+          "total_cost_usd_list": 0.07256000000000001,
+          "models": [
+            "claude-opus-5-5"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "seconds": 1.79,
+      "llm_calls": 0
+    },
+    {
+      "stage": "selection attempt 1",
+      "seconds": 25.46,
+      "llm_calls": 1,
+      "validation_seconds": 49.972,
+      "output_tokens": 2145,
+      "thinking_tokens": 967
+    },
+    {
+      "stage": "card writing (parallel, wall)",
+      "seconds": 49.97,
+      "llm_calls": 4,
+      "dropped_cards": []
+    },
+    {
+      "stage": "  writer C0442",
+      "seconds": 49.97,
+      "llm_calls": 2,
+      "retries": 1,
+      "retry_reasons": [
+        "1 validation error for Perspective\n  Value error, perspective reads as advice/verdict: ['\\\\bправильный выбор\\\\b'] [type=value_error, input_value={'card_id': 'C0442', 'rol...исит от вас.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error"
+      ],
+      "fallback_to_draft": false
+    },
+    {
+      "stage": "  writer C0345",
+      "seconds": 24.18,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "fallback_to_draft": false
+    },
+    {
+      "stage": "  writer C0296",
+      "seconds": 27.85,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "fallback_to_draft": false
+    },
+    {
+      "stage": "composition total",
+      "seconds": 75.44,
+      "llm_calls": 5,
+      "retries": 1,
+      "retry_reasons": [
+        "1 validation error for Perspective\n  Value error, perspective reads as advice/verdict: ['\\\\bправильный выбор\\\\b'] [type=value_error, input_value={'card_id': 'C0442', 'rol...исит от вас.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error"
+      ]
+    }
+  ]
+}

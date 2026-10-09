@@ -1,0 +1,11 @@
+{
+  "baseline_run": "reports/benchmark-runs/m2_2-baseline-20260927T102714Z",
+  "embedding": {
+    "provider": "local-sentence-transformers",
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "dimensions": 1024
+  },
+  "device": "mps",
+  "note": "diagnostic variants only; production M2.2 behaviour unchanged"
+}

@@ -1,0 +1,24 @@
+{
+  "validator_version": "benchmark-validator/0.1.0",
+  "benchmark_path": "data/eval/benchmarks/m2_1-retrieval-benchmark-v0.1.json",
+  "status": "PASS",
+  "counts": {
+    "cases": 20,
+    "contrast_pairs": 4,
+    "evaluation_dimensions": 5,
+    "failure_categories": 7
+  },
+  "case_tension_matches": {
+    "exact": 29,
+    "case_specific": 16,
+    "reversed_poles": 1
+  },
+  "issues": [
+    {
+      "severity": "info",
+      "code": "CASE_SPECIFIC_TENSIONS",
+      "message": "16 case tensions are case-specific formulations (kept verbatim)",
+      "item": null
+    }
+  ]
+}

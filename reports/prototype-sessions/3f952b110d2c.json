@@ -1,0 +1,1269 @@
+{
+  "session_id": "3f952b110d2c",
+  "created_utc": "2026-10-08T13:52:05+00:00",
+  "state": "answered",
+  "interpretation_input": {
+    "topic": "Будущее / неопределённость",
+    "experiences": [
+      "Беспомощность",
+      "Волнение"
+    ],
+    "difficulty_center": "Я не понимаю, что от меня зависит, а что нет",
+    "free_narrative": "Я много работаю, но пока не получается этим зарабатывать, а долгов много. Есть ощущение, что все делаю правильно, но и волнение, что это не приведет к успеху и я так и буду сидеть в долгах."
+  },
+  "interpretation": {
+    "schema_version": "interpretation/0.1.0",
+    "status": "interpreted",
+    "input": {
+      "topic": "Будущее / неопределённость",
+      "experiences": [
+        "Беспомощность",
+        "Волнение"
+      ],
+      "difficulty_center": "Я не понимаю, что от меня зависит, а что нет",
+      "free_narrative": "Я много работаю, но пока не получается этим зарабатывать, а долгов много. Есть ощущение, что все делаю правильно, но и волнение, что это не приведет к успеху и я так и буду сидеть в долгах."
+    },
+    "proposed_question": "Я много работаю, но пока это не приносит денег, а долгов много. Мне кажется, что я всё делаю правильно, и всё равно волнуюсь, что успеха не будет и я так и буду сидеть в долгах. Как понять, что в этой ситуации зависит от меня, а что нет?",
+    "working_hypotheses": [
+      "Возможно, беспомощность связана с разрывом: усилия зависят от человека, а результат — нет, и стараться сильнее уже некуда.",
+      "Волнение может быть связано с неизвестностью: правильность действий не гарантирует успеха, а долги задают срок и цену ожидания.",
+      "Возможно, «успех» отождествлён с заработком. Тогда ценность работы целиком переносится на исход, который от человека не зависит (тема плодов действия, стоики, Гита).",
+      "Возможно, вопрос о том, что зависит от меня, — это ещё и вопрос о том, как продолжать действовать, не имея гарантий, и как отличить упорство от продолжения пути, который не работает."
+    ],
+    "coordinates": [
+      "действие",
+      "контроль",
+      "ожидание / представление",
+      "страх / конечность",
+      "смысл / цель"
+    ],
+    "canonical_tensions": [
+      "контроль ↔ конечность",
+      "ожидание ↔ действительность",
+      "действие ↔ принятие"
+    ],
+    "free_tensions": [
+      "правильность действий ↔ гарантия результата",
+      "усилие ↔ исход"
+    ],
+    "ambiguity_notes": [
+      "Не сказано, в чём именно работа и что человек считает «успехом». Можно понять так, что успех — это заработок и выход из долгов."
+    ],
+    "trace": {
+      "interpreter": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "interpretation-prompt/0.11.0",
+      "input_sha256": "24d669ae71011272a914986cfcbe0a994107bf414bc03bc620e7274ec8aa35d3",
+      "reading_notes": [
+        {
+          "kind": "representation",
+          "note": "Человек много работает, но работа пока не приносит денег, а долгов много."
+        },
+        {
+          "kind": "expectation",
+          "note": "Есть ощущение, что всё делается правильно. Значит, есть ожидание, что правильные действия должны привести к успеху."
+        },
+        {
+          "kind": "tension",
+          "note": "Уверенность в правильности своих действий соседствует с волнением, что результата не будет: «так и буду сидеть в долгах»."
+        },
+        {
+          "kind": "boundary",
+          "note": "Центр трудности — непонятно, где проходит граница между тем, что зависит от человека, и тем, что от него не зависит."
+        },
+        {
+          "kind": "context",
+          "note": "Выбранные чувства — беспомощность и волнение. Оба связаны с будущим, которое нельзя гарантировать."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "wall_seconds": 13.31,
+            "cli_duration_ms": 11549,
+            "api_duration_ms": 11506,
+            "num_turns": 2,
+            "input_tokens": 2,
+            "cache_read_tokens": 5951,
+            "cache_creation_tokens": 795,
+            "output_tokens": 1194,
+            "thinking_tokens": 194,
+            "total_cost_usd_list": 0.0314382,
+            "models": [
+              "claude-opus-5-5"
+            ]
+          }
+        ],
+        "repairs": []
+      }
+    }
+  },
+  "insufficient": null,
+  "confirmation": {
+    "action": "confirmed",
+    "source": "user",
+    "proposed_question": "Я много работаю, но пока это не приносит денег, а долгов много. Мне кажется, что я всё делаю правильно, и всё равно волнуюсь, что успеха не будет и я так и буду сидеть в долгах. Как понять, что в этой ситуации зависит от меня, а что нет?",
+    "confirmed_question": "Я много работаю, но пока это не приносит денег, а долгов много. Мне кажется, что я всё делаю правильно, и всё равно волнуюсь, что успеха не будет и я так и буду сидеть в долгах. Как понять, что в этой ситуации зависит от меня, а что нет?",
+    "edited_text": null
+  },
+  "query_representation": {
+    "schema_version": "query-representation/0.1.0",
+    "confirmed_question": "Я много работаю, но пока это не приносит денег, а долгов много. Мне кажется, что я всё делаю правильно, и всё равно волнуюсь, что успеха не будет и я так и буду сидеть в долгах. Как понять, что в этой ситуации зависит от меня, а что нет?",
+    "context": {
+      "circumstance": "Будущее / неопределённость",
+      "narrative": "Я много работаю, но пока не получается этим зарабатывать, а долгов много. Есть ощущение, что все делаю правильно, но и волнение, что это не приведет к успеху и я так и буду сидеть в долгах."
+    },
+    "experiences": [
+      "Беспомощность",
+      "Волнение"
+    ],
+    "working_hypotheses": [
+      "Возможно, беспомощность связана с разрывом: усилия зависят от человека, а результат — нет, и стараться сильнее уже некуда.",
+      "Волнение может быть связано с неизвестностью: правильность действий не гарантирует успеха, а долги задают срок и цену ожидания.",
+      "Возможно, «успех» отождествлён с заработком. Тогда ценность работы целиком переносится на исход, который от человека не зависит (тема плодов действия, стоики, Гита).",
+      "Возможно, вопрос о том, что зависит от меня, — это ещё и вопрос о том, как продолжать действовать, не имея гарантий, и как отличить упорство от продолжения пути, который не работает."
+    ],
+    "coordinates": [
+      "действие",
+      "контроль",
+      "ожидание / представление",
+      "страх / конечность",
+      "смысл / цель"
+    ],
+    "canonical_tensions": [
+      "контроль ↔ конечность",
+      "ожидание ↔ действительность",
+      "действие ↔ принятие"
+    ],
+    "free_tensions": [
+      "правильность действий ↔ гарантия результата",
+      "усилие ↔ исход"
+    ],
+    "provenance": {
+      "origin": "production",
+      "confirmed_question_source": "user_confirmed",
+      "interpretation_source": "interpretation-layer_0.1.0",
+      "benchmark_item_id": null,
+      "note": null
+    }
+  },
+  "retrieval": {
+    "version": "candidate-retrieval/0.1.0",
+    "query": {
+      "schema_version": "query-representation/0.1.0",
+      "confirmed_question": "Я много работаю, но пока это не приносит денег, а долгов много. Мне кажется, что я всё делаю правильно, и всё равно волнуюсь, что успеха не будет и я так и буду сидеть в долгах. Как понять, что в этой ситуации зависит от меня, а что нет?",
+      "context": {
+        "circumstance": "Будущее / неопределённость",
+        "narrative": "Я много работаю, но пока не получается этим зарабатывать, а долгов много. Есть ощущение, что все делаю правильно, но и волнение, что это не приведет к успеху и я так и буду сидеть в долгах."
+      },
+      "experiences": [
+        "Беспомощность",
+        "Волнение"
+      ],
+      "working_hypotheses": [
+        "Возможно, беспомощность связана с разрывом: усилия зависят от человека, а результат — нет, и стараться сильнее уже некуда.",
+        "Волнение может быть связано с неизвестностью: правильность действий не гарантирует успеха, а долги задают срок и цену ожидания.",
+        "Возможно, «успех» отождествлён с заработком. Тогда ценность работы целиком переносится на исход, который от человека не зависит (тема плодов действия, стоики, Гита).",
+        "Возможно, вопрос о том, что зависит от меня, — это ещё и вопрос о том, как продолжать действовать, не имея гарантий, и как отличить упорство от продолжения пути, который не работает."
+      ],
+      "coordinates": [
+        "действие",
+        "контроль",
+        "ожидание / представление",
+        "страх / конечность",
+        "смысл / цель"
+      ],
+      "canonical_tensions": [
+        "контроль ↔ конечность",
+        "ожидание ↔ действительность",
+        "действие ↔ принятие"
+      ],
+      "free_tensions": [
+        "правильность действий ↔ гарантия результата",
+        "усилие ↔ исход"
+      ],
+      "provenance": {
+        "origin": "production",
+        "confirmed_question_source": "user_confirmed",
+        "interpretation_source": "interpretation-layer_0.1.0",
+        "benchmark_item_id": null,
+        "note": null
+      }
+    },
+    "embedding_config": {
+      "provider": "local-sentence-transformers",
+      "model": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimensions": 1024
+    },
+    "corpus_version": "final-corpus-2026-10-07/active-v1",
+    "retrieval_universe_size": 967,
+    "q0_control": {
+      "route": "Q0_QUESTION_ONLY_CONTROL",
+      "query": {
+        "version": "q0-question-only/1.0",
+        "text": "Я много работаю, но пока это не приносит денег, а долгов много. Мне кажется, что я всё делаю правильно, и всё равно волнуюсь, что успеха не будет и я так и буду сидеть в долгах. Как понять, что в этой ситуации зависит от меня, а что нет?",
+        "sha256": "14948583bace130c45d7ab0b6800b8a96ee73d767d4a24e5c3c5b56208169c58"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0581",
+          "rank": 1,
+          "cosine": 0.624646
+        },
+        {
+          "card_id": "C0604",
+          "rank": 2,
+          "cosine": 0.617566
+        },
+        {
+          "card_id": "C0569",
+          "rank": 3,
+          "cosine": 0.612327
+        },
+        {
+          "card_id": "C0290",
+          "rank": 4,
+          "cosine": 0.610102
+        },
+        {
+          "card_id": "C0545",
+          "rank": 5,
+          "cosine": 0.606992
+        },
+        {
+          "card_id": "C0328",
+          "rank": 6,
+          "cosine": 0.605102
+        },
+        {
+          "card_id": "C0241",
+          "rank": 7,
+          "cosine": 0.599841
+        },
+        {
+          "card_id": "C0587",
+          "rank": 8,
+          "cosine": 0.598647
+        },
+        {
+          "card_id": "C0391",
+          "rank": 9,
+          "cosine": 0.597031
+        },
+        {
+          "card_id": "C0075",
+          "rank": 10,
+          "cosine": 0.595664
+        },
+        {
+          "card_id": "C0378",
+          "rank": 11,
+          "cosine": 0.593441
+        },
+        {
+          "card_id": "C0446",
+          "rank": 12,
+          "cosine": 0.59209
+        },
+        {
+          "card_id": "C0191",
+          "rank": 13,
+          "cosine": 0.591146
+        },
+        {
+          "card_id": "C0377",
+          "rank": 14,
+          "cosine": 0.588835
+        },
+        {
+          "card_id": "C0334",
+          "rank": 15,
+          "cosine": 0.588638
+        }
+      ]
+    },
+    "q1_meaning": {
+      "route": "Q1_MEANING",
+      "query": {
+        "version": "q1-meaning-query/2.0",
+        "text": "Вопрос: Я много работаю, но пока это не приносит денег, а долгов много. Мне кажется, что я всё делаю правильно, и всё равно волнуюсь, что успеха не будет и я так и буду сидеть в долгах. Как понять, что в этой ситуации зависит от меня, а что нет?\nРабочие интерпретации:\n- Возможно, беспомощность связана с разрывом: усилия зависят от человека, а результат — нет, и стараться сильнее уже некуда.\n- Волнение может быть связано с неизвестностью: правильность действий не гарантирует успеха, а долги задают срок и цену ожидания.\n- Возможно, «успех» отождествлён с заработком. Тогда ценность работы целиком переносится на исход, который от человека не зависит (тема плодов действия, стоики, Гита).\n- Возможно, вопрос о том, что зависит от меня, — это ещё и вопрос о том, как продолжать действовать, не имея гарантий, и как отличить упорство от продолжения пути, который не работает.",
+        "sha256": "c661682241010632949a00ec51a10a3dc495b406f5bdef0952660f02fdca2b34"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0581",
+          "rank": 1,
+          "cosine": 0.680676
+        },
+        {
+          "card_id": "C0545",
+          "rank": 2,
+          "cosine": 0.668183
+        },
+        {
+          "card_id": "C0378",
+          "rank": 3,
+          "cosine": 0.651694
+        },
+        {
+          "card_id": "C0587",
+          "rank": 4,
+          "cosine": 0.649311
+        },
+        {
+          "card_id": "C0452",
+          "rank": 5,
+          "cosine": 0.645439
+        },
+        {
+          "card_id": "C0026",
+          "rank": 6,
+          "cosine": 0.64409
+        },
+        {
+          "card_id": "C0257",
+          "rank": 7,
+          "cosine": 0.643698
+        },
+        {
+          "card_id": "C0391",
+          "rank": 8,
+          "cosine": 0.643423
+        },
+        {
+          "card_id": "C0016",
+          "rank": 9,
+          "cosine": 0.637491
+        },
+        {
+          "card_id": "C0586",
+          "rank": 10,
+          "cosine": 0.635463
+        },
+        {
+          "card_id": "C0158",
+          "rank": 14,
+          "cosine": 0.622819
+        },
+        {
+          "card_id": "C0304",
+          "rank": 15,
+          "cosine": 0.621439
+        },
+        {
+          "card_id": "C0028",
+          "rank": 16,
+          "cosine": 0.620656
+        },
+        {
+          "card_id": "C0542",
+          "rank": 17,
+          "cosine": 0.617096
+        },
+        {
+          "card_id": "C0657",
+          "rank": 19,
+          "cosine": 0.615538
+        }
+      ]
+    },
+    "structure": {
+      "route": "STRUCTURE",
+      "ranking_rule": "lexicographic: (1) more exact canonical-tension matches, (2) more exact coordinate matches, (3) card_id ascending; cards with no match are not ranked; operation is logged, never scored",
+      "query_coordinates": [
+        "действие",
+        "контроль",
+        "ожидание / представление",
+        "страх / конечность",
+        "смысл / цель"
+      ],
+      "query_canonical_tensions": [
+        "контроль ↔ конечность",
+        "ожидание ↔ действительность",
+        "действие ↔ принятие"
+      ],
+      "top_k": 15,
+      "matching_cards": 0,
+      "tied_at_cutoff": 0,
+      "hits": []
+    },
+    "union_rule": "union(Q1_MEANING top_k, STRUCTURE top_k); Q0 excluded; one entry per card_id with separate route signals; no combined score; listed by card_id ascending (the order is not a ranking)",
+    "candidate_union": [
+      {
+        "card_id": "C0016",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 9,
+        "meaning_score": 0.637491,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0026",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 6,
+        "meaning_score": 0.64409,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0028",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 16,
+        "meaning_score": 0.620656,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0158",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 14,
+        "meaning_score": 0.622819,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0257",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 7,
+        "meaning_score": 0.643698,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0304",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 15,
+        "meaning_score": 0.621439,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0378",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 3,
+        "meaning_score": 0.651694,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0391",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 8,
+        "meaning_score": 0.643423,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0452",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 5,
+        "meaning_score": 0.645439,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0542",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 17,
+        "meaning_score": 0.617096,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0545",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 2,
+        "meaning_score": 0.668183,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0581",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 1,
+        "meaning_score": 0.680676,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0586",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 10,
+        "meaning_score": 0.635463,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0587",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 4,
+        "meaning_score": 0.649311,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0657",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 19,
+        "meaning_score": 0.615538,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      }
+    ],
+    "diversity_guardrail": {
+      "version": "temporary-mvp-source-diversity-guardrail/0.1.0",
+      "status": "temporary MVP retrieval diversity guardrail (final corpus only; not the retrieval architecture)",
+      "rule": "walk the original cosine ranking; at most 3 cards per source (CSV author field); pool 15; never below rank 45; no padding, no re-ranking",
+      "per_source": 3,
+      "pool_size": 15,
+      "scan_limit": 45,
+      "original_top": [
+        "C0581",
+        "C0545",
+        "C0378",
+        "C0587",
+        "C0452",
+        "C0026",
+        "C0257",
+        "C0391",
+        "C0016",
+        "C0586",
+        "C0597",
+        "C0578",
+        "C0604",
+        "C0158",
+        "C0304"
+      ],
+      "skipped": [
+        {
+          "card_id": "C0597",
+          "rank": 11,
+          "source": "Иов / друзья Иова / Господь / Кохелет (speaker по фрагменту)"
+        },
+        {
+          "card_id": "C0578",
+          "rank": 12,
+          "source": "Иов / друзья Иова / Господь / Кохелет (speaker по фрагменту)"
+        },
+        {
+          "card_id": "C0604",
+          "rank": 13,
+          "source": "Иов / друзья Иова / Господь / Кохелет (speaker по фрагменту)"
+        },
+        {
+          "card_id": "C0334",
+          "rank": 18,
+          "source": "Эпиктет"
+        }
+      ],
+      "deepest_accepted_rank": 19,
+      "pool_filled": true
+    }
+  },
+  "composition": {
+    "schema_version": "composition/0.5.0",
+    "item_id": "proto-3f952b110d2c",
+    "retrieval_run_id": "prototype-3f952b110d2c",
+    "confirmed_question": "Я много работаю, но пока это не приносит денег, а долгов много. Мне кажется, что я всё делаю правильно, и всё равно волнуюсь, что успеха не будет и я так и буду сидеть в долгах. Как понять, что в этой ситуации зависит от меня, а что нет?",
+    "candidate_pool": [
+      "C0016",
+      "C0026",
+      "C0028",
+      "C0158",
+      "C0257",
+      "C0304",
+      "C0378",
+      "C0391",
+      "C0452",
+      "C0542",
+      "C0545",
+      "C0581",
+      "C0586",
+      "C0587",
+      "C0657"
+    ],
+    "opening": "Ваш вопрос можно рассмотреть с нескольких сторон.",
+    "perspectives": [
+      {
+        "card_id": "C0452",
+        "role": "Различает типы причинности",
+        "title": null,
+        "source": "Эпикур, Письмо к Менекею, §§133–134",
+        "perspective": null,
+        "reflection_question": "Что в моих делах с заработком неизбежно, что случайно, а что зависит от меня?",
+        "why_selected": "Даёт прямой и точный инструмент для заданного вопроса и делает исходное деление на две части тоньше.",
+        "main_idea": "Эпикур делит то, что от нас не зависит, на два разных вида: неизбежное и случайное. Третье — наши собственные поступки. Только за них человека можно хвалить или упрекать.",
+        "applied_insight": "Вы спрашиваете, что в этой ситуации зависит от вас, а что нет. Но «не от меня» бывает двух видов. Если на заработок влияет случай, то отсутствие денег сейчас ещё не значит, что вы так и будете сидеть в долгах.",
+        "distinction": "Помогает различить неизбежное, случайное и зависящее от себя: вопрос пока делит происходящее только на две части.",
+        "perspective_effect": "«Не зависит от меня» распадается на два разных вида: неизбежное и случайное. Если на заработок влияет случай, отсутствие результата сейчас не означает, что он заранее предрешён.",
+        "perspective_frame": "какого рода причины стоят за результатом",
+        "question_explanation": null,
+        "verified_quote": null,
+        "card_format": "final-mvp",
+        "quote_excerpt": null
+      },
+      {
+        "card_id": "C0378",
+        "role": "Переносит взгляд на объект опасения",
+        "title": null,
+        "source": "Эпиктет, Энхиридион / Руководство, §2",
+        "perspective": null,
+        "reflection_question": "От чего именно я пытаюсь уберечься, когда волнуюсь о долгах?",
+        "why_selected": "Работает с напряжением, из которого растёт волнение: правильные действия при этом не гарантируют результата.",
+        "main_idea": "Эпиктет отделяет то, чего можно избегать в собственных поступках, от исходов вроде бедности, которые от человека не зависят. Кто бежит от таких исходов, становится несчастным, если они всё же случаются.",
+        "applied_insight": "Вы пишете, что волнуетесь: «так и буду сидеть в долгах». Выбраться из долгов — это исход, и он зависит не только от вас. Эпиктет помогает увидеть разницу: избегать такого исхода или избегать того, что в ваших руках.",
+        "distinction": "Помогает различить два стремления: избежать исхода, который от тебя не зависит, и избежать того, что в твоей власти.",
+        "perspective_effect": "Волнение можно рассмотреть по тому, на что направлено избегание. Если избегаешь исхода вроде бедности, который не в твоей власти, это одно; если избегаешь того, что от тебя зависит, — совсем другое.",
+        "perspective_frame": "на что направлены желание и избегание",
+        "question_explanation": null,
+        "verified_quote": null,
+        "card_format": "final-mvp",
+        "quote_excerpt": "если ты уклоняешься только от противоречащих природе вещей из числа тех, что в твоей власти, ты не будешь впадать в то, от чего уклоняешься. Но если ты начнешь уклоняться от болезни, смерти или бедности, ты станешь несчастным"
+      }
+    ],
+    "fewer_than_three_reason": "Двух перспектив хватает: одна разбирает виды причин, другая — то, на что направлено опасение. Остальные кандидаты либо повторяют операцию Эпиктета, либо требуют догадок о человеке.",
+    "count_reason": "Двух перспектив хватает: одна разбирает виды причин, другая — то, на что направлено опасение. Остальные кандидаты либо повторяют операцию Эпиктета, либо требуют догадок о человеке.",
+    "corpus_version": "final-corpus-2026-10-07/active-v1",
+    "rejected": [
+      {
+        "card_id": "C0391",
+        "reason": "та же мыслительная операция, что у C0378: Делает ту же операцию, но на примере чужой воли, что дальше от вопроса."
+      },
+      {
+        "card_id": "C0257",
+        "reason": "работает только через догадку о человеке: Применить это можно, только если предположить, что человек перенапрягается, а он об этом не говорил."
+      },
+      {
+        "card_id": "C0026",
+        "reason": "работает только через догадку о человеке: Легко прочитать как сомнение в правоте человека без оснований."
+      },
+      {
+        "card_id": "C0581",
+        "reason": "натянутое применение к вопросу: Речь в источнике о наследнике труда, а это требует натянутого переноса."
+      },
+      {
+        "card_id": "C0586",
+        "reason": "работает только через догадку о человеке: Вводит зависть и соперничество, о которых человек не говорил."
+      }
+    ],
+    "q1_top": {
+      "card_id": "C0581",
+      "decision": "rejected",
+      "reason": "Источник говорит о том, что плоды труда достаются другому человеку, а это лишь натянуто применимо к вопросу о долгах и контроле."
+    },
+    "meta": {
+      "composer": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "composition-prompt/0.10.0",
+      "package_sha256": "c4244b3a5979384014fac601cfea0a82aab6666b2f2ff088260648eff352e6a0",
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "wall_seconds": 28.59,
+            "cli_duration_ms": 26921,
+            "api_duration_ms": 26876,
+            "num_turns": 2,
+            "input_tokens": 2,
+            "cache_read_tokens": 5406,
+            "cache_creation_tokens": 7013,
+            "output_tokens": 2690,
+            "thinking_tokens": 837,
+            "total_cost_usd_list": 0.1109932,
+            "models": [
+              "claude-opus-5-5"
+            ],
+            "attempt": 1,
+            "call_seconds": 28.59,
+            "validation_seconds": 65.832
+          }
+        ],
+        "repairs": [],
+        "writer": {
+          "prompt_version": "card-writer-prompt/0.7.0",
+          "seconds": 65.83,
+          "cards": [
+            {
+              "card_id": "C0452",
+              "attempts": 2,
+              "repairs": [
+                "grounding: not in the card data (applied_insight): «Если на заработок влияет случай, отсутствие результата сейчас не означает предрешённости»; evidence «Если на заработок влияет случай, отсутствие результата сейчас не означает, что он заранее предрешён.» is not found — do not add knowledge about the source"
+              ],
+              "calls": [
+                {
+                  "wall_seconds": 14.85,
+                  "cli_duration_ms": 13145,
+                  "api_duration_ms": 13116,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 4187,
+                  "cache_creation_tokens": 1521,
+                  "output_tokens": 1431,
+                  "thinking_tokens": 504,
+                  "total_cost_usd_list": 0.0416334,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 1,
+                  "call_seconds": 14.85
+                },
+                {
+                  "wall_seconds": 14.73,
+                  "cli_duration_ms": 13178,
+                  "api_duration_ms": 13138,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 4187,
+                  "cache_creation_tokens": 1669,
+                  "output_tokens": 1476,
+                  "thinking_tokens": 580,
+                  "total_cost_usd_list": 0.043717400000000003,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 2,
+                  "call_seconds": 14.73
+                }
+              ],
+              "fallback": false,
+              "validation": [
+                {
+                  "wall_seconds": 10.92,
+                  "cli_duration_ms": 9395,
+                  "api_duration_ms": 9354,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 2125,
+                  "cache_creation_tokens": 1347,
+                  "output_tokens": 1050,
+                  "thinking_tokens": 366,
+                  "total_cost_usd_list": 0.032209,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "call_seconds": 10.92,
+                  "checked": 7,
+                  "violations": [],
+                  "labels": [
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "applied_insight",
+                      "given"
+                    ],
+                    [
+                      "applied_insight",
+                      "source_frame"
+                    ],
+                    [
+                      "applied_insight",
+                      "open_hypothesis"
+                    ],
+                    [
+                      "reflection_question",
+                      "open_question"
+                    ]
+                  ]
+                }
+              ],
+              "grounding": [
+                {
+                  "field": "main_idea",
+                  "claim": "Эпикур различает неизбежное, случайное и зависящее от нас",
+                  "kind": "source_fact",
+                  "evidence": "Иное происходит по неизбежности, иное по случаю, а иное зависит от нас"
+                },
+                {
+                  "field": "main_idea",
+                  "claim": "Зависящее от нас подлежит похвале и порицанию",
+                  "kind": "source_fact",
+                  "evidence": "подлежит как порицанию, так и похвале"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек спрашивает, что зависит от него, а что нет",
+                  "kind": "user_fact",
+                  "evidence": "что в этой ситуации зависит от меня, а что нет"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "«Не от меня» делится на два вида",
+                  "kind": "distinction",
+                  "evidence": "Но «не от меня» бывает двух видов."
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Если влияет случай, нынешнее отсутствие денег не означает, что долги останутся навсегда",
+                  "kind": "distinction",
+                  "evidence": "Если на заработок влияет случай, то отсутствие денег сейчас ещё не значит, что вы так и будете сидеть в долгах."
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек боится так и сидеть в долгах",
+                  "kind": "user_fact",
+                  "evidence": "я так и буду сидеть в долгах"
+                },
+                {
+                  "field": "reflection_question",
+                  "claim": "Вопрос о разделении ситуации на три части",
+                  "kind": "question",
+                  "evidence": "Что в моих делах с заработком неизбежно, что случайно, а что зависит от меня?"
+                }
+              ],
+              "seconds": 40.51
+            },
+            {
+              "card_id": "C0378",
+              "attempts": 2,
+              "repairs": [
+                "Независимая проверка нашла в карточке места, где сказано больше, чем известно. Исправь ТОЛЬКО эти предложения, остальное сохрани:\n- [вопрос к себе] «Чего я избегаю, когда волнуюсь: долгов или чего-то в своих собственных действиях?» — вопрос подсовывает гипотезу как один из заранее заданных вариантов и закрывает другие («за X или за Y?»), хотя человек этого не говорил — спросите открыто (Вопрос даёт только два варианта. Второй («что-то в собственных действиях») человек не называл, он, наоборот, пишет, что всё делает правильно. Другие варианты, н)"
+              ],
+              "calls": [
+                {
+                  "wall_seconds": 21.1,
+                  "cli_duration_ms": 19591,
+                  "api_duration_ms": 19555,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 4187,
+                  "cache_creation_tokens": 1585,
+                  "output_tokens": 2066,
+                  "thinking_tokens": 1132,
+                  "total_cost_usd_list": 0.0548454,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 1,
+                  "call_seconds": 21.1
+                },
+                {
+                  "wall_seconds": 15.6,
+                  "cli_duration_ms": 14191,
+                  "api_duration_ms": 14150,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 4187,
+                  "cache_creation_tokens": 1857,
+                  "output_tokens": 1635,
+                  "thinking_tokens": 750,
+                  "total_cost_usd_list": 0.048401400000000004,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 2,
+                  "call_seconds": 15.6
+                }
+              ],
+              "fallback": false,
+              "validation": [
+                {
+                  "wall_seconds": 14.81,
+                  "cli_duration_ms": 13311,
+                  "api_duration_ms": 13269,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 2125,
+                  "cache_creation_tokens": 1400,
+                  "output_tokens": 1453,
+                  "thinking_tokens": 701,
+                  "total_cost_usd_list": 0.04069300000000001,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "call_seconds": 14.81,
+                  "checked": 7,
+                  "violations": [
+                    {
+                      "field": "reflection_question",
+                      "sentence": "Чего я избегаю, когда волнуюсь: долгов или чего-то в своих собственных действиях?",
+                      "label": "forced_choice",
+                      "reason": "Вопрос даёт только два варианта. Второй («что-то в собственных действиях») человек не называл, он, наоборот, пишет, что всё делает правильно. Другие варианты, например неуспех или беспомощность, которые он сам упоминает, из вопроса выпадают."
+                    }
+                  ],
+                  "labels": [
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "applied_insight",
+                      "given"
+                    ],
+                    [
+                      "applied_insight",
+                      "general_distinction"
+                    ],
+                    [
+                      "applied_insight",
+                      "general_distinction"
+                    ],
+                    [
+                      "reflection_question",
+                      "forced_choice"
+                    ]
+                  ]
+                },
+                {
+                  "wall_seconds": 14.31,
+                  "cli_duration_ms": 12697,
+                  "api_duration_ms": 11173,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 2125,
+                  "cache_creation_tokens": 1408,
+                  "output_tokens": 1294,
+                  "thinking_tokens": 530,
+                  "total_cost_usd_list": 0.037577,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "call_seconds": 14.31,
+                  "checked": 6,
+                  "violations": [],
+                  "labels": [
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "applied_insight",
+                      "given"
+                    ],
+                    [
+                      "applied_insight",
+                      "general_distinction"
+                    ],
+                    [
+                      "applied_insight",
+                      "source_frame"
+                    ],
+                    [
+                      "reflection_question",
+                      "open_question"
+                    ]
+                  ]
+                }
+              ],
+              "grounding": [
+                {
+                  "field": "main_idea",
+                  "claim": "Эпиктет отделяет избегание того, что во власти человека, от избегания бедности",
+                  "kind": "source_fact",
+                  "evidence": "если ты начнешь уклоняться от болезни, смерти или бедности, ты станешь несчастным"
+                },
+                {
+                  "field": "main_idea",
+                  "claim": "Избегание того, что в твоей власти, не приводит к несчастью",
+                  "kind": "source_fact",
+                  "evidence": "из числа тех, что в твоей власти, ты не будешь впадать в то, от чего уклоняешься"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек волнуется, что останется в долгах",
+                  "kind": "user_fact",
+                  "evidence": "я так и буду сидеть в долгах"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Избегать исхода и избегать того, что в твоих руках, — разные вещи",
+                  "kind": "distinction",
+                  "evidence": "Эпиктет помогает увидеть разницу: избегать такого исхода или избегать того, что в ваших руках."
+                },
+                {
+                  "field": "reflection_question",
+                  "claim": "Открытый вопрос о предмете избегания",
+                  "kind": "question",
+                  "evidence": "От чего именно я пытаюсь уберечься, когда волнуюсь о долгах?"
+                }
+              ],
+              "seconds": 65.83
+            }
+          ],
+          "dropped": [],
+          "selection": [
+            {
+              "card_id": "C0452",
+              "perspective_effect": "«Не зависит от меня» распадается на два разных вида: неизбежное и случайное. Если на заработок влияет случай, отсутствие результата сейчас не означает, что он заранее предрешён.",
+              "perspective_frame": "какого рода причины стоят за результатом",
+              "distinction": "Помогает различить неизбежное, случайное и зависящее от себя: вопрос пока делит происходящее только на две части.",
+              "role": "Различает типы причинности",
+              "source_point": "Эпикур говорит, что одно происходит по необходимости, другое случайно, а третье зависит от нас. Случай ненадёжен, но и не предрешён, а за зависящее от нас можно хвалить или порицать.",
+              "user_point": "Можно разобрать, какая часть того, что работа пока не приносит денег, относится к неизбежному, какая к случаю, а какая к собственным действиям.",
+              "why_selected": "Даёт прямой и точный инструмент для заданного вопроса и делает исходное деление на две части тоньше."
+            },
+            {
+              "card_id": "C0378",
+              "perspective_effect": "Волнение можно рассмотреть по тому, на что направлено избегание. Если избегаешь исхода вроде бедности, который не в твоей власти, это одно; если избегаешь того, что от тебя зависит, — совсем другое.",
+              "perspective_frame": "на что направлены желание и избегание",
+              "distinction": "Помогает различить два стремления: избежать исхода, который от тебя не зависит, и избежать того, что в твоей власти.",
+              "role": "Переносит взгляд на объект опасения",
+              "source_point": "Эпиктет говорит: кто уклоняется только от того, что в его власти, не попадёт в то, чего избегает. А кто уклоняется от бедности или болезни, станет несчастным.",
+              "user_point": "Вы пишете о волнении, что «так и буду сидеть в долгах». Можно посмотреть, на что направлено это опасение: на исход или на то, что в ваших руках.",
+              "why_selected": "Работает с напряжением, из которого растёт волнение: правильные действия при этом не гарантируют результата."
+            }
+          ],
+          "considered": [
+            {
+              "card_id": "C0452",
+              "perspective_effect": "Внешнее делится на неизбежное и случайное, поэтому результат не обязательно предрешён.",
+              "perspective_frame": "какого рода причины стоят за результатом",
+              "decision": "selected",
+              "duplicate_of": null,
+              "reason": "Самое прямое различение для вопроса «что зависит от меня»."
+            },
+            {
+              "card_id": "C0378",
+              "perspective_effect": "Волнение связано с тем, на что направлено избегание: на исход или на то, что во власти человека.",
+              "perspective_frame": "на что направлены желание и избегание",
+              "decision": "selected",
+              "duplicate_of": null,
+              "reason": "Прямо касается бедности как предмета избегания и связан с волнением."
+            },
+            {
+              "card_id": "C0391",
+              "perspective_effect": "Стоит упражняться в том, на что хватает сил, а не в подчинении внешнего.",
+              "perspective_frame": "на что направлены желание и избегание",
+              "decision": "same_operation_as_selected",
+              "duplicate_of": "C0378",
+              "reason": "Делает ту же операцию, но на примере чужой воли, что дальше от вопроса."
+            },
+            {
+              "card_id": "C0257",
+              "perspective_effect": "У усилия есть мера: слишком сильное и слишком слабое одинаково мешают.",
+              "perspective_frame": "как дозировать усилие",
+              "decision": "needs_guess_about_person",
+              "duplicate_of": null,
+              "reason": "Применить это можно, только если предположить, что человек перенапрягается, а он об этом не говорил."
+            },
+            {
+              "card_id": "C0026",
+              "perspective_effect": "Сама способность отличить должное от недолжного может быть ясной или спутанной.",
+              "perspective_frame": "насколько надёжна собственная оценка «делаю правильно»",
+              "decision": "needs_guess_about_person",
+              "duplicate_of": null,
+              "reason": "Легко прочитать как сомнение в правоте человека без оснований."
+            },
+            {
+              "card_id": "C0581",
+              "perspective_effect": "Умелый труд не даёт власти над тем, кому и как достанется его результат.",
+              "perspective_frame": "разрыв между трудом и его плодами",
+              "decision": "strained_application",
+              "duplicate_of": null,
+              "reason": "Речь в источнике о наследнике труда, а это требует натянутого переноса."
+            },
+            {
+              "card_id": "C0586",
+              "perspective_effect": "Горсть с покоем лучше двух горстей с погоней.",
+              "perspective_frame": "ради чего ведётся труд",
+              "decision": "needs_guess_about_person",
+              "duplicate_of": null,
+              "reason": "Вводит зависть и соперничество, о которых человек не говорил."
+            }
+          ],
+          "count_reason": "Двух перспектив хватает: одна разбирает виды причин, другая — то, на что направлено опасение. Остальные кандидаты либо повторяют операцию Эпиктета, либо требуют догадок о человеке."
+        }
+      }
+    }
+  },
+  "errors": [],
+  "timings": [
+    {
+      "stage": "interpretation",
+      "seconds": 13.31,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "calls": [
+        {
+          "wall_seconds": 13.31,
+          "cli_duration_ms": 11549,
+          "api_duration_ms": 11506,
+          "num_turns": 2,
+          "input_tokens": 2,
+          "cache_read_tokens": 5951,
+          "cache_creation_tokens": 795,
+          "output_tokens": 1194,
+          "thinking_tokens": 194,
+          "total_cost_usd_list": 0.0314382,
+          "models": [
+            "claude-opus-5-5"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "seconds": 1.16,
+      "llm_calls": 0
+    },
+    {
+      "stage": "selection attempt 1",
+      "seconds": 28.59,
+      "llm_calls": 1,
+      "validation_seconds": 65.832,
+      "output_tokens": 2690,
+      "thinking_tokens": 837
+    },
+    {
+      "stage": "card writing (parallel, wall)",
+      "seconds": 65.83,
+      "llm_calls": 4,
+      "dropped_cards": []
+    },
+    {
+      "stage": "independent validation (sum of calls)",
+      "seconds": 40.04,
+      "llm_calls": 3,
+      "rejected_by_validator": 1
+    },
+    {
+      "stage": "  writer C0452",
+      "seconds": 40.51,
+      "llm_calls": 2,
+      "retries": 1,
+      "retry_reasons": [
+        "grounding: not in the card data (applied_insight): «Если на заработок влияет случай, отсутствие результата сейчас не означает предрешённости»; evidence «Если на заработок влияет случай, отсутствие результата сейчас не означает, что он заранее предрешён.» is not found — do not add knowledge about the source"
+      ],
+      "fallback_to_draft": false
+    },
+    {
+      "stage": "  writer C0378",
+      "seconds": 65.83,
+      "llm_calls": 2,
+      "retries": 1,
+      "retry_reasons": [
+        "Независимая проверка нашла в карточке места, где сказано больше, чем известно. Исправь ТОЛЬКО эти предложения, остальное сохрани:\n- [вопрос к себе] «Чего я избегаю, когда волнуюсь: долгов или чего-то в своих собственных действиях?» — вопрос подсовывает гипотезу как один из заранее заданных вариантов и закрывает другие («за X или за Y?»), хотя человек этого не говорил — спросите открыто (Вопрос даёт только два варианта. Второй («что-то в собственных действиях») человек не называл, он, наоборот, пишет, что всё делает правильно. Другие варианты, н)"
+      ],
+      "fallback_to_draft": false
+    },
+    {
+      "stage": "composition total",
+      "seconds": 94.42,
+      "llm_calls": 8,
+      "retries": 2,
+      "retry_reasons": [
+        "grounding: not in the card data (applied_insight): «Если на заработок влияет случай, отсутствие результата сейчас не означает предрешённости»; evidence «Если на заработок влияет случай, отсутствие результата сейчас не означает, что он заранее предрешён.» is not found — do not add knowledge about the source",
+        "Независимая проверка нашла в карточке места, где сказано больше, чем известно. Исправь ТОЛЬКО эти предложения, остальное сохрани:\n- [вопрос к себе] «Чего я избегаю, когда волнуюсь: долгов или чего-то в своих собственных действиях?» — вопрос подсовывает гипотезу как один из заранее заданных вариантов и закрывает другие («за X или за Y?»), хотя человек этого не говорил — спросите открыто (Вопрос даёт только два варианта. Второй («что-то в собственных действиях») человек не называл, он, наоборот, пишет, что всё делает правильно. Другие варианты, н)"
+      ]
+    }
+  ],
+  "reflection": null
+}

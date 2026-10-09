@@ -1,0 +1,99 @@
+{
+  "document": "Перспектива: переживаемый недостаток не имеет единственного смысла; сохранение себя может происходить через отказ от жёсткой прямоты и самоутверждения.\nКоординаты: принятие / сопротивление; отношение к себе; признание\nНапряжения: отношение к себе ↔ взгляд другого; достигнутая цель ↔ смысл",
+  "document_chars": 289,
+  "recovered": true,
+  "centrality": 0.7033,
+  "centrality_rank": 84,
+  "mean_q1_cosine": 0.6927,
+  "mean_q1_cosine_rank": 1,
+  "baseline_q1_rank_per_case": {
+    "B01": 7,
+    "B02": 15,
+    "B03": 3,
+    "B04": 4,
+    "B05": 1,
+    "B06": 2,
+    "B07": 6,
+    "B08": 5,
+    "B09": 4,
+    "B10": 1,
+    "B11": 11,
+    "B12": 4,
+    "B13": 1,
+    "B14": 5,
+    "B15": 10,
+    "B16": 6,
+    "B17": 1,
+    "B18": 5,
+    "B19": 9,
+    "B20": 1
+  },
+  "nearest_neighbours": [
+    [
+      "C0170",
+      0.8731,
+      true
+    ],
+    [
+      "C1108",
+      0.8688,
+      true
+    ],
+    [
+      "C0786",
+      0.8679,
+      true
+    ],
+    [
+      "C0806",
+      0.8523,
+      true
+    ],
+    [
+      "C0246",
+      0.849,
+      true
+    ],
+    [
+      "C0013",
+      0.8486,
+      true
+    ],
+    [
+      "C0813",
+      0.8376,
+      true
+    ],
+    [
+      "C0571",
+      0.8371,
+      true
+    ],
+    [
+      "C0579",
+      0.837,
+      true
+    ],
+    [
+      "C0001",
+      0.8343,
+      true
+    ]
+  ],
+  "frequency_by_doc_variant": {
+    "A_perspective": 14,
+    "B_questions": 0,
+    "C_persp_questions": 14,
+    "D_full": 20,
+    "E_full_no_tensions": 16,
+    "F_full_detemplated": 19,
+    "G_coords_tensions": 17
+  },
+  "frequency_by_query_variant": {
+    "Q0_question_only": 10,
+    "QH_question_hypotheses": 16,
+    "QT_question_tensions": 20,
+    "Q1_full": 20,
+    "QTonly_tensions_only": 20
+  }
+}

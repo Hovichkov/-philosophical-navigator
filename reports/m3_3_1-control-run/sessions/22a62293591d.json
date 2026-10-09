@@ -1,0 +1,1463 @@
+{
+  "session_id": "22a62293591d",
+  "created_utc": "2026-09-29T14:44:39+00:00",
+  "state": "answered",
+  "interpretation_input": {
+    "topic": "Работа / дело / деньги",
+    "experiences": [
+      "Раздражение",
+      "Желание всё исправить"
+    ],
+    "difficulty_center": "Я не знаю, как реагировать",
+    "free_narrative": "Я шакольный учитель. У меня есть ученик с дцп, но дееспособный. И он отказывается участвовать в работе. Все время себя самоуничижает. Я хочу ему помочь, пытаюсь включить в рабочий процесс, но он идет в отказ"
+  },
+  "interpretation": {
+    "schema_version": "interpretation/0.1.0",
+    "status": "interpreted",
+    "input": {
+      "topic": "Работа / дело / деньги",
+      "experiences": [
+        "Раздражение",
+        "Желание всё исправить"
+      ],
+      "difficulty_center": "Я не знаю, как реагировать",
+      "free_narrative": "Я шакольный учитель. У меня есть ученик с дцп, но дееспособный. И он отказывается участвовать в работе. Все время себя самоуничижает. Я хочу ему помочь, пытаюсь включить в рабочий процесс, но он идет в отказ"
+    },
+    "proposed_question": "Я учитель, и мой ученик постоянно отказывается участвовать в работе и принижает себя. Я хочу ему помочь и пытаюсь его включить, но натыкаюсь на отказ и не понимаю, как на это отвечать. Как мне быть рядом с ним, когда моё желание помочь раз за разом упирается в его «нет»?",
+    "working_hypotheses": [
+      "Возможно, помощь, которая стремится к результату (включить в работу), сталкивается с тем, что другой человек сам решает, принимать её или нет. Здесь уместны философские тексты о свободе другого и о пределах влияния.",
+      "Самоуничижение ученика может ставить учителя перед вопросом, отвечать ли на слова ученика о себе или на его отказ участвовать. Это разные адресаты реакции.",
+      "Раздражение, возможно, появляется там, где усилие не даёт отклика. Сюда подходит тема действия без гарантии плода (стоики, Гита).",
+      "Профессиональный долг учителя (включать всех) может расходиться с уважением к «нет» конкретного человека. Это стоит исследовать как философский вопрос, а не как готовый выбор."
+    ],
+    "coordinates": [
+      "отношение к другому",
+      "действие",
+      "долг / ответственность",
+      "контроль",
+      "принятие / сопротивление"
+    ],
+    "canonical_tensions": [
+      "действие ↔ принятие",
+      "ожидание ↔ действительность"
+    ],
+    "free_tensions": [
+      "желание помочь ↔ отказ другого",
+      "усилие ↔ отсутствие отклика"
+    ],
+    "ambiguity_notes": [
+      "Тема выбрана как «Работа / дело / деньги», но по сути трудность связана с отношением к конкретному ученику, а не с работой вообще.",
+      "Не ясно, как учитель понимает самоуничижение ученика: связано ли оно с отказом участвовать или это отдельная трудность.",
+      "Слово «дееспособный» может указывать, что учитель видит в отказе выбор самого ученика. Но в вопросе это не закреплено."
+    ],
+    "trace": {
+      "interpreter": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "interpretation-prompt/0.8.1",
+      "input_sha256": "46366fa6930440feed27e2bb8a5d218fe34cab84bbbca6ec2a1b356d2f2503df",
+      "reading_notes": [
+        {
+          "kind": "representation",
+          "note": "Учитель понимает свою роль как активную: помочь, включить ученика в работу. Отказ ученика он воспринимает как преграду для этой помощи."
+        },
+        {
+          "kind": "tension",
+          "note": "Учитель хочет помочь, а ученик идёт в отказ. К этому добавляются раздражение и желание всё исправить, то есть это напряжение переживается и эмоционально."
+        },
+        {
+          "kind": "context",
+          "note": "Учитель специально пишет, что ученик «дееспособный». Этим он, похоже, отделяет отказ от ограничений и видит в нём позицию самого ученика. Но прямо он этого не формулирует."
+        },
+        {
+          "kind": "boundary",
+          "note": "Центр трудности — «не знаю, как реагировать». То есть вопрос не только в том, как добиться участия ученика. Он ещё и в том, каким должен быть собственный ответ учителя на отказ и самоуничижение."
+        },
+        {
+          "kind": "expectation",
+          "note": "Учитель ждёт, что если он постарается включить ученика, тот откликнется. Но на деле ученик раз за разом отказывается."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "wall_seconds": 22.69,
+            "cli_duration_ms": 20222,
+            "api_duration_ms": 20174,
+            "num_turns": 2,
+            "input_tokens": 2,
+            "cache_read_tokens": 4920,
+            "cache_creation_tokens": 807,
+            "output_tokens": 1701,
+            "thinking_tokens": 445,
+            "total_cost_usd_list": 0.041468000000000005,
+            "models": [
+              "claude-opus-5-5"
+            ]
+          }
+        ],
+        "repairs": []
+      }
+    }
+  },
+  "insufficient": null,
+  "confirmation": {
+    "action": "confirmed",
+    "source": "user",
+    "proposed_question": "Я учитель, и мой ученик постоянно отказывается участвовать в работе и принижает себя. Я хочу ему помочь и пытаюсь его включить, но натыкаюсь на отказ и не понимаю, как на это отвечать. Как мне быть рядом с ним, когда моё желание помочь раз за разом упирается в его «нет»?",
+    "confirmed_question": "Я учитель, и мой ученик постоянно отказывается участвовать в работе и принижает себя. Я хочу ему помочь и пытаюсь его включить, но натыкаюсь на отказ и не понимаю, как на это отвечать. Как мне быть рядом с ним, когда моё желание помочь раз за разом упирается в его «нет»?",
+    "edited_text": null
+  },
+  "query_representation": {
+    "schema_version": "query-representation/0.1.0",
+    "confirmed_question": "Я учитель, и мой ученик постоянно отказывается участвовать в работе и принижает себя. Я хочу ему помочь и пытаюсь его включить, но натыкаюсь на отказ и не понимаю, как на это отвечать. Как мне быть рядом с ним, когда моё желание помочь раз за разом упирается в его «нет»?",
+    "context": {
+      "circumstance": "Работа / дело / деньги",
+      "narrative": "Я шакольный учитель. У меня есть ученик с дцп, но дееспособный. И он отказывается участвовать в работе. Все время себя самоуничижает. Я хочу ему помочь, пытаюсь включить в рабочий процесс, но он идет в отказ"
+    },
+    "experiences": [
+      "Раздражение",
+      "Желание всё исправить"
+    ],
+    "working_hypotheses": [
+      "Возможно, помощь, которая стремится к результату (включить в работу), сталкивается с тем, что другой человек сам решает, принимать её или нет. Здесь уместны философские тексты о свободе другого и о пределах влияния.",
+      "Самоуничижение ученика может ставить учителя перед вопросом, отвечать ли на слова ученика о себе или на его отказ участвовать. Это разные адресаты реакции.",
+      "Раздражение, возможно, появляется там, где усилие не даёт отклика. Сюда подходит тема действия без гарантии плода (стоики, Гита).",
+      "Профессиональный долг учителя (включать всех) может расходиться с уважением к «нет» конкретного человека. Это стоит исследовать как философский вопрос, а не как готовый выбор."
+    ],
+    "coordinates": [
+      "отношение к другому",
+      "действие",
+      "долг / ответственность",
+      "контроль",
+      "принятие / сопротивление"
+    ],
+    "canonical_tensions": [
+      "действие ↔ принятие",
+      "ожидание ↔ действительность"
+    ],
+    "free_tensions": [
+      "желание помочь ↔ отказ другого",
+      "усилие ↔ отсутствие отклика"
+    ],
+    "provenance": {
+      "origin": "production",
+      "confirmed_question_source": "user_confirmed",
+      "interpretation_source": "interpretation-layer_0.1.0",
+      "benchmark_item_id": null,
+      "note": null
+    }
+  },
+  "retrieval": {
+    "version": "candidate-retrieval/0.1.0",
+    "query": {
+      "schema_version": "query-representation/0.1.0",
+      "confirmed_question": "Я учитель, и мой ученик постоянно отказывается участвовать в работе и принижает себя. Я хочу ему помочь и пытаюсь его включить, но натыкаюсь на отказ и не понимаю, как на это отвечать. Как мне быть рядом с ним, когда моё желание помочь раз за разом упирается в его «нет»?",
+      "context": {
+        "circumstance": "Работа / дело / деньги",
+        "narrative": "Я шакольный учитель. У меня есть ученик с дцп, но дееспособный. И он отказывается участвовать в работе. Все время себя самоуничижает. Я хочу ему помочь, пытаюсь включить в рабочий процесс, но он идет в отказ"
+      },
+      "experiences": [
+        "Раздражение",
+        "Желание всё исправить"
+      ],
+      "working_hypotheses": [
+        "Возможно, помощь, которая стремится к результату (включить в работу), сталкивается с тем, что другой человек сам решает, принимать её или нет. Здесь уместны философские тексты о свободе другого и о пределах влияния.",
+        "Самоуничижение ученика может ставить учителя перед вопросом, отвечать ли на слова ученика о себе или на его отказ участвовать. Это разные адресаты реакции.",
+        "Раздражение, возможно, появляется там, где усилие не даёт отклика. Сюда подходит тема действия без гарантии плода (стоики, Гита).",
+        "Профессиональный долг учителя (включать всех) может расходиться с уважением к «нет» конкретного человека. Это стоит исследовать как философский вопрос, а не как готовый выбор."
+      ],
+      "coordinates": [
+        "отношение к другому",
+        "действие",
+        "долг / ответственность",
+        "контроль",
+        "принятие / сопротивление"
+      ],
+      "canonical_tensions": [
+        "действие ↔ принятие",
+        "ожидание ↔ действительность"
+      ],
+      "free_tensions": [
+        "желание помочь ↔ отказ другого",
+        "усилие ↔ отсутствие отклика"
+      ],
+      "provenance": {
+        "origin": "production",
+        "confirmed_question_source": "user_confirmed",
+        "interpretation_source": "interpretation-layer_0.1.0",
+        "benchmark_item_id": null,
+        "note": null
+      }
+    },
+    "embedding_config": {
+      "provider": "local-sentence-transformers",
+      "model": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimensions": 1024
+    },
+    "corpus_version": "launch-124/0.3.0-m1.5-retrieval-readiness",
+    "retrieval_universe_size": 113,
+    "q0_control": {
+      "route": "Q0_QUESTION_ONLY_CONTROL",
+      "query": {
+        "version": "q0-question-only/1.0",
+        "text": "Я учитель, и мой ученик постоянно отказывается участвовать в работе и принижает себя. Я хочу ему помочь и пытаюсь его включить, но натыкаюсь на отказ и не понимаю, как на это отвечать. Как мне быть рядом с ним, когда моё желание помочь раз за разом упирается в его «нет»?",
+        "sha256": "7ba8da1163814717d5ade0f294b8757358fce04f90c3ed270ba0690a4ad026af"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0049",
+          "rank": 1,
+          "cosine": 0.52105
+        },
+        {
+          "card_id": "C0670",
+          "rank": 2,
+          "cosine": 0.515336
+        },
+        {
+          "card_id": "C0056",
+          "rank": 3,
+          "cosine": 0.511592
+        },
+        {
+          "card_id": "C0712",
+          "rank": 4,
+          "cosine": 0.506492
+        },
+        {
+          "card_id": "C0345",
+          "rank": 5,
+          "cosine": 0.498326
+        },
+        {
+          "card_id": "C0123",
+          "rank": 6,
+          "cosine": 0.495093
+        },
+        {
+          "card_id": "C0618",
+          "rank": 7,
+          "cosine": 0.488673
+        },
+        {
+          "card_id": "C0001",
+          "rank": 8,
+          "cosine": 0.487338
+        },
+        {
+          "card_id": "C0621",
+          "rank": 9,
+          "cosine": 0.484758
+        },
+        {
+          "card_id": "C0341",
+          "rank": 10,
+          "cosine": 0.480458
+        },
+        {
+          "card_id": "C0005",
+          "rank": 11,
+          "cosine": 0.479437
+        },
+        {
+          "card_id": "C0028",
+          "rank": 12,
+          "cosine": 0.479313
+        },
+        {
+          "card_id": "C0281",
+          "rank": 13,
+          "cosine": 0.478197
+        },
+        {
+          "card_id": "C0623",
+          "rank": 14,
+          "cosine": 0.47693
+        },
+        {
+          "card_id": "C0779",
+          "rank": 15,
+          "cosine": 0.476171
+        }
+      ]
+    },
+    "q1_meaning": {
+      "route": "Q1_MEANING",
+      "query": {
+        "version": "q1-meaning-query/2.0",
+        "text": "Вопрос: Я учитель, и мой ученик постоянно отказывается участвовать в работе и принижает себя. Я хочу ему помочь и пытаюсь его включить, но натыкаюсь на отказ и не понимаю, как на это отвечать. Как мне быть рядом с ним, когда моё желание помочь раз за разом упирается в его «нет»?\nРабочие интерпретации:\n- Возможно, помощь, которая стремится к результату (включить в работу), сталкивается с тем, что другой человек сам решает, принимать её или нет. Здесь уместны философские тексты о свободе другого и о пределах влияния.\n- Самоуничижение ученика может ставить учителя перед вопросом, отвечать ли на слова ученика о себе или на его отказ участвовать. Это разные адресаты реакции.\n- Раздражение, возможно, появляется там, где усилие не даёт отклика. Сюда подходит тема действия без гарантии плода (стоики, Гита).\n- Профессиональный долг учителя (включать всех) может расходиться с уважением к «нет» конкретного человека. Это стоит исследовать как философский вопрос, а не как готовый выбор.",
+        "sha256": "af0a9cc8e6744b2f4693bbd29629fc599a4325767c0d4e8711b6ed339e34fad6"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0670",
+          "rank": 1,
+          "cosine": 0.625253
+        },
+        {
+          "card_id": "C0049",
+          "rank": 2,
+          "cosine": 0.622166
+        },
+        {
+          "card_id": "C0712",
+          "rank": 3,
+          "cosine": 0.606587
+        },
+        {
+          "card_id": "C0060",
+          "rank": 4,
+          "cosine": 0.596983
+        },
+        {
+          "card_id": "C0345",
+          "rank": 5,
+          "cosine": 0.593166
+        },
+        {
+          "card_id": "C0005",
+          "rank": 6,
+          "cosine": 0.591592
+        },
+        {
+          "card_id": "C0341",
+          "rank": 7,
+          "cosine": 0.589289
+        },
+        {
+          "card_id": "C0028",
+          "rank": 8,
+          "cosine": 0.587382
+        },
+        {
+          "card_id": "C0583",
+          "rank": 9,
+          "cosine": 0.584545
+        },
+        {
+          "card_id": "C0123",
+          "rank": 10,
+          "cosine": 0.582395
+        },
+        {
+          "card_id": "C0445",
+          "rank": 11,
+          "cosine": 0.578377
+        },
+        {
+          "card_id": "C0781",
+          "rank": 12,
+          "cosine": 0.577209
+        },
+        {
+          "card_id": "C0620",
+          "rank": 13,
+          "cosine": 0.576104
+        },
+        {
+          "card_id": "C0621",
+          "rank": 14,
+          "cosine": 0.574543
+        },
+        {
+          "card_id": "C0942",
+          "rank": 15,
+          "cosine": 0.574376
+        }
+      ]
+    },
+    "structure": {
+      "route": "STRUCTURE",
+      "ranking_rule": "lexicographic: (1) more exact canonical-tension matches, (2) more exact coordinate matches, (3) card_id ascending; cards with no match are not ranked; operation is logged, never scored",
+      "query_coordinates": [
+        "отношение к другому",
+        "действие",
+        "долг / ответственность",
+        "контроль",
+        "принятие / сопротивление"
+      ],
+      "query_canonical_tensions": [
+        "действие ↔ принятие",
+        "ожидание ↔ действительность"
+      ],
+      "top_k": 15,
+      "matching_cards": 88,
+      "tied_at_cutoff": 0,
+      "hits": [
+        {
+          "card_id": "C0013",
+          "rank": 1,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "контроль",
+            "принятие / сопротивление"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0813",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "отношение к другому",
+            "принятие / сопротивление"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C1108",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "контроль",
+            "принятие / сопротивление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0442",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "действие"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0518",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "контроль"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0806",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "контроль"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0275",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0281",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0439",
+          "rank": 10,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0440",
+          "rank": 11,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0579",
+          "rank": 12,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0798",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0937",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0957",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "долг / ответственность",
+            "отношение к другому"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        }
+      ]
+    },
+    "union_rule": "union(Q1_MEANING top_k, STRUCTURE top_k); Q0 excluded; one entry per card_id with separate route signals; no combined score; listed by card_id ascending (the order is not a ranking)",
+    "candidate_union": [
+      {
+        "card_id": "C0005",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 6,
+        "meaning_score": 0.591592,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "DECOUPLE_ACTION_OUTCOME"
+      },
+      {
+        "card_id": "C0013",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 1,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "действие",
+          "контроль",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": "DISTINGUISH"
+      },
+      {
+        "card_id": "C0028",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 8,
+        "meaning_score": 0.587382,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0049",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 2,
+        "meaning_score": 0.622166,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0060",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 4,
+        "meaning_score": 0.596983,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "DECOUPLE_ACTION_OUTCOME"
+      },
+      {
+        "card_id": "C0123",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 10,
+        "meaning_score": 0.582395,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "EXAMINE_DESIRE"
+      },
+      {
+        "card_id": "C0275",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 8,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0281",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 9,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0341",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 7,
+        "meaning_score": 0.589289,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "CHALLENGE_ASSUMPTION"
+      },
+      {
+        "card_id": "C0345",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 5,
+        "meaning_score": 0.593166,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0439",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 10,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0440",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 11,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0442",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 5,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "действие"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0445",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 11,
+        "meaning_score": 0.578377,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0518",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 6,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "контроль"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0527",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 2,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "действие",
+          "долг / ответственность",
+          "отношение к другому"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0579",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 12,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0583",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 9,
+        "meaning_score": 0.584545,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0620",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 13,
+        "meaning_score": 0.576104,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "TRANSFORM_PRACTICE"
+      },
+      {
+        "card_id": "C0621",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 14,
+        "meaning_score": 0.574543,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "TRANSFORM_PRACTICE"
+      },
+      {
+        "card_id": "C0670",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 1,
+        "meaning_score": 0.625253,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PRESERVE_AGENCY"
+      },
+      {
+        "card_id": "C0712",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 3,
+        "meaning_score": 0.606587,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0781",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 12,
+        "meaning_score": 0.577209,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PRESERVE_AGENCY"
+      },
+      {
+        "card_id": "C0798",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 13,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "действие",
+          "долг / ответственность",
+          "отношение к другому"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "RELATIONAL_ACCOUNTABILITY"
+      },
+      {
+        "card_id": "C0806",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 7,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "контроль"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "CHALLENGE_ASSUMPTION"
+      },
+      {
+        "card_id": "C0813",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 3,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "действие",
+          "отношение к другому",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": "HOLD_VALUE_CONFLICT"
+      },
+      {
+        "card_id": "C0937",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 14,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "действие",
+          "долг / ответственность",
+          "отношение к другому"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "HOLD_VALUE_CONFLICT"
+      },
+      {
+        "card_id": "C0942",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 15,
+        "meaning_score": 0.574376,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0957",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 15,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "действие",
+          "долг / ответственность",
+          "отношение к другому"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "LIMIT_OBLIGATION"
+      },
+      {
+        "card_id": "C1108",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 4,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "действие",
+          "контроль",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": "REVALUE_GOOD"
+      }
+    ]
+  },
+  "composition": {
+    "schema_version": "composition/0.4.0",
+    "item_id": "proto-22a62293591d",
+    "retrieval_run_id": "prototype-22a62293591d",
+    "confirmed_question": "Я учитель, и мой ученик постоянно отказывается участвовать в работе и принижает себя. Я хочу ему помочь и пытаюсь его включить, но натыкаюсь на отказ и не понимаю, как на это отвечать. Как мне быть рядом с ним, когда моё желание помочь раз за разом упирается в его «нет»?",
+    "candidate_pool": [
+      "C0005",
+      "C0013",
+      "C0028",
+      "C0049",
+      "C0060",
+      "C0123",
+      "C0275",
+      "C0281",
+      "C0341",
+      "C0345",
+      "C0439",
+      "C0440",
+      "C0442",
+      "C0445",
+      "C0518",
+      "C0527",
+      "C0579",
+      "C0583",
+      "C0620",
+      "C0621",
+      "C0670",
+      "C0712",
+      "C0781",
+      "C0798",
+      "C0806",
+      "C0813",
+      "C0937",
+      "C0942",
+      "C0957",
+      "C1108"
+    ],
+    "opening": "Ваш вопрос можно рассмотреть с нескольких сторон.",
+    "perspectives": [
+      {
+        "card_id": "C0005",
+        "role": "Отделяет действие от плода",
+        "title": "Не держаться за результат ещё не значит бросить дело",
+        "source": "Бхагавад-гита, БГ 2.47–51",
+        "perspective": "В Бхагавад-гите соединяются две мысли. Первая: делай то, что должен, и не держись за то, что из этого выйдет. Вторая: не бросай дело и не уходи в бездействие. Обычно кажется, что выбор тут простой: либо добиваться результата, либо махнуть рукой. Гита не принимает ни того, ни другого. Для вашего вопроса это значит вот что. «Нет» ученика не отменяет смысла того, что делаете вы. Но и ваше дело не обязано доказывать себя его согласием. Вы пишете про раздражение и желание всё исправить. Можно проверить, к чему они больше относятся: к вашему делу или к ответу ученика.",
+        "reflection_question": "Что я делаю для этого ученика на уроках? Что из этого стоит делать, даже если ученик снова скажет «нет»?",
+        "why_selected": "Прямо работает с напряжением «усилие ↔ отсутствие отклика» и не предлагает ни давить, ни сдаться.",
+        "main_idea": "Бхагавад-гита учит делать своё дело и не держаться за то, что из этого выйдет. При этом дело бросать нельзя, и бездействие тоже не выход.",
+        "applied_insight": "Вы спрашиваете, как быть рядом с учеником, когда ваше желание помочь раз за разом упирается в его «нет». Гита предлагает смотреть отдельно на то, что делаете вы, и на то, что ответит он. Если не держаться за его «да», это ещё не значит перестать помогать.",
+        "distinction": "Помогает различить отказ от привязанности к результату и отказ от самого действия: можно продолжать делать своё, не ставя его ценность в зависимость от «да» ученика.",
+        "question_explanation": "Речь о том, что вы делаете сами, отдельно от того, как ответит ученик. Например, звать ученика в работу — это ваше дело, а его ответ — уже его.",
+        "verified_quote": null
+      },
+      {
+        "card_id": "C0781",
+        "role": "Сохраняет свободу другого",
+        "title": "Показать путь ещё не значит заставить по нему идти",
+        "source": "Коран, 2:256–257",
+        "perspective": "В Коране мысль устроена просто. Истина и заблуждение различаются ясно. Но из этой ясности не следует право заставлять человека поверить. Решать, верить или нет, остаётся самому человеку. Для учителя здесь разводятся две вещи. Можно ясно показывать дорогу к работе и снова и снова звать ученика. Но согласиться может только сам ученик. Отказ сегодня не отменяет предложения. Предложение остаётся в силе и на следующий день.",
+        "reflection_question": "Где в моих попытках включить ученика я предлагаю, а где уже настаиваю? По каким моим словам на уроке видна эта разница?",
+        "why_selected": "Даёт другую идею — предел влияния на чужую свободу, — точно отвечающую на «его „нет“».",
+        "main_idea": "В Коране есть мысль: истина ясно отличается от заблуждения. Но из этого не следует, что человека надо заставлять поверить.",
+        "applied_insight": "Вы пишете, что хотите помочь ученику и пытаетесь включить его в работу, а он идёт в отказ. Коран подсказывает: показать путь и заставить по нему пойти — разные вещи. Предложение может оставаться в силе, а решение — за учеником.",
+        "distinction": "Помогает различить предложить и показать путь и принудить другого его принять.",
+        "question_explanation": "Речь о том, чтобы заметить разницу между приглашением и нажимом в своих обычных действиях. Например, одно дело позвать к работе, другое — повторять просьбу, пока не согласятся.",
+        "verified_quote": null
+      }
+    ],
+    "fewer_than_three_reason": "Сильных различений два. Ближайший третий кандидат (C0013) повторяет идею C0005 менее ясно, а C0341 работает только через догадку о мотивах ученика.",
+    "rejected": [
+      {
+        "card_id": "C0341",
+        "reason": "Различение о чужой жалости, подтверждающей нежелательный образ положения, применимо только через догадку о переживаниях ученика."
+      },
+      {
+        "card_id": "C0013",
+        "reason": "Мысль о способе участия в действии близка к C0005, но сформулирована расплывчато и различения не добавляет."
+      },
+      {
+        "card_id": "C0049",
+        "reason": "Тема зависимости от чужой оценки уводит к самооценке ученика и требует гипотез о его внутреннем мире."
+      },
+      {
+        "card_id": "C0957",
+        "reason": "«Мне не под силу» и разделение бремени вводят то, чего учитель не говорил: что ему это не по силам."
+      }
+    ],
+    "q1_top": {
+      "card_id": "C0670",
+      "decision": "rejected",
+      "reason": "Совпадение по слову «учитель» ложное: карточка говорит об ответственности ученика, которую не отменяет авторитет учителя, а не о том, как учителю отвечать на отказ, и ясного различения для этого вопроса не даёт."
+    },
+    "meta": {
+      "composer": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "composition-prompt/0.6.1",
+      "package_sha256": "225327dc18f3e1bc94a6683025f0e0d7f6f74572c41fde00b46b5f33604394d8",
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "wall_seconds": 24.22,
+            "cli_duration_ms": 20285,
+            "api_duration_ms": 19726,
+            "num_turns": 2,
+            "input_tokens": 2,
+            "cache_read_tokens": 3456,
+            "cache_creation_tokens": 13222,
+            "output_tokens": 1519,
+            "thinking_tokens": 544,
+            "total_cost_usd_list": 0.13685519999999998,
+            "models": [
+              "claude-opus-5-5"
+            ],
+            "attempt": 1,
+            "call_seconds": 24.22,
+            "validation_seconds": 40.076
+          }
+        ],
+        "repairs": [],
+        "writer": {
+          "prompt_version": "card-writer-prompt/0.3.0",
+          "seconds": 40.07,
+          "cards": [
+            {
+              "card_id": "C0005",
+              "attempts": 1,
+              "repairs": [],
+              "calls": [
+                {
+                  "wall_seconds": 40.07,
+                  "cli_duration_ms": 36069,
+                  "api_duration_ms": 34329,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 768,
+                  "cache_creation_tokens": 7200,
+                  "output_tokens": 2937,
+                  "thinking_tokens": 1555,
+                  "total_cost_usd_list": 0.1165016,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 1,
+                  "call_seconds": 40.07
+                }
+              ],
+              "fallback": false,
+              "grounding": [
+                {
+                  "field": "main_idea",
+                  "claim": "Гита учит действовать, не держась за плод, и не уходить в бездействие",
+                  "kind": "source_fact",
+                  "evidence": "отказом от привязанности к его плоду и одновременно с отказом от бездействия"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек спрашивает, как быть рядом с учеником, когда помощь упирается в его «нет»",
+                  "kind": "user_fact",
+                  "evidence": "моё желание помочь раз за разом упирается в его «нет»"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Можно смотреть отдельно на своё действие и на ответ ученика",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Не держаться за согласие ещё не значит перестать помогать",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "reflection_question",
+                  "claim": "Вопрос о том, что человек делает для ученика и что стоит делать при отказе",
+                  "kind": "question",
+                  "evidence": ""
+                },
+                {
+                  "field": "question_explanation",
+                  "claim": "Звать ученика в работу — это действие учителя",
+                  "kind": "user_fact",
+                  "evidence": "пытаюсь включить в рабочий процесс"
+                },
+                {
+                  "field": "question_explanation",
+                  "claim": "Ответ ученика — уже его ответ",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "perspective",
+                  "claim": "В Гите соединяются действие без привязанности к плоду и отказ от бездействия",
+                  "kind": "source_fact",
+                  "evidence": "направленность на действие соединяется с отказом от привязанности"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Отказ ученика не отменяет смысла действия учителя",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Человек назвал раздражение и желание всё исправить",
+                  "kind": "user_fact",
+                  "evidence": "Желание всё исправить"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "К чему относятся эти переживания — оставлено вопросом",
+                  "kind": "question",
+                  "evidence": ""
+                }
+              ],
+              "seconds": 40.07
+            },
+            {
+              "card_id": "C0781",
+              "attempts": 1,
+              "repairs": [],
+              "calls": [
+                {
+                  "wall_seconds": 39.18,
+                  "cli_duration_ms": 35045,
+                  "api_duration_ms": 33250,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 768,
+                  "cache_creation_tokens": 7157,
+                  "output_tokens": 2809,
+                  "thinking_tokens": 1624,
+                  "total_cost_usd_list": 0.11359759999999999,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 1,
+                  "call_seconds": 39.18
+                }
+              ],
+              "fallback": false,
+              "grounding": [
+                {
+                  "field": "main_idea",
+                  "claim": "В Коране истина отличается от заблуждения, но из этого не следует требование заставить поверить",
+                  "kind": "source_fact",
+                  "evidence": "различение истины и заблуждения не сопровождается требованием принудить человека к вере"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек хочет помочь ученику и пытается включить его в работу",
+                  "kind": "user_fact",
+                  "evidence": "Я хочу ему помочь, пытаюсь включить в рабочий процесс"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Ученик идёт в отказ",
+                  "kind": "user_fact",
+                  "evidence": "но он идет в отказ"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Показать путь и заставить по нему пойти — разные вещи; решение за учеником",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "title",
+                  "claim": "Показать путь ещё не значит заставить по нему идти",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "reflection_question",
+                  "claim": "Где я предлагаю, а где настаиваю",
+                  "kind": "question",
+                  "evidence": ""
+                },
+                {
+                  "field": "question_explanation",
+                  "claim": "Позвать к работе и повторять просьбу, пока не согласятся, — разное",
+                  "kind": "impersonal_example",
+                  "evidence": ""
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Из ясности истины не следует право заставлять поверить",
+                  "kind": "source_fact",
+                  "evidence": "не сопровождается требованием принудить человека к вере"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Можно звать ученика, но согласиться может только он сам; отказ не отменяет предложения",
+                  "kind": "distinction",
+                  "evidence": ""
+                }
+              ],
+              "seconds": 39.18
+            }
+          ],
+          "dropped": [],
+          "selection": [
+            {
+              "card_id": "C0005",
+              "distinction": "Помогает различить отказ от привязанности к результату и отказ от самого действия: можно продолжать делать своё, не ставя его ценность в зависимость от «да» ученика.",
+              "role": "Отделяет действие от плода",
+              "source_point": "Текст призывает действовать, не привязываясь к плоду действия, но и не уходить в бездействие.",
+              "user_point": "В вопросе «помощь упирается в его „нет“» результат (его участие) и собственное действие учителя пока слиты в одно; их можно рассмотреть по отдельности.",
+              "why_selected": "Прямо работает с напряжением «усилие ↔ отсутствие отклика» и не предлагает ни давить, ни сдаться."
+            },
+            {
+              "card_id": "C0781",
+              "distinction": "Помогает различить предложить и показать путь и принудить другого его принять.",
+              "role": "Сохраняет свободу другого",
+              "source_point": "Текст ясно различает истину и заблуждение, но не делает из этого требования заставить человека поверить.",
+              "user_point": "Желание «включить» ученика можно рассмотреть как предложение, которое остаётся в силе, а принятие которого остаётся за ним.",
+              "why_selected": "Даёт другую идею — предел влияния на чужую свободу, — точно отвечающую на «его „нет“»."
+            }
+          ]
+        }
+      }
+    }
+  },
+  "errors": [],
+  "timings": [
+    {
+      "stage": "interpretation",
+      "seconds": 22.7,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "calls": [
+        {
+          "wall_seconds": 22.69,
+          "cli_duration_ms": 20222,
+          "api_duration_ms": 20174,
+          "num_turns": 2,
+          "input_tokens": 2,
+          "cache_read_tokens": 4920,
+          "cache_creation_tokens": 807,
+          "output_tokens": 1701,
+          "thinking_tokens": 445,
+          "total_cost_usd_list": 0.041468000000000005,
+          "models": [
+            "claude-opus-5-5"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "seconds": 1.29,
+      "llm_calls": 0
+    },
+    {
+      "stage": "selection attempt 1",
+      "seconds": 24.22,
+      "llm_calls": 1,
+      "validation_seconds": 40.076,
+      "output_tokens": 1519,
+      "thinking_tokens": 544
+    },
+    {
+      "stage": "card writing (parallel, wall)",
+      "seconds": 40.07,
+      "llm_calls": 2,
+      "dropped_cards": []
+    },
+    {
+      "stage": "  writer C0005",
+      "seconds": 40.07,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "fallback_to_draft": false
+    },
+    {
+      "stage": "  writer C0781",
+      "seconds": 39.18,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "fallback_to_draft": false
+    },
+    {
+      "stage": "composition total",
+      "seconds": 64.3,
+      "llm_calls": 3,
+      "retries": 0,
+      "retry_reasons": []
+    }
+  ]
+}

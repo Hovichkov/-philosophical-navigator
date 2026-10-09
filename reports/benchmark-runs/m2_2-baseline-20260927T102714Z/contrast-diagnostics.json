@@ -1,0 +1,358 @@
+[
+  {
+    "pair_id": "CP1",
+    "variants": [
+      "CP1-A",
+      "CP1-B"
+    ],
+    "case_refs": [
+      "B11",
+      null
+    ],
+    "top_n": 10,
+    "routes": {
+      "Q0_QUESTION_ONLY_CONTROL": {
+        "status": "not_computable",
+        "reasons": {
+          "CP1-B": "benchmark variant has no center (confirmed-question proxy)"
+        }
+      },
+      "Q1_MEANING": {
+        "status": "not_computable",
+        "reasons": {
+          "CP1-B": "benchmark variant has no center and no working-hypothesis proxy"
+        }
+      },
+      "STRUCTURE": {
+        "status": "not_computable",
+        "reasons": {
+          "CP1-B": "benchmark variant lists no coordinates"
+        }
+      },
+      "NARRATIVE_CONTROL": {
+        "status": "computed",
+        "a_ids": [
+          "C0170",
+          "C0786",
+          "C0527",
+          "C0341",
+          "C0001",
+          "C0807",
+          "C0806",
+          "C0049",
+          "C0056",
+          "C0779"
+        ],
+        "b_ids": [
+          "C0170",
+          "C0001",
+          "C0786",
+          "C0341",
+          "C0539",
+          "C1105",
+          "C0780",
+          "C0339",
+          "C0246",
+          "C0797"
+        ],
+        "overlap_ids": [
+          "C0001",
+          "C0170",
+          "C0341",
+          "C0786"
+        ],
+        "overlap_count": 4,
+        "overlap_share_of_top_n": 0.4,
+        "jaccard": 0.25
+      }
+    },
+    "note": "no PASS threshold; smaller overlap is not automatically better (M2.3 analysis)"
+  },
+  {
+    "pair_id": "CP2",
+    "variants": [
+      "CP2-A",
+      "CP2-B"
+    ],
+    "case_refs": [
+      null,
+      null
+    ],
+    "top_n": 10,
+    "routes": {
+      "Q0_QUESTION_ONLY_CONTROL": {
+        "status": "not_computable",
+        "reasons": {
+          "CP2-A": "benchmark variant has no center (confirmed-question proxy)",
+          "CP2-B": "benchmark variant has no center (confirmed-question proxy)"
+        }
+      },
+      "Q1_MEANING": {
+        "status": "not_computable",
+        "reasons": {
+          "CP2-A": "benchmark variant has no center and no working-hypothesis proxy",
+          "CP2-B": "benchmark variant has no center and no working-hypothesis proxy"
+        }
+      },
+      "STRUCTURE": {
+        "status": "computed",
+        "a_ids": [
+          "C1108",
+          "C0013",
+          "C0553",
+          "C0571",
+          "C0793",
+          "C0813",
+          "C0871",
+          "C0930",
+          "C0004",
+          "C0005"
+        ],
+        "b_ids": [
+          "C0056",
+          "C0058",
+          "C0170",
+          "C0786",
+          "C0527",
+          "C0930",
+          "C1105",
+          "C0001",
+          "C0020",
+          "C0023"
+        ],
+        "overlap_ids": [
+          "C0930"
+        ],
+        "overlap_count": 1,
+        "overlap_share_of_top_n": 0.1,
+        "jaccard": 0.053
+      },
+      "NARRATIVE_CONTROL": {
+        "status": "computed",
+        "a_ids": [
+          "C0442",
+          "C0518",
+          "C0571",
+          "C0439",
+          "C0527",
+          "C0553",
+          "C0130",
+          "C1105",
+          "C0056",
+          "C0779"
+        ],
+        "b_ids": [
+          "C1105",
+          "C0957",
+          "C0056",
+          "C0058",
+          "C0001",
+          "C0807",
+          "C0049",
+          "C0806",
+          "C0533",
+          "C0618"
+        ],
+        "overlap_ids": [
+          "C0056",
+          "C1105"
+        ],
+        "overlap_count": 2,
+        "overlap_share_of_top_n": 0.2,
+        "jaccard": 0.111
+      }
+    },
+    "note": "no PASS threshold; smaller overlap is not automatically better (M2.3 analysis)"
+  },
+  {
+    "pair_id": "CP3",
+    "variants": [
+      "CP3-A",
+      "CP3-B"
+    ],
+    "case_refs": [
+      "B02",
+      null
+    ],
+    "top_n": 10,
+    "routes": {
+      "Q0_QUESTION_ONLY_CONTROL": {
+        "status": "not_computable",
+        "reasons": {
+          "CP3-B": "benchmark variant has no center (confirmed-question proxy)"
+        }
+      },
+      "Q1_MEANING": {
+        "status": "not_computable",
+        "reasons": {
+          "CP3-B": "benchmark variant has no center and no working-hypothesis proxy"
+        }
+      },
+      "STRUCTURE": {
+        "status": "computed",
+        "a_ids": [
+          "C0798",
+          "C0952",
+          "C0001",
+          "C0144",
+          "C0648",
+          "C0807",
+          "C0025",
+          "C0633",
+          "C0930",
+          "C0957"
+        ],
+        "b_ids": [
+          "C0798",
+          "C1108",
+          "C0013",
+          "C0275",
+          "C0296",
+          "C0442",
+          "C0518",
+          "C0527",
+          "C0571",
+          "C0806"
+        ],
+        "overlap_ids": [
+          "C0798"
+        ],
+        "overlap_count": 1,
+        "overlap_share_of_top_n": 0.1,
+        "jaccard": 0.053
+      },
+      "NARRATIVE_CONTROL": {
+        "status": "computed",
+        "a_ids": [
+          "C0539",
+          "C0436",
+          "C1105",
+          "C0949",
+          "C0001",
+          "C0170",
+          "C0957",
+          "C0513",
+          "C0633",
+          "C0527"
+        ],
+        "b_ids": [
+          "C0949",
+          "C0436",
+          "C1105",
+          "C0001",
+          "C0807",
+          "C0542",
+          "C0438",
+          "C0780",
+          "C0786",
+          "C0275"
+        ],
+        "overlap_ids": [
+          "C0001",
+          "C0436",
+          "C0949",
+          "C1105"
+        ],
+        "overlap_count": 4,
+        "overlap_share_of_top_n": 0.4,
+        "jaccard": 0.25
+      }
+    },
+    "note": "no PASS threshold; smaller overlap is not automatically better (M2.3 analysis)"
+  },
+  {
+    "pair_id": "CP4",
+    "variants": [
+      "CP4-A",
+      "CP4-B"
+    ],
+    "case_refs": [
+      "B05",
+      null
+    ],
+    "top_n": 10,
+    "routes": {
+      "Q0_QUESTION_ONLY_CONTROL": {
+        "status": "not_computable",
+        "reasons": {
+          "CP4-B": "benchmark variant has no center (confirmed-question proxy)"
+        }
+      },
+      "Q1_MEANING": {
+        "status": "not_computable",
+        "reasons": {
+          "CP4-B": "benchmark variant has no center and no working-hypothesis proxy"
+        }
+      },
+      "STRUCTURE": {
+        "status": "computed",
+        "a_ids": [
+          "C0579",
+          "C0806",
+          "C0275",
+          "C0281",
+          "C0439",
+          "C0440",
+          "C0442",
+          "C0518",
+          "C0527",
+          "C0013"
+        ],
+        "b_ids": [
+          "C0056",
+          "C0058",
+          "C0170",
+          "C0786",
+          "C0527",
+          "C0619",
+          "C0622",
+          "C0937",
+          "C0957",
+          "C0001"
+        ],
+        "overlap_ids": [
+          "C0527"
+        ],
+        "overlap_count": 1,
+        "overlap_share_of_top_n": 0.1,
+        "jaccard": 0.053
+      },
+      "NARRATIVE_CONTROL": {
+        "status": "computed",
+        "a_ids": [
+          "C0056",
+          "C0001",
+          "C0780",
+          "C0813",
+          "C0527",
+          "C1105",
+          "C0281",
+          "C0633",
+          "C0170",
+          "C0990"
+        ],
+        "b_ids": [
+          "C0170",
+          "C0786",
+          "C0339",
+          "C0527",
+          "C0539",
+          "C0806",
+          "C0515",
+          "C0341",
+          "C0404",
+          "C0056"
+        ],
+        "overlap_ids": [
+          "C0056",
+          "C0170",
+          "C0527"
+        ],
+        "overlap_count": 3,
+        "overlap_share_of_top_n": 0.3,
+        "jaccard": 0.176
+      }
+    },
+    "note": "no PASS threshold; smaller overlap is not automatically better (M2.3 analysis)"
+  }
+]

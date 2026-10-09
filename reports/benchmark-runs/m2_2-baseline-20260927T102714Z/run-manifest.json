@@ -1,0 +1,17 @@
+{
+  "run_id": "m2_2-baseline-20260927T102714Z",
+  "run_format": "m2.2-baseline-run/0.1.0",
+  "empirical": true,
+  "benchmark_spec_sha256": "ca3c9474cd7186692b561bbba108244bcbf1db44a1e8d674d448ba9b951d2cf7",
+  "embedding": {
+    "provider": "local-sentence-transformers",
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "dimensions": 1024
+  },
+  "embedding_device": "mps",
+  "corpus_version": "launch-124/0.3.0-m1.5-retrieval-readiness",
+  "top_k": 15,
+  "contrast_top_n": 10,
+  "cases": 20
+}

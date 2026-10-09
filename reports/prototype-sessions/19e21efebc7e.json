@@ -1,0 +1,1256 @@
+{
+  "session_id": "19e21efebc7e",
+  "created_utc": "2026-10-07T16:58:20+00:00",
+  "state": "answered",
+  "interpretation_input": {
+    "topic": "Работа / дело / деньги",
+    "experiences": [
+      "Страх"
+    ],
+    "difficulty_center": "Я боюсь сделать неправильный выбор",
+    "free_narrative": "Я учусь на психолога, но боюсь приступать к работе с людьми. Боюсь нанести им вред и не справиться с порицанием коллег. Еще боюсь чувства вины."
+  },
+  "interpretation": {
+    "schema_version": "interpretation/0.1.0",
+    "status": "interpreted",
+    "input": {
+      "topic": "Работа / дело / деньги",
+      "experiences": [
+        "Страх"
+      ],
+      "difficulty_center": "Я боюсь сделать неправильный выбор",
+      "free_narrative": "Я учусь на психолога, но боюсь приступать к работе с людьми. Боюсь нанести им вред и не справиться с порицанием коллег. Еще боюсь чувства вины."
+    },
+    "proposed_question": "Я учусь на психолога, но боюсь начинать работать с людьми: боюсь нанести им вред, не справиться с порицанием коллег и с чувством вины. Как браться за работу, где от моего выбора зависит другой человек, если я не могу заранее знать, что выбор будет правильным?",
+    "working_hypotheses": [
+      "Возможно, страх неправильного выбора держится на представлении, что действовать можно только с гарантией правильности; тогда это вопрос о действии в неопределённости (Аристотель о практической мудрости, экзистенциалисты о выборе без гарантий).",
+      "Возможно, ответственность за другого переживается как полная ответственность за результат, а не за то, как человек действует (стоики: что от нас зависит и что нет).",
+      "Порицание коллег может быть отдельной темой: оценка себя через чужой взгляд и признание в профессиональном сообществе.",
+      "Вина может пониматься как то, чего нужно избежать любой ценой, а не как часть ответственного действия (Ясперс о вине, Левинас об ответственности перед другим)."
+    ],
+    "coordinates": [
+      "выбор / свобода",
+      "долг / ответственность",
+      "страх / конечность",
+      "отношение к другому",
+      "признание"
+    ],
+    "canonical_tensions": [
+      "контроль ↔ конечность",
+      "отношение к себе ↔ взгляд другого",
+      "действие ↔ принятие"
+    ],
+    "free_tensions": [
+      "ответственность за другого ↔ невозможность гарантировать результат",
+      "начать действовать ↔ избежать ошибки"
+    ],
+    "ambiguity_notes": [
+      "Тема — «Работа / дело / деньги», но о деньгах в рассказе ничего нет: речь идёт о профессии и ответственности.",
+      "Под «неправильным выбором» можно понимать и решение идти в практику, и отдельные решения в работе с клиентами. В вопросе оставлены оба прочтения."
+    ],
+    "trace": {
+      "interpreter": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "interpretation-prompt/0.10.0",
+      "input_sha256": "5ed313fee245c54607a7bc5c6c8b58451e16e2e7ee12ec9269f941fe2a3a3e5c",
+      "reading_notes": [
+        {
+          "kind": "context",
+          "note": "Человек учится на психолога и стоит на пороге практики: работа с людьми ещё не началась, страх касается того, что будет."
+        },
+        {
+          "kind": "representation",
+          "note": "Работа с людьми видится как дело, где ошибка может нанести человеку вред. Ответственность перед другим здесь очень сильная."
+        },
+        {
+          "kind": "tension",
+          "note": "Названы три страха: навредить клиенту, не справиться с порицанием коллег, испытать чувство вины. Первый связан с другим человеком, второй — с чужим взглядом, третий — с отношением к себе."
+        },
+        {
+          "kind": "expectation",
+          "note": "В словах «боюсь сделать неправильный выбор» может скрываться ожидание, что правильность выбора можно знать заранее."
+        },
+        {
+          "kind": "ambiguity",
+          "note": "Неясно, о каком выборе речь: идти ли вообще в профессию или о решениях внутри работы с конкретными людьми."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "wall_seconds": 19.34,
+            "cli_duration_ms": 17276,
+            "api_duration_ms": 17240,
+            "num_turns": 2,
+            "input_tokens": 2,
+            "cache_read_tokens": 5191,
+            "cache_creation_tokens": 596,
+            "output_tokens": 1749,
+            "thinking_tokens": 599,
+            "total_cost_usd_list": 0.0407942,
+            "models": [
+              "claude-opus-5-5"
+            ]
+          }
+        ],
+        "repairs": []
+      }
+    }
+  },
+  "insufficient": null,
+  "confirmation": {
+    "action": "confirmed",
+    "source": "user",
+    "proposed_question": "Я учусь на психолога, но боюсь начинать работать с людьми: боюсь нанести им вред, не справиться с порицанием коллег и с чувством вины. Как браться за работу, где от моего выбора зависит другой человек, если я не могу заранее знать, что выбор будет правильным?",
+    "confirmed_question": "Я учусь на психолога, но боюсь начинать работать с людьми: боюсь нанести им вред, не справиться с порицанием коллег и с чувством вины. Как браться за работу, где от моего выбора зависит другой человек, если я не могу заранее знать, что выбор будет правильным?",
+    "edited_text": null
+  },
+  "query_representation": {
+    "schema_version": "query-representation/0.1.0",
+    "confirmed_question": "Я учусь на психолога, но боюсь начинать работать с людьми: боюсь нанести им вред, не справиться с порицанием коллег и с чувством вины. Как браться за работу, где от моего выбора зависит другой человек, если я не могу заранее знать, что выбор будет правильным?",
+    "context": {
+      "circumstance": "Работа / дело / деньги",
+      "narrative": "Я учусь на психолога, но боюсь приступать к работе с людьми. Боюсь нанести им вред и не справиться с порицанием коллег. Еще боюсь чувства вины."
+    },
+    "experiences": [
+      "Страх"
+    ],
+    "working_hypotheses": [
+      "Возможно, страх неправильного выбора держится на представлении, что действовать можно только с гарантией правильности; тогда это вопрос о действии в неопределённости (Аристотель о практической мудрости, экзистенциалисты о выборе без гарантий).",
+      "Возможно, ответственность за другого переживается как полная ответственность за результат, а не за то, как человек действует (стоики: что от нас зависит и что нет).",
+      "Порицание коллег может быть отдельной темой: оценка себя через чужой взгляд и признание в профессиональном сообществе.",
+      "Вина может пониматься как то, чего нужно избежать любой ценой, а не как часть ответственного действия (Ясперс о вине, Левинас об ответственности перед другим)."
+    ],
+    "coordinates": [
+      "выбор / свобода",
+      "долг / ответственность",
+      "страх / конечность",
+      "отношение к другому",
+      "признание"
+    ],
+    "canonical_tensions": [
+      "контроль ↔ конечность",
+      "отношение к себе ↔ взгляд другого",
+      "действие ↔ принятие"
+    ],
+    "free_tensions": [
+      "ответственность за другого ↔ невозможность гарантировать результат",
+      "начать действовать ↔ избежать ошибки"
+    ],
+    "provenance": {
+      "origin": "production",
+      "confirmed_question_source": "user_confirmed",
+      "interpretation_source": "interpretation-layer_0.1.0",
+      "benchmark_item_id": null,
+      "note": null
+    }
+  },
+  "retrieval": {
+    "version": "candidate-retrieval/0.1.0",
+    "query": {
+      "schema_version": "query-representation/0.1.0",
+      "confirmed_question": "Я учусь на психолога, но боюсь начинать работать с людьми: боюсь нанести им вред, не справиться с порицанием коллег и с чувством вины. Как браться за работу, где от моего выбора зависит другой человек, если я не могу заранее знать, что выбор будет правильным?",
+      "context": {
+        "circumstance": "Работа / дело / деньги",
+        "narrative": "Я учусь на психолога, но боюсь приступать к работе с людьми. Боюсь нанести им вред и не справиться с порицанием коллег. Еще боюсь чувства вины."
+      },
+      "experiences": [
+        "Страх"
+      ],
+      "working_hypotheses": [
+        "Возможно, страх неправильного выбора держится на представлении, что действовать можно только с гарантией правильности; тогда это вопрос о действии в неопределённости (Аристотель о практической мудрости, экзистенциалисты о выборе без гарантий).",
+        "Возможно, ответственность за другого переживается как полная ответственность за результат, а не за то, как человек действует (стоики: что от нас зависит и что нет).",
+        "Порицание коллег может быть отдельной темой: оценка себя через чужой взгляд и признание в профессиональном сообществе.",
+        "Вина может пониматься как то, чего нужно избежать любой ценой, а не как часть ответственного действия (Ясперс о вине, Левинас об ответственности перед другим)."
+      ],
+      "coordinates": [
+        "выбор / свобода",
+        "долг / ответственность",
+        "страх / конечность",
+        "отношение к другому",
+        "признание"
+      ],
+      "canonical_tensions": [
+        "контроль ↔ конечность",
+        "отношение к себе ↔ взгляд другого",
+        "действие ↔ принятие"
+      ],
+      "free_tensions": [
+        "ответственность за другого ↔ невозможность гарантировать результат",
+        "начать действовать ↔ избежать ошибки"
+      ],
+      "provenance": {
+        "origin": "production",
+        "confirmed_question_source": "user_confirmed",
+        "interpretation_source": "interpretation-layer_0.1.0",
+        "benchmark_item_id": null,
+        "note": null
+      }
+    },
+    "embedding_config": {
+      "provider": "local-sentence-transformers",
+      "model": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimensions": 1024
+    },
+    "corpus_version": "final-corpus-2026-10-07/active-v1",
+    "retrieval_universe_size": 967,
+    "q0_control": {
+      "route": "Q0_QUESTION_ONLY_CONTROL",
+      "query": {
+        "version": "q0-question-only/1.0",
+        "text": "Я учусь на психолога, но боюсь начинать работать с людьми: боюсь нанести им вред, не справиться с порицанием коллег и с чувством вины. Как браться за работу, где от моего выбора зависит другой человек, если я не могу заранее знать, что выбор будет правильным?",
+        "sha256": "5c3627b1535fe2e3513f2025386ad5abd76789174951b414b8902b9744143aa7"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0399",
+          "rank": 1,
+          "cosine": 0.642527
+        },
+        {
+          "card_id": "C0646",
+          "rank": 2,
+          "cosine": 0.635935
+        },
+        {
+          "card_id": "C0328",
+          "rank": 3,
+          "cosine": 0.603031
+        },
+        {
+          "card_id": "C0411",
+          "rank": 4,
+          "cosine": 0.596913
+        },
+        {
+          "card_id": "C0131",
+          "rank": 5,
+          "cosine": 0.59663
+        },
+        {
+          "card_id": "C0622",
+          "rank": 6,
+          "cosine": 0.589432
+        },
+        {
+          "card_id": "C0581",
+          "rank": 7,
+          "cosine": 0.586169
+        },
+        {
+          "card_id": "C0634",
+          "rank": 8,
+          "cosine": 0.585478
+        },
+        {
+          "card_id": "C0412",
+          "rank": 9,
+          "cosine": 0.585152
+        },
+        {
+          "card_id": "C0336",
+          "rank": 10,
+          "cosine": 0.581635
+        },
+        {
+          "card_id": "C0413",
+          "rank": 11,
+          "cosine": 0.579771
+        },
+        {
+          "card_id": "C0377",
+          "rank": 12,
+          "cosine": 0.578452
+        },
+        {
+          "card_id": "C0400",
+          "rank": 13,
+          "cosine": 0.572649
+        },
+        {
+          "card_id": "C0240",
+          "rank": 14,
+          "cosine": 0.570622
+        },
+        {
+          "card_id": "C0645",
+          "rank": 15,
+          "cosine": 0.566183
+        }
+      ]
+    },
+    "q1_meaning": {
+      "route": "Q1_MEANING",
+      "query": {
+        "version": "q1-meaning-query/2.0",
+        "text": "Вопрос: Я учусь на психолога, но боюсь начинать работать с людьми: боюсь нанести им вред, не справиться с порицанием коллег и с чувством вины. Как браться за работу, где от моего выбора зависит другой человек, если я не могу заранее знать, что выбор будет правильным?\nРабочие интерпретации:\n- Возможно, страх неправильного выбора держится на представлении, что действовать можно только с гарантией правильности; тогда это вопрос о действии в неопределённости (Аристотель о практической мудрости, экзистенциалисты о выборе без гарантий).\n- Возможно, ответственность за другого переживается как полная ответственность за результат, а не за то, как человек действует (стоики: что от нас зависит и что нет).\n- Порицание коллег может быть отдельной темой: оценка себя через чужой взгляд и признание в профессиональном сообществе.\n- Вина может пониматься как то, чего нужно избежать любой ценой, а не как часть ответственного действия (Ясперс о вине, Левинас об ответственности перед другим).",
+        "sha256": "80303a5fd6487ad021ffd5aae19fc00d258d472e9de3bce4342fdbeef9ee0b55"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0646",
+          "rank": 1,
+          "cosine": 0.654316
+        },
+        {
+          "card_id": "C0411",
+          "rank": 2,
+          "cosine": 0.646968
+        },
+        {
+          "card_id": "C0399",
+          "rank": 3,
+          "cosine": 0.640558
+        },
+        {
+          "card_id": "C0377",
+          "rank": 4,
+          "cosine": 0.621177
+        },
+        {
+          "card_id": "C0336",
+          "rank": 5,
+          "cosine": 0.619641
+        },
+        {
+          "card_id": "C0131",
+          "rank": 6,
+          "cosine": 0.61952
+        },
+        {
+          "card_id": "C0285",
+          "rank": 7,
+          "cosine": 0.618681
+        },
+        {
+          "card_id": "C0286",
+          "rank": 8,
+          "cosine": 0.613433
+        },
+        {
+          "card_id": "C0415",
+          "rank": 9,
+          "cosine": 0.612344
+        },
+        {
+          "card_id": "C0509",
+          "rank": 10,
+          "cosine": 0.611404
+        },
+        {
+          "card_id": "C0581",
+          "rank": 11,
+          "cosine": 0.610673
+        },
+        {
+          "card_id": "C0328",
+          "rank": 12,
+          "cosine": 0.605705
+        },
+        {
+          "card_id": "C0296",
+          "rank": 13,
+          "cosine": 0.605686
+        },
+        {
+          "card_id": "C0241",
+          "rank": 14,
+          "cosine": 0.603836
+        },
+        {
+          "card_id": "C0541",
+          "rank": 15,
+          "cosine": 0.602271
+        }
+      ]
+    },
+    "structure": {
+      "route": "STRUCTURE",
+      "ranking_rule": "lexicographic: (1) more exact canonical-tension matches, (2) more exact coordinate matches, (3) card_id ascending; cards with no match are not ranked; operation is logged, never scored",
+      "query_coordinates": [
+        "выбор / свобода",
+        "долг / ответственность",
+        "страх / конечность",
+        "отношение к другому",
+        "признание"
+      ],
+      "query_canonical_tensions": [
+        "контроль ↔ конечность",
+        "отношение к себе ↔ взгляд другого",
+        "действие ↔ принятие"
+      ],
+      "top_k": 15,
+      "matching_cards": 0,
+      "tied_at_cutoff": 0,
+      "hits": []
+    },
+    "union_rule": "union(Q1_MEANING top_k, STRUCTURE top_k); Q0 excluded; one entry per card_id with separate route signals; no combined score; listed by card_id ascending (the order is not a ranking)",
+    "candidate_union": [
+      {
+        "card_id": "C0131",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 6,
+        "meaning_score": 0.61952,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0241",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 14,
+        "meaning_score": 0.603836,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0285",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 7,
+        "meaning_score": 0.618681,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0286",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 8,
+        "meaning_score": 0.613433,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0296",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 13,
+        "meaning_score": 0.605686,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0328",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 12,
+        "meaning_score": 0.605705,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0336",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 5,
+        "meaning_score": 0.619641,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0377",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 4,
+        "meaning_score": 0.621177,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0399",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 3,
+        "meaning_score": 0.640558,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0411",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 2,
+        "meaning_score": 0.646968,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0415",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 9,
+        "meaning_score": 0.612344,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0509",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 10,
+        "meaning_score": 0.611404,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0541",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 15,
+        "meaning_score": 0.602271,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0581",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 11,
+        "meaning_score": 0.610673,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      },
+      {
+        "card_id": "C0646",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 1,
+        "meaning_score": 0.654316,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": null
+      }
+    ]
+  },
+  "composition": {
+    "schema_version": "composition/0.5.0",
+    "item_id": "proto-19e21efebc7e",
+    "retrieval_run_id": "prototype-19e21efebc7e",
+    "confirmed_question": "Я учусь на психолога, но боюсь начинать работать с людьми: боюсь нанести им вред, не справиться с порицанием коллег и с чувством вины. Как браться за работу, где от моего выбора зависит другой человек, если я не могу заранее знать, что выбор будет правильным?",
+    "candidate_pool": [
+      "C0131",
+      "C0241",
+      "C0285",
+      "C0286",
+      "C0296",
+      "C0328",
+      "C0336",
+      "C0377",
+      "C0399",
+      "C0411",
+      "C0415",
+      "C0509",
+      "C0541",
+      "C0581",
+      "C0646"
+    ],
+    "opening": "Ваш вопрос можно рассмотреть с нескольких сторон.",
+    "perspectives": [
+      {
+        "card_id": "C0241",
+        "role": "Ответственность как проверка",
+        "title": "Правильность выбора можно проверять по ходу дела",
+        "source": "Будда / персонажи ранних сутт (speaker по фрагменту), Амбалаттхикарахуловада сутта — МН 61, Проверка действия во время совершения",
+        "perspective": "В сутте первое решение — ещё не последнее слово. Его пересматривают, глядя, что получается на самом деле. Мерка простая: вредит ли поступок самому человеку, другим или и тем и другим. Если вредит, поступок прекращают. Так ошибка становится тем, что замечают и останавливают, а не тем, что нужно исключить заранее. Поэтому уверенность не обязательно должна быть до начала: дело и проверка идут вместе.",
+        "reflection_question": "Как я смогу заметить по ходу работы, что моё действие вредит человеку? И что сделаю, если замечу вред?",
+        "why_selected": "Прямо отвечает на центральную часть вопроса о выборе без гарантии и страхе навредить.",
+        "main_idea": "В ранней буддийской сутте Будда учит проверять поступок, пока его совершаешь. Если видно, что поступок вредит тебе или другим, от него нужно отказаться.",
+        "applied_insight": "Вы спрашиваете, как браться за работу, если нельзя заранее знать, что выбор правильный. Сутта предлагает другой порядок: правильность выбора проверяют по ходу дела, а не знают до начала. Не знать заранее ещё не значит действовать вслепую.",
+        "distinction": "Помогает различить знание заранее, что выбор правильный, и готовность проверять действие по его последствиям и прекращать вредное.",
+        "perspective_effect": "Правильность выбора в работе с другим не обязательно знать заранее: её можно проверять до действия, во время него и после, и менять курс, если обнаружился вред.",
+        "perspective_frame": "Как устроена ответственность во времени: разовое угадывание или постоянная проверка действия.",
+        "question_explanation": "Мысль в том, что знать правильный ответ заранее не обязательно. Можно по ходу замечать, что идёт не так, и останавливаться. Вопрос о том, по каким признакам это видно.",
+        "verified_quote": null
+      },
+      {
+        "card_id": "C0411",
+        "role": "Отделяет оценку от качества",
+        "title": "Чужое осуждение не делает поступок неправильным",
+        "source": "Эпиктет, Энхиридион / Руководство, §35",
+        "perspective": "Эпиктет начинает с поступка, который человек сам обдумал и счёл нужным. Дальше он разбирает два случая. Если поступок неправильный, дело не в зрителях, а в самом поступке, и от него стоит отказаться. Если поступок правильный, несправедливое осуждение ничего в нём не меняет. Поэтому в обоих случаях главный вопрос — каким был сам поступок, а не что о нём скажут. Для работы с людьми это значит: чужой упрёк — повод проверить своё действие, но не готовый приговор ему.",
+        "reflection_question": "Как я буду отличать справедливый упрёк коллег от несправедливого? Что мне для этого понадобится проверить в собственной работе?",
+        "why_selected": "Работает с отдельным страхом из вопроса, с порицанием, и даёт ясное различение, не отрицая значения справедливой критики.",
+        "main_idea": "Эпиктет рассуждает просто. Если поступаешь неправильно, оставь это дело. А если поступаешь правильно, незачем бояться тех, кто осуждает несправедливо.",
+        "applied_insight": "Вы пишете, что боитесь не справиться с порицанием коллег. Эпиктет разводит здесь два вопроса: ошибся ли я и справедливо ли меня осуждают. Справедливый упрёк указывает на ошибку, а несправедливый не меняет того, каким был поступок.",
+        "distinction": "Помогает различить качество действия, проверенного собственным рассмотрением, и чужое неодобрение этого действия.",
+        "perspective_effect": "Порицание коллег и качество собственного действия — разные вещи: справедливая критика указывает на ошибку, которую стоит исправить, а несправедливая не меняет того, каким было действие.",
+        "perspective_frame": "По какой мерке оценивать свою работу: по её сути или по чужому одобрению.",
+        "question_explanation": "Упрёк может указывать на настоящую ошибку, а может быть несправедливым. Вопрос о том, по каким признакам различать эти два случая в работе.",
+        "verified_quote": null
+      }
+    ],
+    "fewer_than_three_reason": "Двух хватает: одна перспектива перестраивает вопрос о правильности без гарантий, другая отделяет качество действия от порицания, а ближайший кандидат на третью (C0296) лежит в той же рамке, что и C0241.",
+    "count_reason": "Двух хватает: одна перспектива перестраивает вопрос о правильности без гарантий, другая отделяет качество действия от порицания, а ближайший кандидат на третью (C0296) лежит в той же рамке, что и C0241.",
+    "corpus_version": "final-corpus-2026-10-07/active-v1",
+    "rejected": [
+      {
+        "card_id": "C0296",
+        "reason": "та же рамка вопроса, что у C0241: Тоже переводит ответственность на то, как человек действует, а применять стоическое безразличие к благу клиента пришлось бы с натяжкой."
+      },
+      {
+        "card_id": "C0377",
+        "reason": "слабее: Слишком общая мысль, и её трудно приложить к вреду для другого человека, не прибегая к догадкам."
+      },
+      {
+        "card_id": "C0328",
+        "reason": "слабее: Можно прочитать как вердикт о пригодности к профессии, а различение размыто."
+      },
+      {
+        "card_id": "C0415",
+        "reason": "та же мыслительная операция, что у C0411: Та же операция, что у C0411, но без признания возможной справедливости критики."
+      },
+      {
+        "card_id": "C0646",
+        "reason": "натянутое применение к вопросу: С вопросом о выборе без гарантий связан только через натянутый перенос."
+      }
+    ],
+    "q1_top": {
+      "card_id": "C0646",
+      "decision": "rejected",
+      "reason": "Мысль об учении у других не работает с центральным вопросом о выборе без гарантии и страхе навредить."
+    },
+    "meta": {
+      "composer": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "composition-prompt/0.9.0",
+      "package_sha256": "5e11bd2b39c810c66ff71cd3168f97cd34cb41e000b622de966592c63fe0eae4",
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "wall_seconds": 30.32,
+            "cli_duration_ms": 28831,
+            "api_duration_ms": 28801,
+            "num_turns": 2,
+            "input_tokens": 2,
+            "cache_read_tokens": 5280,
+            "cache_creation_tokens": 6748,
+            "output_tokens": 2724,
+            "thinking_tokens": 871,
+            "total_cost_usd_list": 0.109528,
+            "models": [
+              "claude-opus-5-5"
+            ],
+            "attempt": 1,
+            "call_seconds": 30.32,
+            "validation_seconds": 76.587
+          }
+        ],
+        "repairs": [],
+        "writer": {
+          "prompt_version": "card-writer-prompt/0.7.0",
+          "seconds": 76.58,
+          "cards": [
+            {
+              "card_id": "C0241",
+              "attempts": 1,
+              "repairs": [],
+              "calls": [
+                {
+                  "wall_seconds": 30.81,
+                  "cli_duration_ms": 29053,
+                  "api_duration_ms": 29019,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 9164,
+                  "cache_creation_tokens": 1302,
+                  "output_tokens": 3132,
+                  "thinking_tokens": 1503,
+                  "total_cost_usd_list": 0.07489679999999999,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 1,
+                  "call_seconds": 30.81
+                }
+              ],
+              "fallback": false,
+              "validation": [
+                {
+                  "wall_seconds": 18.25,
+                  "cli_duration_ms": 15736,
+                  "api_duration_ms": 15714,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 2125,
+                  "cache_creation_tokens": 1452,
+                  "output_tokens": 1985,
+                  "thinking_tokens": 666,
+                  "total_cost_usd_list": 0.051749,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "call_seconds": 18.25,
+                  "checked": 17,
+                  "violations": [],
+                  "labels": [
+                    [
+                      "title",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "applied_insight",
+                      "given"
+                    ],
+                    [
+                      "applied_insight",
+                      "source_frame"
+                    ],
+                    [
+                      "applied_insight",
+                      "general_distinction"
+                    ],
+                    [
+                      "reflection_question",
+                      "open_question"
+                    ],
+                    [
+                      "reflection_question",
+                      "open_question"
+                    ],
+                    [
+                      "question_explanation",
+                      "source_frame"
+                    ],
+                    [
+                      "question_explanation",
+                      "source_frame"
+                    ],
+                    [
+                      "question_explanation",
+                      "open_question"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ]
+                  ]
+                }
+              ],
+              "grounding": [
+                {
+                  "field": "main_idea",
+                  "claim": "Будда в ранней сутте учит проверять поступок во время совершения",
+                  "kind": "source_fact",
+                  "evidence": "Проверка действия во время совершения"
+                },
+                {
+                  "field": "main_idea",
+                  "claim": "Источник связан с Буддой и ранними суттами",
+                  "kind": "source_fact",
+                  "evidence": "Будда / персонажи ранних сутт"
+                },
+                {
+                  "field": "main_idea",
+                  "claim": "От поступка, вредящего себе или другим, нужно отказаться",
+                  "kind": "source_fact",
+                  "evidence": "то тебе нужно отказаться от него"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек спрашивает, как браться за работу без знания заранее",
+                  "kind": "user_fact",
+                  "evidence": "если я не могу заранее знать, что выбор будет правильным"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Не знать заранее ещё не значит действовать вслепую",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Решение пересматривается по ходу, по последствиям",
+                  "kind": "source_fact",
+                  "evidence": "первоначальное решение пересматривается по фактическим последствиям"
+                },
+                {
+                  "field": "reflection_question",
+                  "claim": "Вопрос о том, как заметить вред по ходу работы",
+                  "kind": "question",
+                  "evidence": ""
+                },
+                {
+                  "field": "question_explanation",
+                  "claim": "Знать ответ заранее не обязательно, можно замечать и останавливаться",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Первое решение пересматривают по реальным последствиям",
+                  "kind": "source_fact",
+                  "evidence": "первоначальное решение пересматривается по фактическим последствиям"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Мерка — вред себе, другим или обоим",
+                  "kind": "source_fact",
+                  "evidence": "вред тебе самому, вред другим, или и тебе, и другим"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Вредный поступок прекращают",
+                  "kind": "source_fact",
+                  "evidence": "вредное действие прекращается"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Уверенность не обязательно нужна до начала, дело и проверка идут вместе",
+                  "kind": "distinction",
+                  "evidence": ""
+                }
+              ],
+              "seconds": 49.07
+            },
+            {
+              "card_id": "C0411",
+              "attempts": 2,
+              "repairs": [
+                "1 validation error for Perspective\n  Value error, reflection_question is syntactically too complex (more than three commas) [type=value_error, input_value={'card_id': 'C0411', 'rol...тдельности.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error"
+              ],
+              "calls": [
+                {
+                  "wall_seconds": 32.54,
+                  "cli_duration_ms": 30993,
+                  "api_duration_ms": 30952,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 9164,
+                  "cache_creation_tokens": 1307,
+                  "output_tokens": 3115,
+                  "thinking_tokens": 1667,
+                  "total_cost_usd_list": 0.07459679999999999,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 1,
+                  "call_seconds": 32.55
+                },
+                {
+                  "wall_seconds": 21.24,
+                  "cli_duration_ms": 19587,
+                  "api_duration_ms": 19541,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 9164,
+                  "cache_creation_tokens": 1453,
+                  "output_tokens": 2069,
+                  "thinking_tokens": 893,
+                  "total_cost_usd_list": 0.054844800000000006,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 2,
+                  "call_seconds": 21.24
+                }
+              ],
+              "fallback": false,
+              "validation": [
+                {
+                  "wall_seconds": 22.79,
+                  "cli_duration_ms": 21175,
+                  "api_duration_ms": 21132,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 2125,
+                  "cache_creation_tokens": 1502,
+                  "output_tokens": 2568,
+                  "thinking_tokens": 683,
+                  "total_cost_usd_list": 0.063809,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "call_seconds": 22.79,
+                  "checked": 17,
+                  "violations": [],
+                  "labels": [
+                    [
+                      "title",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "main_idea",
+                      "source_frame"
+                    ],
+                    [
+                      "applied_insight",
+                      "given"
+                    ],
+                    [
+                      "applied_insight",
+                      "source_frame"
+                    ],
+                    [
+                      "applied_insight",
+                      "general_distinction"
+                    ],
+                    [
+                      "reflection_question",
+                      "open_question"
+                    ],
+                    [
+                      "reflection_question",
+                      "open_question"
+                    ],
+                    [
+                      "question_explanation",
+                      "general_distinction"
+                    ],
+                    [
+                      "question_explanation",
+                      "general_distinction"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "source_frame"
+                    ],
+                    [
+                      "perspective",
+                      "general_distinction"
+                    ]
+                  ]
+                }
+              ],
+              "grounding": [
+                {
+                  "field": "applied_insight",
+                  "claim": "Человек боится не справиться с порицанием коллег",
+                  "kind": "user_fact",
+                  "evidence": "не справиться с порицанием коллег"
+                },
+                {
+                  "field": "main_idea",
+                  "claim": "Эпиктет: если неправильно — оставь дело, если правильно — незачем бояться несправедливо порицающих",
+                  "kind": "source_fact",
+                  "evidence": "если правильно, то отчего ты боишься тех, кто будет порицать несправедливо"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Эпиктет начинает с действия, которое человек счёл нужным",
+                  "kind": "source_fact",
+                  "evidence": "делать то, что счел нужным"
+                },
+                {
+                  "field": "perspective",
+                  "claim": "Чужое неодобрение не меняет качества проверенного действия",
+                  "kind": "source_fact",
+                  "evidence": "чужое неодобрение само по себе не меняет его качества"
+                },
+                {
+                  "field": "applied_insight",
+                  "claim": "Справедливый упрёк указывает на ошибку, несправедливый не меняет поступка",
+                  "kind": "distinction",
+                  "evidence": ""
+                },
+                {
+                  "field": "question_explanation",
+                  "claim": "Упрёк бывает справедливым и несправедливым",
+                  "kind": "distinction",
+                  "evidence": ""
+                }
+              ],
+              "seconds": 76.58
+            }
+          ],
+          "dropped": [],
+          "selection": [
+            {
+              "card_id": "C0241",
+              "perspective_effect": "Правильность выбора в работе с другим не обязательно знать заранее: её можно проверять до действия, во время него и после, и менять курс, если обнаружился вред.",
+              "perspective_frame": "Как устроена ответственность во времени: разовое угадывание или постоянная проверка действия.",
+              "distinction": "Помогает различить знание заранее, что выбор правильный, и готовность проверять действие по его последствиям и прекращать вредное.",
+              "role": "Ответственность как проверка",
+              "source_point": "Текст предлагает смотреть на действие до, во время и после него и отказываться от него, если видно, что оно вредит себе или другим.",
+              "user_point": "Вопрос «как браться, если нельзя заранее знать, что выбор правильный» предполагает, что правильность должна быть известна до начала; источник показывает другой порядок, где вред замечают и исправляют по ходу.",
+              "why_selected": "Прямо отвечает на центральную часть вопроса о выборе без гарантии и страхе навредить."
+            },
+            {
+              "card_id": "C0411",
+              "perspective_effect": "Порицание коллег и качество собственного действия — разные вещи: справедливая критика указывает на ошибку, которую стоит исправить, а несправедливая не меняет того, каким было действие.",
+              "perspective_frame": "По какой мерке оценивать свою работу: по её сути или по чужому одобрению.",
+              "distinction": "Помогает различить качество действия, проверенного собственным рассмотрением, и чужое неодобрение этого действия.",
+              "role": "Отделяет оценку от качества",
+              "source_point": "Эпиктет говорит: если поступаешь неправильно, оставь это дело; если правильно, незачем бояться тех, кто осуждает несправедливо.",
+              "user_point": "Страх перед порицанием коллег можно разделить на два вопроса: было ли действие ошибкой и было ли порицание справедливым.",
+              "why_selected": "Работает с отдельным страхом из вопроса, с порицанием, и даёт ясное различение, не отрицая значения справедливой критики."
+            }
+          ],
+          "considered": [
+            {
+              "card_id": "C0241",
+              "perspective_effect": "Правильность выбора проверяется по ходу действия, а не гарантируется заранее.",
+              "perspective_frame": "Ответственность как процесс проверки.",
+              "decision": "selected",
+              "duplicate_of": null,
+              "reason": "Точнее всего отвечает на вопрос о выборе без гарантий."
+            },
+            {
+              "card_id": "C0411",
+              "perspective_effect": "Чужое неодобрение не определяет качества действия, если оно проверено.",
+              "perspective_frame": "Мерка оценки своей работы.",
+              "decision": "selected",
+              "duplicate_of": null,
+              "reason": "Даёт ясное различение для страха перед порицанием."
+            },
+            {
+              "card_id": "C0296",
+              "perspective_effect": "Осторожность относится к собственному суждению, а бесстрашие — к тому, что от тебя не зависит.",
+              "perspective_frame": "К чему относить страх и осторожность.",
+              "decision": "same_frame_as_selected",
+              "duplicate_of": "C0241",
+              "reason": "Тоже переводит ответственность на то, как человек действует, а применять стоическое безразличие к благу клиента пришлось бы с натяжкой."
+            },
+            {
+              "card_id": "C0377",
+              "perspective_effect": "Если принимать чужое за своё, появляются тревога и обвинения.",
+              "perspective_frame": "Что зависит от меня, а что нет.",
+              "decision": "weaker",
+              "duplicate_of": null,
+              "reason": "Слишком общая мысль, и её трудно приложить к вреду для другого человека, не прибегая к догадкам."
+            },
+            {
+              "card_id": "C0328",
+              "perspective_effect": "Прежде чем брать роль, можно рассмотреть, чего она на самом деле требует.",
+              "perspective_frame": "Каково дело на самом деле, а не в представлении.",
+              "decision": "weaker",
+              "duplicate_of": null,
+              "reason": "Можно прочитать как вердикт о пригодности к профессии, а различение размыто."
+            },
+            {
+              "card_id": "C0415",
+              "perspective_effect": "Порицатель следует своему представлению: «ему показалось».",
+              "perspective_frame": "Мерка оценки своей работы.",
+              "decision": "same_operation_as_selected",
+              "duplicate_of": "C0411",
+              "reason": "Та же операция, что у C0411, но без признания возможной справедливости критики."
+            },
+            {
+              "card_id": "C0646",
+              "perspective_effect": "В других можно увидеть и то, чему стоит следовать, и то, от чего стоит избавиться в себе.",
+              "perspective_frame": "Другие как источник учения.",
+              "decision": "strained_application",
+              "duplicate_of": null,
+              "reason": "С вопросом о выборе без гарантий связан только через натянутый перенос."
+            }
+          ],
+          "count_reason": "Двух хватает: одна перспектива перестраивает вопрос о правильности без гарантий, другая отделяет качество действия от порицания, а ближайший кандидат на третью (C0296) лежит в той же рамке, что и C0241."
+        }
+      }
+    }
+  },
+  "errors": [],
+  "timings": [
+    {
+      "stage": "interpretation",
+      "seconds": 19.36,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "calls": [
+        {
+          "wall_seconds": 19.34,
+          "cli_duration_ms": 17276,
+          "api_duration_ms": 17240,
+          "num_turns": 2,
+          "input_tokens": 2,
+          "cache_read_tokens": 5191,
+          "cache_creation_tokens": 596,
+          "output_tokens": 1749,
+          "thinking_tokens": 599,
+          "total_cost_usd_list": 0.0407942,
+          "models": [
+            "claude-opus-5-5"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "seconds": 0.59,
+      "llm_calls": 0
+    },
+    {
+      "stage": "selection attempt 1",
+      "seconds": 30.32,
+      "llm_calls": 1,
+      "validation_seconds": 76.587,
+      "output_tokens": 2724,
+      "thinking_tokens": 871
+    },
+    {
+      "stage": "card writing (parallel, wall)",
+      "seconds": 76.58,
+      "llm_calls": 3,
+      "dropped_cards": []
+    },
+    {
+      "stage": "independent validation (sum of calls)",
+      "seconds": 41.04,
+      "llm_calls": 2,
+      "rejected_by_validator": 0
+    },
+    {
+      "stage": "  writer C0241",
+      "seconds": 49.07,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "fallback_to_draft": false
+    },
+    {
+      "stage": "  writer C0411",
+      "seconds": 76.58,
+      "llm_calls": 2,
+      "retries": 1,
+      "retry_reasons": [
+        "1 validation error for Perspective\n  Value error, reflection_question is syntactically too complex (more than three commas) [type=value_error, input_value={'card_id': 'C0411', 'rol...тдельности.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error"
+      ],
+      "fallback_to_draft": false
+    },
+    {
+      "stage": "composition total",
+      "seconds": 106.91,
+      "llm_calls": 6,
+      "retries": 1,
+      "retry_reasons": [
+        "1 validation error for Perspective\n  Value error, reflection_question is syntactically too complex (more than three commas) [type=value_error, input_value={'card_id': 'C0411', 'rol...тдельности.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error"
+      ]
+    }
+  ],
+  "reflection": null
+}

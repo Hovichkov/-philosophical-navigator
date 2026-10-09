@@ -1,0 +1,35 @@
+{
+  "session_id": "32db430bf3a9",
+  "created_utc": "2026-09-28T21:52:18+00:00",
+  "state": "new",
+  "interpretation_input": {
+    "topic": "Работа / дело / деньги",
+    "experiences": [
+      "Раздражение",
+      "Желание всё исправить"
+    ],
+    "difficulty_center": "Я не знаю, как реагировать",
+    "free_narrative": "Я шакольный учитель. У меня есть ученик с дцп, но дееспособный. И он отказывается участвовать в работе. Все время себя самоуничижает. Я хочу ему помочь, пытаюсь включить в рабочий процесс, но он идет в отказ"
+  },
+  "interpretation": null,
+  "insufficient": null,
+  "confirmation": null,
+  "query_representation": null,
+  "retrieval": null,
+  "composition": null,
+  "errors": [
+    {
+      "stage": "interpret",
+      "error": "CLI error: {'subtype': 'success', 'is_error': True, 'result': \"You've hit your session limit · resets 4:20am (Europe/Moscow)\", 'api_error_status': 429} | raw: {'duration_api_ms': 0, 'stop_reason': 'stop_sequence', 'session_id': '02965283-c258-4b42-aa14-31014b25af8a', 'total_cost_usd': 0, 'usage': {'output_tokens_details': {'thinking_tokens': 0}, 'input_tokens': 0, 'cache_creation_input_tokens': 0, 'cache_read_input_tokens': 0, 'output_tokens': 0, 'server_tool_use': {'web_search_requests': 0, 'web_fetch_requests': 0}, 'service_tier': 'standard', 'cache_c",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/hovichkov/Documents/Навигатор по самоанализу/src/navigator/prototype/flow.py\", line 112, in submit\n    outcome = interpret(self.input, self.services.interpreter)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/hovichkov/Documents/Навигатор по самоанализу/src/navigator/interpretation/interpreter.py\", line 189, in interpret\n    out, usage = interpreter.complete(inp, feedback)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/hovichkov/Documents/Навигатор по самоанализу/src/navigator/interpretation/interpreter.py\", line 161, in complete\n    raise InterpreterUnavailable(cli_error_message(payload))\nnavigator.interpretation.interpreter.InterpreterUnavailable: CLI error: {'subtype': 'success', 'is_error': True, 'result': \"You've hit your session limit · resets 4:20am (Europe/Moscow)\", 'api_error_status': 429} | raw: {'duration_api_ms': 0, 'stop_reason': 'stop_sequence', 'session_id': '02965283-c258-4b42-aa14-31014b25af8a', 'total_cost_usd': 0, 'usage': {'output_tokens_details': {'thinking_tokens': 0}, 'input_tokens': 0, 'cache_creation_input_tokens': 0, 'cache_read_input_tokens': 0, 'output_tokens': 0, 'server_tool_use': {'web_search_requests': 0, 'web_fetch_requests': 0}, 'service_tier': 'standard', 'cache_c\n",
+      "utc": "2026-09-28T21:52:21+00:00"
+    }
+  ],
+  "timings": [
+    {
+      "stage": "interpretation",
+      "seconds": 3.34,
+      "ok": false
+    }
+  ]
+}

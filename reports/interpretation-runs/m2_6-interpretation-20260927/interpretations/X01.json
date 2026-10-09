@@ -1,0 +1,23 @@
+{
+  "schema_version": "interpretation/0.1.0",
+  "status": "insufficient_input",
+  "input": {
+    "topic": "Другое",
+    "experiences": [
+      "растерянность"
+    ],
+    "difficulty_center": "другое",
+    "free_narrative": "всё сложно, не знаю"
+  },
+  "reason": "free narrative has fewer than 8 words (deterministic pre-check)",
+  "clarification_prompt": "Расскажите, пожалуйста, чуть подробнее, что происходит и что в этом для вас самое трудное — так мы сможем точнее сформулировать ваш вопрос.",
+  "trace": {
+    "interpreter": "deterministic-precheck",
+    "model": null,
+    "prompt_version": "interpretation-prompt/0.3.0",
+    "input_sha256": "ce14461a074762aa666d6073596596d50d37d9384860420a27c86635772c263d",
+    "reading_notes": [],
+    "attempts": 0,
+    "usage": {}
+  }
+}

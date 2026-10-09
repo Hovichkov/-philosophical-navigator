@@ -1,0 +1,9 @@
+{
+  "run_id": "m2_6-interpretation-20260927",
+  "created_utc": "2026-09-27T15:56:42+00:00",
+  "interpreter": "claude-code-cli",
+  "model": "claude-opus-5-5",
+  "prompt_version": "interpretation-prompt/0.3.0",
+  "cases": 21,
+  "completed": 21
+}

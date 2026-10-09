@@ -1,0 +1,1138 @@
+{
+  "session_id": "461a74c177f3",
+  "created_utc": "2026-09-27T23:39:38+00:00",
+  "state": "answered",
+  "interpretation_input": {
+    "topic": "Будущее / неопределённость",
+    "experiences": [
+      "Тревогу"
+    ],
+    "difficulty_center": "Я пытаюсь всё предусмотреть и не могу остановиться",
+    "free_narrative": "У меня таблица на всё: подушка безопасности, страховки, запасной план если сократят, если заболею. Жена смеётся что я готовлюсь к апокалипсису. Но как только что-то закрываю, появляется новый риск. В отпуске проверяю курсы и новости. Не контролировать кажется безответственным."
+  },
+  "interpretation": {
+    "schema_version": "interpretation/0.1.0",
+    "status": "interpreted",
+    "input": {
+      "topic": "Будущее / неопределённость",
+      "experiences": [
+        "Тревогу"
+      ],
+      "difficulty_center": "Я пытаюсь всё предусмотреть и не могу остановиться",
+      "free_narrative": "У меня таблица на всё: подушка безопасности, страховки, запасной план если сократят, если заболею. Жена смеётся что я готовлюсь к апокалипсису. Но как только что-то закрываю, появляется новый риск. В отпуске проверяю курсы и новости. Не контролировать кажется безответственным."
+    },
+    "proposed_question": "Где проходит граница, за которой предусмотрительность перестаёт быть ответственностью перед собой и семьёй, если каждый закрытый риск тут же сменяется новым, остановиться я не могу, а перестать предусматривать кажется мне безответственным?",
+    "working_hypotheses": [
+      "Возможно, ответственность понимается как возможность устранить неопределённость, а не как способ разумно действовать внутри неё.",
+      "Бесконечность рисков может указывать на то, что неопределённость будущего не сводится к списку пунктов (Хайдеггер: бытие-к-смерти; стоики: различение того, что в нашей власти и что нет).",
+      "Возможно, подготовка к будущему вытесняет присутствие в настоящем (Сенека: «жить, откладывая жизнь»; Паскаль: мы никогда не живём, а только надеемся жить).",
+      "Вопрос, где проходит граница «достаточного» в заботе о семье, может оставаться непроговорённым, и тогда любая остановка кажется небрежностью."
+    ],
+    "coordinates": [
+      "контроль",
+      "долг / ответственность",
+      "страх / конечность",
+      "ожидание / представление",
+      "отношение к другому"
+    ],
+    "canonical_tensions": [
+      "контроль ↔ конечность",
+      "действие ↔ принятие",
+      "отношение к себе ↔ взгляд другого"
+    ],
+    "free_tensions": [
+      "подготовка к будущему ↔ жизнь в настоящем",
+      "ответственность ↔ невозможность исчерпать все риски"
+    ],
+    "ambiguity_notes": [
+      "Неясно, за кого именно он чувствует ответственность: за себя, за жену, за семью в целом. В вопросе это оставлено открытым.",
+      "Реакция жены описана как смех. Неизвестно, видит ли он в ней поддержку, лёгкость или непонимание."
+    ],
+    "trace": {
+      "interpreter": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "interpretation-prompt/0.6.0",
+      "input_sha256": "9bc02a366aace6389b1cd59f2654bef09e0ac6129bd34291839f15dec9d1c985",
+      "reading_notes": [
+        {
+          "kind": "representation",
+          "note": "Предусмотрительность описана как ответственность: «не контролировать кажется безответственным». То есть отказ от контроля выглядит для него как моральный изъян, а не просто как риск."
+        },
+        {
+          "kind": "tension",
+          "note": "Каждый закрытый риск тут же сменяется новым. Перечень рисков бесконечен, а готовность, похоже, мыслится как состояние, которого можно достичь."
+        },
+        {
+          "kind": "boundary",
+          "note": "Проверка курсов и новостей в отпуске: подготовка к будущему заходит на территорию настоящего и отдыха."
+        },
+        {
+          "kind": "context",
+          "note": "Жена смеётся над «подготовкой к апокалипсису». Её взгляд расходится с его пониманием ответственности, но рассказчик никак этот взгляд не оценивает."
+        },
+        {
+          "kind": "expectation",
+          "note": "Риски в таблице касаются семейной жизни: сокращение, болезнь, финансовая подушка. Возможно, ответственность связана с семьёй, но прямо он об этом не говорит."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "total_cost_usd_list": 0.0306162,
+            "models": [
+              "claude-opus-5-5"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "insufficient": null,
+  "confirmation": {
+    "action": "edited",
+    "source": "user",
+    "proposed_question": "Где проходит граница, за которой предусмотрительность перестаёт быть ответственностью перед собой и семьёй, если каждый закрытый риск тут же сменяется новым, остановиться я не могу, а перестать предусматривать кажется мне безответственным?",
+    "confirmed_question": "Где проходит граница между ответственной предусмотрительностью и попыткой заранее закрыть каждый риск для моей семьи?",
+    "edited_text": "Где проходит граница между ответственной предусмотрительностью и попыткой заранее закрыть каждый риск для моей семьи?"
+  },
+  "query_representation": {
+    "schema_version": "query-representation/0.1.0",
+    "confirmed_question": "Где проходит граница между ответственной предусмотрительностью и попыткой заранее закрыть каждый риск для моей семьи?",
+    "context": {
+      "circumstance": "Будущее / неопределённость",
+      "narrative": "У меня таблица на всё: подушка безопасности, страховки, запасной план если сократят, если заболею. Жена смеётся что я готовлюсь к апокалипсису. Но как только что-то закрываю, появляется новый риск. В отпуске проверяю курсы и новости. Не контролировать кажется безответственным."
+    },
+    "experiences": [
+      "Тревогу"
+    ],
+    "working_hypotheses": [
+      "Возможно, ответственность понимается как возможность устранить неопределённость, а не как способ разумно действовать внутри неё.",
+      "Бесконечность рисков может указывать на то, что неопределённость будущего не сводится к списку пунктов (Хайдеггер: бытие-к-смерти; стоики: различение того, что в нашей власти и что нет).",
+      "Возможно, подготовка к будущему вытесняет присутствие в настоящем (Сенека: «жить, откладывая жизнь»; Паскаль: мы никогда не живём, а только надеемся жить).",
+      "Вопрос, где проходит граница «достаточного» в заботе о семье, может оставаться непроговорённым, и тогда любая остановка кажется небрежностью."
+    ],
+    "coordinates": [
+      "контроль",
+      "долг / ответственность",
+      "страх / конечность",
+      "ожидание / представление",
+      "отношение к другому"
+    ],
+    "canonical_tensions": [
+      "контроль ↔ конечность",
+      "действие ↔ принятие",
+      "отношение к себе ↔ взгляд другого"
+    ],
+    "free_tensions": [
+      "подготовка к будущему ↔ жизнь в настоящем",
+      "ответственность ↔ невозможность исчерпать все риски"
+    ],
+    "provenance": {
+      "origin": "production",
+      "confirmed_question_source": "user_edited",
+      "interpretation_source": "interpretation-layer_0.1.0",
+      "benchmark_item_id": null,
+      "note": null
+    }
+  },
+  "retrieval": {
+    "version": "candidate-retrieval/0.1.0",
+    "query": {
+      "schema_version": "query-representation/0.1.0",
+      "confirmed_question": "Где проходит граница между ответственной предусмотрительностью и попыткой заранее закрыть каждый риск для моей семьи?",
+      "context": {
+        "circumstance": "Будущее / неопределённость",
+        "narrative": "У меня таблица на всё: подушка безопасности, страховки, запасной план если сократят, если заболею. Жена смеётся что я готовлюсь к апокалипсису. Но как только что-то закрываю, появляется новый риск. В отпуске проверяю курсы и новости. Не контролировать кажется безответственным."
+      },
+      "experiences": [
+        "Тревогу"
+      ],
+      "working_hypotheses": [
+        "Возможно, ответственность понимается как возможность устранить неопределённость, а не как способ разумно действовать внутри неё.",
+        "Бесконечность рисков может указывать на то, что неопределённость будущего не сводится к списку пунктов (Хайдеггер: бытие-к-смерти; стоики: различение того, что в нашей власти и что нет).",
+        "Возможно, подготовка к будущему вытесняет присутствие в настоящем (Сенека: «жить, откладывая жизнь»; Паскаль: мы никогда не живём, а только надеемся жить).",
+        "Вопрос, где проходит граница «достаточного» в заботе о семье, может оставаться непроговорённым, и тогда любая остановка кажется небрежностью."
+      ],
+      "coordinates": [
+        "контроль",
+        "долг / ответственность",
+        "страх / конечность",
+        "ожидание / представление",
+        "отношение к другому"
+      ],
+      "canonical_tensions": [
+        "контроль ↔ конечность",
+        "действие ↔ принятие",
+        "отношение к себе ↔ взгляд другого"
+      ],
+      "free_tensions": [
+        "подготовка к будущему ↔ жизнь в настоящем",
+        "ответственность ↔ невозможность исчерпать все риски"
+      ],
+      "provenance": {
+        "origin": "production",
+        "confirmed_question_source": "user_edited",
+        "interpretation_source": "interpretation-layer_0.1.0",
+        "benchmark_item_id": null,
+        "note": null
+      }
+    },
+    "embedding_config": {
+      "provider": "local-sentence-transformers",
+      "model": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimensions": 1024
+    },
+    "corpus_version": "launch-124/0.3.0-m1.5-retrieval-readiness",
+    "retrieval_universe_size": 113,
+    "q0_control": {
+      "route": "Q0_QUESTION_ONLY_CONTROL",
+      "query": {
+        "version": "q0-question-only/1.0",
+        "text": "Где проходит граница между ответственной предусмотрительностью и попыткой заранее закрыть каждый риск для моей семьи?",
+        "sha256": "a430b5e350aeb8af1abb6f607e4d44ac48437ca74a93aadab387107b5796d68e"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0296",
+          "rank": 1,
+          "cosine": 0.526336
+        },
+        {
+          "card_id": "C0807",
+          "rank": 2,
+          "cosine": 0.525726
+        },
+        {
+          "card_id": "C0518",
+          "rank": 3,
+          "cosine": 0.499453
+        },
+        {
+          "card_id": "C0798",
+          "rank": 4,
+          "cosine": 0.47919
+        },
+        {
+          "card_id": "C0633",
+          "rank": 5,
+          "cosine": 0.457202
+        },
+        {
+          "card_id": "C0444",
+          "rank": 6,
+          "cosine": 0.455168
+        },
+        {
+          "card_id": "C0957",
+          "rank": 7,
+          "cosine": 0.444736
+        },
+        {
+          "card_id": "C0937",
+          "rank": 8,
+          "cosine": 0.444174
+        },
+        {
+          "card_id": "C0442",
+          "rank": 9,
+          "cosine": 0.442064
+        },
+        {
+          "card_id": "C0001",
+          "rank": 10,
+          "cosine": 0.438521
+        },
+        {
+          "card_id": "C1105",
+          "rank": 11,
+          "cosine": 0.437945
+        },
+        {
+          "card_id": "C0055",
+          "rank": 12,
+          "cosine": 0.437448
+        },
+        {
+          "card_id": "C0620",
+          "rank": 13,
+          "cosine": 0.43495
+        },
+        {
+          "card_id": "C0056",
+          "rank": 14,
+          "cosine": 0.433587
+        },
+        {
+          "card_id": "C0779",
+          "rank": 15,
+          "cosine": 0.432983
+        }
+      ]
+    },
+    "q1_meaning": {
+      "route": "Q1_MEANING",
+      "query": {
+        "version": "q1-meaning-query/2.0",
+        "text": "Вопрос: Где проходит граница между ответственной предусмотрительностью и попыткой заранее закрыть каждый риск для моей семьи?\nРабочие интерпретации:\n- Возможно, ответственность понимается как возможность устранить неопределённость, а не как способ разумно действовать внутри неё.\n- Бесконечность рисков может указывать на то, что неопределённость будущего не сводится к списку пунктов (Хайдеггер: бытие-к-смерти; стоики: различение того, что в нашей власти и что нет).\n- Возможно, подготовка к будущему вытесняет присутствие в настоящем (Сенека: «жить, откладывая жизнь»; Паскаль: мы никогда не живём, а только надеемся жить).\n- Вопрос, где проходит граница «достаточного» в заботе о семье, может оставаться непроговорённым, и тогда любая остановка кажется небрежностью.",
+        "sha256": "846d1f4354885fb7e2fbd915da11c63bde1deee32f4ff4d925dead24906106ef"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0807",
+          "rank": 1,
+          "cosine": 0.669699
+        },
+        {
+          "card_id": "C0518",
+          "rank": 2,
+          "cosine": 0.652369
+        },
+        {
+          "card_id": "C0296",
+          "rank": 3,
+          "cosine": 0.638722
+        },
+        {
+          "card_id": "C0442",
+          "rank": 4,
+          "cosine": 0.629559
+        },
+        {
+          "card_id": "C0436",
+          "rank": 5,
+          "cosine": 0.610179
+        },
+        {
+          "card_id": "C0957",
+          "rank": 6,
+          "cosine": 0.606955
+        },
+        {
+          "card_id": "C0821",
+          "rank": 7,
+          "cosine": 0.595905
+        },
+        {
+          "card_id": "C0130",
+          "rank": 8,
+          "cosine": 0.593476
+        },
+        {
+          "card_id": "C0447",
+          "rank": 9,
+          "cosine": 0.590633
+        },
+        {
+          "card_id": "C0813",
+          "rank": 10,
+          "cosine": 0.589427
+        },
+        {
+          "card_id": "C0056",
+          "rank": 11,
+          "cosine": 0.583119
+        },
+        {
+          "card_id": "C0444",
+          "rank": 12,
+          "cosine": 0.577639
+        },
+        {
+          "card_id": "C0583",
+          "rank": 13,
+          "cosine": 0.576216
+        },
+        {
+          "card_id": "C0577",
+          "rank": 14,
+          "cosine": 0.576003
+        },
+        {
+          "card_id": "C0930",
+          "rank": 15,
+          "cosine": 0.575047
+        }
+      ]
+    },
+    "structure": {
+      "route": "STRUCTURE",
+      "ranking_rule": "lexicographic: (1) more exact canonical-tension matches, (2) more exact coordinate matches, (3) card_id ascending; cards with no match are not ranked; operation is logged, never scored",
+      "query_coordinates": [
+        "контроль",
+        "долг / ответственность",
+        "страх / конечность",
+        "ожидание / представление",
+        "отношение к другому"
+      ],
+      "query_canonical_tensions": [
+        "контроль ↔ конечность",
+        "действие ↔ принятие",
+        "отношение к себе ↔ взгляд другого"
+      ],
+      "top_k": 15,
+      "matching_cards": 49,
+      "tied_at_cutoff": 0,
+      "hits": [
+        {
+          "card_id": "C1108",
+          "rank": 1,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "действие ↔ принятие",
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0571",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "контроль",
+            "ожидание / представление",
+            "страх / конечность"
+          ],
+          "operation": "PERSPECTIVE_LIMIT"
+        },
+        {
+          "card_id": "C0553",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0793",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0871",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "страх / конечность"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0013",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "контроль"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0813",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "отношение к другому"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0056",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0058",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0170",
+          "rank": 10,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0786",
+          "rank": 11,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "отношение к себе ↔ взгляд другого"
+          ],
+          "coordinate_overlap": 0,
+          "matched_coordinates": [],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 12,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "ожидание / представление",
+            "отношение к другому"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0798",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "ожидание / представление",
+            "отношение к другому"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "ожидание / представление",
+            "страх / конечность"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0957",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "ожидание / представление",
+            "отношение к другому"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        }
+      ]
+    },
+    "union_rule": "union(Q1_MEANING top_k, STRUCTURE top_k); Q0 excluded; one entry per card_id with separate route signals; no combined score; listed by card_id ascending (the order is not a ranking)",
+    "candidate_union": [
+      {
+        "card_id": "C0013",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 6,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "контроль"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": "DISTINGUISH"
+      },
+      {
+        "card_id": "C0056",
+        "found_by": [
+          "Q1_MEANING",
+          "STRUCTURE"
+        ],
+        "meaning_rank": 11,
+        "meaning_score": 0.583119,
+        "structure_rank": 8,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "отношение к себе ↔ взгляд другого"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0058",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 9,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "отношение к себе ↔ взгляд другого"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0130",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 8,
+        "meaning_score": 0.593476,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0170",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 10,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "отношение к себе ↔ взгляд другого"
+        ],
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0296",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 3,
+        "meaning_score": 0.638722,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0436",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 5,
+        "meaning_score": 0.610179,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0442",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 4,
+        "meaning_score": 0.629559,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0444",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 12,
+        "meaning_score": 0.577639,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0447",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 9,
+        "meaning_score": 0.590633,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "EXAMINE_DESIRE"
+      },
+      {
+        "card_id": "C0518",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 2,
+        "meaning_score": 0.652369,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0527",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 12,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "долг / ответственность",
+          "ожидание / представление",
+          "отношение к другому"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0553",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 3,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0571",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 2,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "контроль",
+          "ожидание / представление",
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0577",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 14,
+        "meaning_score": 0.576003,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "TRANSFORM_PRACTICE"
+      },
+      {
+        "card_id": "C0583",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 13,
+        "meaning_score": 0.576216,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0786",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 11,
+        "coordinate_overlap": 0,
+        "matched_coordinates": [],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "отношение к себе ↔ взгляд другого"
+        ],
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0793",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 4,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0798",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 13,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "долг / ответственность",
+          "ожидание / представление",
+          "отношение к другому"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "RELATIONAL_ACCOUNTABILITY"
+      },
+      {
+        "card_id": "C0807",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 1,
+        "meaning_score": 0.669699,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_OBLIGATION"
+      },
+      {
+        "card_id": "C0813",
+        "found_by": [
+          "Q1_MEANING",
+          "STRUCTURE"
+        ],
+        "meaning_rank": 10,
+        "meaning_score": 0.589427,
+        "structure_rank": 7,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "отношение к другому"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": "HOLD_VALUE_CONFLICT"
+      },
+      {
+        "card_id": "C0821",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 7,
+        "meaning_score": 0.595905,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_OBLIGATION"
+      },
+      {
+        "card_id": "C0871",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 5,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "страх / конечность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0930",
+        "found_by": [
+          "Q1_MEANING",
+          "STRUCTURE"
+        ],
+        "meaning_rank": 15,
+        "meaning_score": 0.575047,
+        "structure_rank": 14,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "долг / ответственность",
+          "ожидание / представление",
+          "страх / конечность"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "CHALLENGE_ASSUMPTION"
+      },
+      {
+        "card_id": "C0957",
+        "found_by": [
+          "Q1_MEANING",
+          "STRUCTURE"
+        ],
+        "meaning_rank": 6,
+        "meaning_score": 0.606955,
+        "structure_rank": 15,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "долг / ответственность",
+          "ожидание / представление",
+          "отношение к другому"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "LIMIT_OBLIGATION"
+      },
+      {
+        "card_id": "C1108",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 1,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "страх / конечность"
+        ],
+        "tension_overlap": 2,
+        "matched_tensions": [
+          "действие ↔ принятие",
+          "контроль ↔ конечность"
+        ],
+        "operation": "REVALUE_GOOD"
+      }
+    ]
+  },
+  "composition": {
+    "schema_version": "composition/0.3.0",
+    "item_id": "proto-461a74c177f3",
+    "retrieval_run_id": "prototype-461a74c177f3",
+    "confirmed_question": "Где проходит граница между ответственной предусмотрительностью и попыткой заранее закрыть каждый риск для моей семьи?",
+    "candidate_pool": [
+      "C0013",
+      "C0056",
+      "C0058",
+      "C0130",
+      "C0170",
+      "C0296",
+      "C0436",
+      "C0442",
+      "C0444",
+      "C0447",
+      "C0518",
+      "C0527",
+      "C0553",
+      "C0571",
+      "C0577",
+      "C0583",
+      "C0786",
+      "C0793",
+      "C0798",
+      "C0807",
+      "C0813",
+      "C0821",
+      "C0871",
+      "C0930",
+      "C0957",
+      "C1108"
+    ],
+    "opening": "Ваш вопрос можно рассмотреть с нескольких сторон.",
+    "perspectives": [
+      {
+        "card_id": "C0442",
+        "role": "Уточняет статус будущего",
+        "title": "Будущее не гарантировано, но и не закрыто для действий",
+        "source": "Письмо к Менекею, §127",
+        "perspective": "У Эпикура две ошибки. Первая — считать, что будущее точно наступит так, как ждёшь. Вторая — считать, что от нас ничего не зависит. Между ними остаётся место для обычных разумных действий. Отложить деньги, оформить страховку, продумать запасной план — это как раз такие действия. Они повышают шансы, но не отменяют неизвестность. Если ждать от них полной гарантии, список никогда не кончится. Ведь неизвестность — не пункт в списке, её нельзя вычеркнуть. Если ждать от них разумной опоры, у списка появляется понятный конец.",
+        "reflection_question": "Какие пункты в моей таблице действительно меняют положение семьи?",
+        "why_selected": "Прямо отвечает на вопрос о границе: даёт ясное различие между влиянием на будущее и его гарантией и объясняет, почему риски «не кончаются».",
+        "main_idea": "Эпикур пишет, что будущее нельзя считать гарантированным. Но нельзя считать и то, что оно совсем от нас не зависит.",
+        "applied_insight": "Подушка безопасности и страховки — действия, которые правда влияют на будущее семьи. Но гарантией они не становятся. Вы пишете, что после каждого закрытого риска появляется новый. Эпикур помогает увидеть: задача «гарантировать будущее» не решается никаким числом пунктов.",
+        "distinction": "Помогает различить «будущее зависит от моих действий» и «будущее можно гарантировать своими действиями».",
+        "question_explanation": "Можно пройтись по списку и отметить пункты с понятным результатом. Например, подушка на несколько месяцев — это ясный результат. Можно посмотреть, у каких ещё пунктов результат так же ясен."
+      },
+      {
+        "card_id": "C0296",
+        "role": "Переносит место осторожности",
+        "title": "Осторожность нужна в решениях, а не во внешних событиях",
+        "source": "Беседы, II.1",
+        "perspective": "Для Эпиктета осторожность — не общее напряжение перед всем подряд. У неё есть точное место: собственные решения и оценки. Там можно думать, сравнивать, выбирать лучше или хуже. Внешние события так не устроены. Сколько ни следи за курсами в отпуске, сами курсы от этого не меняются. Поэтому Эпиктет советует быть бесстрашным перед внешним и внимательным в своём выборе. Это не призыв к беспечности. Это вопрос о том, куда направлять внимание. Для вопроса о семье это значит: ответственность можно мерить качеством решений, а не тем, сколько событий удалось предусмотреть.",
+        "reflection_question": "Что в моей таблице — мои решения, а что — события, которые я не выбираю?",
+        "why_selected": "Даёт ясный критерий для границы, о которой спрашивает человек: где осторожность работает, а где ей не во что вложиться. Высокий смысловой ранг и точное попадание в тему контроля.",
+        "main_idea": "Эпиктет разделяет две вещи. Бесстрашие он относит к внешнему, что от нас не зависит. Осторожность — к собственному выбору и суждению.",
+        "applied_insight": "Сокращение, болезнь, курсы валют — внешние события. Решение, сколько откладывать и какую страховку взять, — ваш выбор. Эпиктет предлагает быть внимательным именно во втором.",
+        "distinction": "Помогает различить осторожность в собственных решениях и попытку быть осторожным по отношению к внешним событиям, которые от нас не зависят.",
+        "question_explanation": "Можно разделить список на две колонки. В одной — то, что вы решаете сами, например размер подушки. В другой — то, что просто может случиться, например сокращение."
+      },
+      {
+        "card_id": "C0957",
+        "role": "Предел как знание",
+        "title": "Признать предел не значит бросить ответственность",
+        "source": "Тора / Пятикнижие, Чис 11:10–17",
+        "perspective": "Моисей отвечает за целый народ. В какой-то момент он говорит прямо: одному мне это не вынести. Текст не считает эти слова слабостью или изменой долгу. Наоборот, после них всё устраивается честнее: бремя распределяют. Здесь признание предела — часть ответственности, а не её конец. Для вопроса о семье это важный поворот. Граница между заботой и попыткой закрыть всё может проходить там, где задача становится невыполнимой в принципе. Назвать такую задачу невыполнимой — значит увидеть её точно.",
+        "reflection_question": "Какие риски моей семьи я не смогу закрыть, сколько бы ни старался?",
+        "why_selected": "Работает прямо со словами человека «не контролировать кажется безответственным» и даёт отдельную идею: предел ответственности как знание, а не как провал.",
+        "main_idea": "В Книге Чисел Моисей прямо говорит, что его ноша ему не по силам. Это признание оказывается верным знанием. После него ношу делят с другими, и дело устраивается иначе.",
+        "applied_insight": "Вы пишете: «Не контролировать кажется безответственным». В истории Моисея сказать «мне это не под силу» — не безответственность. Это точное знание, где проходит граница его ответственности.",
+        "distinction": "Помогает различить признание предела своих сил и отказ от ответственности.",
+        "question_explanation": "Речь о том, чтобы назвать вещи, которые не решаются никакой подготовкой. Например, никакая таблица не отменит того, что кто-то может заболеть."
+      }
+    ],
+    "fewer_than_three_reason": null,
+    "rejected": [
+      {
+        "card_id": "C0518",
+        "reason": "Тема та же (тревога о будущем, предел контроля), но в карточке нет своего ясного различения. Эпиктет даёт тот же ход точнее."
+      },
+      {
+        "card_id": "C1108",
+        "reason": "Первый структурный ранг, но мысль слишком общая («внутренняя организация влияет на взаимодействие»). Применить её можно только через догадку о психике человека."
+      },
+      {
+        "card_id": "C0571",
+        "reason": "Говорит о пределе объяснения происходящего. Человек спрашивает не об объяснении, а о подготовке к будущему. К тому же пересекается с выбранными карточками."
+      },
+      {
+        "card_id": "C0553",
+        "reason": "Говорит о потере, которая открывает представление о владении. Потери в ситуации нет. Применение потребовало бы достраивать проблему."
+      },
+      {
+        "card_id": "C0013",
+        "reason": "Способ участия в действии важнее активности. Идея близкая, но в карточке она слишком общая, и ясное различение для этой ситуации не формулируется."
+      },
+      {
+        "card_id": "C0821",
+        "reason": "Обязанность ограничена тем, что дано. Мысль близка к выбранной карточке о Моисее, но касается расходов по достатку, а не рисков будущего."
+      }
+    ],
+    "q1_top": {
+      "card_id": "C0807",
+      "decision": "rejected",
+      "reason": "Ложное совпадение по словам «долг» и «близкие». Карточка говорит о конфликте обязанностей перед близкими и о пределе подчинения им. Человек же спрашивает о пределе предусмотрительности перед неизвестным будущим."
+    },
+    "meta": {
+      "composer": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "composition-prompt/0.4.0",
+      "package_sha256": "f5cd74ff28ccaccd1210b431ee40d0270d7f3017eb8950a8a2d4aedf9da45181",
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "total_cost_usd_list": 0.1739834,
+            "models": [
+              "claude-opus-5-5"
+            ],
+            "input_tokens": 2,
+            "output_tokens": 4288
+          }
+        ],
+        "repairs": []
+      }
+    }
+  },
+  "errors": []
+}

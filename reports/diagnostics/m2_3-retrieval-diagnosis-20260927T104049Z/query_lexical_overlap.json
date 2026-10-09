@@ -1,0 +1,84 @@
+{
+  "cards_containing_any_query_tension": {
+    "B01": {
+      "recovered": 10,
+      "other": 2
+    },
+    "B02": {
+      "recovered": 7,
+      "other": 2
+    },
+    "B03": {
+      "recovered": 6,
+      "other": 6
+    },
+    "B04": {
+      "recovered": 6,
+      "other": 1
+    },
+    "B05": {
+      "recovered": 3,
+      "other": 6
+    },
+    "B06": {
+      "recovered": 0,
+      "other": 0
+    },
+    "B07": {
+      "recovered": 0,
+      "other": 0
+    },
+    "B08": {
+      "recovered": 5,
+      "other": 0
+    },
+    "B09": {
+      "recovered": 10,
+      "other": 1
+    },
+    "B10": {
+      "recovered": 5,
+      "other": 0
+    },
+    "B11": {
+      "recovered": 8,
+      "other": 0
+    },
+    "B12": {
+      "recovered": 7,
+      "other": 0
+    },
+    "B13": {
+      "recovered": 8,
+      "other": 6
+    },
+    "B14": {
+      "recovered": 3,
+      "other": 1
+    },
+    "B15": {
+      "recovered": 0,
+      "other": 0
+    },
+    "B16": {
+      "recovered": 7,
+      "other": 0
+    },
+    "B17": {
+      "recovered": 0,
+      "other": 0
+    },
+    "B18": {
+      "recovered": 8,
+      "other": 1
+    },
+    "B19": {
+      "recovered": 9,
+      "other": 6
+    },
+    "B20": {
+      "recovered": 0,
+      "other": 0
+    }
+  }
+}

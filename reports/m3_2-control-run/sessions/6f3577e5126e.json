@@ -1,0 +1,1205 @@
+{
+  "session_id": "6f3577e5126e",
+  "created_utc": "2026-09-27T23:34:08+00:00",
+  "state": "answered",
+  "interpretation_input": {
+    "topic": "Работа / дело / деньги",
+    "experiences": [
+      "Желание всё исправить",
+      "Растерянность"
+    ],
+    "difficulty_center": "Я много работаю и работаю любимую работу, но не получаю за это достаточной финансовой отдачи",
+    "free_narrative": "Я делаю много хороших проектов. и людям приносит это пользу. но я не чувствую финансовой отдачи.  я несу в мир благо, а сам сижу в долгах"
+  },
+  "interpretation": {
+    "schema_version": "interpretation/0.1.0",
+    "status": "interpreted",
+    "input": {
+      "topic": "Работа / дело / деньги",
+      "experiences": [
+        "Желание всё исправить",
+        "Растерянность"
+      ],
+      "difficulty_center": "Я много работаю и работаю любимую работу, но не получаю за это достаточной финансовой отдачи",
+      "free_narrative": "Я делаю много хороших проектов. и людям приносит это пользу. но я не чувствую финансовой отдачи.  я несу в мир благо, а сам сижу в долгах"
+    },
+    "proposed_question": "Как мне понимать то, что моя любимая работа, в которую я много вкладываю, приносит людям реальную пользу, но не даёт мне достаточной финансовой отдачи, и я остаюсь в долгах: как в моей работе соотносятся ценность того, что я даю миру, и то, что я получаю взамен?",
+    "working_hypotheses": [
+      "Возможно, для человека сталкиваются две логики ценности: ценность как благо и польза (дар, служение) и ценность как обмен (рынок, цена), причём они не совпадают автоматически.",
+      "Возможно, в представлении о справедливости заложено ожидание, что добро должно возвращаться; расхождение переживается как несправедливость мира или как собственная ошибка, и из-за этого возникает растерянность.",
+      "Любимое дело может понимать себя как призвание, в котором говорить о деньгах неловко; между призванием и заработком может быть напряжение, которое пока не осмыслено.",
+      "Желание «всё исправить» может касаться разных уровней: практического устройства работы, представления о том, что такое вознаграждение, или долга перед собой."
+    ],
+    "coordinates": [
+      "смысл / цель",
+      "ожидание / представление",
+      "долг / ответственность",
+      "отношение к себе",
+      "действие"
+    ],
+    "canonical_tensions": [
+      "ожидание ↔ действительность",
+      "долг перед другим ↔ долг перед собой"
+    ],
+    "free_tensions": [
+      "ценность как благо ↔ ценность как цена",
+      "призвание ↔ заработок",
+      "дар ↔ обмен"
+    ],
+    "ambiguity_notes": [
+      "Неясно, как именно устроена оплата проектов: работа плохо оплачивается, часть делается бесплатно или дело в объёме и структуре доходов. Из рассказа это не видно.",
+      "«Долги» могут означать финансовые долги или быть более общей метафорой недостатка; скорее всего, речь о прямом смысле."
+    ],
+    "trace": {
+      "interpreter": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "interpretation-prompt/0.6.0",
+      "input_sha256": "d0e7a8071fe5f2ab8452d771f6a94f984a5586664774b7b3777f0a94065d4f0d",
+      "reading_notes": [
+        {
+          "kind": "representation",
+          "note": "Человек описывает свою работу как благо для мира («несу в мир благо»), и она приносит людям пользу; работа любимая, и её много."
+        },
+        {
+          "kind": "expectation",
+          "note": "В рассказе звучит ожидание, что ценность и польза сделанного должны так или иначе вернуться в виде денег («не чувствую финансовой отдачи»)."
+        },
+        {
+          "kind": "tension",
+          "note": "Контраст «несу в мир благо, а сам сижу в долгах»: между тем, что человек даёт миру, и тем, в каком положении оказывается сам."
+        },
+        {
+          "kind": "tension",
+          "note": "Любовь к делу и материальная жизнь идут врозь: работа любимая и полезная, но не кормит."
+        },
+        {
+          "kind": "context",
+          "note": "Среди переживаний названы «желание всё исправить» и «растерянность»: хочется действовать, но неясно, что именно исправлять и в чём причина."
+        },
+        {
+          "kind": "boundary",
+          "note": "Человек не говорит, как устроены оплата его проектов, их формат и договорённости о деньгах; неизвестно, сам ли он назначает цену."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "total_cost_usd_list": 0.0313602,
+            "models": [
+              "claude-opus-5-5"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "insufficient": null,
+  "confirmation": {
+    "action": "edited",
+    "source": "user",
+    "proposed_question": "Как мне понимать то, что моя любимая работа, в которую я много вкладываю, приносит людям реальную пользу, но не даёт мне достаточной финансовой отдачи, и я остаюсь в долгах: как в моей работе соотносятся ценность того, что я даю миру, и то, что я получаю взамен?",
+    "confirmed_question": "Что значит для меня то, что любимая работа, в которую я много вкладываю и которая приносит людям пользу, не даёт мне достаточного заработка и я остаюсь в долгах, и как связаны между собой ценность того, что я делаю, и то, чем мир мне за это платит?",
+    "edited_text": "Что значит для меня то, что любимая работа, в которую я много вкладываю и которая приносит людям пользу, не даёт мне достаточного заработка и я остаюсь в долгах, и как связаны между собой ценность того, что я делаю, и то, чем мир мне за это платит?"
+  },
+  "query_representation": {
+    "schema_version": "query-representation/0.1.0",
+    "confirmed_question": "Что значит для меня то, что любимая работа, в которую я много вкладываю и которая приносит людям пользу, не даёт мне достаточного заработка и я остаюсь в долгах, и как связаны между собой ценность того, что я делаю, и то, чем мир мне за это платит?",
+    "context": {
+      "circumstance": "Работа / дело / деньги",
+      "narrative": "Я делаю много хороших проектов. и людям приносит это пользу. но я не чувствую финансовой отдачи.  я несу в мир благо, а сам сижу в долгах"
+    },
+    "experiences": [
+      "Желание всё исправить",
+      "Растерянность"
+    ],
+    "working_hypotheses": [
+      "Возможно, для человека сталкиваются две логики ценности: ценность как благо и польза (дар, служение) и ценность как обмен (рынок, цена), причём они не совпадают автоматически.",
+      "Возможно, в представлении о справедливости заложено ожидание, что добро должно возвращаться; расхождение переживается как несправедливость мира или как собственная ошибка, и из-за этого возникает растерянность.",
+      "Любимое дело может понимать себя как призвание, в котором говорить о деньгах неловко; между призванием и заработком может быть напряжение, которое пока не осмыслено.",
+      "Желание «всё исправить» может касаться разных уровней: практического устройства работы, представления о том, что такое вознаграждение, или долга перед собой."
+    ],
+    "coordinates": [
+      "смысл / цель",
+      "ожидание / представление",
+      "долг / ответственность",
+      "отношение к себе",
+      "действие"
+    ],
+    "canonical_tensions": [
+      "ожидание ↔ действительность",
+      "долг перед другим ↔ долг перед собой"
+    ],
+    "free_tensions": [
+      "ценность как благо ↔ ценность как цена",
+      "призвание ↔ заработок",
+      "дар ↔ обмен"
+    ],
+    "provenance": {
+      "origin": "production",
+      "confirmed_question_source": "user_edited",
+      "interpretation_source": "interpretation-layer_0.1.0",
+      "benchmark_item_id": null,
+      "note": null
+    }
+  },
+  "retrieval": {
+    "version": "candidate-retrieval/0.1.0",
+    "query": {
+      "schema_version": "query-representation/0.1.0",
+      "confirmed_question": "Что значит для меня то, что любимая работа, в которую я много вкладываю и которая приносит людям пользу, не даёт мне достаточного заработка и я остаюсь в долгах, и как связаны между собой ценность того, что я делаю, и то, чем мир мне за это платит?",
+      "context": {
+        "circumstance": "Работа / дело / деньги",
+        "narrative": "Я делаю много хороших проектов. и людям приносит это пользу. но я не чувствую финансовой отдачи.  я несу в мир благо, а сам сижу в долгах"
+      },
+      "experiences": [
+        "Желание всё исправить",
+        "Растерянность"
+      ],
+      "working_hypotheses": [
+        "Возможно, для человека сталкиваются две логики ценности: ценность как благо и польза (дар, служение) и ценность как обмен (рынок, цена), причём они не совпадают автоматически.",
+        "Возможно, в представлении о справедливости заложено ожидание, что добро должно возвращаться; расхождение переживается как несправедливость мира или как собственная ошибка, и из-за этого возникает растерянность.",
+        "Любимое дело может понимать себя как призвание, в котором говорить о деньгах неловко; между призванием и заработком может быть напряжение, которое пока не осмыслено.",
+        "Желание «всё исправить» может касаться разных уровней: практического устройства работы, представления о том, что такое вознаграждение, или долга перед собой."
+      ],
+      "coordinates": [
+        "смысл / цель",
+        "ожидание / представление",
+        "долг / ответственность",
+        "отношение к себе",
+        "действие"
+      ],
+      "canonical_tensions": [
+        "ожидание ↔ действительность",
+        "долг перед другим ↔ долг перед собой"
+      ],
+      "free_tensions": [
+        "ценность как благо ↔ ценность как цена",
+        "призвание ↔ заработок",
+        "дар ↔ обмен"
+      ],
+      "provenance": {
+        "origin": "production",
+        "confirmed_question_source": "user_edited",
+        "interpretation_source": "interpretation-layer_0.1.0",
+        "benchmark_item_id": null,
+        "note": null
+      }
+    },
+    "embedding_config": {
+      "provider": "local-sentence-transformers",
+      "model": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimensions": 1024
+    },
+    "corpus_version": "launch-124/0.3.0-m1.5-retrieval-readiness",
+    "retrieval_universe_size": 113,
+    "q0_control": {
+      "route": "Q0_QUESTION_ONLY_CONTROL",
+      "query": {
+        "version": "q0-question-only/1.0",
+        "text": "Что значит для меня то, что любимая работа, в которую я много вкладываю и которая приносит людям пользу, не даёт мне достаточного заработка и я остаюсь в долгах, и как связаны между собой ценность того, что я делаю, и то, чем мир мне за это платит?",
+        "sha256": "5fd35cfa1267b8f8ea45a821b74ad2e18cd2834c6f67ecf9569eabd000351131"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0001",
+          "rank": 1,
+          "cosine": 0.568989
+        },
+        {
+          "card_id": "C1105",
+          "rank": 2,
+          "cosine": 0.53726
+        },
+        {
+          "card_id": "C0821",
+          "rank": 3,
+          "cosine": 0.532728
+        },
+        {
+          "card_id": "C0807",
+          "rank": 4,
+          "cosine": 0.530011
+        },
+        {
+          "card_id": "C0437",
+          "rank": 5,
+          "cosine": 0.522774
+        },
+        {
+          "card_id": "C0579",
+          "rank": 6,
+          "cosine": 0.512147
+        },
+        {
+          "card_id": "C0170",
+          "rank": 7,
+          "cosine": 0.508878
+        },
+        {
+          "card_id": "C0023",
+          "rank": 8,
+          "cosine": 0.507947
+        },
+        {
+          "card_id": "C0049",
+          "rank": 9,
+          "cosine": 0.507792
+        },
+        {
+          "card_id": "C0056",
+          "rank": 10,
+          "cosine": 0.507584
+        },
+        {
+          "card_id": "C0786",
+          "rank": 11,
+          "cosine": 0.506725
+        },
+        {
+          "card_id": "C0937",
+          "rank": 12,
+          "cosine": 0.503909
+        },
+        {
+          "card_id": "C0553",
+          "rank": 13,
+          "cosine": 0.50265
+        },
+        {
+          "card_id": "C0441",
+          "rank": 14,
+          "cosine": 0.500744
+        },
+        {
+          "card_id": "C0028",
+          "rank": 15,
+          "cosine": 0.495098
+        }
+      ]
+    },
+    "q1_meaning": {
+      "route": "Q1_MEANING",
+      "query": {
+        "version": "q1-meaning-query/2.0",
+        "text": "Вопрос: Что значит для меня то, что любимая работа, в которую я много вкладываю и которая приносит людям пользу, не даёт мне достаточного заработка и я остаюсь в долгах, и как связаны между собой ценность того, что я делаю, и то, чем мир мне за это платит?\nРабочие интерпретации:\n- Возможно, для человека сталкиваются две логики ценности: ценность как благо и польза (дар, служение) и ценность как обмен (рынок, цена), причём они не совпадают автоматически.\n- Возможно, в представлении о справедливости заложено ожидание, что добро должно возвращаться; расхождение переживается как несправедливость мира или как собственная ошибка, и из-за этого возникает растерянность.\n- Любимое дело может понимать себя как призвание, в котором говорить о деньгах неловко; между призванием и заработком может быть напряжение, которое пока не осмыслено.\n- Желание «всё исправить» может касаться разных уровней: практического устройства работы, представления о том, что такое вознаграждение, или долга перед собой.",
+        "sha256": "77ce82cb4dc12d8104e10ac0028669a888b2d4b924550879f6b9a0053fa3a97f"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0001",
+          "rank": 1,
+          "cosine": 0.621713
+        },
+        {
+          "card_id": "C0780",
+          "rank": 2,
+          "cosine": 0.614338
+        },
+        {
+          "card_id": "C0527",
+          "rank": 3,
+          "cosine": 0.611147
+        },
+        {
+          "card_id": "C0821",
+          "rank": 4,
+          "cosine": 0.605664
+        },
+        {
+          "card_id": "C1105",
+          "rank": 5,
+          "cosine": 0.603074
+        },
+        {
+          "card_id": "C0345",
+          "rank": 6,
+          "cosine": 0.592043
+        },
+        {
+          "card_id": "C0583",
+          "rank": 7,
+          "cosine": 0.588505
+        },
+        {
+          "card_id": "C0023",
+          "rank": 8,
+          "cosine": 0.585553
+        },
+        {
+          "card_id": "C0447",
+          "rank": 9,
+          "cosine": 0.583646
+        },
+        {
+          "card_id": "C0513",
+          "rank": 10,
+          "cosine": 0.582635
+        },
+        {
+          "card_id": "C0443",
+          "rank": 11,
+          "cosine": 0.582409
+        },
+        {
+          "card_id": "C0942",
+          "rank": 12,
+          "cosine": 0.580424
+        },
+        {
+          "card_id": "C0710",
+          "rank": 13,
+          "cosine": 0.580006
+        },
+        {
+          "card_id": "C0341",
+          "rank": 14,
+          "cosine": 0.579828
+        },
+        {
+          "card_id": "C0807",
+          "rank": 15,
+          "cosine": 0.576594
+        }
+      ]
+    },
+    "structure": {
+      "route": "STRUCTURE",
+      "ranking_rule": "lexicographic: (1) more exact canonical-tension matches, (2) more exact coordinate matches, (3) card_id ascending; cards with no match are not ranked; operation is logged, never scored",
+      "query_coordinates": [
+        "смысл / цель",
+        "ожидание / представление",
+        "долг / ответственность",
+        "отношение к себе",
+        "действие"
+      ],
+      "query_canonical_tensions": [
+        "ожидание ↔ действительность",
+        "долг перед другим ↔ долг перед собой"
+      ],
+      "top_k": 15,
+      "matching_cards": 89,
+      "tied_at_cutoff": 0,
+      "hits": [
+        {
+          "card_id": "C0527",
+          "rank": 1,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "долг перед другим ↔ долг перед собой",
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 5,
+          "matched_coordinates": [
+            "действие",
+            "долг / ответственность",
+            "ожидание / представление",
+            "отношение к себе",
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "долг перед другим ↔ долг перед собой"
+          ],
+          "coordinate_overlap": 5,
+          "matched_coordinates": [
+            "действие",
+            "долг / ответственность",
+            "ожидание / представление",
+            "отношение к себе",
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0937",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "долг перед другим ↔ долг перед собой"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "долг / ответственность",
+            "отношение к себе"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0281",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "ожидание / представление",
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0442",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "ожидание / представление"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0579",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "ожидание / представление",
+            "смысл / цель"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0778",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "долг перед другим ↔ долг перед собой"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "долг / ответственность",
+            "отношение к себе"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0275",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0439",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0440",
+          "rank": 10,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0518",
+          "rank": 11,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0806",
+          "rank": 12,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0807",
+          "rank": 13,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "долг перед другим ↔ долг перед собой"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "долг / ответственность"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        },
+        {
+          "card_id": "C0798",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "долг / ответственность",
+            "ожидание / представление"
+          ],
+          "operation": "RELATIONAL_ACCOUNTABILITY"
+        },
+        {
+          "card_id": "C0957",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "долг / ответственность",
+            "ожидание / представление"
+          ],
+          "operation": "LIMIT_OBLIGATION"
+        }
+      ]
+    },
+    "union_rule": "union(Q1_MEANING top_k, STRUCTURE top_k); Q0 excluded; one entry per card_id with separate route signals; no combined score; listed by card_id ascending (the order is not a ranking)",
+    "candidate_union": [
+      {
+        "card_id": "C0001",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 1,
+        "meaning_score": 0.621713,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "HOLD_VALUE_CONFLICT"
+      },
+      {
+        "card_id": "C0023",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 8,
+        "meaning_score": 0.585553,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0275",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 8,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0281",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 4,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "ожидание / представление",
+          "отношение к себе"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0341",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 14,
+        "meaning_score": 0.579828,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "CHALLENGE_ASSUMPTION"
+      },
+      {
+        "card_id": "C0345",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 6,
+        "meaning_score": 0.592043,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0439",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 9,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0440",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 10,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0442",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 5,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "действие",
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0443",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 11,
+        "meaning_score": 0.582409,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "EXAMINE_DESIRE"
+      },
+      {
+        "card_id": "C0447",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 9,
+        "meaning_score": 0.583646,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "EXAMINE_DESIRE"
+      },
+      {
+        "card_id": "C0513",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 10,
+        "meaning_score": 0.582635,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "EXAMINE_DESIRE"
+      },
+      {
+        "card_id": "C0518",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 11,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0527",
+        "found_by": [
+          "Q1_MEANING",
+          "STRUCTURE"
+        ],
+        "meaning_rank": 3,
+        "meaning_score": 0.611147,
+        "structure_rank": 1,
+        "coordinate_overlap": 5,
+        "matched_coordinates": [
+          "действие",
+          "долг / ответственность",
+          "ожидание / представление",
+          "отношение к себе",
+          "смысл / цель"
+        ],
+        "tension_overlap": 2,
+        "matched_tensions": [
+          "долг перед другим ↔ долг перед собой",
+          "ожидание ↔ действительность"
+        ],
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0579",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 6,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "ожидание / представление",
+          "смысл / цель"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0583",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 7,
+        "meaning_score": 0.588505,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0710",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 13,
+        "meaning_score": 0.580006,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0778",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 7,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "долг / ответственность",
+          "отношение к себе"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "долг перед другим ↔ долг перед собой"
+        ],
+        "operation": "RELATIONAL_ACCOUNTABILITY"
+      },
+      {
+        "card_id": "C0780",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 2,
+        "meaning_score": 0.614338,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0798",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 14,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "действие",
+          "долг / ответственность",
+          "ожидание / представление"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "RELATIONAL_ACCOUNTABILITY"
+      },
+      {
+        "card_id": "C0806",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 12,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "CHALLENGE_ASSUMPTION"
+      },
+      {
+        "card_id": "C0807",
+        "found_by": [
+          "Q1_MEANING",
+          "STRUCTURE"
+        ],
+        "meaning_rank": 15,
+        "meaning_score": 0.576594,
+        "structure_rank": 13,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "долг / ответственность"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "долг перед другим ↔ долг перед собой"
+        ],
+        "operation": "LIMIT_OBLIGATION"
+      },
+      {
+        "card_id": "C0821",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 4,
+        "meaning_score": 0.605664,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_OBLIGATION"
+      },
+      {
+        "card_id": "C0930",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 2,
+        "coordinate_overlap": 5,
+        "matched_coordinates": [
+          "действие",
+          "долг / ответственность",
+          "ожидание / представление",
+          "отношение к себе",
+          "смысл / цель"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "долг перед другим ↔ долг перед собой"
+        ],
+        "operation": "CHALLENGE_ASSUMPTION"
+      },
+      {
+        "card_id": "C0937",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 3,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "действие",
+          "долг / ответственность",
+          "отношение к себе"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "долг перед другим ↔ долг перед собой"
+        ],
+        "operation": "HOLD_VALUE_CONFLICT"
+      },
+      {
+        "card_id": "C0942",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 12,
+        "meaning_score": 0.580424,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0957",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 15,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "действие",
+          "долг / ответственность",
+          "ожидание / представление"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "LIMIT_OBLIGATION"
+      },
+      {
+        "card_id": "C1105",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 5,
+        "meaning_score": 0.603074,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      }
+    ]
+  },
+  "composition": {
+    "schema_version": "composition/0.3.0",
+    "item_id": "proto-6f3577e5126e",
+    "retrieval_run_id": "prototype-6f3577e5126e",
+    "confirmed_question": "Что значит для меня то, что любимая работа, в которую я много вкладываю и которая приносит людям пользу, не даёт мне достаточного заработка и я остаюсь в долгах, и как связаны между собой ценность того, что я делаю, и то, чем мир мне за это платит?",
+    "candidate_pool": [
+      "C0001",
+      "C0023",
+      "C0275",
+      "C0281",
+      "C0341",
+      "C0345",
+      "C0439",
+      "C0440",
+      "C0442",
+      "C0443",
+      "C0447",
+      "C0513",
+      "C0518",
+      "C0527",
+      "C0579",
+      "C0583",
+      "C0710",
+      "C0778",
+      "C0780",
+      "C0798",
+      "C0806",
+      "C0807",
+      "C0821",
+      "C0930",
+      "C0937",
+      "C0942",
+      "C0957",
+      "C1105"
+    ],
+    "opening": "Ваш вопрос можно рассмотреть с нескольких сторон.",
+    "perspectives": [
+      {
+        "card_id": "C0527",
+        "role": "Отделяет ценность от договора",
+        "title": "Польза работы и договор об оплате — разные вещи",
+        "source": "Евангелия, Мф 20:1–16",
+        "perspective": "В притче хозяин нанимает работников в разное время дня. Вечером он платит всем одинаково. Те, кто работал дольше, возмущаются. Хозяин отвечает, что заплатил им ровно то, о чём договорились. Текст показывает: чувство несправедливости может опираться не на договор, а на другую мерку. В вашем вопросе тоже есть две мерки. Одна — польза, которую получают люди. Другая — то, о чём с вами договорились и за что платят. Эти мерки могут не совпадать. Тогда вопрос «почему мир не платит за добро» можно разложить на части. Какая польза оплачивается по договору? А какая отдаётся без договора?",
+        "reflection_question": "За какие из моих проектов кто-то договаривался мне заплатить?",
+        "why_selected": "Прямо отвечает на вторую часть вопроса — как связаны ценность дела и оплата. Использована только часть о договоре, без сравнения с другими людьми.",
+        "main_idea": "В притче о работниках в винограднике хозяин платит каждому столько, сколько обещал. Работники чувствуют несправедливость. Но хозяин напоминает, о чём они договаривались.",
+        "applied_insight": "Вы пишете, что приносите людям пользу, но не видите денег. Притча показывает: плата обычно следует договору, а не пользе. Можно посмотреть, где в ваших проектах была договорённость об оплате, а где её не было.",
+        "distinction": "Помогает различить пользу, которую приносит работа, и договорённость об оплате: плату определяет договор, а не ценность сделанного.",
+        "question_explanation": "Вопрос предлагает разделить проекты на два вида. Одни делались по договору об оплате, другие без него."
+      },
+      {
+        "card_id": "C0821",
+        "role": "Соизмеряет долг с достатком",
+        "title": "Долг отдавать измеряется тем, что у вас есть",
+        "source": "Коран, 65:7",
+        "perspective": "Текст говорит о расходах: каждый тратит по своему достатку. У кого мало, тот отдаёт из того, что имеет. Больше с него не требуют. Здесь обязанность не абстрактна. Она всегда привязана к реальным средствам человека. В вашем вопросе есть польза для людей и есть ваши долги. Обычно их обсуждают отдельно: польза — это хорошо, долги — это проблема. Текст предлагает смотреть на них вместе. Сколько вы можете вложить в проекты, зависит от того, сколько у вас есть. Долги — тоже часть этой картины.",
+        "reflection_question": "Сколько времени и денег я могу вкладывать в проекты, не увеличивая долги?",
+        "why_selected": "Точно попадает в столкновение «несу благо — сижу в долгах» и даёт ясное различение между желанием отдавать и мерой, заданной достатком.",
+        "main_idea": "Коран связывает расходы человека с его реальным достатком. Обязанность не выходит за пределы того, что человеку дано.",
+        "applied_insight": "Вы пишете, что несёте в мир благо, а сами сидите в долгах. Этот текст считает ваш достаток частью вопроса о долге. Ваши деньги и силы тоже входят в то, сколько вы можете отдать.",
+        "distinction": "Помогает увидеть, что обязанность отдавать соизмеряется с реальным достатком человека: желание приносить благо ≠ обязанность отдавать сверх своих средств.",
+        "question_explanation": "Вопрос о реальных цифрах: сколько сил и средств у вас есть сейчас. Речь не о том, сколько хочется отдать."
+      },
+      {
+        "card_id": "C0001",
+        "role": "Показывает цену цели",
+        "title": "Ценность цели и её цена видны по-разному",
+        "source": "Бхагавад-гита, БГ 1.28–47",
+        "perspective": "Арджуна стоит перед целью, к которой стремился. Потом он видит, чем за неё придётся заплатить и кого это затронет. От этого меняется его отношение к самой цели. Текст не говорит, что цель плохая. Он показывает момент, когда ценность и цена оказываются перед глазами одновременно. В вашем вопросе ценность дела ясна: люди получают пользу, вы любите эту работу. Цена тоже есть: долги и мало денег. Можно держать в поле зрения и то, и другое. Одно не отменяет другого.",
+        "reflection_question": "Во что мне обходится эта работа сейчас, если посчитать деньги и силы?",
+        "why_selected": "Первая по смыслу карточка; даёт отдельное различение ценности и цены, которое не совпадает с идеями договора и меры достатка.",
+        "main_idea": "В начале Гиты Арджуна вдруг ясно видит, чего будет стоить желанная цель. После этого цель уже не кажется ему однозначным благом.",
+        "applied_insight": "Вы любите свою работу, и она полезна людям. Одновременно у неё есть цена — ваши долги. Гита показывает, что ценность дела и его цена видны не сразу вместе.",
+        "distinction": "Помогает различить ценность цели и её цену: цель может оставаться благой и при этом иметь цену, которую нужно видеть ясно.",
+        "question_explanation": "Вопрос предлагает честно посчитать цену любимого дела. Ценность дела от этого не исчезает."
+      }
+    ],
+    "fewer_than_three_reason": null,
+    "rejected": [
+      {
+        "card_id": "C0780",
+        "reason": "Высокий ранг, но мысль «можно ненавидеть благо и любить зло» не даёт ясного различения для вопроса об оплате полезной работы."
+      },
+      {
+        "card_id": "C1105",
+        "reason": "О проверке счастья, которое обещают богатство и статус. У человека обратная ситуация: смысл есть, денег нет."
+      },
+      {
+        "card_id": "C0579",
+        "reason": "«Успех не гарантирует смысла» — это обратное направление. Смысл у человека уже есть, не хватает заработка."
+      },
+      {
+        "card_id": "C0447",
+        "reason": "Мысль о простоте как меньшей зависимости от изобилия могла бы прозвучать как совет хотеть меньше. К вопросу о долгах она относится слабее."
+      },
+      {
+        "card_id": "C0957",
+        "reason": "«Мне не под силу» — человек этого не говорил. Использовать карточку можно, только если приписать ему перегрузку."
+      },
+      {
+        "card_id": "C0930",
+        "reason": "Высокий структурный ранг, но речь о самооправдании после поступка. Тема не совпадает с вопросом."
+      }
+    ],
+    "q1_top": {
+      "card_id": "C0001",
+      "decision": "selected",
+      "reason": "Даёт ясное различение между ценностью любимого дела и его ценой. В тексте для человека сказано, что цель при этом не становится плохой."
+    },
+    "meta": {
+      "composer": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "composition-prompt/0.4.0",
+      "package_sha256": "26872bd2bb55eed2f1d0be0b351ffe4bab827bc4238f6fb08c5987d7c4dfa39f",
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "total_cost_usd_list": 0.1778726,
+            "models": [
+              "claude-opus-5-5"
+            ],
+            "input_tokens": 2,
+            "output_tokens": 3791
+          }
+        ],
+        "repairs": []
+      }
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,109 @@
+{
+  "session_id": "426c33d25939",
+  "created_utc": "2026-10-08T07:28:06+00:00",
+  "state": "insufficient",
+  "interpretation_input": {
+    "topic": "Отношения с близким человеком",
+    "experiences": [
+      "Тревогу",
+      "Грусть",
+      "Злость"
+    ],
+    "difficulty_center": "Мне трудно принять происходящее таким, какое оно сейчас есть",
+    "free_narrative": "Я шабудубу, да, а она мне говорит: нет, ну и как так-то епрст? Это невозможно превозмочь! А я хочу быть с нею"
+  },
+  "interpretation": null,
+  "insufficient": {
+    "schema_version": "interpretation/0.1.0",
+    "status": "insufficient_input",
+    "input": {
+      "topic": "Отношения с близким человеком",
+      "experiences": [
+        "Тревогу",
+        "Грусть",
+        "Злость"
+      ],
+      "difficulty_center": "Мне трудно принять происходящее таким, какое оно сейчас есть",
+      "free_narrative": "Я шабудубу, да, а она мне говорит: нет, ну и как так-то епрст? Это невозможно превозмочь! А я хочу быть с нею"
+    },
+    "reason": "Главное событие описано бессмысленным словом («шабудубу»). Поэтому непонятно, что произошло между человеком и близкой ему женщиной, на что она отвечает «нет» и что именно «невозможно превозмочь». Ясны только желание быть с ней, её несогласие в виде обрывка реплики и общий эмоциональный фон. Если строить вопрос на этом, пришлось бы додумывать саму ситуацию.",
+    "clarification_prompt": "Я не совсем понял, что именно вас беспокоит. Попробуйте описать ситуацию простыми словами: что произошло и что в этом для вас трудно.",
+    "trace": {
+      "interpreter": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "interpretation-prompt/0.11.0",
+      "input_sha256": "281de09dc7924fc1219dd2d008eab229e6c10577aedee62e27005d9a95345725",
+      "reading_notes": [
+        {
+          "kind": "ambiguity",
+          "note": "Что сделал или сказал человек, обозначено словом «шабудубу». Это слово не несёт смысла."
+        },
+        {
+          "kind": "representation",
+          "note": "Её ответ: «нет, ну и как так-то», «это невозможно превозмочь». Непонятно, что именно для неё непреодолимо."
+        },
+        {
+          "kind": "expectation",
+          "note": "Ясно названо собственное желание: «я хочу быть с нею»."
+        },
+        {
+          "kind": "context",
+          "note": "Выбранный центр трудности — трудно принять происходящее таким, какое оно есть. Выбранные чувства — тревога, грусть, злость."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "wall_seconds": 12.12,
+            "cli_duration_ms": 10537,
+            "api_duration_ms": 10498,
+            "num_turns": 2,
+            "input_tokens": 2,
+            "cache_read_tokens": 5878,
+            "cache_creation_tokens": 782,
+            "output_tokens": 1036,
+            "thinking_tokens": 224,
+            "total_cost_usd_list": 0.028159600000000003,
+            "models": [
+              "claude-opus-5-5"
+            ]
+          }
+        ],
+        "repairs": []
+      }
+    }
+  },
+  "confirmation": null,
+  "query_representation": null,
+  "retrieval": null,
+  "composition": null,
+  "errors": [],
+  "timings": [
+    {
+      "stage": "interpretation",
+      "seconds": 12.12,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "calls": [
+        {
+          "wall_seconds": 12.12,
+          "cli_duration_ms": 10537,
+          "api_duration_ms": 10498,
+          "num_turns": 2,
+          "input_tokens": 2,
+          "cache_read_tokens": 5878,
+          "cache_creation_tokens": 782,
+          "output_tokens": 1036,
+          "thinking_tokens": 224,
+          "total_cost_usd_list": 0.028159600000000003,
+          "models": [
+            "claude-opus-5-5"
+          ]
+        }
+      ]
+    }
+  ],
+  "reflection": null
+}

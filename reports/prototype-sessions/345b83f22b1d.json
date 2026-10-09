@@ -1,0 +1,107 @@
+{
+  "session_id": "345b83f22b1d",
+  "created_utc": "2026-10-07T20:21:29+00:00",
+  "state": "insufficient",
+  "interpretation_input": {
+    "topic": "Отношения с близким человеком",
+    "experiences": [
+      "Тревогу",
+      "Страх",
+      "Грусть",
+      "Желание всё исправить"
+    ],
+    "difficulty_center": "Мне трудно принять происходящее таким, какое оно сейчас есть",
+    "free_narrative": "Я шабудубу, да, а она мне говорит: нет, ну и как так-то епрст? Кога йорики грызутся, я пукан раздаю, а йошкар-ола становится не столицей, а екибастусом. Это невозможно превозмочь!"
+  },
+  "interpretation": null,
+  "insufficient": {
+    "schema_version": "interpretation/0.1.0",
+    "status": "insufficient_input",
+    "input": {
+      "topic": "Отношения с близким человеком",
+      "experiences": [
+        "Тревогу",
+        "Страх",
+        "Грусть",
+        "Желание всё исправить"
+      ],
+      "difficulty_center": "Мне трудно принять происходящее таким, какое оно сейчас есть",
+      "free_narrative": "Я шабудубу, да, а она мне говорит: нет, ну и как так-то епрст? Кога йорики грызутся, я пукан раздаю, а йошкар-ола становится не столицей, а екибастусом. Это невозможно превозмочь!"
+    },
+    "reason": "Рассказ почти целиком состоит из бессмысленных или шуточных слов («шабудубу», «йорики грызутся», «пукан раздаю», «йошкар-ола становится екибастусом»). Из него не видно, что происходит между человеком и близким ему человеком. Понятно только, что «она» с чем-то не согласна и что ситуация кажется ему невыносимой («невозможно превозмочь»). Этого не хватает, чтобы честно сформулировать вопрос.",
+    "clarification_prompt": "Расскажите, пожалуйста, чуть подробнее, что происходит и что в этом для вас самое трудное — так мы сможем точнее сформулировать ваш вопрос.",
+    "trace": {
+      "interpreter": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "interpretation-prompt/0.10.0",
+      "input_sha256": "e0f12b6c1c9444336c05f8a11ef8199bab05ef38bfb6f49f91c5d0837fcd4756",
+      "reading_notes": [
+        {
+          "kind": "ambiguity",
+          "note": "Почти весь рассказ — бессвязный набор слов. Нельзя понять ни что за событие, ни кто в нём участвует, кроме некой «она»."
+        },
+        {
+          "kind": "context",
+          "note": "Из понятного: человек что-то делает или говорит, а близкий человек возражает («нет, ну и как так-то?»)."
+        },
+        {
+          "kind": "boundary",
+          "note": "Последняя фраза «Это невозможно превозмочь!» перекликается с выбранным центром трудности: трудно принять происходящее таким, какое оно есть."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "wall_seconds": 15.58,
+            "cli_duration_ms": 13890,
+            "api_duration_ms": 13739,
+            "num_turns": 2,
+            "input_tokens": 2,
+            "cache_read_tokens": 5848,
+            "cache_creation_tokens": 0,
+            "output_tokens": 795,
+            "thinking_tokens": 22,
+            "total_cost_usd_list": 0.017077600000000002,
+            "models": [
+              "claude-opus-5-5"
+            ]
+          }
+        ],
+        "repairs": []
+      }
+    }
+  },
+  "confirmation": null,
+  "query_representation": null,
+  "retrieval": null,
+  "composition": null,
+  "errors": [],
+  "timings": [
+    {
+      "stage": "interpretation",
+      "seconds": 15.59,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "calls": [
+        {
+          "wall_seconds": 15.58,
+          "cli_duration_ms": 13890,
+          "api_duration_ms": 13739,
+          "num_turns": 2,
+          "input_tokens": 2,
+          "cache_read_tokens": 5848,
+          "cache_creation_tokens": 0,
+          "output_tokens": 795,
+          "thinking_tokens": 22,
+          "total_cost_usd_list": 0.017077600000000002,
+          "models": [
+            "claude-opus-5-5"
+          ]
+        }
+      ]
+    }
+  ],
+  "reflection": null
+}

@@ -1,0 +1,247 @@
+{
+  "per_case": {
+    "B01": {
+      "matching_cards": 92,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 2
+      },
+      "tie_group_size": 8,
+      "kept_from_tie_group": 2,
+      "cut_from_tie_group": 6,
+      "slots_decided_by_card_id": 2,
+      "max_tension_overlap": 2
+    },
+    "B02": {
+      "matching_cards": 45,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 2
+      },
+      "tie_group_size": 5,
+      "kept_from_tie_group": 5,
+      "cut_from_tie_group": 0,
+      "slots_decided_by_card_id": 0,
+      "max_tension_overlap": 1
+    },
+    "B03": {
+      "matching_cards": 33,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 2
+      },
+      "tie_group_size": 4,
+      "kept_from_tie_group": 2,
+      "cut_from_tie_group": 2,
+      "slots_decided_by_card_id": 2,
+      "max_tension_overlap": 2
+    },
+    "B04": {
+      "matching_cards": 86,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 2
+      },
+      "tie_group_size": 8,
+      "kept_from_tie_group": 8,
+      "cut_from_tie_group": 0,
+      "slots_decided_by_card_id": 0,
+      "max_tension_overlap": 2
+    },
+    "B05": {
+      "matching_cards": 41,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 1
+      },
+      "tie_group_size": 28,
+      "kept_from_tie_group": 2,
+      "cut_from_tie_group": 26,
+      "slots_decided_by_card_id": 2,
+      "max_tension_overlap": 1
+    },
+    "B06": {
+      "matching_cards": 78,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 1
+      },
+      "tie_group_size": 66,
+      "kept_from_tie_group": 3,
+      "cut_from_tie_group": 63,
+      "slots_decided_by_card_id": 3,
+      "max_tension_overlap": 0
+    },
+    "B07": {
+      "matching_cards": 68,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 1
+      },
+      "tie_group_size": 62,
+      "kept_from_tie_group": 9,
+      "cut_from_tie_group": 53,
+      "slots_decided_by_card_id": 9,
+      "max_tension_overlap": 0
+    },
+    "B08": {
+      "matching_cards": 22,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 1
+      },
+      "tie_group_size": 15,
+      "kept_from_tie_group": 8,
+      "cut_from_tie_group": 7,
+      "slots_decided_by_card_id": 8,
+      "max_tension_overlap": 1
+    },
+    "B09": {
+      "matching_cards": 75,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 2
+      },
+      "tie_group_size": 4,
+      "kept_from_tie_group": 4,
+      "cut_from_tie_group": 0,
+      "slots_decided_by_card_id": 0,
+      "max_tension_overlap": 2
+    },
+    "B10": {
+      "matching_cards": 36,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 1
+      },
+      "tie_group_size": 26,
+      "kept_from_tie_group": 5,
+      "cut_from_tie_group": 21,
+      "slots_decided_by_card_id": 5,
+      "max_tension_overlap": 1
+    },
+    "B11": {
+      "matching_cards": 82,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 2
+      },
+      "tie_group_size": 7,
+      "kept_from_tie_group": 6,
+      "cut_from_tie_group": 1,
+      "slots_decided_by_card_id": 6,
+      "max_tension_overlap": 1
+    },
+    "B12": {
+      "matching_cards": 30,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 1
+      },
+      "tie_group_size": 22,
+      "kept_from_tie_group": 7,
+      "cut_from_tie_group": 15,
+      "slots_decided_by_card_id": 7,
+      "max_tension_overlap": 2
+    },
+    "B13": {
+      "matching_cards": 76,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 3
+      },
+      "tie_group_size": 1,
+      "kept_from_tie_group": 1,
+      "cut_from_tie_group": 0,
+      "slots_decided_by_card_id": 0,
+      "max_tension_overlap": 1
+    },
+    "B14": {
+      "matching_cards": 83,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 1
+      },
+      "tie_group_size": 72,
+      "kept_from_tie_group": 4,
+      "cut_from_tie_group": 68,
+      "slots_decided_by_card_id": 4,
+      "max_tension_overlap": 1
+    },
+    "B15": {
+      "matching_cards": 95,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 2
+      },
+      "tie_group_size": 48,
+      "kept_from_tie_group": 14,
+      "cut_from_tie_group": 34,
+      "slots_decided_by_card_id": 14,
+      "max_tension_overlap": 0
+    },
+    "B16": {
+      "matching_cards": 34,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 1
+      },
+      "tie_group_size": 23,
+      "kept_from_tie_group": 4,
+      "cut_from_tie_group": 19,
+      "slots_decided_by_card_id": 4,
+      "max_tension_overlap": 1
+    },
+    "B17": {
+      "matching_cards": 32,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 1
+      },
+      "tie_group_size": 26,
+      "kept_from_tie_group": 9,
+      "cut_from_tie_group": 17,
+      "slots_decided_by_card_id": 9,
+      "max_tension_overlap": 0
+    },
+    "B18": {
+      "matching_cards": 75,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 1
+      },
+      "tie_group_size": 64,
+      "kept_from_tie_group": 4,
+      "cut_from_tie_group": 60,
+      "slots_decided_by_card_id": 4,
+      "max_tension_overlap": 2
+    },
+    "B19": {
+      "matching_cards": 82,
+      "last_key": {
+        "tension_overlap": 1,
+        "coordinate_overlap": 0
+      },
+      "tie_group_size": 3,
+      "kept_from_tie_group": 3,
+      "cut_from_tie_group": 0,
+      "slots_decided_by_card_id": 0,
+      "max_tension_overlap": 1
+    },
+    "B20": {
+      "matching_cards": 87,
+      "last_key": {
+        "tension_overlap": 0,
+        "coordinate_overlap": 2
+      },
+      "tie_group_size": 45,
+      "kept_from_tie_group": 13,
+      "cut_from_tie_group": 32,
+      "slots_decided_by_card_id": 13,
+      "max_tension_overlap": 0
+    }
+  },
+  "slots_decided_by_card_id_total": 92,
+  "slots_total": 300,
+  "recovered_among_tie_decided_slots": 30
+}

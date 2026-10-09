@@ -1,0 +1,319 @@
+{
+  "group_statistics": {
+    "recovered": {
+      "n": 29,
+      "chars": {
+        "min": 130,
+        "p25": 201,
+        "median": 251,
+        "p75": 289,
+        "max": 475,
+        "mean": 270.1
+      },
+      "words": {
+        "min": 13,
+        "p25": 23,
+        "median": 27,
+        "p75": 32,
+        "max": 60,
+        "mean": 30.41
+      },
+      "type_token_ratio": {
+        "min": 0.75,
+        "p25": 0.842,
+        "median": 0.87,
+        "p75": 0.9,
+        "max": 1.0,
+        "mean": 0.87
+      }
+    },
+    "other": {
+      "n": 84,
+      "chars": {
+        "min": 395,
+        "p25": 495,
+        "median": 531.0,
+        "p75": 573,
+        "max": 814,
+        "mean": 537.85
+      },
+      "words": {
+        "min": 50,
+        "p25": 60,
+        "median": 66.0,
+        "p75": 72,
+        "max": 106,
+        "mean": 66.75
+      },
+      "type_token_ratio": {
+        "min": 0.594,
+        "p25": 0.697,
+        "median": 0.729,
+        "p75": 0.758,
+        "max": 0.83,
+        "mean": 0.73
+      }
+    }
+  },
+  "field_counts": {
+    "recovered": {
+      "philosophical_questions": {
+        "min": 0,
+        "median": 0,
+        "max": 1,
+        "mean": 0.138
+      },
+      "coordinates": {
+        "min": 2,
+        "median": 3,
+        "max": 7,
+        "mean": 3.586
+      },
+      "tensions": {
+        "min": 0,
+        "median": 1,
+        "max": 2,
+        "mean": 1.31
+      }
+    },
+    "other": {
+      "philosophical_questions": {
+        "min": 2,
+        "median": 3.0,
+        "max": 4,
+        "mean": 2.821
+      },
+      "coordinates": {
+        "min": 1,
+        "median": 2.0,
+        "max": 4,
+        "mean": 1.714
+      },
+      "tensions": {
+        "min": 0,
+        "median": 0.0,
+        "max": 1,
+        "mean": 0.107
+      }
+    }
+  },
+  "template_share": {
+    "recovered": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 0.1156,
+      "mean": 0.015
+    },
+    "other": {
+      "min": 0.5439,
+      "median": 0.66015,
+      "max": 0.7583,
+      "mean": 0.656
+    }
+  },
+  "structural_vocabulary_share": {
+    "recovered": {
+      "min": 0.2214,
+      "median": 0.4662,
+      "max": 0.6178,
+      "mean": 0.446
+    },
+    "other": {
+      "min": 0.0288,
+      "median": 0.0691,
+      "max": 0.1925,
+      "mean": 0.074
+    }
+  },
+  "section_presence": {
+    "recovered": {
+      "Перспектива:": 29,
+      "Философские вопросы:": 4,
+      "Координаты:": 29,
+      "Напряжения:": 26
+    },
+    "other": {
+      "Перспектива:": 84,
+      "Философские вопросы:": 84,
+      "Координаты:": 84,
+      "Напряжения:": 9
+    }
+  },
+  "repeated_patterns": [
+    {
+      "pattern": "Философские вопросы:",
+      "kind": "identical_line",
+      "cards": 88,
+      "recovered_cards": 4,
+      "other_cards": 84
+    },
+    {
+      "pattern": "Какой философский ход совершает текст в ситуации:",
+      "kind": "template_prefix",
+      "cards": 88,
+      "recovered_cards": 4,
+      "other_cards": 84
+    },
+    {
+      "pattern": "Рассмотреть ситуацию через операцию, которую задаёт сам фрагмент:",
+      "kind": "template_prefix",
+      "cards": 84,
+      "recovered_cards": 0,
+      "other_cards": 84
+    },
+    {
+      "pattern": "- Как меняется оценка ситуации, если принять исходные предпосылки самого текста?",
+      "kind": "identical_line",
+      "cards": 80,
+      "recovered_cards": 0,
+      "other_cards": 80
+    },
+    {
+      "pattern": "- Как текст различает само действие, его основание и последствия?",
+      "kind": "identical_line",
+      "cards": 49,
+      "recovered_cards": 0,
+      "other_cards": 49
+    },
+    {
+      "pattern": "Координаты: действие; отношение к себе",
+      "kind": "identical_line",
+      "cards": 37,
+      "recovered_cards": 0,
+      "other_cards": 37
+    },
+    {
+      "pattern": "- Как присутствие другого меняет нравственную структуру ситуации?",
+      "kind": "identical_line",
+      "cards": 10,
+      "recovered_cards": 0,
+      "other_cards": 10
+    },
+    {
+      "pattern": "- Что именно делает предмет желанным и как текст предлагает обращаться с этим желанием?",
+      "kind": "identical_line",
+      "cards": 9,
+      "recovered_cards": 0,
+      "other_cards": 9
+    },
+    {
+      "pattern": "Координаты: действие",
+      "kind": "identical_line",
+      "cards": 6,
+      "recovered_cards": 0,
+      "other_cards": 6
+    },
+    {
+      "pattern": "Напряжения: ожидание ↔ действительность",
+      "kind": "identical_line",
+      "cards": 6,
+      "recovered_cards": 0,
+      "other_cards": 6
+    },
+    {
+      "pattern": "Координаты: желание",
+      "kind": "identical_line",
+      "cards": 5,
+      "recovered_cards": 0,
+      "other_cards": 5
+    },
+    {
+      "pattern": "Координаты: отношение к себе",
+      "kind": "identical_line",
+      "cards": 5,
+      "recovered_cards": 0,
+      "other_cards": 5
+    },
+    {
+      "pattern": "Координаты: отношение к другому",
+      "kind": "identical_line",
+      "cards": 4,
+      "recovered_cards": 0,
+      "other_cards": 4
+    },
+    {
+      "pattern": "Напряжения: контроль ↔ конечность",
+      "kind": "identical_line",
+      "cards": 4,
+      "recovered_cards": 4,
+      "other_cards": 0
+    },
+    {
+      "pattern": "- Какое обязательство текст считает определяющим и чем ограничивает его?",
+      "kind": "identical_line",
+      "cards": 3,
+      "recovered_cards": 0,
+      "other_cards": 3
+    },
+    {
+      "pattern": "Координаты: страх / конечность",
+      "kind": "identical_line",
+      "cards": 3,
+      "recovered_cards": 0,
+      "other_cards": 3
+    },
+    {
+      "pattern": "Напряжения: принадлежность ↔ свобода",
+      "kind": "identical_line",
+      "cards": 3,
+      "recovered_cards": 3,
+      "other_cards": 0
+    },
+    {
+      "pattern": "Напряжения: свобода ↔ привязанность",
+      "kind": "identical_line",
+      "cards": 3,
+      "recovered_cards": 3,
+      "other_cards": 0
+    },
+    {
+      "pattern": "Координаты: действие; привязанность",
+      "kind": "identical_line",
+      "cards": 2,
+      "recovered_cards": 0,
+      "other_cards": 2
+    },
+    {
+      "pattern": "Напряжения: действие ↔ принятие",
+      "kind": "identical_line",
+      "cards": 2,
+      "recovered_cards": 2,
+      "other_cards": 0
+    },
+    {
+      "pattern": "Напряжения: желание ↔ долг",
+      "kind": "identical_line",
+      "cards": 2,
+      "recovered_cards": 0,
+      "other_cards": 2
+    },
+    {
+      "pattern": "Координаты: желание; отношение к себе; признание",
+      "kind": "identical_line",
+      "cards": 2,
+      "recovered_cards": 2,
+      "other_cards": 0
+    },
+    {
+      "pattern": "Напряжения: собственное желание ↔ признание; отношение к себе ↔ взгляд другого",
+      "kind": "identical_line",
+      "cards": 2,
+      "recovered_cards": 2,
+      "other_cards": 0
+    },
+    {
+      "pattern": "- Где в этом фрагменте проходит предел человеческого контроля?",
+      "kind": "identical_line",
+      "cards": 2,
+      "recovered_cards": 0,
+      "other_cards": 2
+    },
+    {
+      "pattern": "Координаты: ожидание / представление",
+      "kind": "identical_line",
+      "cards": 2,
+      "recovered_cards": 0,
+      "other_cards": 2
+    }
+  ]
+}

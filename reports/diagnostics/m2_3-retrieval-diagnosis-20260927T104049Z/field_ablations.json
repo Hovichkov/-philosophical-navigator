@@ -1,0 +1,1770 @@
+{
+  "A_perspective": {
+    "description": "perspective only",
+    "rankable_cards": 113,
+    "empty_documents": [],
+    "doc_chars": {
+      "recovered": {
+        "min": 55,
+        "median": 121,
+        "max": 217,
+        "mean": 125.655
+      },
+      "other": {
+        "min": 107,
+        "median": 178.5,
+        "max": 262,
+        "mean": 182.536
+      }
+    },
+    "Q1": {
+      "cases": 20,
+      "slots": 300,
+      "recovered_share": 0.3567,
+      "recovered_base_share": 0.2566,
+      "unique_cards": 67,
+      "universe": 113,
+      "gini": 0.6582,
+      "top10_cards_slot_share": 0.37,
+      "focus_card": "C0056",
+      "focus_frequency": 14,
+      "top_frequencies": [
+        [
+          "C0056",
+          14
+        ],
+        [
+          "C0930",
+          12
+        ],
+        [
+          "C0333",
+          12
+        ],
+        [
+          "C0027",
+          12
+        ],
+        [
+          "C0020",
+          12
+        ],
+        [
+          "C0446",
+          11
+        ],
+        [
+          "C0807",
+          10
+        ],
+        [
+          "C0049",
+          10
+        ],
+        [
+          "C0942",
+          9
+        ],
+        [
+          "C0779",
+          9
+        ],
+        [
+          "C0001",
+          9
+        ],
+        [
+          "C0518",
+          8
+        ],
+        [
+          "C0443",
+          8
+        ],
+        [
+          "C0579",
+          8
+        ],
+        [
+          "C0023",
+          7
+        ]
+      ],
+      "frequency_histogram": {
+        "0": 46,
+        "1": 16,
+        "2": 11,
+        "3": 7,
+        "4": 8,
+        "5": 3,
+        "6": 6,
+        "7": 2,
+        "8": 3,
+        "9": 3,
+        "10": 2,
+        "11": 1,
+        "12": 4,
+        "14": 1
+      },
+      "recovered_per_case": {
+        "B01": 4,
+        "B02": 7,
+        "B03": 11,
+        "B04": 8,
+        "B05": 4,
+        "B06": 5,
+        "B07": 2,
+        "B08": 5,
+        "B09": 5,
+        "B10": 6,
+        "B11": 9,
+        "B12": 3,
+        "B13": 3,
+        "B14": 9,
+        "B15": 3,
+        "B16": 7,
+        "B17": 3,
+        "B18": 5,
+        "B19": 6,
+        "B20": 2
+      },
+      "mean_overlap_with_baseline": 0.4267,
+      "mean_cosine_to_recovered": 0.5286,
+      "mean_cosine_to_other": 0.5338
+    },
+    "Q0": {
+      "cases": 20,
+      "slots": 300,
+      "recovered_share": 0.4567,
+      "recovered_base_share": 0.2566,
+      "unique_cards": 82,
+      "universe": 113,
+      "gini": 0.5415,
+      "top10_cards_slot_share": 0.3133,
+      "focus_card": "C0056",
+      "focus_frequency": 13,
+      "top_frequencies": [
+        [
+          "C0056",
+          13
+        ],
+        [
+          "C0001",
+          12
+        ],
+        [
+          "C0633",
+          11
+        ],
+        [
+          "C0871",
+          11
+        ],
+        [
+          "C0144",
+          9
+        ],
+        [
+          "C0170",
+          9
+        ],
+        [
+          "C0023",
+          9
+        ],
+        [
+          "C0339",
+          7
+        ],
+        [
+          "C0447",
+          7
+        ],
+        [
+          "C0542",
+          6
+        ],
+        [
+          "C0518",
+          6
+        ],
+        [
+          "C0807",
+          6
+        ],
+        [
+          "C0786",
+          6
+        ],
+        [
+          "C0579",
+          6
+        ],
+        [
+          "C0436",
+          5
+        ]
+      ],
+      "frequency_histogram": {
+        "0": 31,
+        "1": 14,
+        "2": 21,
+        "3": 14,
+        "4": 11,
+        "5": 8,
+        "6": 5,
+        "7": 2,
+        "9": 3,
+        "11": 2,
+        "12": 1,
+        "13": 1
+      },
+      "recovered_per_case": {
+        "B01": 8,
+        "B02": 7,
+        "B03": 10,
+        "B04": 10,
+        "B05": 5,
+        "B06": 5,
+        "B07": 2,
+        "B08": 5,
+        "B09": 7,
+        "B10": 4,
+        "B11": 11,
+        "B12": 1,
+        "B13": 8,
+        "B14": 8,
+        "B15": 7,
+        "B16": 9,
+        "B17": 7,
+        "B18": 8,
+        "B19": 12,
+        "B20": 3
+      },
+      "mean_overlap_with_baseline": 0.61,
+      "mean_cosine_to_recovered": 0.4288,
+      "mean_cosine_to_other": 0.4112
+    }
+  },
+  "B_questions": {
+    "description": "philosophical_questions only",
+    "rankable_cards": 88,
+    "empty_documents": [
+      "C0001",
+      "C0013",
+      "C0056",
+      "C0144",
+      "C0167",
+      "C0170",
+      "C0246",
+      "C0404",
+      "C0444",
+      "C0527",
+      "C0553",
+      "C0571",
+      "C0579",
+      "C0633",
+      "C0648",
+      "C0778",
+      "C0786",
+      "C0793",
+      "C0798",
+      "C0806",
+      "C0807",
+      "C0813",
+      "C0871",
+      "C0930",
+      "C1108"
+    ],
+    "doc_chars": {
+      "recovered": {
+        "min": 180,
+        "median": 189.0,
+        "max": 206,
+        "mean": 191
+      },
+      "other": {
+        "min": 225,
+        "median": 312.5,
+        "max": 469,
+        "mean": 313.571
+      }
+    },
+    "Q1": {
+      "cases": 20,
+      "slots": 300,
+      "recovered_share": 0.01,
+      "recovered_base_share": 0.2566,
+      "unique_cards": 61,
+      "universe": 113,
+      "gini": 0.6859,
+      "top10_cards_slot_share": 0.4067,
+      "focus_card": "C0056",
+      "focus_frequency": 0,
+      "top_frequencies": [
+        [
+          "C0345",
+          17
+        ],
+        [
+          "C0049",
+          17
+        ],
+        [
+          "C0027",
+          13
+        ],
+        [
+          "C0023",
+          13
+        ],
+        [
+          "C0333",
+          12
+        ],
+        [
+          "C0583",
+          11
+        ],
+        [
+          "C0821",
+          10
+        ],
+        [
+          "C0060",
+          10
+        ],
+        [
+          "C0020",
+          10
+        ],
+        [
+          "C0447",
+          9
+        ],
+        [
+          "C0446",
+          8
+        ],
+        [
+          "C0952",
+          7
+        ],
+        [
+          "C0670",
+          7
+        ],
+        [
+          "C0779",
+          7
+        ],
+        [
+          "C0341",
+          7
+        ]
+      ],
+      "frequency_histogram": {
+        "0": 52,
+        "1": 12,
+        "2": 7,
+        "3": 11,
+        "4": 5,
+        "5": 5,
+        "6": 4,
+        "7": 6,
+        "8": 1,
+        "9": 1,
+        "10": 3,
+        "11": 1,
+        "12": 1,
+        "13": 2,
+        "17": 2
+      },
+      "recovered_per_case": {
+        "B01": 0,
+        "B02": 0,
+        "B03": 0,
+        "B04": 0,
+        "B05": 1,
+        "B06": 0,
+        "B07": 0,
+        "B08": 0,
+        "B09": 0,
+        "B10": 1,
+        "B11": 0,
+        "B12": 0,
+        "B13": 0,
+        "B14": 0,
+        "B15": 0,
+        "B16": 0,
+        "B17": 0,
+        "B18": 1,
+        "B19": 0,
+        "B20": 0
+      },
+      "mean_overlap_with_baseline": 0.1167,
+      "mean_cosine_to_recovered": 0.4799,
+      "mean_cosine_to_other": 0.5405
+    },
+    "Q0": {
+      "cases": 20,
+      "slots": 300,
+      "recovered_share": 0.0833,
+      "recovered_base_share": 0.2566,
+      "unique_cards": 71,
+      "universe": 113,
+      "gini": 0.6154,
+      "top10_cards_slot_share": 0.35,
+      "focus_card": "C0056",
+      "focus_frequency": 0,
+      "top_frequencies": [
+        [
+          "C0023",
+          15
+        ],
+        [
+          "C0990",
+          13
+        ],
+        [
+          "C0296",
+          11
+        ],
+        [
+          "C0333",
+          11
+        ],
+        [
+          "C0518",
+          11
+        ],
+        [
+          "C0779",
+          11
+        ],
+        [
+          "C1105",
+          10
+        ],
+        [
+          "C0281",
+          8
+        ],
+        [
+          "C0623",
+          8
+        ],
+        [
+          "C0044",
+          7
+        ],
+        [
+          "C0621",
+          7
+        ],
+        [
+          "C0949",
+          7
+        ],
+        [
+          "C0436",
+          6
+        ],
+        [
+          "C0441",
+          6
+        ],
+        [
+          "C0539",
+          6
+        ]
+      ],
+      "frequency_histogram": {
+        "0": 42,
+        "1": 15,
+        "2": 9,
+        "3": 10,
+        "4": 12,
+        "5": 8,
+        "6": 5,
+        "7": 3,
+        "8": 2,
+        "10": 1,
+        "11": 4,
+        "13": 1,
+        "15": 1
+      },
+      "recovered_per_case": {
+        "B01": 0,
+        "B02": 1,
+        "B03": 2,
+        "B04": 0,
+        "B05": 1,
+        "B06": 0,
+        "B07": 0,
+        "B08": 2,
+        "B09": 3,
+        "B10": 2,
+        "B11": 2,
+        "B12": 2,
+        "B13": 2,
+        "B14": 0,
+        "B15": 1,
+        "B16": 3,
+        "B17": 2,
+        "B18": 1,
+        "B19": 0,
+        "B20": 1
+      },
+      "mean_overlap_with_baseline": 0.47,
+      "mean_cosine_to_recovered": 0.3986,
+      "mean_cosine_to_other": 0.3954
+    }
+  },
+  "C_persp_questions": {
+    "description": "perspective + philosophical_questions",
+    "rankable_cards": 113,
+    "empty_documents": [],
+    "doc_chars": {
+      "recovered": {
+        "min": 55,
+        "median": 121,
+        "max": 360,
+        "mean": 152.138
+      },
+      "other": {
+        "min": 356,
+        "median": 494.5,
+        "max": 718,
+        "mean": 497.107
+      }
+    },
+    "Q1": {
+      "cases": 20,
+      "slots": 300,
+      "recovered_share": 0.3533,
+      "recovered_base_share": 0.2566,
+      "unique_cards": 71,
+      "universe": 113,
+      "gini": 0.6262,
+      "top10_cards_slot_share": 0.35,
+      "focus_card": "C0056",
+      "focus_frequency": 14,
+      "top_frequencies": [
+        [
+          "C0345",
+          14
+        ],
+        [
+          "C0056",
+          14
+        ],
+        [
+          "C0942",
+          12
+        ],
+        [
+          "C0930",
+          11
+        ],
+        [
+          "C0333",
+          10
+        ],
+        [
+          "C0049",
+          10
+        ],
+        [
+          "C0807",
+          9
+        ],
+        [
+          "C0001",
+          9
+        ],
+        [
+          "C1105",
+          8
+        ],
+        [
+          "C0579",
+          8
+        ],
+        [
+          "C0583",
+          8
+        ],
+        [
+          "C0027",
+          8
+        ],
+        [
+          "C0020",
+          8
+        ],
+        [
+          "C0446",
+          8
+        ],
+        [
+          "C0404",
+          7
+        ]
+      ],
+      "frequency_histogram": {
+        "0": 42,
+        "1": 15,
+        "2": 12,
+        "3": 10,
+        "4": 11,
+        "5": 6,
+        "6": 1,
+        "7": 2,
+        "8": 6,
+        "9": 2,
+        "10": 2,
+        "11": 1,
+        "12": 1,
+        "14": 2
+      },
+      "recovered_per_case": {
+        "B01": 6,
+        "B02": 6,
+        "B03": 9,
+        "B04": 9,
+        "B05": 6,
+        "B06": 8,
+        "B07": 1,
+        "B08": 2,
+        "B09": 9,
+        "B10": 5,
+        "B11": 8,
+        "B12": 3,
+        "B13": 4,
+        "B14": 3,
+        "B15": 2,
+        "B16": 7,
+        "B17": 4,
+        "B18": 8,
+        "B19": 5,
+        "B20": 1
+      },
+      "mean_overlap_with_baseline": 0.4067,
+      "mean_cosine_to_recovered": 0.5284,
+      "mean_cosine_to_other": 0.5423
+    },
+    "Q0": {
+      "cases": 20,
+      "slots": 300,
+      "recovered_share": 0.47,
+      "recovered_base_share": 0.2566,
+      "unique_cards": 85,
+      "universe": 113,
+      "gini": 0.531,
+      "top10_cards_slot_share": 0.3033,
+      "focus_card": "C0056",
+      "focus_frequency": 11,
+      "top_frequencies": [
+        [
+          "C0001",
+          12
+        ],
+        [
+          "C0871",
+          11
+        ],
+        [
+          "C0056",
+          11
+        ],
+        [
+          "C0633",
+          10
+        ],
+        [
+          "C0023",
+          10
+        ],
+        [
+          "C0807",
+          8
+        ],
+        [
+          "C0579",
+          8
+        ],
+        [
+          "C0170",
+          8
+        ],
+        [
+          "C0786",
+          7
+        ],
+        [
+          "C0333",
+          6
+        ],
+        [
+          "C0798",
+          6
+        ],
+        [
+          "C0144",
+          6
+        ],
+        [
+          "C0621",
+          6
+        ],
+        [
+          "C1105",
+          6
+        ],
+        [
+          "C0447",
+          6
+        ]
+      ],
+      "frequency_histogram": {
+        "0": 28,
+        "1": 20,
+        "2": 15,
+        "3": 17,
+        "4": 13,
+        "5": 4,
+        "6": 7,
+        "7": 1,
+        "8": 3,
+        "10": 2,
+        "11": 2,
+        "12": 1
+      },
+      "recovered_per_case": {
+        "B01": 5,
+        "B02": 7,
+        "B03": 14,
+        "B04": 8,
+        "B05": 7,
+        "B06": 6,
+        "B07": 2,
+        "B08": 6,
+        "B09": 12,
+        "B10": 3,
+        "B11": 9,
+        "B12": 5,
+        "B13": 9,
+        "B14": 6,
+        "B15": 6,
+        "B16": 9,
+        "B17": 7,
+        "B18": 9,
+        "B19": 7,
+        "B20": 4
+      },
+      "mean_overlap_with_baseline": 0.7067,
+      "mean_cosine_to_recovered": 0.4279,
+      "mean_cosine_to_other": 0.417
+    }
+  },
+  "D_full": {
+    "description": "current full MEANING (perspective + questions + coordinates + tensions)",
+    "rankable_cards": 113,
+    "empty_documents": [],
+    "doc_chars": {
+      "recovered": {
+        "min": 130,
+        "median": 251,
+        "max": 475,
+        "mean": 270.103
+      },
+      "other": {
+        "min": 395,
+        "median": 531.0,
+        "max": 814,
+        "mean": 537.845
+      }
+    },
+    "Q1": {
+      "cases": 20,
+      "slots": 300,
+      "recovered_share": 0.85,
+      "recovered_base_share": 0.2566,
+      "unique_cards": 51,
+      "universe": 113,
+      "gini": 0.768,
+      "top10_cards_slot_share": 0.5033,
+      "focus_card": "C0056",
+      "focus_frequency": 20,
+      "top_frequencies": [
+        [
+          "C0056",
+          20
+        ],
+        [
+          "C0930",
+          17
+        ],
+        [
+          "C0633",
+          16
+        ],
+        [
+          "C0170",
+          15
+        ],
+        [
+          "C0579",
+          15
+        ],
+        [
+          "C0404",
+          14
+        ],
+        [
+          "C0001",
+          14
+        ],
+        [
+          "C0786",
+          14
+        ],
+        [
+          "C1105",
+          13
+        ],
+        [
+          "C0527",
+          13
+        ],
+        [
+          "C0807",
+          12
+        ],
+        [
+          "C0806",
+          12
+        ],
+        [
+          "C0798",
+          10
+        ],
+        [
+          "C0813",
+          9
+        ],
+        [
+          "C0553",
+          8
+        ]
+      ],
+      "frequency_histogram": {
+        "0": 62,
+        "1": 12,
+        "2": 8,
+        "3": 7,
+        "4": 3,
+        "5": 2,
+        "6": 2,
+        "7": 1,
+        "8": 2,
+        "9": 1,
+        "10": 1,
+        "12": 2,
+        "13": 2,
+        "14": 3,
+        "15": 2,
+        "16": 1,
+        "17": 1,
+        "20": 1
+      },
+      "recovered_per_case": {
+        "B01": 14,
+        "B02": 14,
+        "B03": 13,
+        "B04": 11,
+        "B05": 14,
+        "B06": 15,
+        "B07": 6,
+        "B08": 10,
+        "B09": 15,
+        "B10": 13,
+        "B11": 15,
+        "B12": 14,
+        "B13": 13,
+        "B14": 10,
+        "B15": 12,
+        "B16": 15,
+        "B17": 15,
+        "B18": 14,
+        "B19": 14,
+        "B20": 8
+      },
+      "mean_overlap_with_baseline": 1.0,
+      "mean_cosine_to_recovered": 0.6361,
+      "mean_cosine_to_other": 0.5637
+    },
+    "Q0": {
+      "cases": 20,
+      "slots": 300,
+      "recovered_share": 0.5167,
+      "recovered_base_share": 0.2566,
+      "unique_cards": 87,
+      "universe": 113,
+      "gini": 0.5151,
+      "top10_cards_slot_share": 0.2933,
+      "focus_card": "C0056",
+      "focus_frequency": 10,
+      "top_frequencies": [
+        [
+          "C0170",
+          11
+        ],
+        [
+          "C1105",
+          10
+        ],
+        [
+          "C0056",
+          10
+        ],
+        [
+          "C0001",
+          9
+        ],
+        [
+          "C0786",
+          9
+        ],
+        [
+          "C0807",
+          8
+        ],
+        [
+          "C0633",
+          8
+        ],
+        [
+          "C0527",
+          8
+        ],
+        [
+          "C0793",
+          8
+        ],
+        [
+          "C0806",
+          7
+        ],
+        [
+          "C0023",
+          7
+        ],
+        [
+          "C0949",
+          7
+        ],
+        [
+          "C0144",
+          6
+        ],
+        [
+          "C0579",
+          6
+        ],
+        [
+          "C0167",
+          5
+        ]
+      ],
+      "frequency_histogram": {
+        "0": 26,
+        "1": 20,
+        "2": 17,
+        "3": 18,
+        "4": 12,
+        "5": 6,
+        "6": 2,
+        "7": 3,
+        "8": 4,
+        "9": 2,
+        "10": 2,
+        "11": 1
+      },
+      "recovered_per_case": {
+        "B01": 5,
+        "B02": 12,
+        "B03": 11,
+        "B04": 5,
+        "B05": 6,
+        "B06": 11,
+        "B07": 0,
+        "B08": 8,
+        "B09": 11,
+        "B10": 5,
+        "B11": 13,
+        "B12": 12,
+        "B13": 11,
+        "B14": 8,
+        "B15": 6,
+        "B16": 11,
+        "B17": 5,
+        "B18": 9,
+        "B19": 4,
+        "B20": 2
+      },
+      "mean_overlap_with_baseline": 1.0,
+      "mean_cosine_to_recovered": 0.4467,
+      "mean_cosine_to_other": 0.4255
+    }
+  },
+  "E_full_no_tensions": {
+    "description": "full MEANING without the tensions line (tests the tension-overlap hypothesis)",
+    "rankable_cards": 113,
+    "empty_documents": [],
+    "doc_chars": {
+      "recovered": {
+        "min": 96,
+        "median": 200,
+        "max": 458,
+        "mean": 223.828
+      },
+      "other": {
+        "min": 395,
+        "median": 526.5,
+        "max": 787,
+        "mean": 533.798
+      }
+    },
+    "Q1": {
+      "cases": 20,
+      "slots": 300,
+      "recovered_share": 0.62,
+      "recovered_base_share": 0.2566,
+      "unique_cards": 72,
+      "universe": 113,
+      "gini": 0.6397,
+      "top10_cards_slot_share": 0.3833,
+      "focus_card": "C0056",
+      "focus_frequency": 16,
+      "top_frequencies": [
+        [
+          "C0056",
+          16
+        ],
+        [
+          "C0930",
+          14
+        ],
+        [
+          "C0001",
+          13
+        ],
+        [
+          "C0404",
+          12
+        ],
+        [
+          "C1105",
+          11
+        ],
+        [
+          "C0807",
+          10
+        ],
+        [
+          "C0527",
+          10
+        ],
+        [
+          "C0170",
+          10
+        ],
+        [
+          "C0579",
+          10
+        ],
+        [
+          "C0798",
+          9
+        ],
+        [
+          "C0345",
+          8
+        ],
+        [
+          "C0553",
+          8
+        ],
+        [
+          "C0049",
+          7
+        ],
+        [
+          "C0333",
+          6
+        ],
+        [
+          "C0806",
+          6
+        ]
+      ],
+      "frequency_histogram": {
+        "0": 41,
+        "1": 18,
+        "2": 12,
+        "3": 12,
+        "4": 6,
+        "5": 6,
+        "6": 5,
+        "7": 1,
+        "8": 2,
+        "9": 1,
+        "10": 4,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "16": 1
+      },
+      "recovered_per_case": {
+        "B01": 11,
+        "B02": 11,
+        "B03": 12,
+        "B04": 9,
+        "B05": 12,
+        "B06": 11,
+        "B07": 3,
+        "B08": 9,
+        "B09": 10,
+        "B10": 8,
+        "B11": 13,
+        "B12": 13,
+        "B13": 11,
+        "B14": 7,
+        "B15": 5,
+        "B16": 13,
+        "B17": 7,
+        "B18": 11,
+        "B19": 7,
+        "B20": 3
+      },
+      "mean_overlap_with_baseline": 0.68,
+      "mean_cosine_to_recovered": 0.5913,
+      "mean_cosine_to_other": 0.5609
+    },
+    "Q0": {
+      "cases": 20,
+      "slots": 300,
+      "recovered_share": 0.4867,
+      "recovered_base_share": 0.2566,
+      "unique_cards": 89,
+      "universe": 113,
+      "gini": 0.5032,
+      "top10_cards_slot_share": 0.2933,
+      "focus_card": "C0056",
+      "focus_frequency": 12,
+      "top_frequencies": [
+        [
+          "C0056",
+          12
+        ],
+        [
+          "C0170",
+          11
+        ],
+        [
+          "C0793",
+          11
+        ],
+        [
+          "C0633",
+          9
+        ],
+        [
+          "C0001",
+          9
+        ],
+        [
+          "C0786",
+          8
+        ],
+        [
+          "C0527",
+          7
+        ],
+        [
+          "C1105",
+          7
+        ],
+        [
+          "C0806",
+          7
+        ],
+        [
+          "C0023",
+          7
+        ],
+        [
+          "C0167",
+          6
+        ],
+        [
+          "C0579",
+          6
+        ],
+        [
+          "C0144",
+          5
+        ],
+        [
+          "C0807",
+          5
+        ],
+        [
+          "C0404",
+          5
+        ]
+      ],
+      "frequency_histogram": {
+        "0": 24,
+        "1": 20,
+        "2": 22,
+        "3": 12,
+        "4": 15,
+        "5": 8,
+        "6": 2,
+        "7": 4,
+        "8": 1,
+        "9": 2,
+        "11": 2,
+        "12": 1
+      },
+      "recovered_per_case": {
+        "B01": 5,
+        "B02": 11,
+        "B03": 12,
+        "B04": 5,
+        "B05": 6,
+        "B06": 11,
+        "B07": 0,
+        "B08": 8,
+        "B09": 11,
+        "B10": 5,
+        "B11": 12,
+        "B12": 11,
+        "B13": 10,
+        "B14": 6,
+        "B15": 5,
+        "B16": 10,
+        "B17": 6,
+        "B18": 9,
+        "B19": 2,
+        "B20": 1
+      },
+      "mean_overlap_with_baseline": 0.9167,
+      "mean_cosine_to_recovered": 0.4426,
+      "mean_cosine_to_other": 0.425
+    }
+  },
+  "F_full_detemplated": {
+    "description": "full MEANING with generic questions and template prefixes removed (tests the template-dilution hypothesis)",
+    "rankable_cards": 113,
+    "empty_documents": [],
+    "doc_chars": {
+      "recovered": {
+        "min": 130,
+        "median": 251,
+        "max": 425,
+        "mean": 263.207
+      },
+      "other": {
+        "min": 132,
+        "median": 278.5,
+        "max": 471,
+        "mean": 284.81
+      }
+    },
+    "Q1": {
+      "cases": 20,
+      "slots": 300,
+      "recovered_share": 0.82,
+      "recovered_base_share": 0.2566,
+      "unique_cards": 52,
+      "universe": 113,
+      "gini": 0.7575,
+      "top10_cards_slot_share": 0.4833,
+      "focus_card": "C0056",
+      "focus_frequency": 19,
+      "top_frequencies": [
+        [
+          "C0056",
+          19
+        ],
+        [
+          "C0633",
+          16
+        ],
+        [
+          "C0170",
+          16
+        ],
+        [
+          "C0404",
+          14
+        ],
+        [
+          "C0527",
+          14
+        ],
+        [
+          "C0786",
+          14
+        ],
+        [
+          "C0579",
+          14
+        ],
+        [
+          "C0930",
+          13
+        ],
+        [
+          "C0001",
+          13
+        ],
+        [
+          "C1105",
+          12
+        ],
+        [
+          "C0807",
+          11
+        ],
+        [
+          "C0806",
+          11
+        ],
+        [
+          "C0798",
+          10
+        ],
+        [
+          "C0778",
+          8
+        ],
+        [
+          "C0518",
+          8
+        ]
+      ],
+      "frequency_histogram": {
+        "0": 61,
+        "1": 12,
+        "2": 9,
+        "3": 4,
+        "4": 6,
+        "6": 3,
+        "7": 1,
+        "8": 4,
+        "10": 1,
+        "11": 2,
+        "12": 1,
+        "13": 2,
+        "14": 4,
+        "16": 2,
+        "19": 1
+      },
+      "recovered_per_case": {
+        "B01": 14,
+        "B02": 13,
+        "B03": 13,
+        "B04": 11,
+        "B05": 13,
+        "B06": 14,
+        "B07": 12,
+        "B08": 10,
+        "B09": 12,
+        "B10": 13,
+        "B11": 13,
+        "B12": 14,
+        "B13": 12,
+        "B14": 8,
+        "B15": 12,
+        "B16": 11,
+        "B17": 14,
+        "B18": 13,
+        "B19": 13,
+        "B20": 11
+      },
+      "mean_overlap_with_baseline": 0.8933,
+      "mean_cosine_to_recovered": 0.6375,
+      "mean_cosine_to_other": 0.5487
+    },
+    "Q0": {
+      "cases": 20,
+      "slots": 300,
+      "recovered_share": 0.5233,
+      "recovered_base_share": 0.2566,
+      "unique_cards": 83,
+      "universe": 113,
+      "gini": 0.534,
+      "top10_cards_slot_share": 0.2967,
+      "focus_card": "C0056",
+      "focus_frequency": 11,
+      "top_frequencies": [
+        [
+          "C0170",
+          14
+        ],
+        [
+          "C0056",
+          11
+        ],
+        [
+          "C0633",
+          9
+        ],
+        [
+          "C0001",
+          9
+        ],
+        [
+          "C0786",
+          8
+        ],
+        [
+          "C1105",
+          8
+        ],
+        [
+          "C0579",
+          8
+        ],
+        [
+          "C0806",
+          8
+        ],
+        [
+          "C0807",
+          7
+        ],
+        [
+          "C0044",
+          7
+        ],
+        [
+          "C0144",
+          6
+        ],
+        [
+          "C0712",
+          6
+        ],
+        [
+          "C0404",
+          6
+        ],
+        [
+          "C0527",
+          6
+        ],
+        [
+          "C0957",
+          6
+        ]
+      ],
+      "frequency_histogram": {
+        "0": 30,
+        "1": 17,
+        "2": 19,
+        "3": 9,
+        "4": 16,
+        "5": 7,
+        "6": 5,
+        "7": 2,
+        "8": 4,
+        "9": 2,
+        "11": 1,
+        "14": 1
+      },
+      "recovered_per_case": {
+        "B01": 5,
+        "B02": 11,
+        "B03": 10,
+        "B04": 5,
+        "B05": 6,
+        "B06": 12,
+        "B07": 6,
+        "B08": 5,
+        "B09": 9,
+        "B10": 5,
+        "B11": 12,
+        "B12": 14,
+        "B13": 7,
+        "B14": 6,
+        "B15": 8,
+        "B16": 9,
+        "B17": 5,
+        "B18": 5,
+        "B19": 11,
+        "B20": 6
+      },
+      "mean_overlap_with_baseline": 0.76,
+      "mean_cosine_to_recovered": 0.4465,
+      "mean_cosine_to_other": 0.409
+    }
+  },
+  "G_coords_tensions": {
+    "description": "coordinates + tensions only (structural vocabulary alone)",
+    "rankable_cards": 113,
+    "empty_documents": [],
+    "doc_chars": {
+      "recovered": {
+        "min": 29,
+        "median": 114,
+        "max": 201,
+        "mean": 116.966
+      },
+      "other": {
+        "min": 19,
+        "median": 38.0,
+        "max": 107,
+        "mean": 39.738
+      }
+    },
+    "Q1": {
+      "cases": 20,
+      "slots": 300,
+      "recovered_share": 0.85,
+      "recovered_base_share": 0.2566,
+      "unique_cards": 34,
+      "universe": 113,
+      "gini": 0.8199,
+      "top10_cards_slot_share": 0.5767,
+      "focus_card": "C0056",
+      "focus_frequency": 17,
+      "top_frequencies": [
+        [
+          "C0930",
+          20
+        ],
+        [
+          "C0527",
+          19
+        ],
+        [
+          "C0806",
+          19
+        ],
+        [
+          "C0001",
+          18
+        ],
+        [
+          "C0798",
+          17
+        ],
+        [
+          "C0056",
+          17
+        ],
+        [
+          "C0170",
+          16
+        ],
+        [
+          "C1105",
+          16
+        ],
+        [
+          "C0579",
+          16
+        ],
+        [
+          "C0633",
+          15
+        ],
+        [
+          "C0786",
+          15
+        ],
+        [
+          "C0807",
+          12
+        ],
+        [
+          "C0275",
+          10
+        ],
+        [
+          "C0937",
+          9
+        ],
+        [
+          "C0281",
+          9
+        ]
+      ],
+      "frequency_histogram": {
+        "0": 79,
+        "1": 1,
+        "2": 7,
+        "3": 2,
+        "4": 3,
+        "5": 2,
+        "7": 3,
+        "8": 1,
+        "9": 2,
+        "10": 1,
+        "12": 1,
+        "15": 2,
+        "16": 3,
+        "17": 2,
+        "18": 1,
+        "19": 2,
+        "20": 1
+      },
+      "recovered_per_case": {
+        "B01": 14,
+        "B02": 13,
+        "B03": 9,
+        "B04": 13,
+        "B05": 11,
+        "B06": 14,
+        "B07": 15,
+        "B08": 14,
+        "B09": 13,
+        "B10": 12,
+        "B11": 12,
+        "B12": 14,
+        "B13": 11,
+        "B14": 13,
+        "B15": 14,
+        "B16": 14,
+        "B17": 13,
+        "B18": 11,
+        "B19": 12,
+        "B20": 13
+      },
+      "mean_overlap_with_baseline": 0.68,
+      "mean_cosine_to_recovered": 0.6032,
+      "mean_cosine_to_other": 0.4625
+    },
+    "Q0": {
+      "cases": 20,
+      "slots": 300,
+      "recovered_share": 0.29,
+      "recovered_base_share": 0.2566,
+      "unique_cards": 77,
+      "universe": 113,
+      "gini": 0.6098,
+      "top10_cards_slot_share": 0.3633,
+      "focus_card": "C0056",
+      "focus_frequency": 3,
+      "top_frequencies": [
+        [
+          "C0044",
+          13
+        ],
+        [
+          "C0274",
+          13
+        ],
+        [
+          "C0621",
+          13
+        ],
+        [
+          "C0708",
+          13
+        ],
+        [
+          "C0709",
+          12
+        ],
+        [
+          "C0542",
+          10
+        ],
+        [
+          "C0930",
+          10
+        ],
+        [
+          "C0619",
+          9
+        ],
+        [
+          "C0333",
+          8
+        ],
+        [
+          "C0246",
+          8
+        ],
+        [
+          "C0957",
+          7
+        ],
+        [
+          "C0990",
+          7
+        ],
+        [
+          "C0020",
+          7
+        ],
+        [
+          "C0023",
+          7
+        ],
+        [
+          "C1108",
+          6
+        ]
+      ],
+      "frequency_histogram": {
+        "0": 36,
+        "1": 20,
+        "2": 14,
+        "3": 12,
+        "4": 10,
+        "5": 3,
+        "6": 4,
+        "7": 4,
+        "8": 2,
+        "9": 1,
+        "10": 2,
+        "12": 1,
+        "13": 4
+      },
+      "recovered_per_case": {
+        "B01": 6,
+        "B02": 8,
+        "B03": 4,
+        "B04": 1,
+        "B05": 6,
+        "B06": 7,
+        "B07": 0,
+        "B08": 7,
+        "B09": 2,
+        "B10": 3,
+        "B11": 7,
+        "B12": 7,
+        "B13": 5,
+        "B14": 0,
+        "B15": 9,
+        "B16": 8,
+        "B17": 3,
+        "B18": 0,
+        "B19": 4,
+        "B20": 0
+      },
+      "mean_overlap_with_baseline": 0.3667,
+      "mean_cosine_to_recovered": 0.4088,
+      "mean_cosine_to_other": 0.4123
+    }
+  }
+}

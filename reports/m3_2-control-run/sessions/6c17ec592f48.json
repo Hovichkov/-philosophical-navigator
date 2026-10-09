@@ -1,0 +1,1175 @@
+{
+  "session_id": "6c17ec592f48",
+  "created_utc": "2026-09-27T23:35:08+00:00",
+  "state": "answered",
+  "interpretation_input": {
+    "topic": "Отношения с близким человеком",
+    "experiences": [
+      "Беспомощность",
+      "Тревогу",
+      "Желание всё исправить"
+    ],
+    "difficulty_center": "Мне трудно принять происходящее таким, какое оно сейчас есть",
+    "free_narrative": "У моего сына невроз - я не знаю как реагировать. Хочу ему запретить - но это не улучшит ситуацию. У меня тоже в детстве было такое. Не знаю что делать (понятное дело, что я пойду к неврологу с ним), но не хочу проблематизировать - надеюсь что это возратсное"
+  },
+  "interpretation": {
+    "schema_version": "interpretation/0.1.0",
+    "status": "interpreted",
+    "input": {
+      "topic": "Отношения с близким человеком",
+      "experiences": [
+        "Беспомощность",
+        "Тревогу",
+        "Желание всё исправить"
+      ],
+      "difficulty_center": "Мне трудно принять происходящее таким, какое оно сейчас есть",
+      "free_narrative": "У моего сына невроз - я не знаю как реагировать. Хочу ему запретить - но это не улучшит ситуацию. У меня тоже в детстве было такое. Не знаю что делать (понятное дело, что я пойду к неврологу с ним), но не хочу проблематизировать - надеюсь что это возратсное"
+    },
+    "proposed_question": "Как мне быть рядом с сыном, когда мне трудно принять то, что с ним сейчас происходит, таким, как оно есть: хочется запретить и всё исправить, но я вижу, что это не поможет, и не знаю, пройдёт ли это само?",
+    "working_hypotheses": [
+      "Возможно, желание запретить — способ хоть как-то действовать там, где прямое действие мало что меняет. Это напряжение между действием и принятием.",
+      "Возможно, собственный детский опыт одновременно помогает понять сына и мешает, накладывая на него своё прошлое: где здесь сын, а где я сам.",
+      "Надежда на «возрастное» может выступать и как принятие, и как отсрочка принятия. Отсюда вопрос: что значит принять то, что есть сейчас, не зная, что будет дальше.",
+      "Нежелание «проблематизировать» может быть связано с тем, как само название меняет отношение к ребёнку и к ситуации."
+    ],
+    "coordinates": [
+      "принятие / сопротивление",
+      "действие",
+      "отношение к другому",
+      "контроль",
+      "ожидание / представление"
+    ],
+    "canonical_tensions": [
+      "действие ↔ принятие",
+      "ожидание ↔ действительность",
+      "контроль ↔ конечность"
+    ],
+    "free_tensions": [
+      "собственный детский опыт ↔ отдельность сына",
+      "назвать проблему ↔ не проблематизировать"
+    ],
+    "ambiguity_notes": [
+      "Человек употребляет клинический термин о сыне. В вопросе он заменён нейтральным «то, что с ним происходит», без оценки, возрастное это или нет.",
+      "Непонятно, что именно хочется запретить (проявления, поведение) и как с этим связан собственный детский опыт человека."
+    ],
+    "trace": {
+      "interpreter": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "interpretation-prompt/0.6.0",
+      "input_sha256": "d9cc0dfb7efa74a46678bbdcdf47a9291b00e1e11c2fd981b3add562226a433b",
+      "reading_notes": [
+        {
+          "kind": "tension",
+          "note": "Есть желание запретить, и одновременно человек понимает, что запрет не улучшит ситуацию. Порыв к действию расходится с тем, что он сам думает о пользе этого действия."
+        },
+        {
+          "kind": "expectation",
+          "note": "Надежда, что это «возрастное» и пройдёт само, соседствует с нежеланием «проблематизировать». Здесь ожидание связано с тем, как назвать происходящее."
+        },
+        {
+          "kind": "context",
+          "note": "Человек пишет, что у него в детстве было «такое же». Собственный опыт присутствует в том, как он смотрит на сына."
+        },
+        {
+          "kind": "boundary",
+          "note": "Практический шаг (визит к специалисту) уже решён. Открытым остаётся вопрос о том, как реагировать и как относиться к происходящему."
+        },
+        {
+          "kind": "representation",
+          "note": "Центр трудности — принять происходящее «таким, какое оно сейчас есть». Трудность в настоящем, а не в будущем исходе."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "total_cost_usd_list": 0.0374562,
+            "models": [
+              "claude-opus-5-5"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "insufficient": null,
+  "confirmation": {
+    "action": "confirmed",
+    "source": "user",
+    "proposed_question": "Как мне быть рядом с сыном, когда мне трудно принять то, что с ним сейчас происходит, таким, как оно есть: хочется запретить и всё исправить, но я вижу, что это не поможет, и не знаю, пройдёт ли это само?",
+    "confirmed_question": "Как мне быть рядом с сыном, когда мне трудно принять то, что с ним сейчас происходит, таким, как оно есть: хочется запретить и всё исправить, но я вижу, что это не поможет, и не знаю, пройдёт ли это само?",
+    "edited_text": null
+  },
+  "query_representation": {
+    "schema_version": "query-representation/0.1.0",
+    "confirmed_question": "Как мне быть рядом с сыном, когда мне трудно принять то, что с ним сейчас происходит, таким, как оно есть: хочется запретить и всё исправить, но я вижу, что это не поможет, и не знаю, пройдёт ли это само?",
+    "context": {
+      "circumstance": "Отношения с близким человеком",
+      "narrative": "У моего сына невроз - я не знаю как реагировать. Хочу ему запретить - но это не улучшит ситуацию. У меня тоже в детстве было такое. Не знаю что делать (понятное дело, что я пойду к неврологу с ним), но не хочу проблематизировать - надеюсь что это возратсное"
+    },
+    "experiences": [
+      "Беспомощность",
+      "Тревогу",
+      "Желание всё исправить"
+    ],
+    "working_hypotheses": [
+      "Возможно, желание запретить — способ хоть как-то действовать там, где прямое действие мало что меняет. Это напряжение между действием и принятием.",
+      "Возможно, собственный детский опыт одновременно помогает понять сына и мешает, накладывая на него своё прошлое: где здесь сын, а где я сам.",
+      "Надежда на «возрастное» может выступать и как принятие, и как отсрочка принятия. Отсюда вопрос: что значит принять то, что есть сейчас, не зная, что будет дальше.",
+      "Нежелание «проблематизировать» может быть связано с тем, как само название меняет отношение к ребёнку и к ситуации."
+    ],
+    "coordinates": [
+      "принятие / сопротивление",
+      "действие",
+      "отношение к другому",
+      "контроль",
+      "ожидание / представление"
+    ],
+    "canonical_tensions": [
+      "действие ↔ принятие",
+      "ожидание ↔ действительность",
+      "контроль ↔ конечность"
+    ],
+    "free_tensions": [
+      "собственный детский опыт ↔ отдельность сына",
+      "назвать проблему ↔ не проблематизировать"
+    ],
+    "provenance": {
+      "origin": "production",
+      "confirmed_question_source": "user_confirmed",
+      "interpretation_source": "interpretation-layer_0.1.0",
+      "benchmark_item_id": null,
+      "note": null
+    }
+  },
+  "retrieval": {
+    "version": "candidate-retrieval/0.1.0",
+    "query": {
+      "schema_version": "query-representation/0.1.0",
+      "confirmed_question": "Как мне быть рядом с сыном, когда мне трудно принять то, что с ним сейчас происходит, таким, как оно есть: хочется запретить и всё исправить, но я вижу, что это не поможет, и не знаю, пройдёт ли это само?",
+      "context": {
+        "circumstance": "Отношения с близким человеком",
+        "narrative": "У моего сына невроз - я не знаю как реагировать. Хочу ему запретить - но это не улучшит ситуацию. У меня тоже в детстве было такое. Не знаю что делать (понятное дело, что я пойду к неврологу с ним), но не хочу проблематизировать - надеюсь что это возратсное"
+      },
+      "experiences": [
+        "Беспомощность",
+        "Тревогу",
+        "Желание всё исправить"
+      ],
+      "working_hypotheses": [
+        "Возможно, желание запретить — способ хоть как-то действовать там, где прямое действие мало что меняет. Это напряжение между действием и принятием.",
+        "Возможно, собственный детский опыт одновременно помогает понять сына и мешает, накладывая на него своё прошлое: где здесь сын, а где я сам.",
+        "Надежда на «возрастное» может выступать и как принятие, и как отсрочка принятия. Отсюда вопрос: что значит принять то, что есть сейчас, не зная, что будет дальше.",
+        "Нежелание «проблематизировать» может быть связано с тем, как само название меняет отношение к ребёнку и к ситуации."
+      ],
+      "coordinates": [
+        "принятие / сопротивление",
+        "действие",
+        "отношение к другому",
+        "контроль",
+        "ожидание / представление"
+      ],
+      "canonical_tensions": [
+        "действие ↔ принятие",
+        "ожидание ↔ действительность",
+        "контроль ↔ конечность"
+      ],
+      "free_tensions": [
+        "собственный детский опыт ↔ отдельность сына",
+        "назвать проблему ↔ не проблематизировать"
+      ],
+      "provenance": {
+        "origin": "production",
+        "confirmed_question_source": "user_confirmed",
+        "interpretation_source": "interpretation-layer_0.1.0",
+        "benchmark_item_id": null,
+        "note": null
+      }
+    },
+    "embedding_config": {
+      "provider": "local-sentence-transformers",
+      "model": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimensions": 1024
+    },
+    "corpus_version": "launch-124/0.3.0-m1.5-retrieval-readiness",
+    "retrieval_universe_size": 113,
+    "q0_control": {
+      "route": "Q0_QUESTION_ONLY_CONTROL",
+      "query": {
+        "version": "q0-question-only/1.0",
+        "text": "Как мне быть рядом с сыном, когда мне трудно принять то, что с ним сейчас происходит, таким, как оно есть: хочется запретить и всё исправить, но я вижу, что это не поможет, и не знаю, пройдёт ли это само?",
+        "sha256": "c96db4f01de4e4b0f3f60f766231e34296b6f6df754bf65f09e6f5f8693e7baf"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0539",
+          "rank": 1,
+          "cosine": 0.555776
+        },
+        {
+          "card_id": "C0056",
+          "rank": 2,
+          "cosine": 0.532914
+        },
+        {
+          "card_id": "C0957",
+          "rank": 3,
+          "cosine": 0.531728
+        },
+        {
+          "card_id": "C0779",
+          "rank": 4,
+          "cosine": 0.513494
+        },
+        {
+          "card_id": "C0807",
+          "rank": 5,
+          "cosine": 0.511665
+        },
+        {
+          "card_id": "C0281",
+          "rank": 6,
+          "cosine": 0.508091
+        },
+        {
+          "card_id": "C0518",
+          "rank": 7,
+          "cosine": 0.507477
+        },
+        {
+          "card_id": "C0780",
+          "rank": 8,
+          "cosine": 0.50743
+        },
+        {
+          "card_id": "C0712",
+          "rank": 9,
+          "cosine": 0.503408
+        },
+        {
+          "card_id": "C0797",
+          "rank": 10,
+          "cosine": 0.503376
+        },
+        {
+          "card_id": "C0001",
+          "rank": 11,
+          "cosine": 0.503256
+        },
+        {
+          "card_id": "C0341",
+          "rank": 12,
+          "cosine": 0.501509
+        },
+        {
+          "card_id": "C0555",
+          "rank": 13,
+          "cosine": 0.50097
+        },
+        {
+          "card_id": "C0813",
+          "rank": 14,
+          "cosine": 0.499395
+        },
+        {
+          "card_id": "C0170",
+          "rank": 15,
+          "cosine": 0.497044
+        }
+      ]
+    },
+    "q1_meaning": {
+      "route": "Q1_MEANING",
+      "query": {
+        "version": "q1-meaning-query/2.0",
+        "text": "Вопрос: Как мне быть рядом с сыном, когда мне трудно принять то, что с ним сейчас происходит, таким, как оно есть: хочется запретить и всё исправить, но я вижу, что это не поможет, и не знаю, пройдёт ли это само?\nРабочие интерпретации:\n- Возможно, желание запретить — способ хоть как-то действовать там, где прямое действие мало что меняет. Это напряжение между действием и принятием.\n- Возможно, собственный детский опыт одновременно помогает понять сына и мешает, накладывая на него своё прошлое: где здесь сын, а где я сам.\n- Надежда на «возрастное» может выступать и как принятие, и как отсрочка принятия. Отсюда вопрос: что значит принять то, что есть сейчас, не зная, что будет дальше.\n- Нежелание «проблематизировать» может быть связано с тем, как само название меняет отношение к ребёнку и к ситуации.",
+        "sha256": "cc38b102eb6380c1cbca12d62ba66f8912498c710c5d2a6333f6917ec59d935c"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0539",
+          "rank": 1,
+          "cosine": 0.619157
+        },
+        {
+          "card_id": "C0712",
+          "rank": 2,
+          "cosine": 0.597125
+        },
+        {
+          "card_id": "C0780",
+          "rank": 3,
+          "cosine": 0.595219
+        },
+        {
+          "card_id": "C0583",
+          "rank": 4,
+          "cosine": 0.593895
+        },
+        {
+          "card_id": "C0710",
+          "rank": 5,
+          "cosine": 0.588347
+        },
+        {
+          "card_id": "C0056",
+          "rank": 6,
+          "cosine": 0.588273
+        },
+        {
+          "card_id": "C0121",
+          "rank": 7,
+          "cosine": 0.587022
+        },
+        {
+          "card_id": "C0275",
+          "rank": 8,
+          "cosine": 0.585439
+        },
+        {
+          "card_id": "C0333",
+          "rank": 9,
+          "cosine": 0.58482
+        },
+        {
+          "card_id": "C0942",
+          "rank": 10,
+          "cosine": 0.58335
+        },
+        {
+          "card_id": "C0930",
+          "rank": 11,
+          "cosine": 0.582638
+        },
+        {
+          "card_id": "C0518",
+          "rank": 12,
+          "cosine": 0.582475
+        },
+        {
+          "card_id": "C0442",
+          "rank": 13,
+          "cosine": 0.582251
+        },
+        {
+          "card_id": "C0620",
+          "rank": 14,
+          "cosine": 0.581444
+        },
+        {
+          "card_id": "C0797",
+          "rank": 15,
+          "cosine": 0.581286
+        }
+      ]
+    },
+    "structure": {
+      "route": "STRUCTURE",
+      "ranking_rule": "lexicographic: (1) more exact canonical-tension matches, (2) more exact coordinate matches, (3) card_id ascending; cards with no match are not ranked; operation is logged, never scored",
+      "query_coordinates": [
+        "принятие / сопротивление",
+        "действие",
+        "отношение к другому",
+        "контроль",
+        "ожидание / представление"
+      ],
+      "query_canonical_tensions": [
+        "действие ↔ принятие",
+        "ожидание ↔ действительность",
+        "контроль ↔ конечность"
+      ],
+      "top_k": 15,
+      "matching_cards": 84,
+      "tied_at_cutoff": 1,
+      "hits": [
+        {
+          "card_id": "C1108",
+          "rank": 1,
+          "tension_overlap": 2,
+          "matched_tensions": [
+            "действие ↔ принятие",
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "контроль",
+            "принятие / сопротивление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0013",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "контроль",
+            "принятие / сопротивление"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0527",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "ожидание / представление",
+            "отношение к другому"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0813",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "действие",
+            "отношение к другому",
+            "принятие / сопротивление"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0442",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "действие",
+            "ожидание / представление"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0518",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "ожидание / представление"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0571",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "ожидание / представление"
+          ],
+          "operation": "PERSPECTIVE_LIMIT"
+        },
+        {
+          "card_id": "C0806",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "контроль",
+            "ожидание / представление"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0275",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0281",
+          "rank": 10,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0439",
+          "rank": 11,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0440",
+          "rank": 12,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0553",
+          "rank": 13,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "контроль"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0579",
+          "rank": 14,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0793",
+          "rank": 15,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "контроль ↔ конечность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "контроль"
+          ],
+          "operation": "LIMIT_CONTROL"
+        }
+      ]
+    },
+    "union_rule": "union(Q1_MEANING top_k, STRUCTURE top_k); Q0 excluded; one entry per card_id with separate route signals; no combined score; listed by card_id ascending (the order is not a ranking)",
+    "candidate_union": [
+      {
+        "card_id": "C0013",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 2,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "действие",
+          "контроль",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": "DISTINGUISH"
+      },
+      {
+        "card_id": "C0056",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 6,
+        "meaning_score": 0.588273,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0121",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 7,
+        "meaning_score": 0.587022,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0275",
+        "found_by": [
+          "Q1_MEANING",
+          "STRUCTURE"
+        ],
+        "meaning_rank": 8,
+        "meaning_score": 0.585439,
+        "structure_rank": 9,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0281",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 10,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0333",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 9,
+        "meaning_score": 0.58482,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PRESERVE_AGENCY"
+      },
+      {
+        "card_id": "C0439",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 11,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0440",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 12,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0442",
+        "found_by": [
+          "Q1_MEANING",
+          "STRUCTURE"
+        ],
+        "meaning_rank": 13,
+        "meaning_score": 0.582251,
+        "structure_rank": 5,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "действие",
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0518",
+        "found_by": [
+          "Q1_MEANING",
+          "STRUCTURE"
+        ],
+        "meaning_rank": 12,
+        "meaning_score": 0.582475,
+        "structure_rank": 6,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0527",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 3,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "действие",
+          "ожидание / представление",
+          "отношение к другому"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0539",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 1,
+        "meaning_score": 0.619157,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0553",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 13,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "контроль"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0571",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 7,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0579",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 14,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0583",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 4,
+        "meaning_score": 0.593895,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0620",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 14,
+        "meaning_score": 0.581444,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "TRANSFORM_PRACTICE"
+      },
+      {
+        "card_id": "C0710",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 5,
+        "meaning_score": 0.588347,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0712",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 2,
+        "meaning_score": 0.597125,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0780",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 3,
+        "meaning_score": 0.595219,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0793",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 15,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "контроль"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "контроль ↔ конечность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0797",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 15,
+        "meaning_score": 0.581286,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "DECOUPLE_RESPONSE"
+      },
+      {
+        "card_id": "C0806",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 8,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "контроль",
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "CHALLENGE_ASSUMPTION"
+      },
+      {
+        "card_id": "C0813",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 4,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "действие",
+          "отношение к другому",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": "HOLD_VALUE_CONFLICT"
+      },
+      {
+        "card_id": "C0930",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 11,
+        "meaning_score": 0.582638,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "CHALLENGE_ASSUMPTION"
+      },
+      {
+        "card_id": "C0942",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 10,
+        "meaning_score": 0.58335,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C1108",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 1,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "действие",
+          "контроль",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 2,
+        "matched_tensions": [
+          "действие ↔ принятие",
+          "контроль ↔ конечность"
+        ],
+        "operation": "REVALUE_GOOD"
+      }
+    ]
+  },
+  "composition": {
+    "schema_version": "composition/0.3.0",
+    "item_id": "proto-6c17ec592f48",
+    "retrieval_run_id": "prototype-6c17ec592f48",
+    "confirmed_question": "Как мне быть рядом с сыном, когда мне трудно принять то, что с ним сейчас происходит, таким, как оно есть: хочется запретить и всё исправить, но я вижу, что это не поможет, и не знаю, пройдёт ли это само?",
+    "candidate_pool": [
+      "C0013",
+      "C0056",
+      "C0121",
+      "C0275",
+      "C0281",
+      "C0333",
+      "C0439",
+      "C0440",
+      "C0442",
+      "C0518",
+      "C0527",
+      "C0539",
+      "C0553",
+      "C0571",
+      "C0579",
+      "C0583",
+      "C0620",
+      "C0710",
+      "C0712",
+      "C0780",
+      "C0793",
+      "C0797",
+      "C0806",
+      "C0813",
+      "C0930",
+      "C0942",
+      "C1108"
+    ],
+    "opening": "Ваш вопрос можно рассмотреть с нескольких сторон.",
+    "perspectives": [
+      {
+        "card_id": "C0013",
+        "role": "Сдвиг от «делать или нет» к «как участвовать»",
+        "title": "Не запрещать не значит ничего не делать",
+        "source": "Бхагавад-гита, БГ 4.16–23",
+        "perspective": "Гита не делит поступки на действие и бездействие. Её интересует другое: как человек участвует в том, что делает. Два внешне одинаковых поступка могут быть разными по сути. Молчание бывает участием, а активность бывает простой суетой. В вашем вопросе есть два полюса: запретить и исправить или ждать, пока пройдёт. Гита предлагает посмотреть на третье. Каким может быть ваше участие, если не запрещать? Это может быть поход к неврологу, разговор, простое присутствие рядом. Такой взгляд не решает за вас. Он лишь показывает, что выбор шире, чем два варианта.",
+        "reflection_question": "Что я могу делать рядом с сыном, кроме запрета и ожидания?",
+        "why_selected": "Прямо работает с напряжением «хочу запретить, но это не поможет» и снимает ложный выбор между контролем и пассивностью.",
+        "main_idea": "Гита считает важным не то, насколько человек активен или пассивен. Важно, как именно он участвует в том, что делает.",
+        "applied_insight": "Вы пишете, что хочется запретить, но это не поможет. Отказ от запрета ещё не значит, что вы в стороне. Можно быть рядом с сыном и участвовать иначе.",
+        "distinction": "Помогает различить отказ от запрета и бездействие: кроме «запретить» и «ничего не делать» есть сам способ участия.",
+        "question_explanation": "Вопрос предлагает найти действия между двумя крайностями. Например, спокойно спросить, как он себя чувствует, или просто побыть вместе."
+      },
+      {
+        "card_id": "C0442",
+        "role": "Будущее: ни гарантия, ни приговор",
+        "title": "Не знать будущее не значит не влиять на него",
+        "source": "Письмо к Менекею, §127",
+        "perspective": "Эпикур предлагает не считать будущее ни уже решённым, ни совсем закрытым для наших действий. Обе крайности упрощают. Если будущее гарантировано, можно просто ждать. Если оно никак от нас не зависит, остаётся только тревожиться. В вашем вопросе звучит «не знаю, пройдёт ли это само». Эпикур не отвечает на этот вопрос. Он переводит внимание на другое: что из будущего всё же связано с тем, что делается сейчас. Вы уже назвали одно такое действие — поход к неврологу. Надежда и действие здесь не спорят друг с другом.",
+        "reflection_question": "Что из того, что будет дальше, зависит от моих сегодняшних поступков?",
+        "why_selected": "Точно попадает в слова «не знаю, пройдёт ли это само» и даёт ясное различение, не похожее на первое.",
+        "main_idea": "Эпикур пишет, что будущее не гарантировано. Но оно и не полностью вне наших действий.",
+        "applied_insight": "Вы надеетесь, что это возрастное, и не знаете, пройдёт ли само. Эпикур не даёт ответа, пройдёт ли. Он показывает, что между «точно пройдёт» и «от меня ничего не зависит» есть много места.",
+        "distinction": "Помогает различить незнание будущего и отсутствие влияния на него: «не знаю, пройдёт ли» не означает «от меня ничего не зависит».",
+        "question_explanation": "Вопрос предлагает отделить то, на что можно повлиять, от того, что остаётся неизвестным. Например, врача выбрать можно, а срок, когда всё пройдёт, узнать нельзя."
+      }
+    ],
+    "fewer_than_three_reason": "Третий кандидат слабее двух выбранных. Чжуан-цзы (C1108) почти повторяет мысль Гиты о способе участия, а без догадок о внутреннем состоянии человека сказать больше нельзя. Эпиктет (C0281) повторяет вывод, который человек уже сделал сам. Евангелие (C0518) пересекается с Эпикуром.",
+    "rejected": [
+      {
+        "card_id": "C1108",
+        "reason": "Первый по структуре, но мысль о внутреннем отношении к событию близка к Гите. Без психологических догадок о человеке ясного отдельного различения не получается."
+      },
+      {
+        "card_id": "C0281",
+        "reason": "Мысль «любовь не доказывает правильность реакции» человек уже сделал сам: он пишет, что запрет не поможет. Кроме того, слов «не мог вынести» он не говорил."
+      },
+      {
+        "card_id": "C0518",
+        "reason": "Тревога о будущем и предел контроля пересекаются с Эпикуром (C0442). Эпикур точнее соединяет незнание будущего с действием."
+      },
+      {
+        "card_id": "C0813",
+        "reason": "Речь о прощении и о вреде, причинённом другим. Этого в ситуации нет."
+      },
+      {
+        "card_id": "C0527",
+        "reason": "Сравнение своей доли с чужой. Такого конфликта в словах человека нет."
+      },
+      {
+        "card_id": "C0571",
+        "reason": "Тема предела объяснения близка по смыслу, но человек не требует полного объяснения. Такое различение пришлось бы достраивать."
+      }
+    ],
+    "q1_top": {
+      "card_id": "C0539",
+      "decision": "rejected",
+      "reason": "Позиция старшего сына — это обида на то, что получил другой. Совпадение со словом «сын» ложное. У человека нет темы несправедливости или сравнения."
+    },
+    "meta": {
+      "composer": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "composition-prompt/0.4.0",
+      "package_sha256": "e520cb4cc243676f37681113579276970161f134bf8d268ecfd54d960d22c859",
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "total_cost_usd_list": 0.1506646,
+            "models": [
+              "claude-opus-5-5"
+            ],
+            "input_tokens": 2,
+            "output_tokens": 2711
+          }
+        ],
+        "repairs": []
+      }
+    }
+  },
+  "errors": []
+}

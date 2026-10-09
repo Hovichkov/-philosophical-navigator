@@ -1,0 +1,1437 @@
+{
+  "session_id": "55d39522db0b",
+  "created_utc": "2026-09-28T21:43:59+00:00",
+  "state": "answered",
+  "interpretation_input": {
+    "topic": "Отношение к себе",
+    "experiences": [
+      "Беспомощность",
+      "Растерянность"
+    ],
+    "difficulty_center": "Я не понимаю, какой(ая) я на самом деле",
+    "free_narrative": "Когда я хочу быть продуктивной, но снова и снова упираюсь в пределы своих возможностей, как понять, какая я — где мои границы, с которыми стоит примириться, а где то, ради чего стоит продолжать пытаться, — и чем тогда отличается бережность к себе от отказа от себя?"
+  },
+  "interpretation": {
+    "schema_version": "interpretation/0.1.0",
+    "status": "interpreted",
+    "input": {
+      "topic": "Отношение к себе",
+      "experiences": [
+        "Беспомощность",
+        "Растерянность"
+      ],
+      "difficulty_center": "Я не понимаю, какой(ая) я на самом деле",
+      "free_narrative": "Когда я хочу быть продуктивной, но снова и снова упираюсь в пределы своих возможностей, как понять, какая я — где мои границы, с которыми стоит примириться, а где то, ради чего стоит продолжать пытаться, — и чем тогда отличается бережность к себе от отказа от себя?"
+    },
+    "proposed_question": "Я хочу быть продуктивной, но раз за разом упираюсь в пределы своих сил и перестаю понимать, какая я на самом деле. Что во мне стоит принять как настоящую границу, а ради чего стоит продолжать пытаться? И чем бережность к себе отличается от отказа от себя?",
+    "working_hypotheses": [
+      "Возможно, вопрос «какая я» ставится как вопрос о фиксированной сущности, хотя «я» может складываться в самих попытках (экзистенциалистская рамка, Сартр, Кьеркегор).",
+      "Возможно, различие между бережностью и отказом лежит не во внешнем поступке, а в том, ради чего человек себя останавливает (Аристотель о мере, стоики о том, что в нашей власти).",
+      "Продуктивность может быть внешним мерилом, которое подменяет вопрос о том, чего человек хочет сам (Хан, «общество усталости»).",
+      "Предел может быть не только препятствием, но и тем, что задаёт форму «я» (Ясперс, пограничные ситуации; принятие конечности)."
+    ],
+    "coordinates": [
+      "отношение к себе",
+      "принятие / сопротивление",
+      "желание",
+      "ожидание / представление",
+      "смысл / цель"
+    ],
+    "canonical_tensions": [
+      "действие ↔ принятие",
+      "ожидание ↔ действительность"
+    ],
+    "free_tensions": [
+      "бережность к себе ↔ отказ от себя",
+      "данность «я» ↔ «я», которое складывается в попытках"
+    ],
+    "ambiguity_notes": [
+      "Рассказ сформулирован сразу как вопрос, конкретных обстоятельств нет: неизвестно, о какой продуктивности речь (работа, учёба, быт) и какие именно пределы имеются в виду.",
+      "Центр трудности («какая я на самом деле») шире рассказа: в рассказе вопрос о себе привязан к продуктивности и пределам сил."
+    ],
+    "trace": {
+      "interpreter": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "interpretation-prompt/0.8.0",
+      "input_sha256": "8030a0a7c164c3378a612aa1b4e953d94478aad3ccfc2cc7d21251de57222e61",
+      "reading_notes": [
+        {
+          "kind": "representation",
+          "note": "Продуктивность выглядит как желаемый образ себя, а пределы возможностей — как то, во что она «снова и снова упирается»."
+        },
+        {
+          "kind": "tension",
+          "note": "Главное напряжение — между примирением с границами и стремлением продолжать пытаться. Сама человек не знает, где проходит линия между ними."
+        },
+        {
+          "kind": "ambiguity",
+          "note": "Непонятно, считать ли свои пределы данностью («какая я») или тем, что можно изменить. Отсюда растерянность насчёт того, какая она на самом деле."
+        },
+        {
+          "kind": "tension",
+          "note": "Бережность к себе и отказ от себя внешне похожи: в обоих случаях человек перестаёт давить на себя. Она спрашивает, чем они различаются."
+        },
+        {
+          "kind": "context",
+          "note": "Беспомощность связана с повторяемостью: «снова и снова». Речь не об одной неудаче, а о постоянном столкновении с пределом."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "wall_seconds": 59.05,
+            "cli_duration_ms": 57743,
+            "api_duration_ms": 56725,
+            "num_turns": 2,
+            "input_tokens": 2,
+            "cache_read_tokens": 1099,
+            "cache_creation_tokens": 4504,
+            "output_tokens": 1456,
+            "thinking_tokens": 285,
+            "total_cost_usd_list": 0.0653798,
+            "models": [
+              "claude-opus-5-5"
+            ]
+          }
+        ],
+        "repairs": []
+      }
+    }
+  },
+  "insufficient": null,
+  "confirmation": {
+    "action": "confirmed",
+    "source": "user",
+    "proposed_question": "Я хочу быть продуктивной, но раз за разом упираюсь в пределы своих сил и перестаю понимать, какая я на самом деле. Что во мне стоит принять как настоящую границу, а ради чего стоит продолжать пытаться? И чем бережность к себе отличается от отказа от себя?",
+    "confirmed_question": "Я хочу быть продуктивной, но раз за разом упираюсь в пределы своих сил и перестаю понимать, какая я на самом деле. Что во мне стоит принять как настоящую границу, а ради чего стоит продолжать пытаться? И чем бережность к себе отличается от отказа от себя?",
+    "edited_text": null
+  },
+  "query_representation": {
+    "schema_version": "query-representation/0.1.0",
+    "confirmed_question": "Я хочу быть продуктивной, но раз за разом упираюсь в пределы своих сил и перестаю понимать, какая я на самом деле. Что во мне стоит принять как настоящую границу, а ради чего стоит продолжать пытаться? И чем бережность к себе отличается от отказа от себя?",
+    "context": {
+      "circumstance": "Отношение к себе",
+      "narrative": "Когда я хочу быть продуктивной, но снова и снова упираюсь в пределы своих возможностей, как понять, какая я — где мои границы, с которыми стоит примириться, а где то, ради чего стоит продолжать пытаться, — и чем тогда отличается бережность к себе от отказа от себя?"
+    },
+    "experiences": [
+      "Беспомощность",
+      "Растерянность"
+    ],
+    "working_hypotheses": [
+      "Возможно, вопрос «какая я» ставится как вопрос о фиксированной сущности, хотя «я» может складываться в самих попытках (экзистенциалистская рамка, Сартр, Кьеркегор).",
+      "Возможно, различие между бережностью и отказом лежит не во внешнем поступке, а в том, ради чего человек себя останавливает (Аристотель о мере, стоики о том, что в нашей власти).",
+      "Продуктивность может быть внешним мерилом, которое подменяет вопрос о том, чего человек хочет сам (Хан, «общество усталости»).",
+      "Предел может быть не только препятствием, но и тем, что задаёт форму «я» (Ясперс, пограничные ситуации; принятие конечности)."
+    ],
+    "coordinates": [
+      "отношение к себе",
+      "принятие / сопротивление",
+      "желание",
+      "ожидание / представление",
+      "смысл / цель"
+    ],
+    "canonical_tensions": [
+      "действие ↔ принятие",
+      "ожидание ↔ действительность"
+    ],
+    "free_tensions": [
+      "бережность к себе ↔ отказ от себя",
+      "данность «я» ↔ «я», которое складывается в попытках"
+    ],
+    "provenance": {
+      "origin": "production",
+      "confirmed_question_source": "user_confirmed",
+      "interpretation_source": "interpretation-layer_0.1.0",
+      "benchmark_item_id": null,
+      "note": null
+    }
+  },
+  "retrieval": {
+    "version": "candidate-retrieval/0.1.0",
+    "query": {
+      "schema_version": "query-representation/0.1.0",
+      "confirmed_question": "Я хочу быть продуктивной, но раз за разом упираюсь в пределы своих сил и перестаю понимать, какая я на самом деле. Что во мне стоит принять как настоящую границу, а ради чего стоит продолжать пытаться? И чем бережность к себе отличается от отказа от себя?",
+      "context": {
+        "circumstance": "Отношение к себе",
+        "narrative": "Когда я хочу быть продуктивной, но снова и снова упираюсь в пределы своих возможностей, как понять, какая я — где мои границы, с которыми стоит примириться, а где то, ради чего стоит продолжать пытаться, — и чем тогда отличается бережность к себе от отказа от себя?"
+      },
+      "experiences": [
+        "Беспомощность",
+        "Растерянность"
+      ],
+      "working_hypotheses": [
+        "Возможно, вопрос «какая я» ставится как вопрос о фиксированной сущности, хотя «я» может складываться в самих попытках (экзистенциалистская рамка, Сартр, Кьеркегор).",
+        "Возможно, различие между бережностью и отказом лежит не во внешнем поступке, а в том, ради чего человек себя останавливает (Аристотель о мере, стоики о том, что в нашей власти).",
+        "Продуктивность может быть внешним мерилом, которое подменяет вопрос о том, чего человек хочет сам (Хан, «общество усталости»).",
+        "Предел может быть не только препятствием, но и тем, что задаёт форму «я» (Ясперс, пограничные ситуации; принятие конечности)."
+      ],
+      "coordinates": [
+        "отношение к себе",
+        "принятие / сопротивление",
+        "желание",
+        "ожидание / представление",
+        "смысл / цель"
+      ],
+      "canonical_tensions": [
+        "действие ↔ принятие",
+        "ожидание ↔ действительность"
+      ],
+      "free_tensions": [
+        "бережность к себе ↔ отказ от себя",
+        "данность «я» ↔ «я», которое складывается в попытках"
+      ],
+      "provenance": {
+        "origin": "production",
+        "confirmed_question_source": "user_confirmed",
+        "interpretation_source": "interpretation-layer_0.1.0",
+        "benchmark_item_id": null,
+        "note": null
+      }
+    },
+    "embedding_config": {
+      "provider": "local-sentence-transformers",
+      "model": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimensions": 1024
+    },
+    "corpus_version": "launch-124/0.3.0-m1.5-retrieval-readiness",
+    "retrieval_universe_size": 113,
+    "q0_control": {
+      "route": "Q0_QUESTION_ONLY_CONTROL",
+      "query": {
+        "version": "q0-question-only/1.0",
+        "text": "Я хочу быть продуктивной, но раз за разом упираюсь в пределы своих сил и перестаю понимать, какая я на самом деле. Что во мне стоит принять как настоящую границу, а ради чего стоит продолжать пытаться? И чем бережность к себе отличается от отказа от себя?",
+        "sha256": "244d1a213a5c201d24d72fd45a5f141c2ecb2f0c2e1979ef14fbff554f77dc54"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0056",
+          "rank": 1,
+          "cosine": 0.623058
+        },
+        {
+          "card_id": "C0001",
+          "rank": 2,
+          "cosine": 0.576084
+        },
+        {
+          "card_id": "C0028",
+          "rank": 3,
+          "cosine": 0.571135
+        },
+        {
+          "card_id": "C0957",
+          "rank": 4,
+          "cosine": 0.565608
+        },
+        {
+          "card_id": "C0296",
+          "rank": 5,
+          "cosine": 0.562642
+        },
+        {
+          "card_id": "C0518",
+          "rank": 6,
+          "cosine": 0.557618
+        },
+        {
+          "card_id": "C0807",
+          "rank": 7,
+          "cosine": 0.548617
+        },
+        {
+          "card_id": "C0583",
+          "rank": 8,
+          "cosine": 0.547632
+        },
+        {
+          "card_id": "C0020",
+          "rank": 9,
+          "cosine": 0.547008
+        },
+        {
+          "card_id": "C0535",
+          "rank": 10,
+          "cosine": 0.544768
+        },
+        {
+          "card_id": "C0447",
+          "rank": 11,
+          "cosine": 0.538949
+        },
+        {
+          "card_id": "C0444",
+          "rank": 12,
+          "cosine": 0.537948
+        },
+        {
+          "card_id": "C0345",
+          "rank": 13,
+          "cosine": 0.534862
+        },
+        {
+          "card_id": "C0170",
+          "rank": 14,
+          "cosine": 0.534596
+        },
+        {
+          "card_id": "C0281",
+          "rank": 15,
+          "cosine": 0.533748
+        }
+      ]
+    },
+    "q1_meaning": {
+      "route": "Q1_MEANING",
+      "query": {
+        "version": "q1-meaning-query/2.0",
+        "text": "Вопрос: Я хочу быть продуктивной, но раз за разом упираюсь в пределы своих сил и перестаю понимать, какая я на самом деле. Что во мне стоит принять как настоящую границу, а ради чего стоит продолжать пытаться? И чем бережность к себе отличается от отказа от себя?\nРабочие интерпретации:\n- Возможно, вопрос «какая я» ставится как вопрос о фиксированной сущности, хотя «я» может складываться в самих попытках (экзистенциалистская рамка, Сартр, Кьеркегор).\n- Возможно, различие между бережностью и отказом лежит не во внешнем поступке, а в том, ради чего человек себя останавливает (Аристотель о мере, стоики о том, что в нашей власти).\n- Продуктивность может быть внешним мерилом, которое подменяет вопрос о том, чего человек хочет сам (Хан, «общество усталости»).\n- Предел может быть не только препятствием, но и тем, что задаёт форму «я» (Ясперс, пограничные ситуации; принятие конечности).",
+        "sha256": "fa1199fdf4273506db6331d58ef946dcf01729d941260d4bc54903cbc59f69d8"
+      },
+      "card_representation_version": "meaning-card-doc/2.0",
+      "top_k": 15,
+      "hits": [
+        {
+          "card_id": "C0056",
+          "rank": 1,
+          "cosine": 0.622645
+        },
+        {
+          "card_id": "C0028",
+          "rank": 2,
+          "cosine": 0.606206
+        },
+        {
+          "card_id": "C0447",
+          "rank": 3,
+          "cosine": 0.605461
+        },
+        {
+          "card_id": "C0023",
+          "rank": 4,
+          "cosine": 0.602232
+        },
+        {
+          "card_id": "C0333",
+          "rank": 5,
+          "cosine": 0.597444
+        },
+        {
+          "card_id": "C0020",
+          "rank": 6,
+          "cosine": 0.594594
+        },
+        {
+          "card_id": "C0345",
+          "rank": 7,
+          "cosine": 0.59243
+        },
+        {
+          "card_id": "C0957",
+          "rank": 8,
+          "cosine": 0.589163
+        },
+        {
+          "card_id": "C0535",
+          "rank": 9,
+          "cosine": 0.588896
+        },
+        {
+          "card_id": "C0583",
+          "rank": 10,
+          "cosine": 0.58794
+        },
+        {
+          "card_id": "C0624",
+          "rank": 11,
+          "cosine": 0.585231
+        },
+        {
+          "card_id": "C0296",
+          "rank": 12,
+          "cosine": 0.584839
+        },
+        {
+          "card_id": "C0008",
+          "rank": 13,
+          "cosine": 0.583168
+        },
+        {
+          "card_id": "C0044",
+          "rank": 14,
+          "cosine": 0.581189
+        },
+        {
+          "card_id": "C0821",
+          "rank": 15,
+          "cosine": 0.58112
+        }
+      ]
+    },
+    "structure": {
+      "route": "STRUCTURE",
+      "ranking_rule": "lexicographic: (1) more exact canonical-tension matches, (2) more exact coordinate matches, (3) card_id ascending; cards with no match are not ranked; operation is logged, never scored",
+      "query_coordinates": [
+        "отношение к себе",
+        "принятие / сопротивление",
+        "желание",
+        "ожидание / представление",
+        "смысл / цель"
+      ],
+      "query_canonical_tensions": [
+        "действие ↔ принятие",
+        "ожидание ↔ действительность"
+      ],
+      "top_k": 15,
+      "matching_cards": 83,
+      "tied_at_cutoff": 4,
+      "hits": [
+        {
+          "card_id": "C0527",
+          "rank": 1,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "ожидание / представление",
+            "отношение к себе",
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_COMPARISON"
+        },
+        {
+          "card_id": "C0579",
+          "rank": 2,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 3,
+          "matched_coordinates": [
+            "желание",
+            "ожидание / представление",
+            "смысл / цель"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0281",
+          "rank": 3,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "ожидание / представление",
+            "отношение к себе"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0806",
+          "rank": 4,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "ожидание / представление"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0013",
+          "rank": 5,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "принятие / сопротивление"
+          ],
+          "operation": "DISTINGUISH"
+        },
+        {
+          "card_id": "C0275",
+          "rank": 6,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0439",
+          "rank": 7,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0440",
+          "rank": 8,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "ACKNOWLEDGE_FINITUDE"
+        },
+        {
+          "card_id": "C0442",
+          "rank": 9,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0518",
+          "rank": 10,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "ожидание ↔ действительность"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "ожидание / представление"
+          ],
+          "operation": "LIMIT_CONTROL"
+        },
+        {
+          "card_id": "C0813",
+          "rank": 11,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "принятие / сопротивление"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C1108",
+          "rank": 12,
+          "tension_overlap": 1,
+          "matched_tensions": [
+            "действие ↔ принятие"
+          ],
+          "coordinate_overlap": 1,
+          "matched_coordinates": [
+            "принятие / сопротивление"
+          ],
+          "operation": "REVALUE_GOOD"
+        },
+        {
+          "card_id": "C0930",
+          "rank": 13,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 4,
+          "matched_coordinates": [
+            "желание",
+            "ожидание / представление",
+            "отношение к себе",
+            "смысл / цель"
+          ],
+          "operation": "CHALLENGE_ASSUMPTION"
+        },
+        {
+          "card_id": "C0001",
+          "rank": 14,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "желание",
+            "смысл / цель"
+          ],
+          "operation": "HOLD_VALUE_CONFLICT"
+        },
+        {
+          "card_id": "C0056",
+          "rank": 15,
+          "tension_overlap": 0,
+          "matched_tensions": [],
+          "coordinate_overlap": 2,
+          "matched_coordinates": [
+            "отношение к себе",
+            "принятие / сопротивление"
+          ],
+          "operation": "REVALUE_GOOD"
+        }
+      ]
+    },
+    "union_rule": "union(Q1_MEANING top_k, STRUCTURE top_k); Q0 excluded; one entry per card_id with separate route signals; no combined score; listed by card_id ascending (the order is not a ranking)",
+    "candidate_union": [
+      {
+        "card_id": "C0001",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 14,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "желание",
+          "смысл / цель"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "HOLD_VALUE_CONFLICT"
+      },
+      {
+        "card_id": "C0008",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 13,
+        "meaning_score": 0.583168,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "DISTINGUISH"
+      },
+      {
+        "card_id": "C0013",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 5,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": "DISTINGUISH"
+      },
+      {
+        "card_id": "C0020",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 6,
+        "meaning_score": 0.594594,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0023",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 4,
+        "meaning_score": 0.602232,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0028",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 2,
+        "meaning_score": 0.606206,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0044",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 14,
+        "meaning_score": 0.581189,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0056",
+        "found_by": [
+          "Q1_MEANING",
+          "STRUCTURE"
+        ],
+        "meaning_rank": 1,
+        "meaning_score": 0.622645,
+        "structure_rank": 15,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "отношение к себе",
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0275",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 6,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0281",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 3,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "ожидание / представление",
+          "отношение к себе"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0296",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 12,
+        "meaning_score": 0.584839,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0333",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 5,
+        "meaning_score": 0.597444,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PRESERVE_AGENCY"
+      },
+      {
+        "card_id": "C0345",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 7,
+        "meaning_score": 0.59243,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0439",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 7,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0440",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 8,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "ACKNOWLEDGE_FINITUDE"
+      },
+      {
+        "card_id": "C0442",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 9,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0447",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 3,
+        "meaning_score": 0.605461,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "EXAMINE_DESIRE"
+      },
+      {
+        "card_id": "C0518",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 10,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "LIMIT_CONTROL"
+      },
+      {
+        "card_id": "C0527",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 1,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "ожидание / представление",
+          "отношение к себе",
+          "смысл / цель"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "CHALLENGE_COMPARISON"
+      },
+      {
+        "card_id": "C0535",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 9,
+        "meaning_score": 0.588896,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0579",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 2,
+        "coordinate_overlap": 3,
+        "matched_coordinates": [
+          "желание",
+          "ожидание / представление",
+          "смысл / цель"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "REVALUE_GOOD"
+      },
+      {
+        "card_id": "C0583",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 10,
+        "meaning_score": 0.58794,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "PERSPECTIVE_LIMIT"
+      },
+      {
+        "card_id": "C0624",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 11,
+        "meaning_score": 0.585231,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "DISTINGUISH"
+      },
+      {
+        "card_id": "C0806",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 4,
+        "coordinate_overlap": 2,
+        "matched_coordinates": [
+          "желание",
+          "ожидание / представление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "ожидание ↔ действительность"
+        ],
+        "operation": "CHALLENGE_ASSUMPTION"
+      },
+      {
+        "card_id": "C0813",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 11,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": "HOLD_VALUE_CONFLICT"
+      },
+      {
+        "card_id": "C0821",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 15,
+        "meaning_score": 0.58112,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_OBLIGATION"
+      },
+      {
+        "card_id": "C0930",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 13,
+        "coordinate_overlap": 4,
+        "matched_coordinates": [
+          "желание",
+          "ожидание / представление",
+          "отношение к себе",
+          "смысл / цель"
+        ],
+        "tension_overlap": 0,
+        "matched_tensions": [],
+        "operation": "CHALLENGE_ASSUMPTION"
+      },
+      {
+        "card_id": "C0957",
+        "found_by": [
+          "Q1_MEANING"
+        ],
+        "meaning_rank": 8,
+        "meaning_score": 0.589163,
+        "structure_rank": null,
+        "coordinate_overlap": null,
+        "matched_coordinates": null,
+        "tension_overlap": null,
+        "matched_tensions": null,
+        "operation": "LIMIT_OBLIGATION"
+      },
+      {
+        "card_id": "C1108",
+        "found_by": [
+          "STRUCTURE"
+        ],
+        "meaning_rank": null,
+        "meaning_score": null,
+        "structure_rank": 12,
+        "coordinate_overlap": 1,
+        "matched_coordinates": [
+          "принятие / сопротивление"
+        ],
+        "tension_overlap": 1,
+        "matched_tensions": [
+          "действие ↔ принятие"
+        ],
+        "operation": "REVALUE_GOOD"
+      }
+    ]
+  },
+  "composition": {
+    "schema_version": "composition/0.4.0",
+    "item_id": "proto-55d39522db0b",
+    "retrieval_run_id": "prototype-55d39522db0b",
+    "confirmed_question": "Я хочу быть продуктивной, но раз за разом упираюсь в пределы своих сил и перестаю понимать, какая я на самом деле. Что во мне стоит принять как настоящую границу, а ради чего стоит продолжать пытаться? И чем бережность к себе отличается от отказа от себя?",
+    "candidate_pool": [
+      "C0001",
+      "C0008",
+      "C0013",
+      "C0020",
+      "C0023",
+      "C0028",
+      "C0044",
+      "C0056",
+      "C0275",
+      "C0281",
+      "C0296",
+      "C0333",
+      "C0345",
+      "C0439",
+      "C0440",
+      "C0442",
+      "C0447",
+      "C0518",
+      "C0527",
+      "C0535",
+      "C0579",
+      "C0583",
+      "C0624",
+      "C0806",
+      "C0813",
+      "C0821",
+      "C0930",
+      "C0957",
+      "C1108"
+    ],
+    "opening": "Ваш вопрос можно рассмотреть с нескольких сторон.",
+    "perspectives": [
+      {
+        "card_id": "C0957",
+        "role": "Предел как знание, а не поражение",
+        "title": "Честно сказать «не могу» не значит бросить дело",
+        "source": "Тора / Пятикнижие, Чис 11:10–17",
+        "perspective": "Моисей не жалуется на жизнь вообще. Он говорит очень точную вещь: этот груз больше, чем может нести один человек. Бог не требует от него стараться сильнее и не снимает с него дело. Часть груза просто берут на себя другие люди. Выходит, что слова «мне не под силу» бывают не слабостью, а правдой о себе, которую полезно знать. Для вашего вопроса это значит вот что. Когда вы упираетесь в предел, этот предел не обязательно решает, сдаваться вам или нет. Иногда он только подсказывает, что пора менять сам способ, каким вы делаете то, что хотите сделать.",
+        "reflection_question": "В каком деле я уже знаю, что одной мне не справиться? Что в этом деле можно устроить иначе, чтобы не бросать его и не тянуть через силу?",
+        "why_selected": "Прямо отвечает на вопрос, чем принятие границы отличается от отказа.",
+        "main_idea": "В Книге Чисел Моисей устаёт вести народ и прямо говорит Богу, что одному ему такой груз не вынести. В ответ рядом с ним ставят старейшин, которые понесут этот груз вместе с ним. Дело остаётся тем же, а делать его начинают по-другому.",
+        "applied_insight": "Вы спрашиваете, с чем примириться, а ради чего продолжать пытаться. Обычно кажется, что вариантов два: сдаться или давить на себя дальше. Моисей поступает иначе. Он честно признаёт, что сил не хватает, и после этого меняет то, как делается дело.",
+        "distinction": "Помогает различить два прочтения признания «мне не под силу»: как отказа от дела и как точного знания о границе, после которого дело устраивается иначе.",
+        "question_explanation": "Речь о конкретном деле, на которое сил уже не хватает. Вопрос не о том, бросать его или нет, а о том, как ещё это дело можно делать.",
+        "verified_quote": null
+      },
+      {
+        "card_id": "C0013",
+        "role": "Сместить критерий с видимого",
+        "title": "Бережность и отказ от себя со стороны выглядят одинаково",
+        "source": "Бхагавад-гита, БГ 4.16–23",
+        "perspective": "В этом месте Гиты Кришна говорит Арджуне, что разобраться в действии и бездействии трудно даже мудрецам. Мудрым он называет того, кто видит бездействие в действии и действие в бездействии. Звучит как загадка, но мысль простая. Человек может трудиться без остановки и так держаться за результат, что работа начинает им управлять. А может делать дело спокойно, не цепляясь за итог, и тогда он свободен даже посреди большой работы. Для вашего вопроса это значит, что граница между бережностью и отказом от себя не проходит между «остановилась» и «продолжила». И остановиться, и продолжить можно по-разному. Гита предлагает смотреть, как вы относитесь к делу и к себе, когда продолжаете и когда откладываете.",
+        "reflection_question": "Когда я в последний раз отложила дело, что я при этом себе говорила? А что я говорю себе, когда продолжаю через силу?",
+        "why_selected": "Даёт критерий для третьей части вопроса, которого в самом вопросе пока нет.",
+        "main_idea": "Бхагавад-гита говорит, что даже мудрые путаются, где действие, а где бездействие. Можно без конца работать и так цепляться за результат, что дело держит тебя, а не ты его. А можно отложить дело и при этом ничего в себе не бросить.",
+        "applied_insight": "Вы спрашиваете, чем бережность к себе отличается от отказа от себя. Со стороны их не различить: в обоих случаях человек останавливается. Гита предлагает смотреть не на то, остановились вы или продолжили, а на то, как именно вы останавливаетесь и как продолжаете.",
+        "distinction": "Помогает увидеть, что бережность и отказ от себя не различаются по внешнему признаку «остановилась или продолжила»: важен способ участия в действии.",
+        "question_explanation": "Вопрос о том, какими словами вы сопровождаете и паузу, и работу через силу. Например, можно отложить работу со словами «сейчас отдохну и вернусь», а можно со словами «всё равно ничего не выйдет».",
+        "verified_quote": null
+      },
+      {
+        "card_id": "C0535",
+        "role": "Отделить результат от «я»",
+        "title": "Успех ещё не говорит, чего стоит человек",
+        "source": "Евангелия, Лк 10:17–20",
+        "perspective": "Ученики вернулись не с пустыми руками: у них действительно получилось то, чего они сами не ожидали. Иисус не отменяет их успех и не говорит, что он ничего не значит. Он только просит не делать успех главной радостью. Сегодня успех есть, а завтра его может не быть. А то, что их имена записаны на небе, от удачного дня не зависит. К вашему вопросу это относится с обеих сторон. Если даже большая удача не решает, чего стоит человек, то и предел сил этого не решает. Тогда о своих границах можно думать спокойнее: как о том, что получается и что не получается, а не о том, какая вы.",
+        "reflection_question": "Что я знаю о себе такого, что не меняется от того, сколько я сегодня успела? И как я говорю с собой в дни, когда сделано мало?",
+        "why_selected": "Работает с вопросом «какая я», который другие выбранные карточки не затрагивают.",
+        "main_idea": "В Евангелии от Луки ученики возвращаются к Иисусу радостные: у них всё получилось, даже больше, чем они ждали. Иисус не спорит, что успех настоящий. Но он говорит им радоваться не успеху, а тому, что их имена записаны на небе.",
+        "applied_insight": "Вы пишете, что упираетесь в пределы своих сил и перестаёте понимать, какая вы. У вас эти две вещи стоят рядом: сколько удаётся сделать и какая вы. Иисус разводит их даже в день большой удачи. Сделанное — это одно, а то, чего стоит человек, — другое.",
+        "distinction": "Помогает различить то, что удаётся сделать, и то, какая она есть: даже настоящий успех не обязан становиться мерой собственной ценности.",
+        "question_explanation": "Речь о том, что остаётся в вас одинаковым и в удачный день, и в день, когда силы кончились. Например, что вам дорого или как вы относитесь к людям.",
+        "verified_quote": null
+      }
+    ],
+    "fewer_than_three_reason": null,
+    "rejected": [
+      {
+        "card_id": "C0028",
+        "reason": "Обращается к чужому успеху и сравнению с другими — такого сравнения в вопросе нет, его пришлось бы додумывать."
+      },
+      {
+        "card_id": "C0527",
+        "reason": "Первая по структурному рангу, но говорит о несправедливости и сравнении своей доли с чужой — к вопросу о пределах сил это не относится."
+      },
+      {
+        "card_id": "C0579",
+        "reason": "Говорит о том, что успех не гарантирует смысла, тогда как человек упирается в невозможность достичь результата; различение смещено."
+      },
+      {
+        "card_id": "C0821",
+        "reason": "Мысль «обязанность ограничена тем, что дано» близка к C0957, но она уже и привязана к расходованию средств."
+      }
+    ],
+    "q1_top": {
+      "card_id": "C0056",
+      "decision": "rejected",
+      "reason": "Мысль о том, что у недостатка нет единственного смысла, пересекается с C0957, но расплывчатее, а «отказ от самоутверждения» легко прочитать как совет уступить."
+    },
+    "meta": {
+      "composer": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "composition-prompt/0.6.0",
+      "package_sha256": "1505ba9d3db0fb5460c7ebaffa3f927207da725a91936555877e335c57548423",
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "wall_seconds": 67.39,
+            "cli_duration_ms": 66632,
+            "api_duration_ms": 61776,
+            "num_turns": 3,
+            "input_tokens": 4,
+            "cache_read_tokens": 16407,
+            "cache_creation_tokens": 23390,
+            "output_tokens": 3081,
+            "thinking_tokens": 728,
+            "total_cost_usd_list": 0.25203739999999997,
+            "models": [
+              "claude-opus-5-5"
+            ],
+            "attempt": 1,
+            "call_seconds": 67.39,
+            "validation_seconds": 92.628
+          }
+        ],
+        "repairs": [],
+        "writer": {
+          "prompt_version": "card-writer-prompt/0.1.0",
+          "seconds": 92.63,
+          "cards": [
+            {
+              "card_id": "C0957",
+              "attempts": 3,
+              "repairs": [
+                "1 validation error for Perspective\n  Value error, question_explanation: sentence too long to understand on first reading (28 words) [type=value_error, input_value={'card_id': 'C0957', 'rol...ерестроить.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+                "1 validation error for Perspective\n  Value error, question_explanation is too long: 43 words > 40 [type=value_error, input_value={'card_id': 'C0957', 'rol...ерестроить.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error"
+              ],
+              "calls": [
+                {
+                  "wall_seconds": 36.17,
+                  "cli_duration_ms": 35133,
+                  "api_duration_ms": 30395,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 4530,
+                  "cache_creation_tokens": 1439,
+                  "output_tokens": 1721,
+                  "thinking_tokens": 997,
+                  "total_cost_usd_list": 0.046846,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 1,
+                  "call_seconds": 36.17
+                },
+                {
+                  "wall_seconds": 29.59,
+                  "cli_duration_ms": 27186,
+                  "api_duration_ms": 26265,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 4530,
+                  "cache_creation_tokens": 1589,
+                  "output_tokens": 1743,
+                  "thinking_tokens": 946,
+                  "total_cost_usd_list": 0.048486,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 2,
+                  "call_seconds": 29.59
+                },
+                {
+                  "wall_seconds": 26.86,
+                  "cli_duration_ms": 25977,
+                  "api_duration_ms": 24886,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 4530,
+                  "cache_creation_tokens": 1586,
+                  "output_tokens": 1651,
+                  "thinking_tokens": 924,
+                  "total_cost_usd_list": 0.046622,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 3,
+                  "call_seconds": 26.86
+                }
+              ],
+              "fallback": false,
+              "seconds": 92.63
+            },
+            {
+              "card_id": "C0013",
+              "attempts": 1,
+              "repairs": [],
+              "calls": [
+                {
+                  "wall_seconds": 30.59,
+                  "cli_duration_ms": 29515,
+                  "api_duration_ms": 28795,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 4530,
+                  "cache_creation_tokens": 1410,
+                  "output_tokens": 2086,
+                  "thinking_tokens": 1306,
+                  "total_cost_usd_list": 0.053914000000000004,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 1,
+                  "call_seconds": 30.59
+                }
+              ],
+              "fallback": false,
+              "seconds": 30.59
+            },
+            {
+              "card_id": "C0535",
+              "attempts": 1,
+              "repairs": [],
+              "calls": [
+                {
+                  "wall_seconds": 25.46,
+                  "cli_duration_ms": 24357,
+                  "api_duration_ms": 19667,
+                  "num_turns": 2,
+                  "input_tokens": 2,
+                  "cache_read_tokens": 0,
+                  "cache_creation_tokens": 5958,
+                  "output_tokens": 1852,
+                  "thinking_tokens": 1129,
+                  "total_cost_usd_list": 0.084712,
+                  "models": [
+                    "claude-opus-5-5"
+                  ],
+                  "attempt": 1,
+                  "call_seconds": 25.46
+                }
+              ],
+              "fallback": false,
+              "seconds": 25.46
+            }
+          ],
+          "dropped": [],
+          "selection": [
+            {
+              "card_id": "C0957",
+              "role": "Предел как знание, а не поражение",
+              "distinction": "Помогает различить два прочтения признания «мне не под силу»: как отказа от дела и как точного знания о границе, после которого дело устраивается иначе.",
+              "source_point": "Сказать «это выше моих сил» можно честно и верно, и тогда меняется не цель, а то, как устроено действие.",
+              "user_point": "Вопрос «с чем примириться, а ради чего пытаться» перестаёт быть выбором только между «сдаться» и «давить дальше»: у признанного предела может быть третье следствие — другой способ действовать.",
+              "why_selected": "Прямо отвечает на вопрос, чем принятие границы отличается от отказа."
+            },
+            {
+              "card_id": "C0013",
+              "role": "Сместить критерий с видимого",
+              "distinction": "Помогает увидеть, что бережность и отказ от себя не различаются по внешнему признаку «остановилась или продолжила»: важен способ участия в действии.",
+              "source_point": "Главное не то, насколько человек выглядит активным или пассивным, а то, как именно он участвует в том, что делает.",
+              "user_point": "Бережность и отказ нельзя различить, глядя только на то, остановилась она или нет; можно спросить, как она участвует и в остановке, и в продолжении.",
+              "why_selected": "Даёт критерий для третьей части вопроса, которого в самом вопросе пока нет."
+            },
+            {
+              "card_id": "C0535",
+              "role": "Отделить результат от «я»",
+              "distinction": "Помогает различить то, что удаётся сделать, и то, какая она есть: даже настоящий успех не обязан становиться мерой собственной ценности.",
+              "source_point": "Даже когда успех настоящий, он не обязан становиться основанием того, чего стоит человек.",
+              "user_point": "Слова «перестаю понимать, какая я» стоят в вопросе рядом с упором в пределы продуктивности; различение позволяет спросить, должен ли ответ на «какая я» зависеть от результата.",
+              "why_selected": "Работает с вопросом «какая я», который другие выбранные карточки не затрагивают."
+            }
+          ]
+        }
+      }
+    }
+  },
+  "errors": [],
+  "timings": [
+    {
+      "stage": "interpretation",
+      "seconds": 59.06,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "calls": [
+        {
+          "wall_seconds": 59.05,
+          "cli_duration_ms": 57743,
+          "api_duration_ms": 56725,
+          "num_turns": 2,
+          "input_tokens": 2,
+          "cache_read_tokens": 1099,
+          "cache_creation_tokens": 4504,
+          "output_tokens": 1456,
+          "thinking_tokens": 285,
+          "total_cost_usd_list": 0.0653798,
+          "models": [
+            "claude-opus-5-5"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "seconds": 1.05,
+      "llm_calls": 0
+    },
+    {
+      "stage": "selection attempt 1",
+      "seconds": 67.39,
+      "llm_calls": 1,
+      "validation_seconds": 92.628,
+      "output_tokens": 3081,
+      "thinking_tokens": 728
+    },
+    {
+      "stage": "card writing (parallel, wall)",
+      "seconds": 92.63,
+      "llm_calls": 5,
+      "dropped_cards": []
+    },
+    {
+      "stage": "  writer C0957",
+      "seconds": 92.63,
+      "llm_calls": 3,
+      "retries": 2,
+      "retry_reasons": [
+        "1 validation error for Perspective\n  Value error, question_explanation: sentence too long to understand on first reading (28 words) [type=value_error, input_value={'card_id': 'C0957', 'rol...ерестроить.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+        "1 validation error for Perspective\n  Value error, question_explanation is too long: 43 words > 40 [type=value_error, input_value={'card_id': 'C0957', 'rol...ерестроить.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error"
+      ],
+      "fallback_to_draft": false
+    },
+    {
+      "stage": "  writer C0013",
+      "seconds": 30.59,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "fallback_to_draft": false
+    },
+    {
+      "stage": "  writer C0535",
+      "seconds": 25.46,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "fallback_to_draft": false
+    },
+    {
+      "stage": "composition total",
+      "seconds": 160.02,
+      "llm_calls": 6,
+      "retries": 2,
+      "retry_reasons": [
+        "1 validation error for Perspective\n  Value error, question_explanation: sentence too long to understand on first reading (28 words) [type=value_error, input_value={'card_id': 'C0957', 'rol...ерестроить.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+        "1 validation error for Perspective\n  Value error, question_explanation is too long: 43 words > 40 [type=value_error, input_value={'card_id': 'C0957', 'rol...ерестроить.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error"
+      ]
+    }
+  ]
+}

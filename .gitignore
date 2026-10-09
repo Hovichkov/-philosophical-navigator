@@ -49,8 +49,11 @@ secrets.*
 *.onnx
 pytorch_model*.bin
 
-# Sessions and experimental output may contain personal narratives
-/reports/
+# Diagnostic sessions and reports are project history; include them.
+!/reports/
+!/reports/**
+# macOS metadata and local logs remain excluded by the global rules above.
+**/.DS_Store
 *.zip
 *.tar
 *.tar.gz
@@ -58,21 +61,20 @@ pytorch_model*.bin
 *.7z
 *.pdf
 
-# Keep only the two archive source documents required by corpus import/tests
+# Preserve historical source material while excluding backup copies.
 /Архив/*
 !/Архив/CORPUS-LAUNCH-124-v.md
 !/Архив/CORPUS-LAUNCH-124-v1-final-textual-pass.md
+!/Архив/
+!/Архив/**
+/Архив/backup-*/
+Архив/**/.DS_Store
+Архив/**/*.zip
+Архив/**/*.pdf
+Источники/Архив.zip
 
-# Local handoffs and planning documents are not reviewed for disclosure.
-# Explicitly retain source documents used by code/tests and the cloud guide.
+# Project handoffs, development records, and source documents are included.
 /*.md
-!/README-GITHUB.md
-!/LANGUAGE-GUIDE.md
-!/TAXONOMY-philosophical-navigator-v1.1.md
-!/M2.1-RETRIEVAL-BENCHMARK-v0.1.md
-!/OPERATION-AUDIT-launch-113-v0.1.md
-!/CORPUS-LAUNCH-124-operational-status-v2.0.md
-!/CORPUS-FULL-1090-v1.md
-!/CORPUS-LAUNCH-FIRST-29-recovery-source-v0.2.md
+!/*.md
 
 # Owner-authorized test narratives and fixtures are included unchanged.

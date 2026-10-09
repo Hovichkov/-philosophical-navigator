@@ -1,0 +1,111 @@
+{
+  "session_id": "d080f0b8c77a",
+  "created_utc": "2026-10-07T20:22:38+00:00",
+  "state": "insufficient",
+  "interpretation_input": {
+    "topic": "Отношения с близким человеком",
+    "experiences": [
+      "Тревогу",
+      "Страх",
+      "Грусть",
+      "Желание всё исправить"
+    ],
+    "difficulty_center": "Мне трудно принять происходящее таким, какое оно сейчас есть",
+    "free_narrative": "Я шабудубу, да, а она мне говорит: нет, ну и как так-то епрст? Это невозможно превозмочь! А я хочу быть с нею"
+  },
+  "interpretation": null,
+  "insufficient": {
+    "schema_version": "interpretation/0.1.0",
+    "status": "insufficient_input",
+    "input": {
+      "topic": "Отношения с близким человеком",
+      "experiences": [
+        "Тревогу",
+        "Страх",
+        "Грусть",
+        "Желание всё исправить"
+      ],
+      "difficulty_center": "Мне трудно принять происходящее таким, какое оно сейчас есть",
+      "free_narrative": "Я шабудубу, да, а она мне говорит: нет, ну и как так-то епрст? Это невозможно превозмочь! А я хочу быть с нею"
+    },
+    "reason": "В рассказе ясно только одно: человек хочет быть с ней, а она отвечает «нет». Главное действие описано словом «шабудубу», поэтому непонятно, что человек предлагает или делает и на что именно она отвечает отказом. Неясно и то, кто говорит «это невозможно превозмочь». Без этого нельзя честно понять ситуацию и сформулировать вопрос, не придумав лишнего.",
+    "clarification_prompt": "Расскажите, пожалуйста, чуть подробнее, что происходит и что в этом для вас самое трудное — так мы сможем точнее сформулировать ваш вопрос.",
+    "trace": {
+      "interpreter": "claude-code-cli",
+      "model": "claude-opus-5-5",
+      "prompt_version": "interpretation-prompt/0.10.0",
+      "input_sha256": "7ac1c819b7e88cf5905dca04fe76f7e5b8259523c6ade517359c61ad1b3bb577",
+      "reading_notes": [
+        {
+          "kind": "representation",
+          "note": "Ясно только желание человека: «я хочу быть с нею»."
+        },
+        {
+          "kind": "tension",
+          "note": "Её «нет» и недоумение («как так-то?») сталкиваются с этим желанием."
+        },
+        {
+          "kind": "ambiguity",
+          "note": "Главное действие обозначено бессмысленным словом «шабудубу», поэтому суть конфликта не видна."
+        },
+        {
+          "kind": "ambiguity",
+          "note": "Неясно, чьи слова «это невозможно превозмочь» — её или самого человека."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "calls": [
+          {
+            "wall_seconds": 13.09,
+            "cli_duration_ms": 11356,
+            "api_duration_ms": 11233,
+            "num_turns": 2,
+            "input_tokens": 2,
+            "cache_read_tokens": 5191,
+            "cache_creation_tokens": 625,
+            "output_tokens": 1143,
+            "thinking_tokens": 328,
+            "total_cost_usd_list": 0.0289062,
+            "models": [
+              "claude-opus-5-5"
+            ]
+          }
+        ],
+        "repairs": []
+      }
+    }
+  },
+  "confirmation": null,
+  "query_representation": null,
+  "retrieval": null,
+  "composition": null,
+  "errors": [],
+  "timings": [
+    {
+      "stage": "interpretation",
+      "seconds": 13.1,
+      "llm_calls": 1,
+      "retries": 0,
+      "retry_reasons": [],
+      "calls": [
+        {
+          "wall_seconds": 13.09,
+          "cli_duration_ms": 11356,
+          "api_duration_ms": 11233,
+          "num_turns": 2,
+          "input_tokens": 2,
+          "cache_read_tokens": 5191,
+          "cache_creation_tokens": 625,
+          "output_tokens": 1143,
+          "thinking_tokens": 328,
+          "total_cost_usd_list": 0.0289062,
+          "models": [
+            "claude-opus-5-5"
+          ]
+        }
+      ]
+    }
+  ],
+  "reflection": null
+}
