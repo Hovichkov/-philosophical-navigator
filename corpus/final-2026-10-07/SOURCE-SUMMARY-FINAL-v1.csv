@@ -1,0 +1,18 @@
+﻿source_group,master_range,master_count,active_count,present_count,not_active_or_missing
+Bhagavadgita,C0001–C0040,40,40,40,0
+Dao de jing,C0041–C0104,64,64,64,0
+Dhammapada,C0105–C0209,105,103,103,2
+Early Pali Suttas,C0210–C0273,64,64,64,0
+Epictetus — Discourses,C0274–C0375,102,98,100,4
+Epictetus — Enchiridion,C0376–C0435,60,59,59,1
+Epicurus — Letter to Menoeceus,C0436–C0461,26,26,26,0
+Epicurus — Principal Doctrines,C0462–C0510,49,49,49,0
+Gospels,C0511–C0552,42,42,42,0
+Job / Ecclesiastes,C0553–C0617,65,65,65,0
+Lunyu,C0618–C0702,85,60,61,25
+Presocratics / Lebedev,C0703–C0777,75,75,75,0
+Quran / Krachkovsky,C0778–C0836,59,59,59,0
+Socrates / Plato,C0837–C0929,93,19,19,74
+Torah,C0930–C0978,49,49,49,0
+Upanishads / Syrkin,C0979–C1073,95,95,95,0
+Zhuangzi,C1074–C1140,67,0,0,67

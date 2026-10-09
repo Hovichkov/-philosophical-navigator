@@ -1,0 +1,44 @@
+{
+  "curation_id": "M1.5-retrieval-readiness",
+  "date": "2026-09-27",
+  "scope": "Minimal fixes for retrieval-distorting defects among the 113 retrieval-eligible Fragment. Not a corpus-quality pass.",
+  "rules": [
+    "Applied by the importer as the last layer; every touched field gets a field_provenance entry and a technical.curation note.",
+    "from_registry: copy perspective / coordinates / tensions from the CORPUS-FULL-1090 row (recovery source, level 2); EN labels mapped 1:1 to TAXONOMY v1.1.",
+    "questions_from_launch_move: add the single move-specific question built by the textual-pass convention «Какой философский ход совершает текст в ситуации: <launch move>?». Generic template questions are not added.",
+    "set: explicit editorial value; the replaced value is preserved verbatim in technical.curation."
+  ],
+  "fragments": {
+    "C1105": {
+      "reason": "retrieval-eligible, MEANING and coordinates/tensions empty (registry row not recovered in first-29 recovery source)",
+      "from_registry": ["perspective", "coordinates", "tensions"],
+      "questions_from_launch_move": true,
+      "corroboration": "perspective identical to Источники/corpus-zhuangzi-malyavin-candidates-v1.md §32 (Гл. 18 «Высшая радость»)"
+    },
+    "C0957": {
+      "reason": "retrieval-eligible, MEANING and coordinates/tensions empty (registry row not recovered in first-29 recovery source)",
+      "from_registry": ["perspective", "coordinates", "tensions"],
+      "questions_from_launch_move": true,
+      "corroboration": "perspective identical to Источники/corpus-torah-candidates-v1.md §28 (Чис 11:10–17)"
+    },
+    "C0937": {
+      "reason": "retrieval-eligible, MEANING and coordinates/tensions empty (registry row not recovered in first-29 recovery source)",
+      "from_registry": ["perspective", "coordinates", "tensions"],
+      "questions_from_launch_move": true,
+      "corroboration": "perspective identical to Источники/corpus-torah-candidates-v1.md §8 (Быт 22:1–14); candidate file flags high_context_required"
+    },
+    "C0949": {
+      "reason": "retrieval-eligible, MEANING and coordinates/tensions empty (registry row not recovered in first-29 recovery source)",
+      "from_registry": ["perspective", "coordinates", "tensions"],
+      "questions_from_launch_move": true,
+      "corroboration": "perspective identical to Источники/corpus-torah-candidates-v1.md §20 (Исх 14:10–14)"
+    },
+    "C0527": {
+      "reason": "perspective held an editorial note, not a philosophical perspective; the same note is the only value in every available source (candidate file, 1090 registry, editorial review, recovery source)",
+      "set": {
+        "perspective": "ощущение несправедливости может возникать не из нарушения договорённости, а из сравнения своей доли с чужой: мерой справедливого незаметно становится то, что получил другой, а не то, о чём договаривались."
+      },
+      "basis": "editorial reconstruction from the launch philosophical move (C0527, Мф 20:1–16) and OPERATION-AUDIT operation CHALLENGE_COMPARISON («ставит под вопрос сравнение себя, своей доли или результата с другим»); not an original value"
+    }
+  }
+}

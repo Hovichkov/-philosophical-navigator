@@ -1,0 +1,1 @@
+"""Philosophical Navigator — retrieval MVP."""

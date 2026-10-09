@@ -1,0 +1,78 @@
+# Python environments, generated packages and caches
+.venv/
+venv/
+env/
+.env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage*
+htmlcov/
+*.egg-info/
+/build/
+/dist/
+.DS_Store
+*.log
+*.tmp
+*.swp
+*~
+
+# Credentials and machine-specific agent/editor configuration
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials*.json
+secrets.*
+.netrc
+.npmrc
+/.claude/
+/.codex/
+/.agents/
+/.vscode/
+/.idea/
+
+# Generated retrieval data, model weights and historical copies
+/data/retrieval/
+/data/archive/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+pytorch_model*.bin
+
+# Sessions and experimental output may contain personal narratives
+/reports/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.pdf
+
+# Keep only the two archive source documents required by corpus import/tests
+/Архив/*
+!/Архив/CORPUS-LAUNCH-124-v.md
+!/Архив/CORPUS-LAUNCH-124-v1-final-textual-pass.md
+
+# Local handoffs and planning documents are not reviewed for disclosure.
+# Explicitly retain source documents used by code/tests and the cloud guide.
+/*.md
+!/README-GITHUB.md
+!/LANGUAGE-GUIDE.md
+!/TAXONOMY-philosophical-navigator-v1.1.md
+!/M2.1-RETRIEVAL-BENCHMARK-v0.1.md
+!/OPERATION-AUDIT-launch-113-v0.1.md
+!/CORPUS-LAUNCH-124-operational-status-v2.0.md
+!/CORPUS-FULL-1090-v1.md
+!/CORPUS-LAUNCH-FIRST-29-recovery-source-v0.2.md
+
+# Owner-authorized test narratives and fixtures are included unchanged.

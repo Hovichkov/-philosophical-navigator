@@ -1,0 +1,1805 @@
+{
+  "corpus_version": "launch-124/0.3.0-m1.5-retrieval-readiness",
+  "schema_version": "fragment-schema/0.2.0",
+  "expected_count": 124,
+  "operational_rule": "launch shortlist 124; verified 113; unresolved 11 kept for audit and excluded from retrieval (CLAUDE-CODE-M1-CORRECTION-CLOSEOUT-PROMPT.md §1; supersedes TECHNICAL-DESIGN-retrieval-v0.2 §0)",
+  "launch_shortlist_count": 124,
+  "retrieval_verified_count": 113,
+  "expected_retrieval_verified_count": 113,
+  "unresolved_count": 11,
+  "launch_ids": [
+    "C0930",
+    "C0527",
+    "C0798",
+    "C0806",
+    "C1108",
+    "C1105",
+    "C0957",
+    "C0579",
+    "C0013",
+    "C0170",
+    "C0144",
+    "C0937",
+    "C0404",
+    "C0786",
+    "C0949",
+    "C0001",
+    "C0553",
+    "C0648",
+    "C0807",
+    "C0793",
+    "C0633",
+    "C0813",
+    "C0246",
+    "C0571",
+    "C0167",
+    "C0056",
+    "C0969",
+    "C0948",
+    "C0345",
+    "C0583",
+    "C0004",
+    "C0068",
+    "C0215",
+    "C0577",
+    "C0258",
+    "C0005",
+    "C0014",
+    "C0027",
+    "C0555",
+    "C0043",
+    "C0055",
+    "C0165",
+    "C0533",
+    "C0230",
+    "C0341",
+    "C0653",
+    "C0008",
+    "C0020",
+    "C0023",
+    "C0025",
+    "C0028",
+    "C0044",
+    "C0049",
+    "C0050",
+    "C0058",
+    "C0121",
+    "C0123",
+    "C0125",
+    "C0130",
+    "C0296",
+    "C0333",
+    "C0339",
+    "C0396",
+    "C0447",
+    "C0514",
+    "C0518",
+    "C0535",
+    "C0539",
+    "C0542",
+    "C0545",
+    "C0619",
+    "C0623",
+    "C0659",
+    "C0670",
+    "C0871",
+    "C0168",
+    "C0281",
+    "C0308",
+    "C0942",
+    "C0952",
+    "C0990",
+    "C0274",
+    "C0275",
+    "C0436",
+    "C0437",
+    "C0438",
+    "C0439",
+    "C0440",
+    "C0441",
+    "C0442",
+    "C0443",
+    "C0444",
+    "C0445",
+    "C0446",
+    "C0511",
+    "C0512",
+    "C0513",
+    "C0515",
+    "C0618",
+    "C0620",
+    "C0621",
+    "C0622",
+    "C0624",
+    "C0703",
+    "C0704",
+    "C0705",
+    "C0706",
+    "C0707",
+    "C0708",
+    "C0709",
+    "C0710",
+    "C0711",
+    "C0712",
+    "C0713",
+    "C0778",
+    "C0779",
+    "C0780",
+    "C0781",
+    "C0797",
+    "C0398",
+    "C0060",
+    "C0377",
+    "C0081",
+    "C0821"
+  ],
+  "unresolved_ids": [
+    "C0215",
+    "C0230",
+    "C0258",
+    "C0377",
+    "C0396",
+    "C0398",
+    "C0703",
+    "C0704",
+    "C0705",
+    "C0706",
+    "C0707"
+  ],
+  "retrieval_allowlist": [
+    "C0930",
+    "C0527",
+    "C0798",
+    "C0806",
+    "C1108",
+    "C1105",
+    "C0957",
+    "C0579",
+    "C0013",
+    "C0170",
+    "C0144",
+    "C0937",
+    "C0404",
+    "C0786",
+    "C0949",
+    "C0001",
+    "C0553",
+    "C0648",
+    "C0807",
+    "C0793",
+    "C0633",
+    "C0813",
+    "C0246",
+    "C0571",
+    "C0167",
+    "C0056",
+    "C0969",
+    "C0948",
+    "C0345",
+    "C0583",
+    "C0004",
+    "C0068",
+    "C0577",
+    "C0005",
+    "C0014",
+    "C0027",
+    "C0555",
+    "C0043",
+    "C0055",
+    "C0165",
+    "C0533",
+    "C0341",
+    "C0653",
+    "C0008",
+    "C0020",
+    "C0023",
+    "C0025",
+    "C0028",
+    "C0044",
+    "C0049",
+    "C0050",
+    "C0058",
+    "C0121",
+    "C0123",
+    "C0125",
+    "C0130",
+    "C0296",
+    "C0333",
+    "C0339",
+    "C0447",
+    "C0514",
+    "C0518",
+    "C0535",
+    "C0539",
+    "C0542",
+    "C0545",
+    "C0619",
+    "C0623",
+    "C0659",
+    "C0670",
+    "C0871",
+    "C0168",
+    "C0281",
+    "C0308",
+    "C0942",
+    "C0952",
+    "C0990",
+    "C0274",
+    "C0275",
+    "C0436",
+    "C0437",
+    "C0438",
+    "C0439",
+    "C0440",
+    "C0441",
+    "C0442",
+    "C0443",
+    "C0444",
+    "C0445",
+    "C0446",
+    "C0511",
+    "C0512",
+    "C0513",
+    "C0515",
+    "C0618",
+    "C0620",
+    "C0621",
+    "C0622",
+    "C0624",
+    "C0708",
+    "C0709",
+    "C0710",
+    "C0711",
+    "C0712",
+    "C0713",
+    "C0778",
+    "C0779",
+    "C0780",
+    "C0781",
+    "C0797",
+    "C0060",
+    "C0081",
+    "C0821"
+  ],
+  "routes": {
+    "MEANING": "enabled",
+    "STRUCTURE": "enabled",
+    "SOURCE": "disabled_pending_full_fragment_text"
+  },
+  "first_29_recovery": {
+    "source": "CORPUS-LAUNCH-FIRST-29-recovery-source-v0.2.md",
+    "note": "original approved YAML not physically recovered; recovered fields are reconstructed from registry",
+    "records": {
+      "C0001": {
+        "batch": "Тестовый батч",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C1108": {
+        "batch": "Тестовый батч",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0871": {
+        "batch": "Тестовый батч",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0778": {
+        "batch": "Тестовый батч",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0444": {
+        "batch": "Тестовый батч",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0930": {
+        "batch": "Production batch 01",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0527": {
+        "batch": "Production batch 01",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0798": {
+        "batch": "Production batch 01",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0806": {
+        "batch": "Production batch 01",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C1105": {
+        "batch": "Production batch 01",
+        "recovery_status": "approved_batch_membership_confirmed_but_registry_row_not_yet_extracted",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": false,
+        "fields_reconstructed": []
+      },
+      "C0957": {
+        "batch": "Production batch 01",
+        "recovery_status": "approved_batch_membership_confirmed_but_registry_row_not_yet_extracted",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": false,
+        "fields_reconstructed": []
+      },
+      "C0579": {
+        "batch": "Production batch 01",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0013": {
+        "batch": "Production batch 01",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0170": {
+        "batch": "Production batch 02",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0144": {
+        "batch": "Production batch 02",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0937": {
+        "batch": "Production batch 02",
+        "recovery_status": "approved_batch_membership_confirmed_but_registry_row_not_yet_extracted",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": false,
+        "fields_reconstructed": []
+      },
+      "C0404": {
+        "batch": "Production batch 02",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0786": {
+        "batch": "Production batch 02",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0949": {
+        "batch": "Production batch 02",
+        "recovery_status": "approved_batch_membership_confirmed_but_registry_row_not_yet_extracted",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": false,
+        "fields_reconstructed": []
+      },
+      "C0553": {
+        "batch": "Production batch 02",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0648": {
+        "batch": "Production batch 02",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0807": {
+        "batch": "Production batch 03",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0793": {
+        "batch": "Production batch 03",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0633": {
+        "batch": "Production batch 03",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0813": {
+        "batch": "Production batch 03",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0246": {
+        "batch": "Production batch 03",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0571": {
+        "batch": "Production batch 03",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0167": {
+        "batch": "Production batch 03",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      },
+      "C0056": {
+        "batch": "Production batch 03",
+        "recovery_status": "source_registry_recovered",
+        "old_yaml_status": "original approved YAML not physically recovered",
+        "registry_row_recovered": true,
+        "fields_reconstructed": [
+          "work",
+          "location",
+          "perspective",
+          "coordinates",
+          "tensions"
+        ]
+      }
+    }
+  },
+  "historical": {
+    "unresolved_status_v2_0": [
+      "C0215",
+      "C0230",
+      "C0258",
+      "C0377",
+      "C0396",
+      "C0398",
+      "C0703",
+      "C0704",
+      "C0705",
+      "C0706",
+      "C0707"
+    ],
+    "unresolved_textual_pass": [
+      "C0004",
+      "C0008",
+      "C0020",
+      "C0023",
+      "C0025",
+      "C0027",
+      "C0028",
+      "C0215",
+      "C0230",
+      "C0258",
+      "C0274",
+      "C0275",
+      "C0281",
+      "C0296",
+      "C0308",
+      "C0333",
+      "C0339",
+      "C0341",
+      "C0345",
+      "C0377",
+      "C0396",
+      "C0398",
+      "C0703",
+      "C0704",
+      "C0705",
+      "C0706",
+      "C0707",
+      "C0990"
+    ],
+    "operation_audit_113_ids": [
+      "C0001",
+      "C0004",
+      "C0005",
+      "C0008",
+      "C0013",
+      "C0014",
+      "C0020",
+      "C0023",
+      "C0025",
+      "C0027",
+      "C0028",
+      "C0043",
+      "C0044",
+      "C0049",
+      "C0050",
+      "C0055",
+      "C0056",
+      "C0058",
+      "C0060",
+      "C0068",
+      "C0081",
+      "C0121",
+      "C0123",
+      "C0125",
+      "C0130",
+      "C0144",
+      "C0165",
+      "C0167",
+      "C0168",
+      "C0170",
+      "C0246",
+      "C0274",
+      "C0275",
+      "C0281",
+      "C0296",
+      "C0308",
+      "C0333",
+      "C0339",
+      "C0341",
+      "C0345",
+      "C0404",
+      "C0436",
+      "C0437",
+      "C0438",
+      "C0439",
+      "C0440",
+      "C0441",
+      "C0442",
+      "C0443",
+      "C0444",
+      "C0445",
+      "C0446",
+      "C0447",
+      "C0511",
+      "C0512",
+      "C0513",
+      "C0514",
+      "C0515",
+      "C0518",
+      "C0527",
+      "C0533",
+      "C0535",
+      "C0539",
+      "C0542",
+      "C0545",
+      "C0553",
+      "C0555",
+      "C0571",
+      "C0577",
+      "C0579",
+      "C0583",
+      "C0618",
+      "C0619",
+      "C0620",
+      "C0621",
+      "C0622",
+      "C0623",
+      "C0624",
+      "C0633",
+      "C0648",
+      "C0653",
+      "C0659",
+      "C0670",
+      "C0708",
+      "C0709",
+      "C0710",
+      "C0711",
+      "C0712",
+      "C0713",
+      "C0778",
+      "C0779",
+      "C0780",
+      "C0781",
+      "C0786",
+      "C0793",
+      "C0797",
+      "C0798",
+      "C0806",
+      "C0807",
+      "C0813",
+      "C0821",
+      "C0871",
+      "C0930",
+      "C0937",
+      "C0942",
+      "C0948",
+      "C0949",
+      "C0952",
+      "C0957",
+      "C0969",
+      "C0990",
+      "C1105",
+      "C1108"
+    ],
+    "textual_pass_card_ids": [
+      "C0004",
+      "C0005",
+      "C0008",
+      "C0014",
+      "C0020",
+      "C0023",
+      "C0025",
+      "C0027",
+      "C0028",
+      "C0043",
+      "C0044",
+      "C0049",
+      "C0050",
+      "C0055",
+      "C0058",
+      "C0060",
+      "C0068",
+      "C0081",
+      "C0121",
+      "C0123",
+      "C0125",
+      "C0130",
+      "C0165",
+      "C0168",
+      "C0215",
+      "C0230",
+      "C0258",
+      "C0274",
+      "C0275",
+      "C0281",
+      "C0296",
+      "C0308",
+      "C0333",
+      "C0339",
+      "C0341",
+      "C0345",
+      "C0377",
+      "C0396",
+      "C0398",
+      "C0436",
+      "C0437",
+      "C0438",
+      "C0439",
+      "C0440",
+      "C0441",
+      "C0442",
+      "C0443",
+      "C0445",
+      "C0446",
+      "C0447",
+      "C0511",
+      "C0512",
+      "C0513",
+      "C0514",
+      "C0515",
+      "C0518",
+      "C0533",
+      "C0535",
+      "C0539",
+      "C0542",
+      "C0545",
+      "C0555",
+      "C0577",
+      "C0583",
+      "C0618",
+      "C0619",
+      "C0620",
+      "C0621",
+      "C0622",
+      "C0623",
+      "C0624",
+      "C0653",
+      "C0659",
+      "C0670",
+      "C0703",
+      "C0704",
+      "C0705",
+      "C0706",
+      "C0707",
+      "C0708",
+      "C0709",
+      "C0710",
+      "C0711",
+      "C0712",
+      "C0713",
+      "C0779",
+      "C0780",
+      "C0781",
+      "C0797",
+      "C0821",
+      "C0942",
+      "C0948",
+      "C0952",
+      "C0969",
+      "C0990"
+    ],
+    "textual_pass_source_corrections": [
+      "C0215 → Anattalakkhaṇa Sutta, SN 22.59",
+      "C0230 → Kakacūpama Sutta, MN 21",
+      "C0258 → Soṇa Sutta, AN 6.55",
+      "C0246 → Sallatha Sutta, SN 36.6 (in previously approved batch)"
+    ]
+  },
+  "source_documents": {
+    "Архив/CORPUS-LAUNCH-124-v.md": "1f0ed961ef4b17a72cf86f892af081845d94df7c7a26efc1a78b436effdba71d",
+    "Архив/CORPUS-LAUNCH-124-v1-final-textual-pass.md": "a284849d11914618b554aed772ddcdb60a5a181d2ab6e9cf3b2b11cd4fe3bb27",
+    "OPERATION-AUDIT-launch-113-v0.1.md": "1e89ec916c0963833f467d95cd83a30a67a3f8da76c2e01d8965fb6ae2cbda48",
+    "CORPUS-LAUNCH-124-operational-status-v2.0.md": "05f533de8be501ba0eed77b311ab51fa012aad1ff4c2e893a476506dde459b6b",
+    "CORPUS-FULL-1090-v1.md": "200c4d7f825479773da16ab5ac52c10a82e6a0d7cff826cddf0683959a1cbde0",
+    "CORPUS-LAUNCH-FIRST-29-recovery-source-v0.2.md": "6bb97edc1001a29b13043ec4c4838eaa3f674e4e25fe4659812b250a8a0712a0"
+  },
+  "import_notes": [
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0969",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0948",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0345",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0583",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0004",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0068",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0215",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0577",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0258",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0005",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0014",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0027",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0555",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0043",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0055",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0165",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0533",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0230",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0341",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0653",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0008",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0020",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0023",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0025",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0028",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0044",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0049",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0050",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0058",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0121",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0123",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0125",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0130",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0296",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0333",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0339",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0396",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0447",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0514",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0518",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0535",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0539",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0542",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0545",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0619",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0623",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0659",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0670",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0168",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0281",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0308",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0942",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0952",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0990",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0274",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0275",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0436",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0437",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0438",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0439",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0440",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0441",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0442",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0443",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0445",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0446",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0511",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0512",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0513",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0515",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0618",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0620",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0621",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0622",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0624",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0703",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0704",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0705",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0706",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0707",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0708",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0709",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0710",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0711",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0712",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0713",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0779",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0780",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0781",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0797",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0398",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0060",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0377",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0081",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "YAML_REPAIRED",
+      "fragment_id": "C0821",
+      "detail": "YAML block failed strict parsing or turned prose list items into mappings (unquoted ':' or '`'); list items were quoted verbatim and re-parsed"
+    },
+    {
+      "kind": "RECOVERY_CANDIDATE_NOT_APPLIED",
+      "fragment_id": "C1105",
+      "detail": "CORPUS-FULL-1090 has a registry row for this ID (kept in technical.registry_reference); not applied because the recovery source marks the original row as not recovered"
+    },
+    {
+      "kind": "RECOVERY_CANDIDATE_NOT_APPLIED",
+      "fragment_id": "C0957",
+      "detail": "CORPUS-FULL-1090 has a registry row for this ID (kept in technical.registry_reference); not applied because the recovery source marks the original row as not recovered"
+    },
+    {
+      "kind": "SOURCE_CONFLICT_RESOLVED_BY_LAUNCH",
+      "fragment_id": "C0579",
+      "detail": "tradition: recovery source «библейская / иудейская традиция» vs launch table «иудаизм / библейская традиция»; launch shortlist value used"
+    },
+    {
+      "kind": "RECOVERY_CANDIDATE_NOT_APPLIED",
+      "fragment_id": "C0937",
+      "detail": "CORPUS-FULL-1090 has a registry row for this ID (kept in technical.registry_reference); not applied because the recovery source marks the original row as not recovered"
+    },
+    {
+      "kind": "RECOVERY_CANDIDATE_NOT_APPLIED",
+      "fragment_id": "C0949",
+      "detail": "CORPUS-FULL-1090 has a registry row for this ID (kept in technical.registry_reference); not applied because the recovery source marks the original row as not recovered"
+    },
+    {
+      "kind": "SOURCE_CONFLICT_RESOLVED_BY_LAUNCH",
+      "fragment_id": "C0553",
+      "detail": "tradition: recovery source «библейская / иудейская традиция» vs launch table «иудаизм / библейская традиция»; launch shortlist value used"
+    },
+    {
+      "kind": "SOURCE_CORRECTION",
+      "fragment_id": "C0246",
+      "detail": "work: recovery source «Sallatha Sutta» vs launch table «Дхаммачаккаппаваттана сутта — СН 56.11»"
+    },
+    {
+      "kind": "SOURCE_CORRECTION",
+      "fragment_id": "C0246",
+      "detail": "location: recovery source «SN 36.6» vs launch table «Первая и вторая стрелы»"
+    },
+    {
+      "kind": "SOURCE_CONFLICT_RESOLVED_BY_LAUNCH",
+      "fragment_id": "C0571",
+      "detail": "tradition: recovery source «библейская / иудейская традиция» vs launch table «иудаизм / библейская традиция»; launch shortlist value used"
+    },
+    {
+      "kind": "REGISTRY_STATUS_SUPERSEDED",
+      "fragment_id": "C0969",
+      "detail": "CORPUS-FULL-1090 marks this card status=reserve, decision=RESERVE; launch shortlist takes precedence"
+    },
+    {
+      "kind": "SOURCE_CORRECTION",
+      "fragment_id": "C0215",
+      "detail": "work: textual pass «Anattalakkhaṇa Sutta / Сутта о признаке не-самости» vs launch table «Дхаммачаккаппаваттана сутта — СН 56.11»"
+    },
+    {
+      "kind": "SOURCE_CORRECTION",
+      "fragment_id": "C0215",
+      "detail": "location: textual pass «SN 22.59» vs launch table «То же исследование пяти совокупностей»"
+    },
+    {
+      "kind": "SOURCE_CORRECTION",
+      "fragment_id": "C0258",
+      "detail": "work: textual pass «Soṇa Sutta» vs launch table «Дхаммачаккаппаваттана сутта — СН 56.11»"
+    },
+    {
+      "kind": "SOURCE_CORRECTION",
+      "fragment_id": "C0258",
+      "detail": "location: textual pass «AN 6.55» vs launch table «Неудача при большом старании не обязательно означает неверность пути»"
+    },
+    {
+      "kind": "SOURCE_CORRECTION",
+      "fragment_id": "C0230",
+      "detail": "work: textual pass «Kakacūpama Sutta / Притча о пиле» vs launch table «Дхаммачаккаппаваттана сутта — СН 56.11»"
+    },
+    {
+      "kind": "SOURCE_CORRECTION",
+      "fragment_id": "C0230",
+      "detail": "location: textual pass «MN 21, эпизод Ведехики и Кали» vs launch table «Репутация спокойного человека проверяется неприятностью»"
+    }
+  ],
+  "content_observations": {
+    "cards_with_textual_pass": 95,
+    "templated_interpretation_fields": {
+      "context": 95,
+      "commentary": 95,
+      "perspective": 95
+    },
+    "templated_interpretation_ids": {
+      "context": [
+        "C0004",
+        "C0005",
+        "C0008",
+        "C0014",
+        "C0020",
+        "C0023",
+        "C0025",
+        "C0027",
+        "C0028",
+        "C0043",
+        "C0044",
+        "C0049",
+        "C0050",
+        "C0055",
+        "C0058",
+        "C0060",
+        "C0068",
+        "C0081",
+        "C0121",
+        "C0123",
+        "C0125",
+        "C0130",
+        "C0165",
+        "C0168",
+        "C0215",
+        "C0230",
+        "C0258",
+        "C0274",
+        "C0275",
+        "C0281",
+        "C0296",
+        "C0308",
+        "C0333",
+        "C0339",
+        "C0341",
+        "C0345",
+        "C0377",
+        "C0396",
+        "C0398",
+        "C0436",
+        "C0437",
+        "C0438",
+        "C0439",
+        "C0440",
+        "C0441",
+        "C0442",
+        "C0443",
+        "C0445",
+        "C0446",
+        "C0447",
+        "C0511",
+        "C0512",
+        "C0513",
+        "C0514",
+        "C0515",
+        "C0518",
+        "C0533",
+        "C0535",
+        "C0539",
+        "C0542",
+        "C0545",
+        "C0555",
+        "C0577",
+        "C0583",
+        "C0618",
+        "C0619",
+        "C0620",
+        "C0621",
+        "C0622",
+        "C0623",
+        "C0624",
+        "C0653",
+        "C0659",
+        "C0670",
+        "C0703",
+        "C0704",
+        "C0705",
+        "C0706",
+        "C0707",
+        "C0708",
+        "C0709",
+        "C0710",
+        "C0711",
+        "C0712",
+        "C0713",
+        "C0779",
+        "C0780",
+        "C0781",
+        "C0797",
+        "C0821",
+        "C0942",
+        "C0948",
+        "C0952",
+        "C0969",
+        "C0990"
+      ],
+      "commentary": [
+        "C0004",
+        "C0005",
+        "C0008",
+        "C0014",
+        "C0020",
+        "C0023",
+        "C0025",
+        "C0027",
+        "C0028",
+        "C0043",
+        "C0044",
+        "C0049",
+        "C0050",
+        "C0055",
+        "C0058",
+        "C0060",
+        "C0068",
+        "C0081",
+        "C0121",
+        "C0123",
+        "C0125",
+        "C0130",
+        "C0165",
+        "C0168",
+        "C0215",
+        "C0230",
+        "C0258",
+        "C0274",
+        "C0275",
+        "C0281",
+        "C0296",
+        "C0308",
+        "C0333",
+        "C0339",
+        "C0341",
+        "C0345",
+        "C0377",
+        "C0396",
+        "C0398",
+        "C0436",
+        "C0437",
+        "C0438",
+        "C0439",
+        "C0440",
+        "C0441",
+        "C0442",
+        "C0443",
+        "C0445",
+        "C0446",
+        "C0447",
+        "C0511",
+        "C0512",
+        "C0513",
+        "C0514",
+        "C0515",
+        "C0518",
+        "C0533",
+        "C0535",
+        "C0539",
+        "C0542",
+        "C0545",
+        "C0555",
+        "C0577",
+        "C0583",
+        "C0618",
+        "C0619",
+        "C0620",
+        "C0621",
+        "C0622",
+        "C0623",
+        "C0624",
+        "C0653",
+        "C0659",
+        "C0670",
+        "C0703",
+        "C0704",
+        "C0705",
+        "C0706",
+        "C0707",
+        "C0708",
+        "C0709",
+        "C0710",
+        "C0711",
+        "C0712",
+        "C0713",
+        "C0779",
+        "C0780",
+        "C0781",
+        "C0797",
+        "C0821",
+        "C0942",
+        "C0948",
+        "C0952",
+        "C0969",
+        "C0990"
+      ],
+      "perspective": [
+        "C0004",
+        "C0005",
+        "C0008",
+        "C0014",
+        "C0020",
+        "C0023",
+        "C0025",
+        "C0027",
+        "C0028",
+        "C0043",
+        "C0044",
+        "C0049",
+        "C0050",
+        "C0055",
+        "C0058",
+        "C0060",
+        "C0068",
+        "C0081",
+        "C0121",
+        "C0123",
+        "C0125",
+        "C0130",
+        "C0165",
+        "C0168",
+        "C0215",
+        "C0230",
+        "C0258",
+        "C0274",
+        "C0275",
+        "C0281",
+        "C0296",
+        "C0308",
+        "C0333",
+        "C0339",
+        "C0341",
+        "C0345",
+        "C0377",
+        "C0396",
+        "C0398",
+        "C0436",
+        "C0437",
+        "C0438",
+        "C0439",
+        "C0440",
+        "C0441",
+        "C0442",
+        "C0443",
+        "C0445",
+        "C0446",
+        "C0447",
+        "C0511",
+        "C0512",
+        "C0513",
+        "C0514",
+        "C0515",
+        "C0518",
+        "C0533",
+        "C0535",
+        "C0539",
+        "C0542",
+        "C0545",
+        "C0555",
+        "C0577",
+        "C0583",
+        "C0618",
+        "C0619",
+        "C0620",
+        "C0621",
+        "C0622",
+        "C0623",
+        "C0624",
+        "C0653",
+        "C0659",
+        "C0670",
+        "C0703",
+        "C0704",
+        "C0705",
+        "C0706",
+        "C0707",
+        "C0708",
+        "C0709",
+        "C0710",
+        "C0711",
+        "C0712",
+        "C0713",
+        "C0779",
+        "C0780",
+        "C0781",
+        "C0797",
+        "C0821",
+        "C0942",
+        "C0948",
+        "C0952",
+        "C0969",
+        "C0990"
+      ]
+    },
+    "most_common_coordinate_sets": [
+      {
+        "coordinates": [
+          "действие",
+          "отношение к себе"
+        ],
+        "count": 43
+      },
+      {
+        "coordinates": [
+          "действие"
+        ],
+        "count": 6
+      },
+      {
+        "coordinates": [
+          "желание"
+        ],
+        "count": 5
+      },
+      {
+        "coordinates": [
+          "отношение к себе"
+        ],
+        "count": 5
+      },
+      {
+        "coordinates": [
+          "отношение к другому"
+        ],
+        "count": 5
+      }
+    ],
+    "cards_with_empty_tensions": 86
+  },
+  "curation": [
+    {
+      "curation_id": "M1.5-retrieval-readiness",
+      "file": "data/corpus/curation/m1_5-retrieval-readiness.json",
+      "sha256": "60ade07f8c92bb0c36af8561edf8622dc464f512fe2c84e5906b75b336c2a8c9",
+      "fragments": [
+        "C1105",
+        "C0957",
+        "C0937",
+        "C0949",
+        "C0527"
+      ]
+    }
+  ]
+}

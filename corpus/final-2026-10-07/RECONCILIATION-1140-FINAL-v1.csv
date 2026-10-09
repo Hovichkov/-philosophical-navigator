@@ -1,0 +1,1141 @@
+﻿card_id,source_group,reconciliation_status,active_for_product,verification_status,work,location
+C0001,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Бхагавад-гита,1.33
+C0002,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,2.7
+C0003,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,2.17
+C0004,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,2.38
+C0005,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,2.47
+C0006,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,2.56
+C0007,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,2.62
+C0008,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Бхагавад-гита,3.8
+C0009,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Бхагавад-гита,3.21
+C0010,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Бхагавад-гита,3.28
+C0011,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Бхагавад-гита,3.35
+C0012,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,3.36
+C0013,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,4.17
+C0014,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,5.1
+C0015,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,5.18
+C0016,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Бхагавад-гита,6.5
+C0017,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,6.32
+C0018,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,6.35
+C0019,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Бхагавад-гита,12.11
+C0020,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Бхагавад-гита,12.18
+C0021,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,14.12
+C0022,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Бхагавад-гита,14.19
+C0023,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Бхагавад-гита,16.21
+C0024,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,17.3
+C0025,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,18.23
+C0026,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,18.30
+C0027,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,18.39
+C0028,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Бхагавад-гита,18.47
+C0029,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Бхагавад-гита,18.63
+C0030,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,18.73
+C0031,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Бхагавад-гита,2.14
+C0032,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,2.57
+C0033,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,4.34
+C0034,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,5.22
+C0035,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Бхагавад-гита,9.27
+C0036,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,13.11
+C0037,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Бхагавад-гита,13.29
+C0038,Bhagavadgita,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Бхагавад-гита,16.3
+C0039,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Бхагавад-гита,16.21
+C0040,Bhagavadgita,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Бхагавад-гита,18.33
+C0041,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 1
+C0042,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 2
+C0043,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 3
+C0044,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 7
+C0045,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 8
+C0046,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 9
+C0047,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 11
+C0048,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 12
+C0049,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 13
+C0050,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 15
+C0051,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 16
+C0052,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 17
+C0053,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 18
+C0054,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 19
+C0055,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 20
+C0056,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 22
+C0057,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 23
+C0058,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 24
+C0059,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 29
+C0060,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 30
+C0061,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 33
+C0062,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 36
+C0063,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 37
+C0064,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 38
+C0065,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 44
+C0066,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 46
+C0067,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 47
+C0068,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 48
+C0069,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 49
+C0070,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 52
+C0071,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 53
+C0072,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 56
+C0073,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 58
+C0074,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 63
+C0075,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 64
+C0076,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 66
+C0077,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 67
+C0078,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 68
+C0079,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 71
+C0080,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 72
+C0081,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 73
+C0082,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 74
+C0083,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 76
+C0084,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 77
+C0085,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 78
+C0086,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 79
+C0087,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 81
+C0088,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 4
+C0089,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 5
+C0090,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 10
+C0091,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 14
+C0092,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 25
+C0093,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 26
+C0094,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 28
+C0095,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 32
+C0096,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 39
+C0097,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 43
+C0098,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 50
+C0099,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 54
+C0100,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 57
+C0101,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 69
+C0102,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 70
+C0103,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 75
+C0104,Dao de jing,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дао дэ цзин,Чжан 80
+C0105,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,1
+C0106,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,3
+C0107,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,7
+C0108,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,9
+C0109,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,12
+C0110,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,20
+C0111,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,25
+C0112,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,33
+C0113,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,38
+C0114,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,42
+C0115,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,48
+C0116,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,50
+C0117,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,52
+C0118,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,62
+C0119,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,63
+C0120,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,65
+C0121,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,69
+C0122,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,71
+C0123,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,74
+C0124,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,76
+C0125,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,81
+C0126,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,93
+C0127,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,103
+C0128,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,114
+C0129,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,122
+C0130,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,127
+C0131,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,130
+C0132,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,133
+C0133,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,145
+C0134,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,147
+C0135,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,154
+C0136,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,160
+C0137,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,166
+C0138,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,167
+C0139,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,170
+C0140,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,172
+C0141,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,176
+C0142,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,187
+C0143,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,189
+C0144,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,199
+C0145,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,201
+C0146,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,214
+C0147,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,223
+C0148,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,228
+C0149,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,239
+C0150,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,240
+C0151,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,246
+C0152,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,253
+C0153,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,256
+C0154,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,263
+C0155,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,270
+C0156,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,276
+C0157,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,279
+C0158,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,280
+C0159,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,290
+C0160,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,291
+C0161,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,308
+C0162,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,316
+C0163,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,321
+C0164,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,326
+C0165,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,329
+C0166,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,338
+C0167,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,344
+C0168,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,347
+C0169,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,349
+C0170,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,361
+C0171,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,369
+C0172,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,374
+C0173,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,379
+C0174,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,389
+C0175,Dhammapada,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0176,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,406
+C0177,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,421
+C0178,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,13
+C0179,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,29
+C0180,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,46
+C0181,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,53
+C0182,Dhammapada,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0183,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,66
+C0184,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,81
+C0185,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,99
+C0186,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,104
+C0187,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,109
+C0188,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,123
+C0189,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,135
+C0190,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,152
+C0191,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,163
+C0192,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,178
+C0193,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,185
+C0194,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,205
+C0195,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,211
+C0196,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,224
+C0197,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,231
+C0198,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,252
+C0199,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,271
+C0200,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,281
+C0201,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,288
+C0202,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,292
+C0203,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,297
+C0204,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,305
+C0205,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,333
+C0206,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,359
+C0207,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,385
+C0208,Dhammapada,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Дхаммапада,411
+C0209,Dhammapada,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Дхаммапада,419
+C0210,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дхамма-чакка-паваттана сутта — СН 56.11,Две крайности и срединный путь
+C0211,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дхамма-чакка-паваттана сутта — СН 56.11,Страдание как структура опыта
+C0212,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дхамма-чакка-паваттана сутта — СН 56.11,Источник страдания
+C0213,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дхамма-чакка-паваттана сутта — СН 56.11,Четыре истины требуют разных действий
+C0214,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Анатта-лаккхана сутта — СН 22.59,"Если бы тело было полностью «я», им можно было бы распоряжаться"
+C0215,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Анатта-лаккхана сутта — СН 22.59,То же исследование пяти совокупностей
+C0216,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Анатта-лаккхана сутта — СН 22.59,Непостоянное как основание не-присвоения
+C0217,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Сатипаттхана сутта — МН 10,«Есть тело»
+C0218,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Сатипаттхана сутта — МН 10,Обычные действия как объекты осознавания
+C0219,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Сатипаттхана сутта — МН 10,«И моё тело такого же рода»
+C0220,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Сатипаттхана сутта — МН 10,Ощущение распознаётся как ощущение
+C0221,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Сатипаттхана сутта — МН 10,Ум со страстью распознаётся как ум со страстью
+C0222,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Сатипаттхана сутта — МН 10,"Видеть не только состояние, но его возникновение и исчезновение"
+C0223,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Ахара сутта — СН 46.51,"Качество внимания меняет то, что возникает"
+C0224,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Саббасава сутта — МН 2,Не каждый вопрос полезно продолжать обдумывать
+C0225,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Саббасава сутта — МН 2,Семь разных способов работы
+C0226,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Саббасава сутта — МН 2,Использовать вещи по функции
+C0227,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Саббасава сутта — МН 2,"Что-то нужно выдерживать, чего-то избегать"
+C0228,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Мадхупиндика сутта — МН 18,От контакта к умственному разрастанию
+C0229,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Мадхупиндика сутта — МН 18,Удержание умственного разрастания связано со ссорой
+C0230,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Какачупама сутта — МН 21,Репутация спокойного человека проверяется неприятностью
+C0231,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Какачупама сутта — МН 21,Чужая речь имеет несколько независимых измерений
+C0232,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Какачупама сутта — МН 21,Не позволять чужому воздействию полностью определять свой ответ
+C0233,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Алагаддупама сутта — МН 22,Учение можно схватить неправильно
+C0234,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Алагаддупама сутта — МН 22,Если смысл не понят
+C0235,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Алагаддупама сутта — МН 22,"Плот нужен для переправы, а не для ношения"
+C0236,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чула Малункйовада сутта — МН 63,Требование получить ответы прежде практики
+C0237,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чула Малункйовада сутта — МН 63,Притча об отравленной стреле
+C0238,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чула Малункйовада сутта — МН 63,Что объяснено и что оставлено необъяснённым
+C0239,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Амбалаттхикарахуловада сутта — МН 61,Зеркало как образ рефлексии
+C0240,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Амбалаттхикарахуловада сутта — МН 61,Проверка действия до совершения
+C0241,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Амбалаттхикарахуловада сутта — МН 61,Проверка действия во время совершения
+C0242,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Амбалаттхикарахуловада сутта — МН 61,Проверка после действия
+C0243,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Калама сутта — АН 3.65,Не опираться на один авторитетный признак истинности
+C0244,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Калама сутта — АН 3.65,"Проверять алчность, ненависть и заблуждение по последствиям"
+C0245,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Калама сутта — АН 3.65,Не превращать Калама сутту в «верь только себе»
+C0246,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Салла сутта — СН 36.6,Первая и вторая стрелы
+C0247,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Салла сутта — СН 36.6,Бегство от боли к удовольствию
+C0248,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Салла сутта — СН 36.6,"Знать возникновение, прекращение, привлекательность и недостаток ощущения"
+C0249,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Каччаянаготта сутта — СН 12.15,Мир держится за «существует / не существует»
+C0250,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Каччаянаготта сутта — СН 12.15,Возникновение и прекращение вместо фиксированной сущности
+C0251,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Карания метта сутта — Сн 1.8,Не желать другому страдания из раздражения
+C0252,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Карания метта сутта — Сн 1.8,Расширение круга отношения
+C0253,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Бхаддекаратта сутта — МН 131,Не оживлять прошлое и не строить себя из будущего
+C0254,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Бхаддекаратта сутта — МН 131,«Пробуждать прошлое» означает лелеять в нём присвоение
+C0255,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Бхаддекаратта сутта — МН 131,Будущие ожидания как желаемая версия себя
+C0256,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Бахия сутта — Уд 1.10,«В видимом
+C0257,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Сона сутта — АН 6.55,Слишком сильное усилие превращается в неугомонность
+C0258,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Сона сутта — АН 6.55,Неудача при большом старании не обязательно означает неверность пути
+C0259,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дведха-витакка сутта — МН 19,**МН 19 Дведха-витакка**
+C0260,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Витаккасантхана сутта — МН 20,**МН 20 Витаккасантхана**
+C0261,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тхана сутта — АН 5.57,**АН 5.57 Упаджджхаттхана**
+C0262,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Сигаловада сутта — ДН 31,**ДН 31 Сигаловада**
+C0263,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Дханья сутта — Сн 1.2,**Сн 1.2 Дхания**
+C0264,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Салла сутта — Сн 3.8,**Сн 3.8 Салла**
+C0265,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Пасура сутта — Сн 4.8,**Сн 4.8 Пасура / корпус Аттхакавагги**
+C0266,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Патхама-апариджана сутта — СН 35.26,**СН 35.26**
+C0267,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Аниччата сутта — СН 22.45,**СН 22.45**
+C0268,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Джарамарана сутта — СН 3.3,**СН 3.3 Джарамарана**
+C0269,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Мангала сутта — Сн 2.4,**Махамангала сутта Сн 2.4**
+C0270,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Метта сутта — АН 11.16,**АН 11.16 Метта**
+C0271,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Бахия сутта — Уд 1.10,"**Уд 1.10, финал**"
+C0272,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Какачупама сутта — МН 21,"**МН 21, история Ведехики**"
+C0273,Early Pali Suttas,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Алагаддупама сутта — МН 22,"**МН 22, шесть позиций воззрения**"
+C0274,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.1
+C0275,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.1
+C0276,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,I.2
+C0277,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.2
+C0278,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,I.4
+C0279,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.6
+C0280,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.7
+C0281,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,I.11
+C0282,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.12
+C0283,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.15
+C0284,Epictetus — Discourses,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Беседы,II.25
+C0285,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,I.18
+C0286,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.19
+C0287,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.20
+C0288,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.22
+C0289,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,I.24
+C0290,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.25
+C0291,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.26
+C0292,Epictetus — Discourses,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Беседы,I.28
+C0293,Epictetus — Discourses,HISTORICAL_GAP,NO,,,
+C0294,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.28
+C0295,Epictetus — Discourses,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Беседы,I.25
+C0296,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.1
+C0297,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,II.2
+C0298,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.5
+C0299,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.5
+C0300,Epictetus — Discourses,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Беседы,II.5
+C0301,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.8
+C0302,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.10
+C0303,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.11
+C0304,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.14
+C0305,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.15
+C0306,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.16
+C0307,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.17
+C0308,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.18
+C0309,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.18
+C0310,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.19
+C0311,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.21
+C0312,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,II.22
+C0313,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.23
+C0314,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.26
+C0315,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,III.1
+C0316,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,III.2
+C0317,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,III.3
+C0318,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,III.5
+C0319,Epictetus — Discourses,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Беседы,II.5
+C0320,Epictetus — Discourses,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Беседы,III.18
+C0321,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,III.10
+C0322,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,III.12
+C0323,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,III.13
+C0324,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,III.15
+C0325,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,III.16
+C0326,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,III.18
+C0327,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,III.20
+C0328,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,III.22
+C0329,Epictetus — Discourses,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Беседы,II.16
+C0330,Epictetus — Discourses,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Беседы,II.16
+C0331,Epictetus — Discourses,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Беседы,II.10
+C0332,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,III.25
+C0333,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,IV.1
+C0334,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,IV.1
+C0335,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,IV.1
+C0336,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,IV.2
+C0337,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,IV.3
+C0338,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,IV.4
+C0339,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,IV.4
+C0340,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,IV.5
+C0341,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,IV.6
+C0342,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,IV.7
+C0343,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,IV.8
+C0344,Epictetus — Discourses,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Беседы,III.12
+C0345,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,IV.10
+C0346,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,IV.12
+C0347,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,IV.13
+C0348,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,I.3
+C0349,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.5
+C0350,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,I.8
+C0351,Epictetus — Discourses,HISTORICAL_GAP,NO,,,
+C0352,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,I.10
+C0353,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.13–14
+C0354,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.16
+C0355,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,I.21
+C0356,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.23
+C0357,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,I.30
+C0358,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.3
+C0359,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,II.4
+C0360,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,II.9
+C0361,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.12
+C0362,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,II.13
+C0363,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,II.20
+C0364,Epictetus — Discourses,PRESENT_REJECTED,NO,REJECTED_MOVE_SOURCE_MISMATCH,Беседы,II.24
+C0365,Epictetus — Discourses,PRESENT_REJECTED,NO,REJECTED_MOVE_SOURCE_MISMATCH,Беседы,III.4
+C0366,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,III.6
+C0367,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,III.9
+C0368,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,III.11
+C0369,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,III.14
+C0370,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,III.17
+C0371,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,III.19
+C0372,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,III.21
+C0373,Epictetus — Discourses,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Беседы,III.26
+C0374,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,IV.11
+C0375,Epictetus — Discourses,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Беседы,IV.13
+C0376,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§1
+C0377,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§1
+C0378,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Энхиридион / Руководство,§2
+C0379,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§3
+C0380,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§4
+C0381,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§5
+C0382,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§5
+C0383,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§6
+C0384,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§7
+C0385,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§8
+C0386,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Энхиридион / Руководство,§9
+C0387,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§10
+C0388,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§11
+C0389,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§12
+C0390,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§13
+C0391,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§14
+C0392,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Энхиридион / Руководство,§15
+C0393,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Энхиридион / Руководство,§16
+C0394,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Энхиридион / Руководство,§17
+C0395,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§18
+C0396,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Энхиридион / Руководство,§19
+C0397,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Энхиридион / Руководство,§20
+C0398,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Энхиридион / Руководство,§21
+C0399,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Энхиридион / Руководство,§22
+C0400,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§23
+C0401,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§24
+C0402,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§25
+C0403,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§26
+C0404,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§28
+C0405,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§29
+C0406,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§30
+C0407,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§31
+C0408,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§32
+C0409,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§33
+C0410,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§34
+C0411,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§35
+C0412,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§37
+C0413,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§38
+C0414,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§39
+C0415,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§42
+C0416,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§43
+C0417,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§44
+C0418,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§45
+C0419,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§46
+C0420,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§47
+C0421,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§48
+C0422,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§49
+C0423,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§50
+C0424,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§51
+C0425,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§§52–53
+C0426,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§12
+C0427,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§18
+C0428,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Энхиридион / Руководство,§24
+C0429,Epictetus — Enchiridion,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0430,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§33
+C0431,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Энхиридион / Руководство,§36
+C0432,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Энхиридион / Руководство,§40
+C0433,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Энхиридион / Руководство,§41
+C0434,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Энхиридион / Руководство,§51
+C0435,Epictetus — Enchiridion,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Энхиридион / Руководство,§53
+C0436,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§122
+C0437,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§§123–124
+C0438,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§§124–125
+C0439,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§125
+C0440,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§125
+C0441,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§§126–127
+C0442,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§127
+C0443,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§§127–128
+C0444,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§§128–130
+C0445,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§§129–130
+C0446,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§130
+C0447,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§§130–131
+C0448,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§131
+C0449,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§§131–132
+C0450,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§132
+C0451,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§132
+C0452,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§§133–134
+C0453,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§§134–135
+C0454,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§135
+C0455,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§§123–124
+C0456,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§126
+C0457,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§127
+C0458,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§131
+C0459,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§133
+C0460,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§§133–134
+C0461,Epicurus — Letter to Menoeceus,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Письмо к Менекею,§135
+C0462,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,I
+C0463,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,II
+C0464,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,III
+C0465,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,IV
+C0466,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,V
+C0467,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,VI
+C0468,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,VII
+C0469,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,VIII
+C0470,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,IX
+C0471,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,X
+C0472,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XI
+C0473,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XII
+C0474,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XIII
+C0475,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XIV
+C0476,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XV
+C0477,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XVI
+C0478,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XVII
+C0479,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XVIII
+C0480,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XIX
+C0481,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XX
+C0482,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXI
+C0483,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXII
+C0484,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXIII
+C0485,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXIV
+C0486,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXV
+C0487,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXVI
+C0488,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXVII
+C0489,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXVIII
+C0490,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXIX
+C0491,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXX
+C0492,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXXI
+C0493,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXXIII
+C0494,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXXIV
+C0495,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXXV
+C0496,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXXVI
+C0497,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXXVII
+C0498,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXXVIII
+C0499,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXXIX
+C0500,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XL
+C0501,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,I
+C0502,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,IV
+C0503,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,VI–VII
+C0504,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,IX–X
+C0505,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XI–XIII
+C0506,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XVI
+C0507,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XVIII–XX
+C0508,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXXII
+C0509,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXXIV–XXXV
+C0510,Epicurus — Principal Doctrines,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Главные мысли,XXXIX–XL
+C0511,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 5:3–10
+C0512,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 5:23–24
+C0513,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 5:28
+C0514,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 5:39
+C0515,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 5:44
+C0516,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 6:1
+C0517,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,"Мф 6:21,24"
+C0518,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,"Мф 6:27,34"
+C0519,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 7:3–5
+C0520,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,"Мф 7:24,26"
+C0521,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 10:37–39
+C0522,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 11:28–30
+C0523,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 16:26
+C0524,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 18:4
+C0525,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 18:33
+C0526,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 19:21–22
+C0527,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 20:13–15
+C0528,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 20:26–27
+C0529,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 22:37–39
+C0530,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 22:21
+C0531,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мк 7:20–23
+C0532,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мк 9:35
+C0533,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мк 9:40
+C0534,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мк 12:43–44
+C0535,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Лк 10:20
+C0536,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Лк 10:36–37
+C0537,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Лк 10:41–42
+C0538,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Лк 12:20
+C0539,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Лк 15:31–32
+C0540,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Лк 18:14
+C0541,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Ин 8:7
+C0542,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,"Ин 8:34,36"
+C0543,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Ин 9:3
+C0544,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Ин 13:14–15
+C0545,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Ин 15:4–5
+C0546,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Ин 21:21–22
+C0547,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 7:7
+C0548,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 7:13–14
+C0549,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Мф 19:23–24
+C0550,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Лк 12:25–26
+C0551,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Ин 12:24–25
+C0552,Gospels,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евангелия,Ин 15:12–13
+C0553,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 1:20–22
+C0554,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 2:9–10
+C0555,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 3:1–3
+C0556,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 4:7–9
+C0557,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,"Иов 6:14, 21, 24–25"
+C0558,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 7:17–18
+C0559,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 9:32–33
+C0560,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,"Иов 10:18, 20–21"
+C0561,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 12:4
+C0562,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 13:13–15
+C0563,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 14:1–2
+C0564,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 19:13–14
+C0565,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 21:7–9
+C0566,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 23:3–9
+C0567,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,"Иов 28:12,20,23"
+C0568,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 29:11; 30:1
+C0569,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 31:5–6
+C0570,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 32:6–9
+C0571,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 38:2–4
+C0572,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 38:39–41
+C0573,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 39:32–35
+C0574,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 40:3–9
+C0575,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 42:2–6
+C0576,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 42:7
+C0577,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 1:2–4
+C0578,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,"Еккл 1:15, 17–18"
+C0579,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 2:9–10
+C0580,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,"Еккл 2:13–14, 16"
+C0581,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 2:20–21
+C0582,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 3:1–2
+C0583,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 3:11
+C0584,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 3:16
+C0585,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 4:1
+C0586,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 4:4–6
+C0587,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 4:8–10
+C0588,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 4:15–16
+C0589,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,"Еккл 5:9–10, 12–14"
+C0590,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 5:17–18
+C0591,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 6:2
+C0592,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 7:1–2
+C0593,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 7:10
+C0594,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 7:13–14
+C0595,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 7:15–18
+C0596,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 7:20–21
+C0597,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 8:6–8
+C0598,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 8:14
+C0599,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 9:1–3
+C0600,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 9:10
+C0601,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 9:11–12
+C0602,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 9:13–16
+C0603,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 10:1
+C0604,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 11:4–6
+C0605,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 11:7–10
+C0606,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 2:11–13
+C0607,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 8:3–7
+C0608,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 16:2–5
+C0609,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 16:18–21
+C0610,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 27:5–6
+C0611,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 33:12–14
+C0612,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Иов 40:20–23
+C0613,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 3:12–13
+C0614,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 5:1–4
+C0615,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 7:5–6
+C0616,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 7:20–21
+C0617,Job / Ecclesiastes,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Книга Иова и Экклезиаст,Еккл 10:10
+C0618,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,1.1
+C0619,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,1.4
+C0620,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,1.8
+C0621,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,1.14
+C0622,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,1.16
+C0623,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,2.4
+C0624,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,2.10
+C0625,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,2.11
+C0626,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,2.15
+C0627,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,2.17
+C0628,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,2.18
+C0629,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,2.22
+C0630,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,3.3
+C0631,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,4.2
+C0632,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,4.3–4
+C0633,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,4.5
+C0634,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,4.14
+C0635,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,4.17
+C0636,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,4.18
+C0637,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,4.24
+C0638,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,5.9
+C0639,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,5.11
+C0640,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,5.25
+C0641,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,6.10
+C0642,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,6.18
+C0643,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,6.28
+C0644,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,7.3
+C0645,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,7.8
+C0646,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,7.23
+C0647,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,7.35
+C0648,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,8.13
+C0649,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,9.4
+C0650,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,9.22
+C0651,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,9.25
+C0652,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,11.21
+C0653,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,12.1
+C0654,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,12.2
+C0655,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,12.16
+C0656,Lunyu,PRESENT_AMBIGUOUS,NO,AMBIGUOUS,Лунь юй,12.10
+C0657,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,13.3
+C0658,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,13.21
+C0659,Lunyu,PRESENT_VERIFIED,YES,FIXED_OCR_VERIFIED,Лунь юй,13.23
+C0660,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,13.24
+C0661,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,14.25
+C0662,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,14.27
+C0663,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,14.30
+C0664,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,14.35
+C0665,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,15.20
+C0666,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0667,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,15.23
+C0668,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,15.28
+C0669,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,15.29
+C0670,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,15.35
+C0671,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,15.38
+C0672,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,16.4
+C0673,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,16.9
+C0674,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,17.2
+C0675,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,17.8
+C0676,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,17.13
+C0677,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,19.5
+C0678,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0679,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0680,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0681,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0682,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0683,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0684,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0685,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0686,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0687,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0688,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0689,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0690,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0691,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0692,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0693,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0694,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0695,Lunyu,PRESENT_VERIFIED,YES,VERIFIED_CLEAN,Лунь юй,13.18
+C0696,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0697,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0698,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0699,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0700,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0701,Lunyu,PRESENT_VERIFIED,YES,LOCATOR_CORRECTED,Лунь юй,18.7
+C0702,Lunyu,UNRESOLVED_NOT_IN_FINAL_EVIDENCE,NO,,,
+C0703,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,Семь мудрецов: Фалес 18–20; Питтак 1
+C0704,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,Семь мудрецов: Питтак 4
+C0705,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Анаксимандр, фр. 1"
+C0706,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Пифагор, 8b"
+C0707,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Пифагор, 8b / Антисфен-сократик, фр. 51"
+C0708,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Ксенофан, фр. 14–16"
+C0709,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Ксенофан, фр. 15"
+C0710,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Ксенофан, фр. 34"
+C0711,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Ксенофан, фр. 38"
+C0712,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 1"
+C0713,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 2–4"
+C0714,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 15 / B101"
+C0715,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 16 / B40"
+C0716,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 23e–f / B116, B112"
+C0717,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 24 / B89"
+C0718,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 27 / B51"
+C0719,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 28b / B8"
+C0720,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 29 / B53"
+C0721,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 33 / B60"
+C0722,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 42 / B126 (candidate master: 41/B88; locator corrected to supporting fragment)"
+C0723,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 44 / B111"
+C0724,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, речные фрагменты / B12, B49a, B91"
+C0725,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 67 / B45"
+C0726,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 70 / B85"
+C0727,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 71 / B110"
+C0728,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 94 / B119"
+C0729,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Гераклит, фр. 95 / B29"
+C0730,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Алкмеон, фр. 1a"
+C0731,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Алкмеон, фр. 2"
+C0732,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Парменид, фр. 1.28–30"
+C0733,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Парменид, фр. 2–3"
+C0734,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Парменид, фр. 3 / 8.34–36"
+C0735,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Парменид, фр. 8.50–61"
+C0736,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Зенон, аргументы против множества"
+C0737,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Зенон, «Ахиллес» / дихотомия"
+C0738,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Эмпедокл, фр. 31 / B17"
+C0739,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Эмпедокл, фр. 31 / B17"
+C0740,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Эмпедокл, фр. 522 / B109"
+C0741,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Эмпедокл, «Очищения», фр. 115"
+C0742,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Анаксагор, B11–12"
+C0743,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Анаксагор, B12"
+C0744,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Анаксагор, B21"
+C0745,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"А 40 / Цицерон, О государстве I.16.25"
+C0746,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Диоген из Аполлонии, фр. 1"
+C0747,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"«О древней медицине», 1"
+C0748,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"А 9 / Платон, Теэтет 174a"
+C0749,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"А 19 / Апулей, Флориды 18"
+C0750,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,вводная реконструкция учения / А 9
+C0751,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"свидетельство о метемпсихозе / Ксенофан, фр. 7"
+C0752,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"«Золотые стихи», 40–44"
+C0753,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,фр. 11
+C0754,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,фр. 23
+C0755,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,фр. 25 / B10
+C0756,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,фр. 32 / B59
+C0757,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,фр. 44 / B111
+C0758,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,фр. 8 / B123
+C0759,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,фр. 9 / B54
+C0760,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"фр. 68, 69 / B118, B117"
+C0761,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,фр. 95 / B29
+C0762,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Эпихарм, гномические фрагменты / B2, B4"
+C0763,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,фр. 4 / Aëtius V.30.1
+C0764,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Парменид, фр. 1, пролог"
+C0765,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Парменид, фр. 4"
+C0766,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"«Стрела» / Аристотель, Физика Z 9, 239b30"
+C0767,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,фр. 7
+C0768,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Эмпедокл, фр. 17 / B17"
+C0769,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"«Очищения», фр. 128–136"
+C0770,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,фр. B2
+C0771,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Архит, фр. 3 / B3"
+C0772,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,Пифагорейская традиция: музыка и воспитание нрава
+C0773,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,B1
+C0774,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,А 1 §12; А 72
+C0775,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Диоген из Аполлонии, фр. 5"
+C0776,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"Аристотель, Метафизика Г 5, 1010a"
+C0777,Presocratics / Lebedev,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Фрагменты ранних греческих философов,"«О диете», I"
+C0778,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,2:44
+C0779,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,2:156
+C0780,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,2:216
+C0781,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,2:256
+C0782,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,2:286
+C0783,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,3:134–135
+C0784,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,3:159
+C0785,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,3:185
+C0786,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,4:32
+C0787,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,4:135
+C0788,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,5:8
+C0789,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,5:27–31
+C0790,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,5:48
+C0791,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,6:152
+C0792,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,7:172–176
+C0793,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,7:188
+C0794,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,12:86–87
+C0795,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,12:92
+C0796,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,13:11
+C0797,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,16:125
+C0798,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,17:23–39
+C0799,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,17:36–37
+C0800,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,18:60–82
+C0801,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,18:32–44
+C0802,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,20:25–26
+C0803,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,20:120–123
+C0804,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,23:96
+C0805,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,25:63–76
+C0806,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,28:78–79
+C0807,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,29:8
+C0808,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,30:21–22
+C0809,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,30:54
+C0810,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,31:17–18
+C0811,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,39:49–53
+C0812,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,41:34
+C0813,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,42:37–38
+C0814,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,49:6
+C0815,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,49:11
+C0816,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,53:32
+C0817,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,57:23
+C0818,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,59:18
+C0819,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,60:7–9
+C0820,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,64:14–16
+C0821,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,65:7
+C0822,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,2:62
+C0823,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,2:177
+C0824,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,2:261–274
+C0825,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,3:26–27
+C0826,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,3:190–191
+C0827,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,4:128–130
+C0828,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,7:31–32
+C0829,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,10:12
+C0830,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,16:90–92
+C0831,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,17:29–30
+C0832,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,24:39–40
+C0833,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,28:33–35
+C0834,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,33:5
+C0835,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,42:30
+C0836,Quran / Krachkovsky,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Коран,94:5–8
+C0837,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Апология Сократа,20d–23b
+C0838,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Апология Сократа,21b–23c
+C0839,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Апология Сократа,24b–28a
+C0840,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Апология Сократа,28b–29b
+C0841,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Апология Сократа,29d–30b
+C0842,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Апология Сократа,30e–31c
+C0843,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Апология Сократа,31c–32e
+C0844,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Апология Сократа,35b–38a
+C0845,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Апология Сократа,38a
+C0846,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Апология Сократа,39a–b
+C0847,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Апология Сократа,40c–42a
+C0848,Socrates / Plato,USER_SCOPE_EXCLUDED_CRITON,NO,,,
+C0849,Socrates / Plato,USER_SCOPE_EXCLUDED_CRITON,NO,,,
+C0850,Socrates / Plato,USER_SCOPE_EXCLUDED_CRITON,NO,,,
+C0851,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евтифрон,5d–6e
+C0852,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Евтифрон,10a–11b
+C0853,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0854,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0855,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0856,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0857,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Протагор,319a–328d
+C0858,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Протагор,351b–357e
+C0859,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Менон,70a–80d
+C0860,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Менон,80a–86c
+C0861,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Менон,82b–85b
+C0862,Socrates / Plato,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Менон,97a–98a
+C0863,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0864,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0865,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0866,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0867,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0868,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0869,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0870,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0871,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0872,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0873,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0874,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0875,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0876,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0877,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0878,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0879,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0880,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0881,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0882,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0883,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0884,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0885,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0886,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0887,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0888,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0889,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0890,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0891,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0892,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0893,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0894,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0895,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0896,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0897,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0898,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0899,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0900,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0901,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0902,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0903,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0904,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0905,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0906,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0907,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0908,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0909,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0910,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0911,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0912,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0913,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0914,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0915,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0916,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0917,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0918,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0919,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0920,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0921,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0922,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0923,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0924,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0925,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0926,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0927,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0928,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0929,Socrates / Plato,USER_SCOPE_EXCLUDED_PLATO,NO,,,
+C0930,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 3:1–13
+C0931,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 4:3–16
+C0932,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 4:23–24
+C0933,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 12:1–4
+C0934,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 13:5–12
+C0935,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 16:1–13
+C0936,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 18:17–33
+C0937,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 22:1–14
+C0938,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 25:29–34
+C0939,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 32:3–32
+C0940,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 33:1–11
+C0941,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 37:2–11
+C0942,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 39:6–12
+C0943,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 45:1–15
+C0944,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 50:15–21
+C0945,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Исх 3:1–15
+C0946,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Исх 4:1–17
+C0947,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Исх 5:20–6:13
+C0948,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,"Исх 8:15, 32"
+C0949,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Исх 14:10–14
+C0950,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,"Исх 16:1–5, 13–21"
+C0951,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Исх 18:13–26
+C0952,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Исх 20:1–17
+C0953,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Исх 32:1–8
+C0954,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Исх 32:21–24
+C0955,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,"Лев 19:9–10, 33–34"
+C0956,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Лев 19:15–18
+C0957,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Чис 11:10–17
+C0958,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Чис 13:27–14:9
+C0959,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Чис 14:39–45
+C0960,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Чис 20:1–13
+C0961,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Втор 6:4–12
+C0962,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Втор 8:2–18
+C0963,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Втор 10:12–19
+C0964,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Втор 15:1–11
+C0965,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Втор 24:17–22
+C0966,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Втор 30:11–20
+C0967,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 1:26–31
+C0968,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 11:1–9
+C0969,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 27:1–40
+C0970,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 29:15–30
+C0971,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Быт 41:33–40
+C0972,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Исх 2:11–17
+C0973,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Исх 33:12–17
+C0974,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Лев 25:8–17
+C0975,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Чис 16
+C0976,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Втор 5:12–15
+C0977,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Втор 17:14–20
+C0978,Torah,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тора / Пятикнижие,Втор 21:15–17
+C0979,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_FROM_USER_PROVIDED_FULL_TEXT,Брихадараньяка-упанишада,I.4.1–10
+C0980,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_FROM_USER_PROVIDED_FULL_TEXT,Брихадараньяка-упанишада,I.4.10
+C0981,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_FROM_USER_PROVIDED_FULL_TEXT,Брихадараньяка-упанишада,II.4.5 / IV.5.6
+C0982,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_FROM_USER_PROVIDED_FULL_TEXT,Брихадараньяка-упанишада,II.4.12–14
+C0983,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_FROM_USER_PROVIDED_FULL_TEXT,Брихадараньяка-упанишада,III.4.1–2
+C0984,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_FROM_USER_PROVIDED_FULL_TEXT,Брихадараньяка-упанишада,III.5.1
+C0985,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_FROM_USER_PROVIDED_FULL_TEXT,Брихадараньяка-упанишада,III.7.3–23
+C0986,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_FROM_USER_PROVIDED_FULL_TEXT,Брихадараньяка-упанишада,III.8.8–11
+C0987,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_FROM_USER_PROVIDED_FULL_TEXT,Брихадараньяка-упанишада,IV.3.7–22
+C0988,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_FROM_USER_PROVIDED_FULL_TEXT,Брихадараньяка-упанишада,IV.3.21–22
+C0989,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_FROM_USER_PROVIDED_FULL_TEXT,Брихадараньяка-упанишада,IV.4.5
+C0990,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_FROM_USER_PROVIDED_FULL_TEXT,Брихадараньяка-упанишада,IV.4.6–7
+C0991,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_FROM_USER_PROVIDED_FULL_TEXT,Брихадараньяка-упанишада,IV.4.15
+C0992,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_FROM_USER_PROVIDED_FULL_TEXT,Брихадараньяка-упанишада,V.2.1–3
+C0993,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чхандогья-упанишада,III.14.1
+C0994,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чхандогья-упанишада,V.11
+C0995,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чхандогья-упанишада,VI.1.3–6
+C0996,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чхандогья-упанишада,VI.8–16
+C0997,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чхандогья-упанишада,VI.12
+C0998,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чхандогья-упанишада,VI.13
+C0999,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чхандогья-упанишада,VI.14
+C1000,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чхандогья-упанишада,VII.1
+C1001,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чхандогья-упанишада,VII.23–24
+C1002,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чхандогья-упанишада,VIII.7–12
+C1003,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Айтарея-упанишада,I.3
+C1004,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Айтарея-упанишада,III.1–3
+C1005,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Каушитаки-упанишада,II.1
+C1006,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Каушитаки-упанишада,III.8
+C1007,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Кена-упанишада,I.1–2
+C1008,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Кена-упанишада,I.3–9
+C1009,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Кена-упанишада,II.1–3
+C1010,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Кена-упанишада,III–IV
+C1011,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тайттирия-упанишада,I.11
+C1012,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тайттирия-упанишада,II.1–5
+C1013,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тайттирия-упанишада,II.7–8
+C1014,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тайттирия-упанишада,III.1–6
+C1015,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Катха-упанишада,I.1.20–29
+C1016,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Катха-упанишада,I.2.1–2
+C1017,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Катха-упанишада,I.2.3–5
+C1018,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Катха-упанишада,I.2.18–22
+C1019,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Катха-упанишада,I.3.3–9
+C1020,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Катха-упанишада,II.1.1–2
+C1021,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Катха-упанишада,II.3.14–15
+C1022,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Шветашватара-упанишада,I.1–2
+C1023,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Шветашватара-упанишада,I.3–6
+C1024,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Шветашватара-упанишада,IV.6–7
+C1025,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Майтри-упанишада,I.2–4
+C1026,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Майтри-упанишада,VI.34
+C1027,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Майтри-упанишада,VI.34–35
+C1028,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Иша-упанишада,1
+C1029,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Иша-упанишада,4–5
+C1030,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Иша-упанишада,6–7
+C1031,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Иша-упанишада,9–11
+C1032,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Мундака-упанишада,I.1.4–5
+C1033,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Мундака-упанишада,I.2.7–12
+C1034,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Мундака-упанишада,II.2.3–4
+C1035,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Мундака-упанишада,III.1.1–2
+C1036,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Мундака-упанишада,III.1.5–6
+C1037,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_PDF_LITERAL,Прашна-упанишада,I.1–2
+C1038,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_PDF_LITERAL,Прашна-упанишада,II.1–4
+C1039,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_PDF_LITERAL,Прашна-упанишада,IV.1–9
+C1040,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_PDF_LITERAL,Прашна-упанишада,VI.1–6
+C1041,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Мандукья-упанишада,1–2
+C1042,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Мандукья-упанишада,3–6
+C1043,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Мандукья-упанишада,7
+C1044,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Брихадараньяка-упанишада,I.3
+C1045,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Брихадараньяка-упанишада,I.5
+C1046,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Брихадараньяка-упанишада,II.1
+C1047,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Брихадараньяка-упанишада,III.9
+C1048,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Брихадараньяка-упанишада,IV.1
+C1049,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Брихадараньяка-упанишада,IV.4.22–23
+C1050,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чхандогья-упанишада,IV.4–9
+C1051,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чхандогья-упанишада,V.3–10
+C1052,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чхандогья-упанишада,VII.2–26
+C1053,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Чхандогья-упанишада,VIII.1
+C1054,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Айтарея-упанишада,II
+C1055,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Каушитаки-упанишада,I
+C1056,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Кена-упанишада,III.1–12
+C1057,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тайттирия-упанишада,I.9
+C1058,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Тайттирия-упанишада,II.4
+C1059,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Катха-упанишада,I.1.1–19
+C1060,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Катха-упанишада,I.2.23
+C1061,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Катха-упанишада,II.2.1–2
+C1062,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Шветашватара-упанишада,II.8–15
+C1063,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Шветашватара-упанишада,III.8–11
+C1064,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Шветашватара-упанишада,VI.23
+C1065,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Майтри-упанишада,II.1–5
+C1066,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Майтри-упанишада,III–IV
+C1067,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Иша-упанишада,2
+C1068,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Иша-упанишада,12–14
+C1069,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Мундака-упанишада,I.1.6
+C1070,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Мундака-упанишада,II.1
+C1071,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Прашна-упанишада,III
+C1072,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Прашна-упанишада,V
+C1073,Upanishads / Syrkin,PRESENT_VERIFIED,YES,VERIFIED_WEB_LITERAL,Мандукья-упанишада,8–12
+C1074,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1075,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1076,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1077,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1078,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1079,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1080,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1081,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1082,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1083,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1084,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1085,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1086,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1087,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1088,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1089,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1090,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1091,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1092,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1093,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1094,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1095,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1096,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1097,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1098,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1099,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1100,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1101,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1102,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1103,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1104,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1105,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1106,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1107,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1108,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1109,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1110,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1111,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1112,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1113,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1114,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1115,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1116,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1117,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1118,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1119,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1120,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1121,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1122,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1123,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1124,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1125,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1126,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1127,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1128,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1129,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1130,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1131,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1132,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1133,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1134,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1135,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1136,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1137,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1138,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1139,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
+C1140,Zhuangzi,OUT_OF_FINAL_SCOPE_UNPROCESSED,NO,,,
