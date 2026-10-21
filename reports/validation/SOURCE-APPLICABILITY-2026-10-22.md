@@ -14,13 +14,17 @@ Base: `codex/mvp-quality-baseline-2026-10-22` @ 6519475. One bounded pass; no li
   to results) — the rule must not reject them for a different setting.
 
 ## Change (minimal)
-- Selection prompt `composition-prompt/0.11.0`: applicability is checked by the source's SUBJECT, AGENT and SENSE, not
+- Selection prompt `composition-prompt/0.12.0`: applicability is checked by the source's SUBJECT, AGENT and SENSE, not
   by shared words; new considered decisions `subject_shift`, `generic_only`; a source's value is not a verdict; one
   strong card is a full answer on the final corpus; an empty selection is allowed when nothing applies.
 - Final selection schema: `minItems` 0, required internal `fit` ("the source is about X of Y; the same in the
   question: Z"); empty `fit` is sent back for repair. Legacy schema/behaviour unchanged.
-- Empty final selection raises `NoApplicablePerspective` (no retry, no extra model call); the flow shows an honest
-  message through the existing error path.
+- The prompt's count is consistent throughout: without `corpus_version` in the package 2 or 3 (legacy, unchanged);
+  with it (final corpus) 1, 2 or 3, or none when nothing applies.
+- Empty final selection raises `NoApplicablePerspective` (no retry, no extra model call). The API returns
+  `no_fit: true` with «Не удалось подобрать подходящую перспективу к этому вопросу…»; the page stays on the result
+  screen with the existing «Изменить вопрос» and the other questions from the story (story and feelings kept). Technical
+  failures keep the ordinary «Попробовать ещё раз».
 
 ## Unchanged
 Corpus, embeddings, cache, pool size, author exclusion (735 of 967), verified quotes, language policy, themes, design,
@@ -28,4 +32,5 @@ landing, model, writer and independent grounding validator. No author blacklist,
 
 ## Limits
 Tests are contract/structure checks with invented examples; they do not prove the quality of live model choices.
-The prompt change needs a separate live run on the stored private cases. The `fit` field is checked only for presence.
+The prompt change needs a separate live run on the stored private cases. The `fit` field is checked only for presence. The no-fit
+screen is covered by an HTTP scenario test and page-source checks, not by a browser run.

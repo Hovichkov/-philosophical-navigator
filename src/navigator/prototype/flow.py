@@ -43,8 +43,8 @@ USER_ERROR_INTERPRET = ("Не получилось сформулировать 
 USER_ERROR_COMPOSE_CHECK = ("Не получилось подготовить ясный ответ: проверки текста не прошли. Попробуйте ещё раз — "
                             "иногда со второй попытки получается.")
 # 2026-10-22: the selector honestly found no applicable source — not a failure to retry blindly
-USER_ERROR_NO_FIT = ("В корпусе не нашлось источника, который говорит именно об этом вопросе. Можно изменить или "
-                     "уточнить формулировку вопроса — ваш текст сохранён.")
+USER_ERROR_NO_FIT = ("Не удалось подобрать подходящую перспективу к этому вопросу. Можно изменить вопрос — "
+                     "ваш рассказ и выбранные чувства сохранены.")
 USER_ERROR_BUSY = "Этот запрос уже обрабатывается. Дождитесь ответа, пожалуйста."
 MAX_EXPERIENCES = 3  # MVP: at most three feelings — the ones that matter most
 
@@ -121,9 +121,10 @@ class _Release:
 class FlowError(RuntimeError):
     """An error with a human-readable message for the UI."""
 
-    def __init__(self, user_message: str, detail: str = ""):
+    def __init__(self, user_message: str, detail: str = "", no_fit: bool = False):
         super().__init__(detail or user_message)
         self.user_message = user_message
+        self.no_fit = no_fit  # an honest empty selection: the page offers «Изменить вопрос», not a blind retry
 
 
 @dataclass
@@ -309,7 +310,8 @@ class Session:
         except Exception as exc:
             self._time("composition", t0, ok=False)
             self._fail("composition", exc)
-            raise FlowError(user_message_for(exc, "composition"), str(exc)) from exc
+            raise FlowError(user_message_for(exc, "composition"), str(exc),
+                            no_fit=type(exc).__name__ == "NoApplicablePerspective") from exc
         self._record_composition_timings(t0)
         leaked = {p.card_id for p in self.composition.perspectives} & excluded_ids_for(self.retrieval.corpus_version)
         if leaked:  # defence in depth; the contracts already forbid it

@@ -165,7 +165,8 @@ def make_handler(app: App):
                     return self._json(200, app.get(str(data.get("session_id", ""))).answer())
                 return self._json(404, {"error": "Not found"})
             except FlowError as exc:
-                return self._json(HTTPStatus.UNPROCESSABLE_ENTITY, {"error": exc.user_message})
+                return self._json(HTTPStatus.UNPROCESSABLE_ENTITY,
+                                  {"error": exc.user_message, **({"no_fit": True} if exc.no_fit else {})})
             except Exception:  # never leak a stack trace to the user — but never lose it for the developer
                 app.log_error(path, traceback.format_exc())
                 return self._json(HTTPStatus.INTERNAL_SERVER_ERROR, {"error": USER_ERROR})

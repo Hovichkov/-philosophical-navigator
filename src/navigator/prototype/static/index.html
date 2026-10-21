@@ -196,6 +196,8 @@ footer {border-top:1px solid var(--line);padding-top:16px;margin-top:38px;color:
         <div><span id="pending-text">Ищем философские перспективы…</span><small id="pending-sub"></small></div></div>
       <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
     </div>
+    <!-- 2026-10-22: an honest empty selection stays on this screen with «Изменить вопрос» (no blind retry) -->
+    <p class="lead" id="no-fit" hidden></p>
     <p class="lead" id="result-lead" hidden>На него можно посмотреть с нескольких сторон.</p>
     <div id="cards"></div>
     <!-- MVP flow: the other independent questions from the story stay one tap away -->
@@ -285,7 +287,11 @@ async function api(path, body) {
   let data = {};
   try { data = await res.json(); } catch (e) {}
   if (gen !== GEN) throw new Stale();
-  if (!res.ok) throw new Error(data.error || "Не получилось обработать запрос. Попробуйте ещё раз.");
+  if (!res.ok) {
+    const err = new Error(data.error || "Не получилось обработать запрос. Попробуйте ещё раз.");
+    err.noFit = data.no_fit === true;
+    throw err;
+  }
   return data;
 }
 async function exclusive(fn) {
@@ -467,7 +473,7 @@ function showPendingResult(question) {
   $("share-status").textContent = "";
   $("result-lead").hidden = true; $("copy").hidden = true; $("share").hidden = true;
   $("other-questions").hidden = true;
-  $("edit-q-link").hidden = true; $("edit-q-box").hidden = true;
+  $("edit-q-link").hidden = true; $("edit-q-box").hidden = true; $("no-fit").hidden = true;
   $("result-pending").hidden = false;
   show("s-result");
 }
@@ -485,8 +491,19 @@ async function answer(confirmedQuestion) {
     renderResult(data.confirmed_question || confirmedQuestion, data.perspectives || [], data.copy_text);
   } catch (e) {
     clearPending(); stopElapsed();
-    if (!(e instanceof Stale)) fail(e.message, () => exclusive(() => answer(confirmedQuestion)));
+    if (e instanceof Stale) return;
+    if (e.noFit) { showNoFit(e.message, confirmedQuestion); return; }
+    fail(e.message, () => exclusive(() => answer(confirmedQuestion)));
   }
+}
+
+// Nothing applicable was found: keep the question on screen and offer the existing «Изменить вопрос» and the other
+// questions from the story; the story and feelings stay in the session. No automatic retry.
+function showNoFit(message, question) {
+  $("result-pending").hidden = true;
+  $("no-fit").textContent = message; $("no-fit").hidden = false;
+  $("edit-q-link").hidden = false;
+  renderOtherQuestions(question);
 }
 
 // ---- result (M3.1: Title / Main Idea / Applied Insight / Reflection Question; «Подробнее» folds the rest)
@@ -579,8 +596,9 @@ $("edit-q-cancel").addEventListener("click", () => { $("edit-q-box").hidden = tr
 $("edit-q-save").addEventListener("click", () => {
   const text = $("edit-q-text").value.trim();
   if (!text) { $("edit-q-error").textContent = "Пожалуйста, напишите формулировку вопроса."; return; }
-  if (RESULT && text === RESULT.question) { $("edit-q-box").hidden = true; $("edit-q-link").hidden = false; return; }
-  state.editedFrom = RESULT ? RESULT.question : null;
+  const current = RESULT ? RESULT.question : $("confirmed").textContent;  // also after «nothing applicable»
+  if (text === current) { $("edit-q-box").hidden = true; $("edit-q-link").hidden = false; return; }
+  state.editedFrom = current;
   exclusive(() => editQuestion(text));
 });
 async function editQuestion(text) {
