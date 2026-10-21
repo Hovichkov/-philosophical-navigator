@@ -42,6 +42,9 @@ USER_ERROR_INTERPRET = ("Не получилось сформулировать 
                         "ситуацию немного иначе — ваш текст сохранён.")
 USER_ERROR_COMPOSE_CHECK = ("Не получилось подготовить ясный ответ: проверки текста не прошли. Попробуйте ещё раз — "
                             "иногда со второй попытки получается.")
+# 2026-10-22: the selector honestly found no applicable source — not a failure to retry blindly
+USER_ERROR_NO_FIT = ("В корпусе не нашлось источника, который говорит именно об этом вопросе. Можно изменить или "
+                     "уточнить формулировку вопроса — ваш текст сохранён.")
 USER_ERROR_BUSY = "Этот запрос уже обрабатывается. Дождитесь ответа, пожалуйста."
 MAX_EXPERIENCES = 3  # MVP: at most three feelings — the ones that matter most
 
@@ -56,6 +59,8 @@ def user_message_for(exc: Exception, stage: str) -> str:
         return USER_ERROR_MODEL
     if stage == "interpret":
         return USER_ERROR_INTERPRET
+    if type(exc).__name__ == "NoApplicablePerspective":
+        return USER_ERROR_NO_FIT
     if stage == "composition" and ("validation" in text or "could not be written" in text):
         return USER_ERROR_COMPOSE_CHECK
     return USER_ERROR_COMPOSITION if stage == "composition" else USER_ERROR

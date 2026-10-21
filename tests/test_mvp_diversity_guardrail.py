@@ -166,7 +166,7 @@ def test_legacy_selection_keeps_two_to_three_and_no_author_rule(final):
     pair = [{"card_id": c} for c in EPICTETUS]
     assert one_card_per_author(legacy_pkg, pair, by_id, resolve=False) == (pair, [])
     assert OUTPUT_SCHEMA["properties"]["perspectives"]["minItems"] == 2
-    assert FINAL_OUTPUT_SCHEMA["properties"]["perspectives"]["minItems"] == 1
+    assert FINAL_OUTPUT_SCHEMA["properties"]["perspectives"]["minItems"] == 0  # 2026-10-22: empty = honest «no fit»
 
 
 # ------------------------------------------------------------------ 4. candidate pool size (2026-10-09)
