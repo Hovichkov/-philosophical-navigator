@@ -277,7 +277,7 @@ def test_page_order_is_story_feelings_question_answer_and_has_no_dead_end():
     order = [page.index(f'id="{i}"') for i in ("s-story", "s-exp", "s-clarify", "s-choose", "s-result")]
     assert order == sorted(order)
     story = page[page.index('id="s-story"'):page.index("</section>", page.index('id="s-story"'))]
-    assert "Расскажите, что вас беспокоит." in story and "Постарайтесь описать ситуацию своими словами." in story
+    assert "С чего начнём?" in story and "Можно начать с нескольких предложений." in story
     for gone in ('id="s-topic"', 'id="s-diff"', 'id="s-confirm"', 'id="s-next"', 'id="reflection"',
                  "в разработке", "Следующий круг", "/api/reflect", "Правильно ли мы поняли"):
         assert gone not in page, gone

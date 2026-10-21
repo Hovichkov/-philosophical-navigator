@@ -202,7 +202,18 @@ FINAL_EMBEDDINGS = "data/retrieval/embeddings-final"
 # worse); multi-view fusion did not win and is not used. 15 = the previous behaviour.
 FINAL_POOL_SIZE = 20
 POOL_SIZES = (15, 20, 25)
-AUTHOR_FILTERS = {"epictetus": "эпиктет"}
+# Temporary MVP policy, 2026-10-21: keep the corpus intact, but stop the recurring
+# Epictetus/Epicurus pair from occupying the live demo. Explicit "none" is for comparison runs.
+DEFAULT_FINAL_AUTHOR_FILTER = "epictetus-epicurus"
+AUTHOR_FILTERS = {
+    "none": frozenset(),
+    "epictetus": frozenset({"эпиктет"}),
+    "epictetus-epicurus": frozenset({"эпиктет", "эпикур"}),
+}
+
+
+def effective_author_filter(corpus: str, requested: str | None) -> str | None:
+    return DEFAULT_FINAL_AUTHOR_FILTER if corpus == "final" and requested is None else requested
 
 
 def filter_excluded_author(fragments: list, exclude_author: str | None) -> list:
@@ -211,8 +222,8 @@ def filter_excluded_author(fragments: list, exclude_author: str | None) -> list:
         return fragments
     if exclude_author not in AUTHOR_FILTERS:
         raise ValueError(f"unknown excluded author {exclude_author!r}; known: {sorted(AUTHOR_FILTERS)}")
-    target = AUTHOR_FILTERS[exclude_author].casefold()
-    return [f for f in fragments if (f.author or "").strip().casefold() != target]
+    targets = AUTHOR_FILTERS[exclude_author]
+    return [f for f in fragments if (f.author or "").strip().casefold() not in targets]
 
 
 def build_final_services(model: str, mode: str, retrieval_layer: str | None = None,
@@ -227,6 +238,7 @@ def build_final_services(model: str, mode: str, retrieval_layer: str | None = No
     from navigator.representations.final_meaning import mode_snapshot
 
     root = Path.cwd()
+    exclude_author = effective_author_filter("final", exclude_author)
     final = filter_excluded_author(final_snapshot_fragments(load_final_active()), exclude_author)
     layer = None
     if retrieval_layer and mode == "B":  # Retrieval Layer v1: a separate search text for Block 1 cards (mode B only)
@@ -295,6 +307,7 @@ def serve(port: int = 8770, open_browser: bool = True, trace_dir: Path = Path("r
           corpus: str = "compact", final_mode: str = "A", retrieval_layer: str | None = None,
           pool_size: int = FINAL_POOL_SIZE, exclude_author: str | None = None) -> None:
     claude = ensure_claude_on_path()
+    exclude_author = effective_author_filter(corpus, exclude_author)
     services = build_services(corpus=corpus, final_mode=final_mode, retrieval_layer=retrieval_layer,
                               pool_size=pool_size, exclude_author=exclude_author)
     print(f"Корпус: {corpus}" + (f" (тестовый режим, retrieval {final_mode}, цитаты показываются)" if corpus == "final" else "")

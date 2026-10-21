@@ -54,7 +54,7 @@ from navigator.models.interpretation import (
 from navigator.models.query import QueryProvenance, QueryRepresentation, UserContext
 from navigator.models.vocabularies import COORDINATES, TENSIONS
 
-PROMPT_VERSION = "interpretation-prompt/0.13.0"  # distinct question lenses with question-specific hypotheses
+PROMPT_VERSION = "interpretation-prompt/0.14.0"  # shared editorial policy: precise wording and natural word order
 INTERPRETER_VERSION = "interpretation-layer/0.1.0"
 DEFAULT_MODEL = "claude-opus-5-5"
 

@@ -422,8 +422,9 @@ def main(argv: list[str] | None = None) -> int:
                            "retrieval_text + quote instead of move + quote); none = plain mode B")
     p_pr.add_argument("--pool-size", type=int, choices=[15, 20, 25], default=20,
                       help="final corpus: candidates passed to the selection (max 3 per source); 15 = previous behaviour")
-    p_pr.add_argument("--exclude-author", choices=["epictetus"], default=None,
-                      help="temporary test filter: remove all Epictetus cards before final-corpus retrieval")
+    p_pr.add_argument("--exclude-author", choices=["none", "epictetus", "epictetus-epicurus"], default=None,
+                      help="final corpus: defaults to excluding Epictetus and Epicurus for the MVP; "
+                           "none = all authors for controlled comparisons")
     p_pr.set_defaults(func=cmd_prototype)
 
     p_vf = sub.add_parser("validate-final-corpus", help="validate corpus/final-2026-10-07 against its contract")
