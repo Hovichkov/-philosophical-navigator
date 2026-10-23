@@ -70,7 +70,7 @@ def test_prompt_states_subject_agent_sense_and_generic_rules():
     assert "не отвергай сильную перспективу за другую обстановку" in SYSTEM_PROMPT  # no overstrict filter
     assert "пустой список perspectives" in SYSTEM_PROMPT
     assert {"subject_shift", "generic_only"} <= set(DECISIONS)
-    assert cmp.PROMPT_VERSION == "composition-prompt/0.13.0"
+    assert cmp.PROMPT_VERSION == "composition-prompt/0.14.0"
 
 
 def test_one_card_per_author_is_told_before_selection_not_only_after():
@@ -217,3 +217,13 @@ def test_page_shows_checked_cards_while_the_rest_are_written():
     assert "setInterval(() => showPartial(gen), 2000)" in page and "clearInterval(poll)" in page
     partial = page[page.index("async function showPartial"):page.index("// Nothing applicable was found")]
     assert '"/api/partial"' in partial and "if (gen !== GEN || RESULT || !res.ok) return;" in partial
+
+
+def test_card_prompts_turn_to_the_asker_without_retelling_his_words():
+    from navigator.composition.writer import FINAL_WRITER_PROMPT
+
+    assert "НЕ пересказывай человеку его же слова" in FINAL_WRITER_PROMPT
+    assert "Опирайся на его слова («Вы пишете…»" not in FINAL_WRITER_PROMPT
+    assert "обращает взгляд человека на него самого" in FINAL_WRITER_PROMPT
+    assert "не уже исходного вопроса" in FINAL_WRITER_PROMPT and "философский, а не психологический" in FINAL_WRITER_PROMPT
+    assert "чем та, что подсказывает тактику" in SYSTEM_PROMPT

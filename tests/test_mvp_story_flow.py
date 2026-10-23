@@ -152,14 +152,16 @@ def test_custom_question_then_return_to_first_proposed_restores_its_hypotheses(f
     assert it.calls == 1 and sel.calls == 1
 
 
-def test_single_question_has_no_artificial_alternatives_and_prompt_allows_grounded_lenses():
+def test_single_question_has_no_artificial_alternatives_and_the_prompt_only_splits():
     from navigator.interpretation.interpreter import SYSTEM_PROMPT
 
     result = interpret(InterpretationInput(topic="Другое", difficulty_center="Другое", free_narrative=SON),
                       CountingInterp([out(Q1)]))
     assert result.other_questions == []
-    assert "2–4" in SYSTEM_PROMPT and "простое перефразирование" in SYSTEM_PROMPT
-    assert "скрытые мотивы за факт" in SYSTEM_PROMPT
+    # 2026-10-23: the visible question is the person's own; other questions only if he asked them himself
+    assert "только отделяет вопросы человека друг от друга" in SYSTEM_PROMPT
+    assert "Никаких новых ракурсов" in SYSTEM_PROMPT and "обычно этот список пуст" in SYSTEM_PROMPT
+    assert "а НЕ часть вопроса" in SYSTEM_PROMPT and "скрытые мотивы за факт" in SYSTEM_PROMPT
 
 
 def test_choose_rejects_unknown_index_and_wrong_state(fragments, tmp_path):
