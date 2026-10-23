@@ -520,7 +520,13 @@ def write_card(brief: dict, selected: dict, source: str, user_words: str, writer
                 if brief.get("формат_карточки") == FINAL_FORMAT else None
             card = check_card(selected["card_id"], fields, selected, source, user_words, source_data, final_quote)
             if validator is not None:  # M3.4.2: independent of the writer's own audit
-                validate_independently(card, brief, validator, record)
+                try:
+                    validate_independently(card, brief, validator, record)
+                except ValueError:
+                    card = _validator_fixed(card, fields, record, selected, source, user_words, source_data,
+                                            final_quote)
+                    if card is None:
+                        raise
             record["grounding"] = fields.get("grounding")
             record["seconds"] = round(time.monotonic() - t0, 2)
             return card, record
@@ -533,6 +539,23 @@ def write_card(brief: dict, selected: dict, source: str, user_words: str, writer
     record["seconds"] = round(time.monotonic() - t0, 2)
     record["fallback"] = True  # could not be written cleanly: the card is dropped (never shown half-checked)
     return None, record
+
+
+def _validator_fixed(card, fields, record, selected, source, user_words, source_data, final_quote):
+    """The card with the validator's own fixes, if every violation has one and the result passes ``check_card``.
+    Fixes are applied to the text the validator saw (the checked card), then checked again like a written card."""
+    from navigator.composition.grounding_validator import FIELD_NAMES, apply_fixes
+
+    seen = {k: getattr(card, k) for k in FIELD_NAMES if isinstance(getattr(card, k, None), str) and k in fields}
+    fixed = apply_fixes({**fields, **seen}, record["validation"][-1]["violations"])
+    if fixed is None:
+        return None
+    try:
+        card = check_card(card.card_id, fixed, selected, source, user_words, source_data, final_quote)
+    except ValueError:
+        return None
+    record["fixed_by_validator"] = record.get("fixed_by_validator", 0) + 1
+    return card
 
 
 def validate_independently(card: Perspective, brief: dict, validator, record: dict) -> None:

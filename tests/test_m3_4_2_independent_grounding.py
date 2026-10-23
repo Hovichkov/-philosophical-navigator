@@ -257,3 +257,35 @@ def test_without_validator_the_pipeline_is_unchanged(fragments, tmp_path):
     s = base.session(fragments, tmp_path, writer=w)
     s.compose()
     assert all(c["validation"] == [] for c in s.composition.meta.usage["writer"]["cards"])
+
+
+# ---------------------------------------------------------------- 2026-10-23: the validator's own minimal fix
+
+
+def test_a_violation_with_a_fix_is_repaired_in_place_without_a_rewrite_round(fragments, tmp_path):
+    class FixingValidator(ScriptedValidator):
+        def complete(self, material):
+            out, u = super().complete(material)
+            for x in out["sentences"]:
+                x["fix"] = ""
+            first = out["sentences"][0]
+            if self.calls == 1:  # one violation, with a minimal fix of the same sentence
+                first["label"], first["fix"] = "hypothesis_as_fact", first["sentence"]
+            return out, u
+
+    w, v = base.Writer(), FixingValidator()
+    s, view, fb = run(fragments, tmp_path, w, v, narrative=base.SON, experiences=("Беспомощность",))
+    cards = s.composition.meta.usage["writer"]["cards"]
+    assert max(w.calls.values()) == 1 and not fb  # nobody was asked to rewrite
+    assert sum(c.get("fixed_by_validator", 0) for c in cards) == 1
+    assert v.calls == len(cards)  # the fixed card is not validated a second time
+
+
+def test_apply_fixes_needs_a_fix_for_every_violation_and_the_literal_sentence():
+    from navigator.composition.grounding_validator import apply_fixes
+
+    fields = {"applied_insight": "Первое. Второе."}
+    ok = apply_fixes(fields, [{"field": "applied_insight", "sentence": "Второе.", "fix": "Другое."}])
+    assert ok == {"applied_insight": "Первое. Другое."} and fields["applied_insight"] == "Первое. Второе."
+    assert apply_fixes(fields, [{"field": "applied_insight", "sentence": "Второе.", "fix": ""}]) is None
+    assert apply_fixes(fields, [{"field": "applied_insight", "sentence": "Нет такого.", "fix": "x"}]) is None
