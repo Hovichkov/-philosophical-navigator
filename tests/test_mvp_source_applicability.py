@@ -70,7 +70,12 @@ def test_prompt_states_subject_agent_sense_and_generic_rules():
     assert "не отвергай сильную перспективу за другую обстановку" in SYSTEM_PROMPT  # no overstrict filter
     assert "пустой список perspectives" in SYSTEM_PROMPT
     assert {"subject_shift", "generic_only"} <= set(DECISIONS)
-    assert cmp.PROMPT_VERSION == "composition-prompt/0.12.0"
+    assert cmp.PROMPT_VERSION == "composition-prompt/0.13.0"
+
+
+def test_one_card_per_author_is_told_before_selection_not_only_after():
+    # the code still enforces it (one_card_per_author); stating it up front saves a whole repair selection call
+    assert "не больше одной карточки одного автора" in SYSTEM_PROMPT
 
 
 def test_prompt_count_is_consistent_for_final_and_legacy():
