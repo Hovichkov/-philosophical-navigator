@@ -353,3 +353,65 @@ def test_page_has_the_edit_action_next_to_the_question():
     assert result.index('id="confirmed"') < result.index('id="edit-q"') < result.index('id="cards"')
     for needle in ("Изменить вопрос", 'action: "edited"', "exclusive(() => editQuestion(text))"):
         assert needle in page, needle
+
+
+# ------------------------------------------------------------------ 2026-10-23: fast split, structure in the background
+
+
+class Splitter:
+    name, model = "scripted-split", None
+
+    def __init__(self, out):
+        self.out, self.calls = out, 0
+
+    def complete(self, inp, feedback=None):
+        self.calls += 1
+        return self.out, {}
+
+
+class FixedInterp(CountingInterp):
+    def complete(self, inp, feedback=None, fixed_questions=None):
+        self.fixed = fixed_questions
+        return super().complete(inp, feedback)
+
+
+OWN = "Как мне быть с тем, что я узнаю это в сыне?"  # made of the words of the invented story below
+STORY = SON + " " + OWN
+
+
+def split_session(fragments, tmp_path, split_out):
+    svc, it, sel = services(fragments, tmp_path, [out(Q1)])
+    it = svc.interpreter = FixedInterp([out(Q1)])
+    svc.splitter = Splitter(split_out)
+    return Session(svc, tmp_path / "t"), it, sel, svc.splitter
+
+
+def test_own_question_is_shown_from_the_split_and_answered_with_the_background_structure(fragments, tmp_path):
+    s, it, sel, sp = split_session(fragments, tmp_path, {"sufficient": True, "insufficiency_reason": None,
+                                                          "clarifying_question": None, "asked": True,
+                                                          "questions": [OWN]})
+    view = s.submit("", ["Тревогу"], "", STORY, auto_confirm=True)
+    assert view["state"] == "confirmed" and view["confirmed_question"] == OWN and sp.calls == 1
+    answer = s.compose()  # waits for the structure, confirms, retrieves, composes
+    assert answer["confirmed_question"] == OWN and answer["perspectives"]
+    assert it.calls == 1 and it.fixed == [OWN]  # the structure was built for the person's own words
+    assert s.interpretation.proposed_question == OWN and s.input.experiences == ["Тревогу"]
+    assert [t["stage"] for t in s.timings][:2] == ["question_split", "search_structure"]
+
+
+def test_a_split_question_not_made_of_his_words_falls_back_to_the_full_interpretation(fragments, tmp_path):
+    invented = "Где моя ответственность перед чужим ребёнком, а где перед своим?"
+    s, it, sel, sp = split_session(fragments, tmp_path, {"sufficient": True, "insufficiency_reason": None,
+                                                          "clarifying_question": None, "asked": True,
+                                                          "questions": [invented]})
+    view = s.submit("", [], "", STORY, auto_confirm=True)
+    assert sp.calls == 2 and it.fixed is None  # rejected twice → the old single call formulates the question
+    assert view["confirmed_question"] == Q1
+
+
+def test_no_own_question_uses_the_full_interpretation(fragments, tmp_path):
+    s, it, sel, sp = split_session(fragments, tmp_path, {"sufficient": True, "insufficiency_reason": None,
+                                                          "clarifying_question": None, "asked": False,
+                                                          "questions": []})
+    view = s.submit("", [], "", SON, auto_confirm=True)
+    assert sp.calls == 1 and view["confirmed_question"] == Q1 and it.fixed is None

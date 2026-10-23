@@ -28,7 +28,9 @@ from typing import Any
 from navigator.composition.composer import build_package, compose
 from navigator.composition.references import display_label, fragment_reference
 from navigator.models.composition import FINAL_CARD_FORMAT
-from navigator.interpretation.interpreter import confirm, interpret, to_query_representation
+from concurrent.futures import Future, ThreadPoolExecutor
+
+from navigator.interpretation.interpreter import confirm, interpret, split_questions, to_query_representation
 from navigator.models.interpretation import InsufficientInterpretation, InterpretationInput, InterpretationResult
 from navigator.corpus.policy import excluded_ids_for
 
@@ -138,6 +140,10 @@ class Services:
     quote_source: Any = None  # M3.3: card_id → VerifiedQuote | None, from READY local-source inventory rows only
     writer: Any = None  # M3.3.1: card writer (one call per card, parallel); None = one-call composer format
     validator: Any = None  # M3.4.2: independent grounding validator of each written card; None = not run
+    # 2026-10-23: fast split of the person's own question; the search structure is built in the background.
+    # None = the single full interpretation call, as before
+    splitter: Any = None
+    background: Any = field(default_factory=lambda: ThreadPoolExecutor(max_workers=4))
     show_quotes: bool = False  # final-corpus test mode: show the verified quote with work + exact location
     _retriever: Any = None
     _lock: threading.Lock = field(default_factory=threading.Lock)
@@ -173,6 +179,8 @@ class Session:
     auto_confirmed: bool = False  # MVP flow: the one clear question was taken without a confirmation step
     _busy: threading.Lock = field(default_factory=threading.Lock, repr=False)
     partial: dict = field(default_factory=dict, repr=False)  # index → card already checked while composing
+    _pending: Future | None = field(default=None, repr=False)  # the search structure being built after the split
+    _pending_confirm: bool = False  # one question was split: confirm it as soon as the structure is ready
 
     def _guard(self):
         """MVP stabilization: a second request for the same session while one runs (double submit) is refused
@@ -197,6 +205,10 @@ class Session:
         self.interpretation = self.insufficient = self.confirmation = None
         self.query = self.retrieval = self.composition = None
         self.questions, self.initial_working_hypotheses, self.auto_confirmed = [], [], False
+        self._pending, self._pending_confirm = None, False
+        if self.services.splitter is not None and self._split(auto_confirm):
+            self._save()
+            return self.public_view()
         t0 = time.monotonic()
         try:
             outcome = interpret(self.input, self.services.interpreter)
@@ -219,10 +231,61 @@ class Session:
         self._save()
         return self.public_view()
 
+    def _split(self, auto_confirm: bool) -> bool:
+        """Fast path: show the person's own questions at once and build the search structure in the background.
+        Returns False when he asked no question of his own (the full interpretation formulates one, as before)."""
+        t0 = time.monotonic()
+        try:
+            outcome, meta = split_questions(self.input, self.services.splitter)
+        except Exception as exc:
+            self._time("question_split", t0, ok=False)
+            self._fail("interpret", exc)
+            raise FlowError(user_message_for(exc, "interpret"), str(exc)) from exc
+        self._time("question_split", t0, llm_calls=len(meta.get("calls", [])), calls=meta.get("calls", []))
+        if isinstance(outcome, InsufficientInterpretation):
+            self.insufficient, self.state = outcome, "insufficient"
+            return True
+        if not outcome:
+            return False
+        self.questions, self.state = outcome, "proposed"
+        inp, interpreter, t1 = self.input, self.services.interpreter, time.monotonic()
+
+        def structure():
+            try:
+                return interpret(inp, interpreter, fixed_questions=list(outcome))
+            finally:
+                self._time("search_structure", t1)
+        self._pending = self.services.background.submit(structure)
+        if auto_confirm and len(outcome) == 1:  # one clear question: no confirmation step
+            self.auto_confirmed = self._pending_confirm = True
+            self.state = "confirmed"
+        return True
+
+    def _ready(self) -> None:
+        """Wait for the background search structure (if any) and take it into the session."""
+        if self._pending is None:
+            return
+        pending, self._pending = self._pending, None
+        try:
+            outcome = pending.result()
+            if not isinstance(outcome, InterpretationResult):
+                raise ValueError("search structure: unexpected insufficient interpretation")
+        except Exception as exc:
+            self._fail("interpret", exc)
+            self._pending_confirm = False
+            self.state = "new"
+            raise FlowError(user_message_for(exc, "interpret"), str(exc)) from exc
+        self.interpretation = outcome
+        self.initial_working_hypotheses = list(outcome.working_hypotheses)
+        if self._pending_confirm:
+            self._pending_confirm, self.state = False, "proposed"
+            self._confirm("confirmed")
+
     def choose(self, index: int) -> dict:
         """MVP flow: take one of the questions found in the story (also later, from the answer screen: the others stay
         in the session). No model call — the interpretation of the story is reused; the answer is built anew."""
         with self._guard():
+            self._ready()
             if self.interpretation is None or self.state in ("new", "insufficient"):
                 raise FlowError(USER_ERROR, f"cannot choose a question in state {self.state}")
             if not (isinstance(index, int) and not isinstance(index, bool) and 0 <= index < len(self.questions)):
@@ -243,6 +306,7 @@ class Session:
             return self._confirm(action, text)
 
     def _confirm(self, action: str, text: str | None = None) -> dict:
+        self._ready()
         # MVP flow: «Изменить вопрос» on the answer screen = an «edited» confirmation after the answer; the story,
         # the feelings and the interpretation are kept (no interpreter call), the old answer is dropped
         answered = self.state in ("retrieved", "answered", "reflected") and action == "edited"
@@ -275,6 +339,7 @@ class Session:
             return self._retrieve()
 
     def _retrieve(self) -> dict:
+        self._ready()
         if self.state not in ("confirmed", "retrieved", "answered") or self.query is None:
             raise FlowError(USER_ERROR, f"cannot retrieve in state {self.state}")
         t0 = time.monotonic()
@@ -362,10 +427,13 @@ class Session:
         view: dict[str, Any] = {"session_id": self.id, "state": self.state}
         if self.state == "insufficient" and self.insufficient:
             view["clarification"] = self.insufficient.clarification_prompt
-        if self.interpretation is not None:
-            view["proposed_question"] = self.interpretation.proposed_question
+        if self.interpretation is not None or self.questions:
+            view["proposed_question"] = (self.interpretation.proposed_question if self.interpretation is not None
+                                         else self.questions[0])
             if len(self.questions) > 1:  # MVP flow: several independent questions — the person picks one
                 view["questions"] = list(self.questions)
+        if self._pending_confirm:  # split fast path: the question is shown while the search structure is built
+            view["confirmed_question"] = self.questions[0]
         if self.confirmation is not None:
             view["confirmed_question"] = self.confirmation.confirmed_question
         if self.state in ("answered", "reflected") and self.composition is not None:

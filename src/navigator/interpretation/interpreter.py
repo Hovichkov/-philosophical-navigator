@@ -171,8 +171,11 @@ class ClaudeCodeCLIInterpreter:
     timeout_s: int = 600
     name: str = "claude-code-cli"
 
-    def complete(self, inp: InterpretationInput, feedback: str | None = None) -> tuple[dict, dict]:
+    def complete(self, inp: InterpretationInput, feedback: str | None = None,
+                 fixed_questions: list[str] | None = None) -> tuple[dict, dict]:
         user = "Ввод пользователя (JSON):\n" + inp.model_dump_json(indent=1)
+        if fixed_questions:
+            user += FIXED_QUESTIONS_NOTE + json.dumps(fixed_questions, ensure_ascii=False)
         if feedback:
             user += "\n\nПредыдущий ответ не прошёл проверку контракта. Исправь и ответь заново. Ошибка:\n" + feedback
         cmd = [
@@ -200,8 +203,10 @@ def _word_count(text: str) -> int:
     return len(re.findall(r"\w+", text))
 
 
-def interpret(inp: InterpretationInput, interpreter: Interpreter, max_attempts: int = 2
-              ) -> InterpretationResult | InsufficientInterpretation:
+def interpret(inp: InterpretationInput, interpreter: Interpreter, max_attempts: int = 2,
+              fixed_questions: list[str] | None = None) -> InterpretationResult | InsufficientInterpretation:
+    """``fixed_questions`` (2026-10-23): the person's own questions, already split by ``split_questions``. The call
+    then only builds the search structure for them; the visible questions are kept exactly as given."""
     sha = input_sha256(inp)
     if _word_count(inp.free_narrative) < MIN_NARRATIVE_WORDS:
         return InsufficientInterpretation(
@@ -215,7 +220,8 @@ def interpret(inp: InterpretationInput, interpreter: Interpreter, max_attempts: 
     calls: list[dict] = []
     repairs: list[str] = []  # M3.3.1: why each earlier attempt was rejected
     for attempt in range(1, max_attempts + 1):
-        out, usage = interpreter.complete(inp, feedback)
+        out, usage = (interpreter.complete(inp, feedback, fixed_questions=fixed_questions) if fixed_questions
+                      else interpreter.complete(inp, feedback))
         calls.append(usage)
         try:
             notes = [ReadingNote(**n) for n in out.get("reading_notes", [])]
@@ -224,6 +230,9 @@ def interpret(inp: InterpretationInput, interpreter: Interpreter, max_attempts: 
                 input_sha256=sha, reading_notes=notes, attempts=attempt,
                 usage={"calls": calls, "repairs": list(repairs)},
             )
+            if fixed_questions:  # the split already decided sufficiency and the wording
+                out = {**out, "sufficient": True, "proposed_question": fixed_questions[0],
+                       "other_questions": list(fixed_questions[1:])}
             if not out.get("sufficient", True):
                 return InsufficientInterpretation(
                     input=inp, reason=(out.get("insufficiency_reason") or "model reported insufficient input").strip(),
@@ -239,9 +248,11 @@ def interpret(inp: InterpretationInput, interpreter: Interpreter, max_attempts: 
                 for group in raw_hypotheses[:len(others)]
             ]
             hypotheses_by_question = (hypotheses_by_question + [[] for _ in range(len(others))])[:len(others)]
-            check_question(pq, inp)
+            if not fixed_questions:  # the person's own words are not rewritten to fit the formulation rules
+                check_question(pq, inp)
             # another independent question that breaks the contract is dropped (never a repair call for it)
-            valid_pairs = [(q, hs) for q, hs in zip(others, hypotheses_by_question) if _passes(q, inp)]
+            valid_pairs = [(q, hs) for q, hs in zip(others, hypotheses_by_question)
+                           if fixed_questions or _passes(q, inp)]
             others = [q for q, _ in valid_pairs]
             hypotheses_by_question = [hs for _, hs in valid_pairs]
             return InterpretationResult(
@@ -337,3 +348,105 @@ def to_query_representation(result: InterpretationResult, confirmation: Confirma
         free_tensions=result.free_tensions,
         provenance=provenance,
     )
+
+
+# ---------------------------------------------------------------- 2026-10-23: fast split of the person's own question
+# The visible question step only separates the questions the person asked himself (seconds). The search structure
+# (hypotheses, coordinates, tensions) is built afterwards by ``interpret(..., fixed_questions=...)``, in the background.
+
+SPLIT_PROMPT_VERSION = "split-prompt/0.1.0"
+FIXED_QUESTIONS_NOTE = ("\n\nВопросы человека уже выделены его словами (JSON-список ниже). proposed_question — ПЕРВЫЙ "
+                        "из них дословно, other_questions — остальные дословно и в том же порядке; не меняй их. "
+                        "Твоя задача — гипотезы и разметка для поиска именно по этим вопросам:\n")
+SPLIT_PROMPT = """Ты выделяешь вопрос человека из его рассказа. Ты ничего не переформулируешь и не толкуешь.
+
+1. Понятен ли рассказ: можно ли обычными словами сказать, чего человек хочет или что произошло и в чём трудность? Если нет — sufficient=false, в insufficiency_reason коротко почему, в clarifying_question ОДИН короткий уточняющий вопрос на «вы», без бессмысленных слов из рассказа. Иначе sufficient=true и clarifying_question = null.
+2. asked: задал ли человек свой вопрос сам (вопросительной фразой или прямо: «не знаю, как…», «хочу понять…»). Если не задал — asked=false и questions пустой: вопрос сформулирует другой шаг.
+3. questions (если asked=true): вопрос(ы) человека ЕГО словами. Можно взять одно его предложение о ситуации, если без него вопрос непонятен, и убрать лишнее. Нельзя: добавлять слова, обобщать, «поднимать» до напряжения, менять опорные слова, вставлять чувства (они не часть вопроса), придумывать вопросы, которых он не задавал. Несколько РАЗНЫХ вопросов — отдельные элементы списка (до четырёх). Связанные части одного вопроса — один элемент. Каждый элемент — законченное, грамматически правильное, понятное без рассказа; последнее предложение оканчивается «?».
+
+Отвечай строго по JSON-схеме."""
+SPLIT_SCHEMA = {
+    "type": "object", "additionalProperties": False,
+    "required": ["sufficient", "insufficiency_reason", "clarifying_question", "asked", "questions"],
+    "properties": {
+        "sufficient": {"type": "boolean"},
+        "insufficiency_reason": {"type": ["string", "null"]},
+        "clarifying_question": {"type": ["string", "null"]},
+        "asked": {"type": "boolean"},
+        "questions": {"type": "array", "items": {"type": "string"}, "maxItems": 1 + MAX_OTHER_QUESTIONS},
+    },
+}
+MIN_OWN_WORDS_SHARE = 0.8  # a split question must be made of the person's own words
+
+
+@dataclass
+class ClaudeCodeCLISplitter:
+    """One small, low-effort call: the person's own questions, nothing else."""
+    model: str = DEFAULT_MODEL
+    effort: str | None = "low"
+    timeout_s: int = 120
+    name: str = "claude-code-cli-split"
+
+    def complete(self, inp: InterpretationInput, feedback: str | None = None) -> tuple[dict, dict]:
+        user = "Рассказ человека:\n" + inp.free_narrative
+        if feedback:
+            user += "\n\nПредыдущий ответ не прошёл проверку. Исправь:\n" + feedback
+        cmd = [
+            "claude", "-p", "--safe-mode", "--tools", "", "--strict-mcp-config", "--no-session-persistence",
+            "--model", self.model, "--system-prompt", SPLIT_PROMPT,
+            "--output-format", "json", "--json-schema", json.dumps(SPLIT_SCHEMA, ensure_ascii=False),
+            *(["--effort", self.effort] if self.effort else []),
+        ]
+        t0 = time.monotonic()
+        try:
+            proc = subprocess.run(cmd, input=user, capture_output=True, text=True, timeout=self.timeout_s)
+            payload = json.loads(proc.stdout)
+        except (FileNotFoundError, subprocess.TimeoutExpired, json.JSONDecodeError) as exc:
+            raise InterpreterUnavailable(str(exc)[:500]) from exc
+        if payload.get("is_error") or not isinstance(payload.get("structured_output"), dict):
+            raise InterpreterUnavailable(cli_error_message(payload))
+        return payload["structured_output"], cli_usage(payload, time.monotonic() - t0)
+
+
+def _stems(text: str) -> list[str]:
+    # crude stems: Russian endings change between a story and a question taken from it
+    return [w[:5] for w in re.findall(r"\w{3,}", (text or "").lower().replace("ё", "е"))]
+
+
+def own_words_share(question: str, narrative: str) -> float:
+    words, known = _stems(question), set(_stems(narrative))
+    return sum(w in known for w in words) / len(words) if words else 0.0
+
+
+def split_questions(inp: InterpretationInput, splitter, max_attempts: int = 2
+                    ) -> tuple[list[str] | InsufficientInterpretation | None, dict]:
+    """The person's own questions (list), an ``InsufficientInterpretation``, or ``None`` when he asked no question
+    (then the full interpreter formulates one, as before). Questions not made of his words are rejected."""
+    sha = input_sha256(inp)
+    if _word_count(inp.free_narrative) < MIN_NARRATIVE_WORDS:
+        return InsufficientInterpretation(
+            input=inp, reason=f"free narrative has fewer than {MIN_NARRATIVE_WORDS} words (deterministic pre-check)",
+            clarification_prompt=CLARIFICATION_PROMPT,
+            trace=InterpretationTrace(interpreter="deterministic-precheck", prompt_version=SPLIT_PROMPT_VERSION,
+                                      input_sha256=sha, attempts=0)), {"calls": []}
+    feedback, calls = None, []
+    for attempt in range(1, max_attempts + 1):
+        out, usage = splitter.complete(inp, feedback)
+        calls.append(usage)
+        meta = {"calls": calls, "prompt_version": SPLIT_PROMPT_VERSION}
+        if not out.get("sufficient", True):
+            return InsufficientInterpretation(
+                input=inp, reason=(out.get("insufficiency_reason") or "model reported insufficient input").strip(),
+                clarification_prompt=clarifying_question(out.get("clarifying_question")) or UNCLEAR_PROMPT,
+                trace=InterpretationTrace(interpreter=splitter.name, model=splitter.model,
+                                          prompt_version=SPLIT_PROMPT_VERSION, input_sha256=sha, attempts=attempt,
+                                          usage=meta)), meta
+        if not out.get("asked"):
+            return None, meta
+        qs = list(dict.fromkeys(q.strip() for q in out.get("questions") or [] if q and q.strip()))
+        bad = [q for q in qs if not q.endswith("?") or own_words_share(q, inp.free_narrative) < MIN_OWN_WORDS_SHARE]
+        if qs and not bad:
+            return qs[:1 + MAX_OTHER_QUESTIONS], meta
+        feedback = ("Вопросы должны быть словами человека из рассказа и оканчиваться «?». Не прошли: "
+                    + "; ".join(bad or ["пустой список"]))
+    return None, {"calls": calls, "prompt_version": SPLIT_PROMPT_VERSION, "fallback": feedback}

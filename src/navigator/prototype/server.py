@@ -237,7 +237,7 @@ def build_final_services(model: str, mode: str, retrieval_layer: str | None = No
     from navigator.composition.grounding_validator import ClaudeCodeCLIValidator
     from navigator.composition.writer import ClaudeCodeCLIWriter
     from navigator.corpus.final_corpus import FINAL_CORPUS_VERSION, final_snapshot_fragments, load_final_active
-    from navigator.interpretation.interpreter import ClaudeCodeCLIInterpreter
+    from navigator.interpretation.interpreter import ClaudeCodeCLIInterpreter, ClaudeCodeCLISplitter
     from navigator.representations.final_meaning import mode_snapshot
 
     root = Path.cwd()
@@ -265,7 +265,8 @@ def build_final_services(model: str, mode: str, retrieval_layer: str | None = No
     return Services(fragments=final, interpreter=ClaudeCodeCLIInterpreter(model=model),
                     composer=ClaudeCodeCLIComposer(model=model), retriever_factory=retriever_factory,
                     writer=ClaudeCodeCLIWriter(model=model, effort="medium"),
-                    validator=ClaudeCodeCLIValidator(model=model, effort="medium"), show_quotes=True)
+                    validator=ClaudeCodeCLIValidator(model=model, effort="medium"), show_quotes=True,
+                    splitter=ClaudeCodeCLISplitter(model=model))  # 2026-10-23: fast split of the own question
 
 
 def build_services(model: str = "claude-opus-5-5", corpus: str = "compact", final_mode: str = "A",
