@@ -25,7 +25,7 @@ from dataclasses import dataclass
 
 from navigator.timing import cli_error_message, cli_usage
 
-VALIDATOR_PROMPT_VERSION = "grounding-validator-prompt/0.2.0"  # 2026-10-23: a fix for each violating sentence
+VALIDATOR_PROMPT_VERSION = "grounding-validator-prompt/0.1.0"
 FIELD_NAMES = {"title": "заголовок", "main_idea": "что говорит источник", "applied_insight": "применение к вопросу",
                "reflection_question": "вопрос к себе", "question_explanation": "«Что имеется в виду?»",
                "perspective": "«Подробнее»"}
@@ -68,7 +68,7 @@ VALIDATOR_PROMPT = """Ты — независимый проверяющий ф�
 - source_beyond_data — об источнике сказано то, чего нет в материале источника (подробности сюжета, «часто говорит», биография, знание из памяти).
 
 Не будь придирчивым к языку и не требуй оговорок: уверенное различение источника и слова человека — это нормально. Нарушение — только там, где появляется НОВЫЙ факт о человеке или об источнике, решение за человека или предписание. Не выдумывай нарушений.
-Для каждого предложения верни field (одно из: title, main_idea, applied_insight, reflection_question, question_explanation, perspective), sentence — ДОСЛОВНО как в тексте, label, reason (коротко) и fix. fix — только для нарушения: то же предложение, исправленное минимально, чтобы нарушения не стало, с тем же смыслом карточки, той же длины и формы (вопрос остаётся одним вопросом с «?»), без новых сведений о человеке и об источнике; если исправить нельзя — пустая строка. Для допустимых предложений fix — пустая строка. Отвечай по-русски, строго по JSON-схеме."""
+Для каждого предложения верни field (одно из: title, main_idea, applied_insight, reflection_question, question_explanation, perspective), sentence — ДОСЛОВНО как в тексте, label и reason (коротко). Отвечай по-русски, строго по JSON-схеме."""
 
 VALIDATOR_SCHEMA = {
     "type": "object",
@@ -78,14 +78,12 @@ VALIDATOR_SCHEMA = {
         "sentences": {
             "type": "array",
             "items": {
-                "type": "object", "additionalProperties": False,
-                "required": ["field", "sentence", "label", "reason", "fix"],
+                "type": "object", "additionalProperties": False, "required": ["field", "sentence", "label", "reason"],
                 "properties": {
                     "field": {"type": "string", "enum": list(FIELD_NAMES)},
                     "sentence": {"type": "string"},
                     "label": {"type": "string", "enum": [*OK_LABELS, *VIOLATIONS]},
                     "reason": {"type": "string"},
-                    "fix": {"type": "string"},
                 },
             },
         },
@@ -151,16 +149,3 @@ def feedback_for(violations: list[dict]) -> str:
         lines.append(f"- [{FIELD_NAMES.get(v['field'], v['field'])}] «{v['sentence'][:220]}» — {VIOLATIONS[v['label']]}"
                      f" ({v.get('reason', '')[:160]})")
     return "\n".join(lines)
-
-
-def apply_fixes(fields: dict, violations: list[dict]) -> dict | None:
-    """2026-10-23: the validator's own minimal fix of each violating sentence, put in place by code — saves a whole
-    rewrite + re-validation round. None when any violation has no fix or its sentence is not literally in the field
-    (then the writer rewrites the card as before). The result still goes through the deterministic card checks."""
-    out = dict(fields)
-    for v in violations:
-        fix, field, sent = (v.get("fix") or "").strip(), v.get("field"), v.get("sentence") or ""
-        if not fix or field not in out or not isinstance(out[field], str) or sent not in out[field]:
-            return None
-        out[field] = out[field].replace(sent, fix, 1)
-    return out
