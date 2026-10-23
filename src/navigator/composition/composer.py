@@ -447,7 +447,7 @@ def one_card_per_author(package: dict, sel: list[dict], by_id: dict, resolve: bo
 
 def compose_written(package: dict, output: dict, fragments: list[Fragment], meta: ComposerMeta, writer,
                     quote_source=None, max_writer_attempts: int = 3, validator=None,
-                    resolve_same_author: bool = True) -> CompositionResult:
+                    resolve_same_author: bool = True, on_card=None) -> CompositionResult:
     """M3.3.1 two-step composition: the selection in ``output`` + one writer call per card (parallel).
     Final corpus: at most one card per author (``one_card_per_author``)."""
     from navigator.composition.writer import WRITER_PROMPT_VERSION, write_cards
@@ -456,8 +456,16 @@ def compose_written(package: dict, output: dict, fragments: list[Fragment], meta
     sel = check_selection(package, output)
     sel, same_author = one_card_per_author(package, sel, by_id, resolve_same_author)
     t0 = time.monotonic()
+    final = is_final_package(package)
+
+    def ready(i, card):  # the same finishing touches as the result below, so an early card equals the final one
+        on_card(i, card.model_copy(update={"perspective_effect": sel[i].get("perspective_effect"),
+                                           "perspective_frame": sel[i].get("perspective_frame"),
+                                           **({"verified_quote": quote_source(card.card_id)} if quote_source else {})}))
+
     cards, records = write_cards(package, sel, fragments, lambda cid: source_label(by_id[cid]), writer,
-                                 max_writer_attempts, validator)
+                                 max_writer_attempts, validator, on_card=ready if on_card else None,
+                                 give_up_after=2 if final else None)
     written = [(s, c) for s, c in zip(sel, cards) if c is not None]
     dropped = [s["card_id"] for s, c in zip(sel, cards) if c is None]
     # Each failed card was already repaired on its own by the writer (``max_writer_attempts``); the written ones are
@@ -507,7 +515,8 @@ def _is_selection(output: dict) -> bool:
 
 
 def compose(package: dict, fragments: list[Fragment], composer: Composer, max_attempts: int = 2,
-            quote_source=None, writer=None, max_writer_attempts: int = 3, validator=None) -> CompositionResult:
+            quote_source=None, writer=None, max_writer_attempts: int = 3, validator=None,
+            on_card=None) -> CompositionResult:
     """Selection by ``composer``; with a ``writer`` the text is written per card (M3.3.1). A composer that
     returns the older one-call format (text included) is assembled directly."""
     feedback = None
@@ -529,7 +538,7 @@ def compose(package: dict, fragments: list[Fragment], composer: Composer, max_at
                 if writer is None:
                     raise RuntimeError("a selection-only composer output needs a card writer")
                 result = compose_written(package, output, fragments, meta, writer, quote_source, max_writer_attempts,
-                                         validator, resolve_same_author=attempt == max_attempts)
+                                         validator, resolve_same_author=attempt == max_attempts, on_card=on_card)
             else:
                 result = assemble_result(package, output, fragments, meta, quote_source=quote_source)
             usage["validation_seconds"] = round(time.monotonic() - t_val, 3)

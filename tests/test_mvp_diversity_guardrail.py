@@ -8,6 +8,7 @@ Legacy / compact behaviour must not change. Fake embeddings: structure and polic
 
 from __future__ import annotations
 
+import time
 from collections import Counter
 
 import pytest
@@ -201,13 +202,14 @@ def test_final_pool_default_is_20_and_15_remains_available():
 class FailingWriter(base.Writer):
     """Final-corpus writer whose cards with the given selection index never pass the card check (two questions)."""
 
-    def __init__(self, fail=()):
+    def __init__(self, fail=(), delay=0.05):
         super().__init__()
-        self.fail = set(fail)
+        self.fail, self.delay = set(fail), delay
 
     def complete(self, brief, feedback=None):
         out, usage = super().complete(brief, feedback)
         if int(brief["различение_карточки"].split("(")[1][0]) in self.fail:
+            time.sleep(self.delay)  # a failing card is slower than a clean one, so the order of events is fixed
             out = {**out, "reflection_question": "Что я думаю о её ответе? И чего хочу после него?"}
         return out, usage
 
@@ -229,10 +231,33 @@ def test_one_card_lost_keeps_the_other_without_reselection(final, tmp_path):
     assert [p.card_id for p in res.perspectives] == [PAIR[0]]
     assert sel.calls == 1 and res.meta.attempts == 1  # the selection is not repeated
     calls = {k.split("(")[1][0]: n for k, n in w.calls.items()}
-    assert calls == {"0": 1, "1": 3}  # only the failed card is repaired; the written one is not rewritten
+    # only the failed card is repaired; the written one is not rewritten. 2026-10-23: one card is already a full
+    # answer, so the failing one is dropped after its second attempt instead of a third rewrite
+    assert calls == {"0": 1, "1": 2}
+    assert [r.get("gave_up_early", False) for r in res.meta.usage["writer"]["cards"]] == [False, True]
     assert res.meta.usage["writer"]["dropped"] == [PAIR[1]]
     assert any(r.card_id == PAIR[1] and "не прошёл проверку" in r.reason for r in res.rejected)
     assert res.fewer_than_three_reason
+
+
+def test_without_a_written_card_a_failing_card_keeps_all_its_attempts(final, tmp_path):
+    w = FailingWriter(fail={0, 1}, delay=0)
+    with pytest.raises(ValueError):
+        compose(final_package(final, tmp_path), final, PairSelector(PAIR), max_attempts=1, writer=w,
+                max_writer_attempts=3)
+    assert sorted(w.calls.values()) == [3, 3]  # nobody gives up early while no card is ready
+
+
+def test_checked_cards_are_reported_as_soon_as_written_and_equal_the_final_ones(final, tmp_path):
+    from navigator.prototype.flow import Services, Session
+
+    got = {}
+    res = compose(final_package(final, tmp_path), final, PairSelector(PAIR), max_attempts=3, writer=FailingWriter(),
+                  on_card=got.__setitem__)
+    assert sorted(got) == [0, 1] and [got[i] for i in sorted(got)] == res.perspectives
+    s = Session(Services(final, None, None, None))
+    s.partial = got
+    assert s.partial_view()["perspectives"] == [s._card_view(p) for p in res.perspectives]
 
 
 def test_no_card_written_falls_back_to_reselection(final, tmp_path):

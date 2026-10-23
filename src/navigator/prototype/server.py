@@ -155,6 +155,8 @@ def make_handler(app: App):
                     return self._json(200, app.get(str(data.get("session_id", ""))).retrieve())
                 if path == "/api/compose":
                     return self._json(200, app.get(str(data.get("session_id", ""))).compose())
+                if path == "/api/partial":  # cards already checked while the answer is being composed
+                    return self._json(200, app.get(str(data.get("session_id", ""))).partial_view())
                 if path == "/api/reflect":
                     chosen = data.get("chosen")
                     chosen = chosen if isinstance(chosen, int) and not isinstance(chosen, bool) else None

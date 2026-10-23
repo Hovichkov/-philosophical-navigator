@@ -210,3 +210,10 @@ def test_page_offers_edit_question_on_no_fit_and_keeps_retry_for_failures():
     assert '$("edit-q-link").hidden = false' in no_fit and "renderOtherQuestions(" in no_fit
     assert "api(" not in no_fit and "answer(" not in no_fit  # nothing is re-sent automatically
     assert 'err.noFit = data.no_fit === true' in page and 'id="no-fit"' in page
+
+
+def test_page_shows_checked_cards_while_the_rest_are_written():
+    page = (ROOT / "src/navigator/prototype/static/index.html").read_text(encoding="utf-8")
+    assert "setInterval(() => showPartial(gen), 2000)" in page and "clearInterval(poll)" in page
+    partial = page[page.index("async function showPartial"):page.index("// Nothing applicable was found")]
+    assert '"/api/partial"' in partial and "if (gen !== GEN || RESULT || !res.ok) return;" in partial

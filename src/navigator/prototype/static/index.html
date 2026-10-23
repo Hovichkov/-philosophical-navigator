@@ -467,7 +467,7 @@ let pendingTimers = [];
 function setPending(text, sub) { $("pending-text").textContent = text; $("pending-sub").textContent = sub || ""; }
 function clearPending() { pendingTimers.forEach(clearTimeout); pendingTimers = []; }
 function showPendingResult(question) {
-  RESULT = null;
+  RESULT = null; partialShown = 0;
   $("confirmed").textContent = question;
   $("cards").innerHTML = "";
   $("share-status").textContent = "";
@@ -486,7 +486,10 @@ async function answer(confirmedQuestion) {
     await api("/api/retrieve", { session_id: state.sessionId });
     setPending("Выбираем подходящие перспективы и готовим ответ…");
     startElapsed("pending-sub", "Обычно это занимает несколько минут, текст проверяется на понятность.");
-    const data = await api("/api/compose", { session_id: state.sessionId });
+    const gen = GEN;
+    const poll = setInterval(() => showPartial(gen), 2000);  // checked cards appear while the rest are written
+    let data;
+    try { data = await api("/api/compose", { session_id: state.sessionId }); } finally { clearInterval(poll); }
     clearPending(); stopElapsed();
     renderResult(data.confirmed_question || confirmedQuestion, data.perspectives || [], data.copy_text);
   } catch (e) {
@@ -495,6 +498,23 @@ async function answer(confirmedQuestion) {
     if (e.noFit) { showNoFit(e.message, confirmedQuestion); return; }
     fail(e.message, () => exclusive(() => answer(confirmedQuestion)));
   }
+}
+
+// Cards already written and checked are shown at once; the finished answer then re-renders the whole result.
+let partialShown = 0;
+async function showPartial(gen) {
+  try {
+    const res = await fetch("/api/partial", { method: "POST", headers: { "Content-Type": "application/json" },
+                                             body: JSON.stringify({ session_id: state.sessionId }) });
+    const data = await res.json();
+    if (gen !== GEN || RESULT || !res.ok) return;
+    const ps = data.perspectives || [];
+    if (ps.length <= partialShown) return;
+    $("cards").innerHTML = "";
+    ps.forEach((p) => $("cards").append(finalCard(p)));
+    partialShown = ps.length;
+    setPending("Первая перспектива готова, проверяем остальные…");
+  } catch (e) {}
 }
 
 // Nothing applicable was found: keep the question on screen and offer the existing «Изменить вопрос» and the other

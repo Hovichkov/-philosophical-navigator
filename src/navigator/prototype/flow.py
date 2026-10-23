@@ -172,6 +172,7 @@ class Session:
     initial_working_hypotheses: list[str] = field(default_factory=list)  # preserve question 0 across custom/other choices
     auto_confirmed: bool = False  # MVP flow: the one clear question was taken without a confirmation step
     _busy: threading.Lock = field(default_factory=threading.Lock, repr=False)
+    partial: dict = field(default_factory=dict, repr=False)  # index → card already checked while composing
 
     def _guard(self):
         """MVP stabilization: a second request for the same session while one runs (double submit) is refused
@@ -304,9 +305,11 @@ class Session:
             trace = {"item_id": f"proto-{self.id}", "run_id": f"prototype-{self.id}",
                      "candidate_retrieval": self.retrieval.model_dump(mode="json")}
             # 3 attempts in the prototype: a failed check costs the person the whole wait, a retry only ~40 s.
+            self.partial = {}
             self.composition = compose(build_package(trace, self.services.fragments), self.services.fragments,
                                        self.services.composer, max_attempts=3, quote_source=self.services.quote_source,
-                                       writer=self.services.writer, validator=self.services.validator)
+                                       writer=self.services.writer, validator=self.services.validator,
+                                       on_card=self.partial.__setitem__)
         except Exception as exc:
             self._time("composition", t0, ok=False)
             self._fail("composition", exc)
@@ -371,20 +374,29 @@ class Session:
             # Internal fields (distinction, role, why_selected, card_id) are never sent. M3.3: ``source`` is the
             # reader-friendly reference built by code; verified quotes are NOT shown yet (0 READY cards, see
             # reports/validation/M3.3-QUOTE-READINESS-REPORT.md).
-            view["perspectives"] = [
-                self._final_card(p) if p.card_format == FINAL_CARD_FORMAT else
-                {"title": p.title, "source": self._reference(p), "main_idea": p.main_idea,
-                 "applied_insight": p.applied_insight,
-                 "reflection_question": p.reflection_question, "question_explanation": p.question_explanation,
-                 "details": p.perspective, **self._quote(p.card_id)}
-                for p in self.composition.perspectives
-            ]
+            view["perspectives"] = [self._card_view(p) for p in self.composition.perspectives]
             view["copy_text"] = copy_text(view["confirmed_question"], view["perspectives"])
         if self.state == "reflected" and self.reflection is not None:
             view["reflection"] = {"chosen_index": self.reflection["chosen_index"],
                                   "chosen_title": self.reflection["chosen_title"],
                                   "own_text": self.reflection["own_text"], "next": NEXT_ROUND}
         return view
+
+    def _card_view(self, p) -> dict:
+        if p.card_format == FINAL_CARD_FORMAT:
+            return self._final_card(p)
+        return {"title": p.title, "source": self._reference(p), "main_idea": p.main_idea,
+                "applied_insight": p.applied_insight,
+                "reflection_question": p.reflection_question, "question_explanation": p.question_explanation,
+                "details": p.perspective, **self._quote(p.card_id)}
+
+    def partial_view(self) -> dict:
+        """Cards already written and checked while the answer is still being composed (no lock: read-only).
+        Only final-corpus cards are shown early; the finished answer replaces this view."""
+        excluded = excluded_ids_for(self.retrieval.corpus_version) if self.retrieval is not None else set()
+        ready = [p for _, p in sorted(dict(self.partial).items())
+                 if p.card_format == FINAL_CARD_FORMAT and p.card_id not in excluded]
+        return {"session_id": self.id, "state": self.state, "perspectives": [self._card_view(p) for p in ready]}
 
     def _quote(self, card_id: str) -> dict:
         """Final-corpus test mode: the verified verbatim quote (never altered or cut), with work and exact location;

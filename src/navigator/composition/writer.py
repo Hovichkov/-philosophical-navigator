@@ -18,6 +18,7 @@ from __future__ import annotations
 import json
 import re
 import subprocess
+import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
@@ -500,7 +501,9 @@ def source_data_from_brief(brief: dict) -> str:
 
 
 def write_card(brief: dict, selected: dict, source: str, user_words: str, writer, max_attempts: int = 3,
-               validator=None) -> tuple[Perspective | None, dict]:
+               validator=None, give_up=None) -> tuple[Perspective | None, dict]:
+    """``give_up(attempt) -> bool`` (final corpus): stop rewriting a failing card once another card is already
+    written — one checked card is a full answer, so the person does not wait for a third rewrite."""
     record = {"card_id": selected["card_id"], "attempts": 0, "repairs": [], "calls": [], "fallback": False,
               "validation": []}
     source_data = source_data_from_brief(brief)
@@ -523,6 +526,9 @@ def write_card(brief: dict, selected: dict, source: str, user_words: str, writer
         except ValueError as exc:
             feedback = str(exc)[:1200]
             record["repairs"].append(feedback)
+            if attempt < max_attempts and give_up is not None and give_up(attempt):
+                record["gave_up_early"] = True
+                break
     record["seconds"] = round(time.monotonic() - t0, 2)
     record["fallback"] = True  # could not be written cleanly: the card is dropped (never shown half-checked)
     return None, record
@@ -555,15 +561,28 @@ def validate_independently(card: Perspective, brief: dict, validator, record: di
 
 
 def write_cards(package: dict, selection: list[dict], fragments: list[Fragment], source_of, writer,
-                max_attempts: int = 3, validator=None) -> tuple[list[Perspective | None], list[dict]]:
-    """Write all selected cards in parallel (one call per card). Order of ``selection`` is kept."""
+                max_attempts: int = 3, validator=None, on_card=None,
+                give_up_after: int | None = None) -> tuple[list[Perspective | None], list[dict]]:
+    """Write all selected cards in parallel (one call per card). Order of ``selection`` is kept.
+    ``on_card(index, card)`` is called as soon as a card passes every check (the page can show it at once).
+    ``give_up_after`` (final corpus): after that many failed attempts a card is dropped if another is already written."""
     by_id = {f.id: f for f in fragments}
     words = user_words_from_package(package)
+    done = threading.Event()
+
+    def give_up(attempt: int) -> bool:
+        return give_up_after is not None and attempt >= give_up_after and done.is_set()
 
     def one(i: int):
         sel = selection[i]
         brief = build_brief(package, sel, [s for j, s in enumerate(selection) if j != i], by_id[sel["card_id"]])
-        return write_card(brief, sel, source_of(sel["card_id"]), words, writer, max_attempts, validator)
+        card, record = write_card(brief, sel, source_of(sel["card_id"]), words, writer, max_attempts, validator,
+                                  give_up)
+        if card is not None:
+            done.set()
+            if on_card is not None:
+                on_card(i, card)
+        return card, record
 
     with ThreadPoolExecutor(max_workers=max(1, len(selection))) as ex:
         results = list(ex.map(one, range(len(selection))))
