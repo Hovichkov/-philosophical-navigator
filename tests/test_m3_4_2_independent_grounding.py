@@ -257,3 +257,30 @@ def test_without_validator_the_pipeline_is_unchanged(fragments, tmp_path):
     s = base.session(fragments, tmp_path, writer=w)
     s.compose()
     assert all(c["validation"] == [] for c in s.composition.meta.usage["writer"]["cards"])
+
+
+# ------------------------------------------------------------------ 2026-10-23: a validator «fix» is never trusted
+# (regression: an unsupported claim reached the answer as «fixed by the validator»; that path is removed)
+
+CITY = "Вы живёте в Казани."
+
+
+@legacy_card_only
+@pytest.mark.parametrize("fix", [CITY, "Вы живёте в Самаре."])
+def test_an_invented_fact_is_rewritten_and_revalidated_whatever_fix_the_validator_offers(fragments, tmp_path, fix):
+    class OfferingFix(ScriptedValidator):
+        def complete(self, material):
+            out, u = super().complete(material)
+            for x in out["sentences"]:
+                x["fix"] = fix if x["label"] == "hypothesis_as_fact" else ""
+            return out, u
+
+    w = AuditWriter({"applied_insight": "Вы пишете, что друзьям сказать стыдно. " + CITY})
+    v = OfferingFix([("Казани", "hypothesis_as_fact"), ("Самаре", "hypothesis_as_fact")])
+    s, view, fb = run(fragments, tmp_path, w, v)
+    shown = json.dumps(view["perspectives"], ensure_ascii=False)
+    assert "Казан" not in shown and "Самар" not in shown  # neither the claim nor its replacement is shown
+    assert fb and CITY in fb[0]  # the writer was asked to rewrite this card
+    cards = s.composition.meta.usage["writer"]["cards"]
+    assert all("fixed_by_validator" not in c for c in cards)
+    assert sorted(len(c["validation"]) for c in cards)[-1] == 2  # the rewritten card is validated again

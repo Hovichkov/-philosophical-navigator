@@ -181,6 +181,7 @@ class Session:
     partial: dict = field(default_factory=dict, repr=False)  # index → card already checked while composing
     _pending: Future | None = field(default=None, repr=False)  # the search structure being built after the split
     _pending_confirm: bool = False  # one question was split: confirm it as soon as the structure is ready
+    _structure_failed: bool = False  # the background structure failed: the next request builds it again
 
     def _guard(self):
         """MVP stabilization: a second request for the same session while one runs (double submit) is refused
@@ -205,7 +206,7 @@ class Session:
         self.interpretation = self.insufficient = self.confirmation = None
         self.query = self.retrieval = self.composition = None
         self.questions, self.initial_working_hypotheses, self.auto_confirmed = [], [], False
-        self._pending, self._pending_confirm = None, False
+        self._pending, self._pending_confirm, self._structure_failed = None, False, False
         if self.services.splitter is not None and self._split(auto_confirm):
             self._save()
             return self.public_view()
@@ -248,33 +249,41 @@ class Session:
         if not outcome:
             return False
         self.questions, self.state = outcome, "proposed"
-        inp, interpreter, t1 = self.input, self.services.interpreter, time.monotonic()
-
-        def structure():
-            try:
-                return interpret(inp, interpreter, fixed_questions=list(outcome))
-            finally:
-                self._time("search_structure", t1)
-        self._pending = self.services.background.submit(structure)
+        self._pending = self.services.background.submit(self._build_structure)
         if auto_confirm and len(outcome) == 1:  # one clear question: no confirmation step
             self.auto_confirmed = self._pending_confirm = True
             self.state = "confirmed"
         return True
 
-    def _ready(self) -> None:
-        """Wait for the background search structure (if any) and take it into the session."""
-        if self._pending is None:
-            return
-        pending, self._pending = self._pending, None
+    def _build_structure(self) -> InterpretationResult:
+        """The search structure for exactly the split questions (the story, feelings and questions are kept)."""
+        t0 = time.monotonic()
         try:
-            outcome = pending.result()
+            return interpret(self.input, self.services.interpreter, fixed_questions=list(self.questions))
+        finally:
+            self._time("search_structure", t0)
+
+    def _ready(self) -> None:
+        """Wait for the background search structure (if any) and take it into the session. After a failure the
+        session keeps its state (question shown, story and feelings saved); the next request — the page's
+        «Попробовать ещё раз» — builds only this missing step again. Requests of one session never run in parallel
+        (``_guard``), so a repeated tap cannot start a second build."""
+        if self._pending is not None:
+            pending, self._pending = self._pending, None
+            job = pending.result
+        elif self._structure_failed:
+            job = self._build_structure
+        else:
+            return
+        try:
+            outcome = job()
             if not isinstance(outcome, InterpretationResult):
                 raise ValueError("search structure: unexpected insufficient interpretation")
         except Exception as exc:
+            self._structure_failed = True
             self._fail("interpret", exc)
-            self._pending_confirm = False
-            self.state = "new"
             raise FlowError(user_message_for(exc, "interpret"), str(exc)) from exc
+        self._structure_failed = False
         self.interpretation = outcome
         self.initial_working_hypotheses = list(outcome.working_hypotheses)
         if self._pending_confirm:

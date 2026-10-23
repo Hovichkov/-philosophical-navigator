@@ -418,6 +418,60 @@ def own_words_share(question: str, narrative: str) -> float:
     return sum(w in known for w in words) / len(words) if words else 0.0
 
 
+NEGATIONS = frozenset({"не", "ни", "нет", "без", "никогда", "ничего", "нельзя", "никто", "нигде", "некогда"})
+MAX_FOREIGN_SHARE = 0.2  # words of a question sentence that its source sentence lacks (connectives, «мне»…)
+
+
+def _tokens(text: str) -> list[str]:
+    return re.findall(r"\w+", (text or "").lower().replace("ё", "е"))
+
+
+def _sentences(text: str) -> list[str]:
+    return [x for x in re.split(r"(?<=[.!?…])\s+", (text or "").strip()) if x.strip()]
+
+
+def _neg_pairs(tokens: list[str]) -> list[tuple[str, str]]:
+    return sorted((t, tokens[i + 1][:5] if i + 1 < len(tokens) else "") for i, t in enumerate(tokens) if t in NEGATIONS)
+
+
+def _fits_sentence(q_tokens: list[str], s_tokens: list[str]) -> bool:
+    """Content words of the question sentence appear in this story sentence in the same order (a few new ones are
+    allowed, a word that is there but out of order is not), and the negations around them are exactly the same."""
+    content = [t for t in q_tokens if len(t) >= 3 and t not in NEGATIONS]
+    stems, s_stems = [t[:5] for t in content], [t[:5] for t in s_tokens]
+    pos, matched, foreign = 0, [], 0
+    for st in stems:
+        try:
+            pos = s_stems.index(st, pos)
+        except ValueError:
+            if st in s_stems:  # present, but not in this order: actors or direction changed
+                return False
+            foreign += 1
+            continue
+        matched.append(pos)
+        pos += 1
+    if not matched or foreign > MAX_FOREIGN_SHARE * len(stems):
+        return False
+    lo = matched[0] - 1 if matched[0] > 0 and s_tokens[matched[0] - 1] in NEGATIONS else matched[0]
+    return _neg_pairs(q_tokens) == _neg_pairs(s_tokens[lo:matched[-1] + 1])
+
+
+def own_question_problem(question: str, narrative: str) -> str | None:
+    """Why a split question is not the person's own words, or None. A cheap guard, not a proof of meaning: it catches
+    a lost or added negation and actors or words in another order (each sentence must follow one story sentence);
+    it cannot see a change of meaning made with the same words in the same order or with short words such as
+    pronouns."""
+    if not question.endswith("?"):
+        return "не оканчивается «?»"
+    if own_words_share(question, narrative) < MIN_OWN_WORDS_SHARE:
+        return "не из слов человека"
+    story = [_tokens(x) for x in _sentences(narrative)]
+    for sent in _sentences(question):
+        if not any(_fits_sentence(_tokens(sent), st) for st in story):
+            return f"«{sent}» не повторяет ни одно предложение рассказа (порядок слов, действующие лица или отрицание)"
+    return None
+
+
 def split_questions(inp: InterpretationInput, splitter, max_attempts: int = 2
                     ) -> tuple[list[str] | InsufficientInterpretation | None, dict]:
     """The person's own questions (list), an ``InsufficientInterpretation``, or ``None`` when he asked no question
@@ -444,9 +498,9 @@ def split_questions(inp: InterpretationInput, splitter, max_attempts: int = 2
         if not out.get("asked"):
             return None, meta
         qs = list(dict.fromkeys(q.strip() for q in out.get("questions") or [] if q and q.strip()))
-        bad = [q for q in qs if not q.endswith("?") or own_words_share(q, inp.free_narrative) < MIN_OWN_WORDS_SHARE]
+        bad = [f"{q} — {why}" for q in qs if (why := own_question_problem(q, inp.free_narrative))]
         if qs and not bad:
             return qs[:1 + MAX_OTHER_QUESTIONS], meta
-        feedback = ("Вопросы должны быть словами человека из рассказа и оканчиваться «?». Не прошли: "
-                    + "; ".join(bad or ["пустой список"]))
+        feedback = ("Вопросы должны быть словами человека из рассказа, в его порядке и с его отрицаниями, и "
+                    "оканчиваться «?». Не прошли: " + "; ".join(bad or ["пустой список"]))
     return None, {"calls": calls, "prompt_version": SPLIT_PROMPT_VERSION, "fallback": feedback}
