@@ -155,6 +155,8 @@ def make_handler(app: App):
                     return self._json(200, app.get(str(data.get("session_id", ""))).retrieve())
                 if path == "/api/compose":
                     return self._json(200, app.get(str(data.get("session_id", ""))).compose())
+                if path == "/api/partial":  # cards already checked while the answer is being composed
+                    return self._json(200, app.get(str(data.get("session_id", ""))).partial_view())
                 if path == "/api/reflect":
                     chosen = data.get("chosen")
                     chosen = chosen if isinstance(chosen, int) and not isinstance(chosen, bool) else None
@@ -165,7 +167,8 @@ def make_handler(app: App):
                     return self._json(200, app.get(str(data.get("session_id", ""))).answer())
                 return self._json(404, {"error": "Not found"})
             except FlowError as exc:
-                return self._json(HTTPStatus.UNPROCESSABLE_ENTITY, {"error": exc.user_message})
+                return self._json(HTTPStatus.UNPROCESSABLE_ENTITY,
+                                  {"error": exc.user_message, **({"no_fit": True} if exc.no_fit else {})})
             except Exception:  # never leak a stack trace to the user — but never lose it for the developer
                 app.log_error(path, traceback.format_exc())
                 return self._json(HTTPStatus.INTERNAL_SERVER_ERROR, {"error": USER_ERROR})
@@ -234,7 +237,7 @@ def build_final_services(model: str, mode: str, retrieval_layer: str | None = No
     from navigator.composition.grounding_validator import ClaudeCodeCLIValidator
     from navigator.composition.writer import ClaudeCodeCLIWriter
     from navigator.corpus.final_corpus import FINAL_CORPUS_VERSION, final_snapshot_fragments, load_final_active
-    from navigator.interpretation.interpreter import ClaudeCodeCLIInterpreter
+    from navigator.interpretation.interpreter import ClaudeCodeCLIInterpreter, ClaudeCodeCLISplitter
     from navigator.representations.final_meaning import mode_snapshot
 
     root = Path.cwd()
@@ -262,7 +265,8 @@ def build_final_services(model: str, mode: str, retrieval_layer: str | None = No
     return Services(fragments=final, interpreter=ClaudeCodeCLIInterpreter(model=model),
                     composer=ClaudeCodeCLIComposer(model=model), retriever_factory=retriever_factory,
                     writer=ClaudeCodeCLIWriter(model=model, effort="medium"),
-                    validator=ClaudeCodeCLIValidator(model=model, effort="medium"), show_quotes=True)
+                    validator=ClaudeCodeCLIValidator(model=model, effort="medium"), show_quotes=True,
+                    splitter=ClaudeCodeCLISplitter(model=model))  # 2026-10-23: fast split of the own question
 
 
 def build_services(model: str = "claude-opus-5-5", corpus: str = "compact", final_mode: str = "A",

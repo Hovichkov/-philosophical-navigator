@@ -152,14 +152,16 @@ def test_custom_question_then_return_to_first_proposed_restores_its_hypotheses(f
     assert it.calls == 1 and sel.calls == 1
 
 
-def test_single_question_has_no_artificial_alternatives_and_prompt_allows_grounded_lenses():
+def test_single_question_has_no_artificial_alternatives_and_the_prompt_only_splits():
     from navigator.interpretation.interpreter import SYSTEM_PROMPT
 
     result = interpret(InterpretationInput(topic="Другое", difficulty_center="Другое", free_narrative=SON),
                       CountingInterp([out(Q1)]))
     assert result.other_questions == []
-    assert "2–4" in SYSTEM_PROMPT and "простое перефразирование" in SYSTEM_PROMPT
-    assert "скрытые мотивы за факт" in SYSTEM_PROMPT
+    # 2026-10-23: the visible question is the person's own; other questions only if he asked them himself
+    assert "только отделяет вопросы человека друг от друга" in SYSTEM_PROMPT
+    assert "Никаких новых ракурсов" in SYSTEM_PROMPT and "обычно этот список пуст" in SYSTEM_PROMPT
+    assert "а НЕ часть вопроса" in SYSTEM_PROMPT and "скрытые мотивы за факт" in SYSTEM_PROMPT
 
 
 def test_choose_rejects_unknown_index_and_wrong_state(fragments, tmp_path):
@@ -351,3 +353,152 @@ def test_page_has_the_edit_action_next_to_the_question():
     assert result.index('id="confirmed"') < result.index('id="edit-q"') < result.index('id="cards"')
     for needle in ("Изменить вопрос", 'action: "edited"', "exclusive(() => editQuestion(text))"):
         assert needle in page, needle
+
+
+# ------------------------------------------------------------------ 2026-10-23: fast split, structure in the background
+
+
+class Splitter:
+    name, model = "scripted-split", None
+
+    def __init__(self, out):
+        self.out, self.calls = out, 0
+
+    def complete(self, inp, feedback=None):
+        self.calls += 1
+        return self.out, {}
+
+
+class FixedInterp(CountingInterp):
+    def complete(self, inp, feedback=None, fixed_questions=None):
+        self.fixed = fixed_questions
+        return super().complete(inp, feedback)
+
+
+OWN = "Как мне быть с тем, что я узнаю это в сыне?"  # made of the words of the invented story below
+STORY = SON + " " + OWN
+
+
+def split_session(fragments, tmp_path, split_out):
+    svc, it, sel = services(fragments, tmp_path, [out(Q1)])
+    it = svc.interpreter = FixedInterp([out(Q1)])
+    svc.splitter = Splitter(split_out)
+    return Session(svc, tmp_path / "t"), it, sel, svc.splitter
+
+
+def test_own_question_is_shown_from_the_split_and_answered_with_the_background_structure(fragments, tmp_path):
+    s, it, sel, sp = split_session(fragments, tmp_path, {"sufficient": True, "insufficiency_reason": None,
+                                                          "clarifying_question": None, "asked": True,
+                                                          "questions": [OWN]})
+    view = s.submit("", ["Тревогу"], "", STORY, auto_confirm=True)
+    assert view["state"] == "confirmed" and view["confirmed_question"] == OWN and sp.calls == 1
+    answer = s.compose()  # waits for the structure, confirms, retrieves, composes
+    assert answer["confirmed_question"] == OWN and answer["perspectives"]
+    assert it.calls == 1 and it.fixed == [OWN]  # the structure was built for the person's own words
+    assert s.interpretation.proposed_question == OWN and s.input.experiences == ["Тревогу"]
+    assert [t["stage"] for t in s.timings][:2] == ["question_split", "search_structure"]
+
+
+def test_a_split_question_not_made_of_his_words_falls_back_to_the_full_interpretation(fragments, tmp_path):
+    invented = "Где моя ответственность перед чужим ребёнком, а где перед своим?"
+    s, it, sel, sp = split_session(fragments, tmp_path, {"sufficient": True, "insufficiency_reason": None,
+                                                          "clarifying_question": None, "asked": True,
+                                                          "questions": [invented]})
+    view = s.submit("", [], "", STORY, auto_confirm=True)
+    assert sp.calls == 2 and it.fixed is None  # rejected twice → the old single call formulates the question
+    assert view["confirmed_question"] == Q1
+
+
+def test_no_own_question_uses_the_full_interpretation(fragments, tmp_path):
+    s, it, sel, sp = split_session(fragments, tmp_path, {"sufficient": True, "insufficiency_reason": None,
+                                                          "clarifying_question": None, "asked": False,
+                                                          "questions": []})
+    view = s.submit("", [], "", SON, auto_confirm=True)
+    assert sp.calls == 1 and view["confirmed_question"] == Q1 and it.fixed is None
+
+
+class FlakyInterp(FixedInterp):
+    """The background structure fails once (a temporary model error), then works."""
+
+    def complete(self, inp, feedback=None, fixed_questions=None):
+        if self.calls == 0:
+            self.calls += 1
+            from navigator.interpretation.interpreter import InterpreterUnavailable
+            raise InterpreterUnavailable("timeout")
+        return super().complete(inp, feedback, fixed_questions)
+
+
+OWN2 = "Что мне сказать ему вечером?"
+
+
+def flaky_session(fragments, tmp_path, questions):
+    s, _, sel, sp = split_session(fragments, tmp_path, {"sufficient": True, "insufficiency_reason": None,
+                                                         "clarifying_question": None, "asked": True,
+                                                         "questions": questions})
+    it = s.services.interpreter = FlakyInterp([out(Q1)])
+    return s, it, sel
+
+
+def test_retry_after_a_failed_background_structure_builds_only_the_missing_step(fragments, tmp_path):
+    s, it, sel = flaky_session(fragments, tmp_path, [OWN])
+    s.submit("", ["Тревогу"], "", STORY + " " + OWN2, auto_confirm=True)
+    with pytest.raises(FlowError):
+        s.retrieve()
+    assert s.state == "confirmed" and s.questions == [OWN] and s.input.experiences == ["Тревогу"]
+    view = s.retrieve()  # «Попробовать ещё раз»: the structure is built again, then the search runs
+    assert view["state"] == "retrieved" and view["confirmed_question"] == OWN
+    assert s.compose()["perspectives"] and it.calls == 2 and it.fixed == [OWN] and sel.calls == 1
+    s.retrieve()
+    assert it.calls == 2  # nothing is rebuilt once the structure is there
+
+
+def test_retry_after_a_failed_structure_also_works_when_choosing_one_of_several_questions(fragments, tmp_path):
+    s, it, sel = flaky_session(fragments, tmp_path, [OWN, OWN2])
+    view = s.submit("", [], "", STORY + " " + OWN2, auto_confirm=True)
+    assert view["state"] == "proposed" and view["questions"] == [OWN, OWN2]
+    with pytest.raises(FlowError):
+        s.choose(1)
+    assert s.state == "proposed" and s.questions == [OWN, OWN2]
+    assert s.choose(1)["confirmed_question"] == OWN2 and it.calls == 2 and it.fixed == [OWN, OWN2]
+
+
+def test_a_repeated_tap_during_the_rebuild_is_refused_without_a_second_model_call(fragments, tmp_path):
+    s, it, sel = flaky_session(fragments, tmp_path, [OWN])
+    s.submit("", [], "", STORY + " " + OWN2, auto_confirm=True)
+    with pytest.raises(FlowError):
+        s.retrieve()
+    s._busy.acquire()  # the first retry is still running
+    try:
+        with pytest.raises(FlowError, match="concurrent"):
+            s.retrieve()
+    finally:
+        s._busy.release()
+    assert it.calls == 1
+
+
+# invented examples: a lost/added negation or swapped actors is not the person's own question
+WORK = "Я не хочу остаться на работе. Почему я не хочу остаться на работе?"
+BOSS = "Мой начальник не доверяет коллеге, и мне от этого неловко. Почему начальник не доверяет коллеге?"
+
+
+@pytest.mark.parametrize("question, narrative, ok", [
+    ("Почему я не хочу остаться на работе?", WORK, True),
+    ("Почему я хочу остаться на работе?", WORK, False),  # negation lost
+    ("Почему начальник не доверяет коллеге?", BOSS, True),
+    ("Почему коллега не доверяет начальнику?", BOSS, False),  # actors swapped
+    ("Почему начальник доверяет коллеге?", BOSS, False),  # negation lost
+    ("Почему я не хочу уйти с работы?", "Почему я хочу уйти с работы?", False),  # negation added
+    ("Мой начальник не доверяет коллеге. Почему начальник не доверяет коллеге?", BOSS, True),  # context kept
+])
+def test_own_question_check_catches_negation_and_actor_changes(question, narrative, ok):
+    from navigator.interpretation.interpreter import own_question_problem
+
+    assert (own_question_problem(question, narrative) is None) is ok
+
+
+def test_a_split_with_a_lost_negation_is_retried_then_left_to_the_full_interpretation(fragments, tmp_path):
+    s, it, sel, sp = split_session(fragments, tmp_path, {"sufficient": True, "insufficiency_reason": None,
+                                                          "clarifying_question": None, "asked": True,
+                                                          "questions": ["Почему я хочу остаться на работе?"]})
+    view = s.submit("", [], "", SON + " " + WORK, auto_confirm=True)
+    assert sp.calls == 2 and it.fixed is None and view["confirmed_question"] == Q1

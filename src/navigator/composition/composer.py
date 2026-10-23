@@ -49,7 +49,7 @@ from navigator.models.interpretation import (
 )
 
 PACKAGE_VERSION = "composition-package/0.1.0"
-PROMPT_VERSION = "composition-prompt/0.10.0"  # MVP pass 1: the person's chosen feelings inform the choice
+PROMPT_VERSION = "composition-prompt/0.14.0"  # 2026-10-23: prefer a turn of the asker's own view over tactics
 DEFAULT_MODEL = "claude-opus-5-5"
 
 
@@ -114,7 +114,7 @@ def package_sha256(package: dict) -> str:
 
 SYSTEM_PROMPT = f"""Ты — composer философского навигатора. Ты получаешь вопрос человека и ограниченный набор карточек-кандидатов из корпуса первоисточников. Ты не знаешь и не используешь ничего о философах и текстах сверх того, что написано в карточках.
 
-Задача: вернуть МИНИМАЛЬНОЕ число сильных перспектив, достаточное, чтобы человек получил действительно РАЗНЫЕ способы увидеть свой вопрос: 2 или 3. Две сильные разные перспективы — полноценный хороший результат, а не неполный. Третья появляется, только если она даёт самостоятельный сильный взгляд. Текст для человека пишешь НЕ ты: его по твоему выбору напишет отдельный шаг.
+Задача: вернуть МИНИМАЛЬНОЕ число сильных перспектив, достаточное, чтобы человек получил действительно РАЗНЫЕ способы увидеть свой вопрос. Сколько — зависит от пакета. Если в пакете НЕТ поля corpus_version: 2 или 3. Если поле corpus_version ЕСТЬ (финальный корпус): 1, 2 или 3, а если ни одна карточка пула не проходит проверку применимости — ни одной. Две сильные разные перспективы — полноценный хороший результат, а не неполный; на финальном корпусе это верно и для одной сильной. Каждая следующая появляется, только если она даёт самостоятельный сильный взгляд. Текст для человека пишешь НЕ ты: его по твоему выбору напишет отдельный шаг.
 
 Главное правило продукта: система не решает жизненную ситуацию. Она помогает увидеть различия, которых исходный вопрос пока не делает. Запрещены советы и вердикты («вам следует…», «вам нужно…», «вы должны…», «правильное решение…»). Запрещена психологическая диагностика. Рабочие гипотезы во входном пакете — внутренний материал системы, а не факты о человеке. {AMPLIFICATION_RULE} {PSYCH_FUNCTION_RULE} {INTERNAL_CLAIM_RULE}
 
@@ -128,6 +128,9 @@ SYSTEM_PROMPT = f"""Ты — composer философского навигато�
 
 Рамка перспективы (perspective_frame) — уровень выше эффекта. Одной фразой: какую рамку своего вопроса человек начинает исследовать благодаря этой перспективе, то есть в каком отношении он теперь смотрит на проблему (например, «как действовать без гарантий», «как соотносятся страх и выбор», «по какой мерке вообще сравнивать пути», «что было моим, а что мне давали»). Это формы, а не список ответов. Два разных эффекта могут лежать в одной рамке: тогда вторая карточка лишь уточняет первую или меняет критерий внутри той же работы — это НЕ самостоятельная перспектива. Сравнивай кандидатов и по эффекту, и по рамке. Для каждого следующего кандидата спроси: меняет ли он способ, которым человек рассматривает проблему, настолько, чтобы оправдать ещё одну карточку?
 Проверь и применимость: если перспектива подходит к вопросу только через натянутый перенос (метафора источника, частный пример, который приходится растягивать на ситуацию человека, неверное описание того, о чём он спрашивает) — она слабее, даже если её эффект нов.
+Применимость проверяй по трём вещам источника, а не по словам: ПРЕДМЕТ (о чём он говорит), СУБЪЕКТ (кто действует, переживает или оценивается, к кому это относится) и СМЫСЛ хода. Применение к подтверждённому вопросу допустимо, если в вопросе есть тот же предмет у того же по роли субъекта и ход сохраняет смысл. Общего слова («действие», «помнить», «труд», «любовь») мало: если источник говорит о собственном прошлом человека, а вопрос — о другом человеке; о нравственном пути, а вопрос — о качестве вещи; о Боге или судьбе, а вопрос — о мотивах конкретного человека; о телесной боли, а вопрос — о событии, — это подмена (decision subject_shift), даже если структура похожа. Ход можно применить и к соседней ситуации, если предмет и субъект по роли совпадают, — не отвергай сильную перспективу за другую обстановку.
+Общая фраза сама по себе не перспектива: если мысль карточки в той же формулировке подошла бы почти к любому вопросу («действие трудно понять», «всему своё время») и не даёт различения именно в ЭТОМ вопросе — decision generic_only. Ценность или оценка источника не становится вердиктом о выборе или образе жизни человека: если перспектива работает, только когда из неё следует, как ему правильно жить, — не выбирай её.
+Для каждой выбранной карточки во внутреннем поле fit (если оно есть в схеме) одной фразой: «Источник говорит о <предмет> у <субъект>; в вопросе о том же: <часть вопроса>».
 Нужен минимальный достаточный результат: не «обычно 2» и не «обычно 3».
 perspective_effect и perspective_frame описывают ВОЗМОЖНОСТЬ увидеть вопрос иначе, а не новый факт о человеке. Плохо: «высокое положение и нынешний стыд — две стороны одного» (это утверждение о его стыде). Хорошо: «можно проверить, связан ли стыд с тем, как положение выглядит в чужих глазах». Не выбирай карточку за то, что она «объясняет» человека догадкой.
 
@@ -138,10 +141,12 @@ perspective_effect и perspective_frame описывают ВОЗМОЖНОСТ�
 Порядок критериев:
 1. Relevance: карточка работает именно с подтверждённым вопросом. Проверяй направленность и субъекта действия: «мой поступок определяет меня» и «чужой поступок определяет мой ответ» — разные вопросы, даже если лексика похожа.
 2. Ясность различения: его можно сказать одной простой фразой.
-3. Польза: после различения человек видит свою ситуацию иначе. Тематического совпадения мало.
+3. Польза: после различения человек видит свою ситуацию иначе. Тематического совпадения мало. Сильнее та перспектива, мысль которой обращает внимание спрашивающего на его собственную позицию или на основание его вопроса (какую мерку он сам прикладывает, что и почему он разделяет, чему служит то, чему он хочет соответствовать), чем та, что подсказывает тактику (что сказать, каким тоном, как поступить). Не приписывай ему этой позиции: перспектива даёт возможность посмотреть, а не вывод о нём.
 4. Разные ЭФФЕКТЫ: выбранные перспективы меняют понимание вопроса по-разному (см. выше); разнообразие определяется эффектом на вопрос, НЕ традицией или автором и не формулировкой различения. Не бери более слабую карточку ради другой традиции.
 5. Grounding: всё, что ты приписываешь источнику, должно следовать из perspective / philosophical_questions карточки. Не добавляй идей, цитат, глав, стихов.
-- КАЧЕСТВО ВАЖНЕЕ КОЛИЧЕСТВА. 2 и 3 — равноправные результаты. В count_reason одной фразой объясни выбранное число: при 3 — какой самостоятельный эффект даёт третья; при 2 — почему третьей нет. Никогда не добивай результат слабой карточкой. Никогда не больше 3.
+- Финальный корпус (в пакете есть corpus_version): не добавляй вторую перспективу, если она не проходит проверку применимости. Если ни одна карточка пула её не проходит, верни пустой список perspectives: честное «не подошло» лучше натянутого ответа. Без corpus_version пустой список и одна карточка недопустимы.
+- Финальный корпус: в ответе не больше одной карточки одного автора (автор стоит в начале поля source). Из двух сильных карточек одного автора выбери одну сразу; вторую перспективу бери у другого автора, только если она сама проходит все проверки.
+- КАЧЕСТВО ВАЖНЕЕ КОЛИЧЕСТВА. Все допустимые для пакета числа равноправны. В count_reason одной фразой объясни выбранное число: при 3 — какой самостоятельный эффект даёт третья; при 2 — почему третьей нет; при 1 — почему второй нет; при 0 — почему не подошла ни одна. Никогда не добивай результат слабой карточкой. Никогда не больше 3.
 - Перспектива может работать с одной важной частью вопроса; не требуй от неё охватить весь вопрос.
 - Не достраивай проблему: карточка может ввести новое философское различение, но не новый факт о человеке, его мотив, сравнение, страх, желание или психологический механизм. Если карточка работает только при таком добавлении — не выбирай её. Этот запрет касается ТЕКСТА о человеке, а не выбора карточки: если карточка даёт полезное различение, но её легко применить через догадку о человеке, — всё равно рассматривай её и сформулируй различение как мысль о вещах («похвала и качество работы — разные вещи»), а не как утверждение о человеке («вы зависите от похвалы»). Не пиши в тексте «возможно, для вас…» про мотив или самооценку — называй различение и оставь вывод человеку.
 - Ранги и cosine — лишь свидетельства. Карточку с первым рангом можно отвергнуть как ложное совпадение; карточку ниже можно выбрать, если она точнее.
@@ -158,13 +163,13 @@ perspective_effect и perspective_frame описывают ВОЗМОЖНОСТ�
 - why_selected: одно короткое предложение, почему выбрана.
 
 Также:
-- considered: все кандидаты, которых ты всерьёз рассматривал (обычно 4–7), включая выбранные: card_id, perspective_effect, perspective_frame, decision (selected / same_operation_as_selected / same_frame_as_selected / weaker / strained_application / no_clear_distinction / needs_guess_about_person), duplicate_of (card_id выбранной карточки с той же операцией или рамкой, иначе null) и reason — одно короткое предложение.
+- considered: все кандидаты, которых ты всерьёз рассматривал (обычно 4–7), включая выбранные: card_id, perspective_effect, perspective_frame, decision (selected / same_operation_as_selected / same_frame_as_selected / weaker / strained_application / subject_shift / generic_only / no_clear_distinction / needs_guess_about_person), duplicate_of (card_id выбранной карточки с той же операцией или рамкой, иначе null) и reason — одно короткое предложение.
 - q1_top: решение по карточке q1_top_card_id (selected/rejected) и причина одним предложением.
 
 Пиши по-русски. Отвечай строго по JSON-схеме."""
 
 DECISIONS = ["selected", "same_operation_as_selected", "same_frame_as_selected", "weaker", "strained_application",
-             "no_clear_distinction", "needs_guess_about_person"]
+             "subject_shift", "generic_only", "no_clear_distinction", "needs_guess_about_person"]
 OUTPUT_SCHEMA = {
     "type": "object",
     "additionalProperties": False,
@@ -223,10 +228,14 @@ OUTPUT_SCHEMA = {
 }
 
 
-# Final corpus (MVP demo): one strong card is a valid answer when no other author gives a good second one, so the
-# selection schema accepts 1–3 there. Legacy corpora keep 2–3. The system prompt is unchanged.
+# Final corpus (MVP demo): one strong card is a valid answer when no other author gives a good second one, and an
+# empty selection is the honest outcome when no card keeps the source's subject on this question (2026-10-22), so the
+# selection schema accepts 0–3 there, and each selected card states its ``fit``. Legacy corpora keep 2–3.
 FINAL_OUTPUT_SCHEMA = copy.deepcopy(OUTPUT_SCHEMA)
-FINAL_OUTPUT_SCHEMA["properties"]["perspectives"]["minItems"] = 1
+FINAL_OUTPUT_SCHEMA["properties"]["perspectives"]["minItems"] = 0
+_final_item = FINAL_OUTPUT_SCHEMA["properties"]["perspectives"]["items"]
+_final_item["properties"]["fit"] = {"type": "string"}
+_final_item["required"] = [*_final_item["required"], "fit"]
 
 
 def is_final_package(package: dict) -> bool:
@@ -239,6 +248,11 @@ def output_schema_for(package: dict) -> dict:
 
 class ComposerUnavailable(RuntimeError):
     pass
+
+
+class NoApplicablePerspective(RuntimeError):
+    """Final corpus: the selector found no card whose subject and sense hold for the confirmed question.
+    Not a contract violation, so ``compose`` does not retry it; the flow shows an honest message."""
 
 
 class Composer(Protocol):
@@ -280,7 +294,7 @@ class ClaudeCodeCLIComposer:
         return payload["structured_output"], usage
 
 
-SELECTION_FIELDS = frozenset(OUTPUT_SCHEMA["properties"]["perspectives"]["items"]["properties"])
+SELECTION_FIELDS = frozenset(FINAL_OUTPUT_SCHEMA["properties"]["perspectives"]["items"]["properties"])
 # One-call format (M3.2–M3.3: the composer also wrote the text). Still accepted, e.g. from scripted test composers.
 MODEL_PERSPECTIVE_FIELDS = frozenset({"card_id", "role", "title", "main_idea", "applied_insight", "perspective",
                                       "reflection_question", "why_selected", "distinction", "question_explanation"})
@@ -336,7 +350,10 @@ def check_selection(package: dict, output: dict) -> list[dict]:
     pool = [c["card_id"] for c in package["candidates"]]
     sel = [{k: v for k, v in p.items() if k in SELECTION_FIELDS} for p in output["perspectives"]]
     ids = [p["card_id"] for p in sel]
-    low = 1 if is_final_package(package) else 2  # final corpus (MVP): one strong card is a valid answer
+    final = is_final_package(package)
+    if final and not ids:  # an honest «nothing applies» (no padding with a strained card)
+        raise NoApplicablePerspective((output.get("count_reason") or "").strip() or "no applicable perspective")
+    low = 1 if final else 2  # final corpus (MVP): one strong card is a valid answer
     if not low <= len(ids) <= 3:
         raise ValueError(f"select {low}–3 cards, got {len(ids)}")
     if len(set(ids)) != len(ids):
@@ -348,6 +365,9 @@ def check_selection(package: dict, output: dict) -> list[dict]:
         missing = [f for f in ("distinction", "role", "why_selected", "perspective_effect") if not (p.get(f) or "").strip()]
         if missing:
             raise ValueError(f"card {p['card_id']}: empty {missing}")
+        if final and "fit" in p and not (p["fit"] or "").strip():
+            raise ValueError(f"card {p['card_id']}: empty fit — say what the source is about, whose it is, and which "
+                             "part of the confirmed question is about the same")
         if not any(w in p["distinction"].lower() for w in ("различ", "увидеть")):
             raise ValueError("distinction must say what the person can distinguish («различить … и …») or see («увидеть …»)")
     effects = [" ".join(re.findall(r"\w+", p["perspective_effect"].lower())) for p in sel]
@@ -376,6 +396,8 @@ def check_selection(package: dict, output: dict) -> list[dict]:
 _DECISION_LABEL = {"same_operation_as_selected": "та же мыслительная операция, что у {dup}",
                    "same_frame_as_selected": "та же рамка вопроса, что у {dup}",
                    "strained_application": "натянутое применение к вопросу",
+                   "subject_shift": "предмет или субъект источника подменён",
+                   "generic_only": "общая фраза без различения для этого вопроса",
                    "weaker": "слабее", "no_clear_distinction": "нет ясного различения",
                    "needs_guess_about_person": "работает только через догадку о человеке"}
 
@@ -425,7 +447,7 @@ def one_card_per_author(package: dict, sel: list[dict], by_id: dict, resolve: bo
 
 def compose_written(package: dict, output: dict, fragments: list[Fragment], meta: ComposerMeta, writer,
                     quote_source=None, max_writer_attempts: int = 3, validator=None,
-                    resolve_same_author: bool = True) -> CompositionResult:
+                    resolve_same_author: bool = True, on_card=None) -> CompositionResult:
     """M3.3.1 two-step composition: the selection in ``output`` + one writer call per card (parallel).
     Final corpus: at most one card per author (``one_card_per_author``)."""
     from navigator.composition.writer import WRITER_PROMPT_VERSION, write_cards
@@ -434,8 +456,16 @@ def compose_written(package: dict, output: dict, fragments: list[Fragment], meta
     sel = check_selection(package, output)
     sel, same_author = one_card_per_author(package, sel, by_id, resolve_same_author)
     t0 = time.monotonic()
+    final = is_final_package(package)
+
+    def ready(i, card):  # the same finishing touches as the result below, so an early card equals the final one
+        on_card(i, card.model_copy(update={"perspective_effect": sel[i].get("perspective_effect"),
+                                           "perspective_frame": sel[i].get("perspective_frame"),
+                                           **({"verified_quote": quote_source(card.card_id)} if quote_source else {})}))
+
     cards, records = write_cards(package, sel, fragments, lambda cid: source_label(by_id[cid]), writer,
-                                 max_writer_attempts, validator)
+                                 max_writer_attempts, validator, on_card=ready if on_card else None,
+                                 give_up_after=2 if final else None)
     written = [(s, c) for s, c in zip(sel, cards) if c is not None]
     dropped = [s["card_id"] for s, c in zip(sel, cards) if c is None]
     # Each failed card was already repaired on its own by the writer (``max_writer_attempts``); the written ones are
@@ -485,7 +515,8 @@ def _is_selection(output: dict) -> bool:
 
 
 def compose(package: dict, fragments: list[Fragment], composer: Composer, max_attempts: int = 2,
-            quote_source=None, writer=None, max_writer_attempts: int = 3, validator=None) -> CompositionResult:
+            quote_source=None, writer=None, max_writer_attempts: int = 3, validator=None,
+            on_card=None) -> CompositionResult:
     """Selection by ``composer``; with a ``writer`` the text is written per card (M3.3.1). A composer that
     returns the older one-call format (text included) is assembled directly."""
     feedback = None
@@ -507,7 +538,7 @@ def compose(package: dict, fragments: list[Fragment], composer: Composer, max_at
                 if writer is None:
                     raise RuntimeError("a selection-only composer output needs a card writer")
                 result = compose_written(package, output, fragments, meta, writer, quote_source, max_writer_attempts,
-                                         validator, resolve_same_author=attempt == max_attempts)
+                                         validator, resolve_same_author=attempt == max_attempts, on_card=on_card)
             else:
                 result = assemble_result(package, output, fragments, meta, quote_source=quote_source)
             usage["validation_seconds"] = round(time.monotonic() - t_val, 3)
