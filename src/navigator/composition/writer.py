@@ -18,6 +18,7 @@ from __future__ import annotations
 import json
 import re
 import subprocess
+import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
@@ -123,7 +124,7 @@ WRITER_PROMPT = f"""Ты пишешь ОДНУ карточку философс
 # ------------------------------------------------------------------ MVP pass 1: the final-corpus card
 # quote (shown by code, on top) → comment: what distinction the author makes → application to the question → ONE question.
 FINAL_FORMAT = "final-mvp"
-FINAL_WRITER_PROMPT_VERSION = "final-card-writer-prompt/1.1.0"
+FINAL_WRITER_PROMPT_VERSION = "final-card-writer-prompt/1.2.0"  # 2026-10-23: no retelling; the question turns to the asker
 FINAL_FIELDS = ("main_idea", "applied_insight", "reflection_question")
 FINAL_EXCERPT_FROM_WORDS = 40  # a longer verified quote is shown as a VERBATIM excerpt; the whole quote stays one tap away
 FINAL_ADVICE = (r"\bсделайте\b", r"\bпопробуйте\b", r"\bпостарайтесь\b", r"\bпозвольте себе\b", r"\bвам стоит\b")
@@ -136,8 +137,8 @@ FINAL_WRITER_PROMPT = f"""Ты пишешь ОДНУ карточку филос
 Больше в карточке ничего нет: ни заголовка, ни пояснений, ни «Подробнее». Каждая мысль звучит ОДИН раз.
 
 main_idea — КОММЕНТАРИЙ К ЦИТАТЕ: какое различение здесь делает автор — что он отделяет от чего. 1–2 коротких предложения, всего не больше 35 слов. Можно назвать автора или книгу («Эпиктет различает…», «В Екклесиасте…»). НЕ пересказывай цитату её же словами и не копируй её архаичный синтаксис: человек только что её прочитал. Здесь ещё нет человека.
-applied_insight — ПРИМЕНЕНИЕ: почему это различение важно именно в ситуации человека. 1–3 коротких предложения, всего не больше 45 слов. Опирайся на его слова («Вы пишете…», «Вы спрашиваете…»). Не советуй и не предписывай: никаких «вам следует», «вам нужно», «сделайте», «попробуйте».
-reflection_question — РОВНО ОДИН короткий понятный вопрос к себе от первого лица, не больше 18 слов, ровно один знак «?». Не два вопроса подряд («Что я думаю о её ответе? И чего хочу после него?» — нельзя; нужно: «Чего я хочу после её ответа?»). Конкретный, о его ситуации; не философская загадка и не совет.
+applied_insight — ПРИМЕНЕНИЕ: почему это различение важно именно в ситуации человека. 1–3 коротких предложения, всего не больше 45 слов. НЕ пересказывай человеку его же слова и его ситуацию: он их знает. Не начинай с «Вы пишете», «Вы спрашиваете»; его слова можно задеть одним-двумя опорными словами, только где это нужно для мысли. Покажи, что мысль источника позволяет увидеть в позиции самого спрашивающего — в том, как он сам смотрит на ситуацию и на людей в ней, — а не в тактике (что сказать, каким тоном, что сделать). Не советуй и не предписывай: никаких «вам следует», «вам нужно», «сделайте», «попробуйте».
+reflection_question — РОВНО ОДИН короткий понятный вопрос к себе от первого лица, не больше 18 слов, ровно один знак «?». Не два вопроса подряд («Что я думаю о её ответе? И чего хочу после него?» — нельзя; нужно: «Чего я хочу после её ответа?»). Он обращает взгляд человека на него самого: на его собственную мерку, взгляд или отношение, которые мысль источника делает видимыми, — а не на тактику («как сказать», «каким тоном», «что сделать»). Он не уже исходного вопроса человека. Он открытый: спрашивает, а не утверждает о человеке того, чего тот не говорил («Пользуюсь ли я сам той же меркой?», а не «Где я сам пользуюсь той же меркой?»). Простыми словами; не философская загадка и не совет.
 quote_excerpt — заполняй, ТОЛЬКО если в данных «проверенная_дословная_цитата» длиннее 40 слов: скопируй из неё ДОСЛОВНО (символ в символ, без пропусков внутри) один непрерывный отрывок 12–40 слов, который точнее всего несёт различение карточки. Ничего не меняй в словах. Если цитата короткая — пустая строка.
 
 ЯЗЫК — главное требование:
@@ -158,6 +159,7 @@ quote_excerpt — заполняй, ТОЛЬКО если в данных «пр
 - Не предписывай, как чувствовать. «Кто я» за человека не решай.
 - Сохраняй опорные слова человека: «принять» ≠ «смириться». Если «род_человека» = «неизвестен», пиши без форм, зависящих от рода.
 - Чувства, которые человек выбрал, — подсказка, ЧТО в вопросе для него живо. Не вставляй их названия ради галочки.
+- Регистр философский, а не психологический: не о том, как справиться с чувством, выбрать тон или наладить разговор, а о том, что мысль источника открывает в понимании ситуации и в самом человеке.
 
 Запиши во внутреннее поле grounding (человек его не видит) по записи на каждое утверждение о человеке, о другом человеке или об источнике: kind = user_fact (evidence — ДОСЛОВНЫЙ отрывок 2–12 слов из слов человека), source_fact (ДОСЛОВНЫЙ отрывок из данных карточки), distinction, question, impersonal_example или open_hypothesis (evidence — дословно то предложение поля, где она сказана). Отрывки проверяет код. metaphor_words — слова-образы источника (их нельзя переносить на ситуацию человека).
 
@@ -500,7 +502,9 @@ def source_data_from_brief(brief: dict) -> str:
 
 
 def write_card(brief: dict, selected: dict, source: str, user_words: str, writer, max_attempts: int = 3,
-               validator=None) -> tuple[Perspective | None, dict]:
+               validator=None, give_up=None) -> tuple[Perspective | None, dict]:
+    """``give_up(attempt) -> bool`` (final corpus): stop rewriting a failing card once another card is already
+    written — one checked card is a full answer, so the person does not wait for a third rewrite."""
     record = {"card_id": selected["card_id"], "attempts": 0, "repairs": [], "calls": [], "fallback": False,
               "validation": []}
     source_data = source_data_from_brief(brief)
@@ -523,6 +527,9 @@ def write_card(brief: dict, selected: dict, source: str, user_words: str, writer
         except ValueError as exc:
             feedback = str(exc)[:1200]
             record["repairs"].append(feedback)
+            if attempt < max_attempts and give_up is not None and give_up(attempt):
+                record["gave_up_early"] = True
+                break
     record["seconds"] = round(time.monotonic() - t0, 2)
     record["fallback"] = True  # could not be written cleanly: the card is dropped (never shown half-checked)
     return None, record
@@ -555,15 +562,28 @@ def validate_independently(card: Perspective, brief: dict, validator, record: di
 
 
 def write_cards(package: dict, selection: list[dict], fragments: list[Fragment], source_of, writer,
-                max_attempts: int = 3, validator=None) -> tuple[list[Perspective | None], list[dict]]:
-    """Write all selected cards in parallel (one call per card). Order of ``selection`` is kept."""
+                max_attempts: int = 3, validator=None, on_card=None,
+                give_up_after: int | None = None) -> tuple[list[Perspective | None], list[dict]]:
+    """Write all selected cards in parallel (one call per card). Order of ``selection`` is kept.
+    ``on_card(index, card)`` is called as soon as a card passes every check (the page can show it at once).
+    ``give_up_after`` (final corpus): after that many failed attempts a card is dropped if another is already written."""
     by_id = {f.id: f for f in fragments}
     words = user_words_from_package(package)
+    done = threading.Event()
+
+    def give_up(attempt: int) -> bool:
+        return give_up_after is not None and attempt >= give_up_after and done.is_set()
 
     def one(i: int):
         sel = selection[i]
         brief = build_brief(package, sel, [s for j, s in enumerate(selection) if j != i], by_id[sel["card_id"]])
-        return write_card(brief, sel, source_of(sel["card_id"]), words, writer, max_attempts, validator)
+        card, record = write_card(brief, sel, source_of(sel["card_id"]), words, writer, max_attempts, validator,
+                                  give_up)
+        if card is not None:
+            done.set()
+            if on_card is not None:
+                on_card(i, card)
+        return card, record
 
     with ThreadPoolExecutor(max_workers=max(1, len(selection))) as ex:
         results = list(ex.map(one, range(len(selection))))
